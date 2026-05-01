@@ -1,0 +1,4 @@
+2026-05-01 16:20:00 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-01 16:20:05 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-01 16:20:05 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-01 16:20:05 - VectorDB - INFO - Vector Database initialized
