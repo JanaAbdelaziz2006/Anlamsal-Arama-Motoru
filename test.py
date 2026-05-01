@@ -129,6 +129,8 @@ class SemanticSearchUI:
         
         for i, result in enumerate(results, 1):
             # Score visualization
+            if result.score < 0.40:
+                continue
             score_pct = int(result.score * 100)
             score_bar = SemanticSearchUI.SCORE_BAR * (score_pct // 5)
             empty_bar = " " * ((100 // 5) - (score_pct // 5))

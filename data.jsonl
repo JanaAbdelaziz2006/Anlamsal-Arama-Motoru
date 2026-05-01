@@ -1,0 +1,29 @@
+{"id": "btu_001", "content": "BTÜ'de başarılı olmak için disiplin ve çalışkanlık gereklidir."}
+{"id": "btu_002", "content": "BTÜ, 2010 yılında kurulan Türkiye'nin ikinci teknik üniversitesidir. Mühendislik ve Doğa Bilimleri ağırlıklıdır."}
+{"id": "btu_003", "content": "BTÜ'de eğitim dili genellikle %30 veya %100 İngilizcedir. Hazırlık sınıfı Mimar Sinan yerleşkesinde bulunur."}
+{"id": "btu_004", "content": "BTÜ, teknik eğitimde öncü bir kurumdur."}
+{"id": "btu_005", "content": "BTÜ teknik bir üniversitedir."}
+{"id": "btu_006", "content": "BTÜ'nün kampüsleri Mimar Sinan, Görükle ve Tophane'de yer alır."}
+{"id": "btu_007", "content": "BTÜ'nün mühendislik fakültesi birçok bölüm içerir."}
+{"id": "btu_008", "content": "BTÜ'de öğrenciler çeşitli sosyal ve kültürel etkinliklere katılabilirler."}
+
+{"id": "ai_001", "content": "Vektör veritabanları (Vector DB), verileri matematiksel vektörler olarak saklar ve anlamsal (semantic) arama yapılmasına olanak tanır."}
+{"id": "ai_002", "content": "Yapay zeka ve makine öğrenmesi geleceğin teknolojileridir."}
+{"id": "ai_003", "content": "Vektör veritabanları, benzerlik araması yapmak için kullanılır."}
+{"id": "ai_006", "content": "FAISS kütüphanesi yüksek boyutlu vektörlerde benzerlik aramayı hızlandırır."}
+{"id": "ai_007", "content": "Machine learning modelleri büyük veri setlerinden öğrenirler."}
+{"id": "ai_008", "content": "Derin öğrenme, çok katmanlı sinir ağlarını kullanarak karmaşık verileri işler."}
+{"id": "ai_009", "content": "Derin öğrenme sinir ağlarını kullanarak karmaşık özellikleri öğrenir."}
+{"id": "ai_010", "content": "Elasticsearch ve Weaviate popüler vektör arama araçlarıdır."}
+{"id": "ai_0011", "content":"Yapay Zeka (AI), insan zekasını taklit eden makinelerin geliştirilmesidir. Makine öğrenmesi ve derin öğrenme alt dallarıdır."}
+
+
+{"id": "trans_001", "content": "Bursa'da ulaşım için BursaRay (metro), T1 ve T2 tramvay hatları ile sarı belediye otobüsleri kullanılır. Bukart ödeme sistemidir."}
+{"id": "trans_002", "content": "T2 tramvay hattı Kent Meydanı ile Terminal arasında çalışır. İstanbul yolu (Yeni Yalova Yolu) güzergahını takip eder."}
+{"id": "trans_003", "content": "BursaRay metro hattı şehrin doğusunu ve batısını bağlar."}
+
+{"id": "math_001", "content": "Calculus dersinde limit, türev ve integral konuları işlenir. Bir fonksiyonun anlık değişim hızı türev ile hesaplanır."}
+{"id": "math_002", "content": "Lineer Cebir, matrisler, vektör uzayları ve lineer denklem sistemlerini inceleyen matematik dalıdır. AI için temeldir."}
+
+{"id": "career_001", "content": "Bilgisayar mühendisliği öğrencileri için Python, Java ve C++ dilleri sektörde en çok talep gören dillerdir."}
+{"id": "career_002", "content": "Staj ve iş arama süreçlerinde GitHub portfolyosu ve LinkedIn profili bir yazılımcı için en önemli araçlardır."}
