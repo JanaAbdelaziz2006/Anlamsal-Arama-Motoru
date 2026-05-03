@@ -116,3 +116,119 @@
 2026-05-02 01:44:26 - VectorDB - INFO - Search completed for query: 'transportation in bursa' in 25.67ms
 2026-05-02 01:44:37 - VectorDB - INFO - Search completed for query: 'vehicles in bursa'. Results: 3
 2026-05-02 01:44:37 - VectorDB - INFO - Search completed for query: 'vehicles in bursa' in 26.14ms
+2026-05-02 01:46:25 - VectorDB - INFO - Initializing VectorDatabase from data.jsonl
+2026-05-02 01:46:25 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-02 01:46:29 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-02 01:46:29 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-02 01:46:29 - VectorDB - INFO - Vector Database initialized
+2026-05-02 01:46:29 - VectorDB - INFO - Indexing documents from data.jsonl
+2026-05-02 01:46:29 - VectorDB - INFO - Starting document indexing from data.jsonl
+2026-05-02 01:46:29 - VectorDB - INFO - Data file validated: data.jsonl
+2026-05-02 01:46:29 - VectorDB - INFO - Loaded 24 documents from data.jsonl
+2026-05-02 01:46:30 - VectorDB - INFO - Added 24 embeddings to index. Total: 24
+2026-05-02 01:46:30 - VectorDB - INFO - Indexing complete. Total documents: 24
+2026-05-02 01:46:30 - VectorDB - INFO - Successfully indexed 24 documents
+2026-05-02 01:46:49 - VectorDB - INFO - Search completed for query: 'transportation in bursa'. Results: 3
+2026-05-02 01:46:49 - VectorDB - INFO - Search completed for query: 'transportation in bursa' in 30.11ms
+2026-05-02 01:46:57 - VectorDB - INFO - Search completed for query: 'bursada ulasim'. Results: 3
+2026-05-02 01:46:57 - VectorDB - INFO - Search completed for query: 'bursada ulasim' in 38.27ms
+2026-05-02 01:47:01 - VectorDB - INFO - Search completed for query: 'btu'. Results: 3
+2026-05-02 01:47:01 - VectorDB - INFO - Search completed for query: 'btu' in 21.60ms
+2026-05-02 01:47:20 - VectorDB - INFO - Search completed for query: 'engineering faculty in btu'. Results: 3
+2026-05-02 01:47:20 - VectorDB - INFO - Search completed for query: 'engineering faculty in btu' in 33.88ms
+2026-05-02 01:47:35 - VectorDB - INFO - Search completed for query: 'muhendislik fakultesi'. Results: 3
+2026-05-02 01:47:35 - VectorDB - INFO - Search completed for query: 'muhendislik fakultesi' in 30.38ms
+2026-05-02 01:51:54 - VectorDB - INFO - Initializing VectorDatabase from data.jsonl
+2026-05-02 01:51:54 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-02 01:51:58 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-02 01:51:58 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-02 01:51:58 - VectorDB - INFO - Vector Database initialized
+2026-05-02 01:51:58 - VectorDB - INFO - Indexing documents from data.jsonl
+2026-05-02 01:51:58 - VectorDB - INFO - Starting document indexing from data.jsonl
+2026-05-02 01:51:58 - VectorDB - INFO - Data file validated: data.jsonl
+2026-05-02 01:51:58 - VectorDB - INFO - Loaded 24 documents from data.jsonl
+2026-05-02 01:51:58 - VectorDB - INFO - Added 24 embeddings to index. Total: 24
+2026-05-02 01:51:58 - VectorDB - INFO - Indexing complete. Total documents: 24
+2026-05-02 01:51:58 - VectorDB - INFO - Successfully indexed 24 documents
+2026-05-02 01:52:13 - VectorDB - INFO - Search completed for query: 'bursa teknik universitesi'. Results: 3
+2026-05-02 01:52:13 - VectorDB - INFO - Search completed for query: 'bursa teknik universitesi' in 19.22ms
+2026-05-02 01:52:26 - VectorDB - INFO - Search completed for query: 'transportation in bursa'. Results: 3
+2026-05-02 01:52:26 - VectorDB - INFO - Search completed for query: 'transportation in bursa' in 27.66ms
+2026-05-02 01:52:34 - VectorDB - INFO - Search completed for query: 'yapay zeka nedir'. Results: 3
+2026-05-02 01:52:34 - VectorDB - INFO - Search completed for query: 'yapay zeka nedir' in 23.04ms
+2026-05-02 01:53:18 - VectorDB - INFO - Search completed for query: 'Are linkedin and githup important'. Results: 3
+2026-05-02 01:53:18 - VectorDB - INFO - Search completed for query: 'Are linkedin and githup important' in 32.19ms
+2026-05-02 01:53:36 - VectorDB - INFO - Search completed for query: 'muhendislik fakultesi in btu'. Results: 3
+2026-05-02 01:53:36 - VectorDB - INFO - Search completed for query: 'muhendislik fakultesi in btu' in 23.95ms
+2026-05-02 01:55:56 - VectorDB - INFO - Search completed for query: 'what is machine learning'. Results: 3
+2026-05-02 01:55:56 - VectorDB - INFO - Search completed for query: 'what is machine learning' in 39.24ms
+2026-05-02 01:56:57 - VectorDB - INFO - Initializing VectorDatabase from data.jsonl
+2026-05-02 01:56:57 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-02 01:57:01 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-02 01:57:01 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-02 01:57:01 - VectorDB - INFO - Vector Database initialized
+2026-05-02 01:57:01 - VectorDB - INFO - Indexing documents from data.jsonl
+2026-05-02 01:57:01 - VectorDB - INFO - Starting document indexing from data.jsonl
+2026-05-02 01:57:01 - VectorDB - INFO - Data file validated: data.jsonl
+2026-05-02 01:57:01 - VectorDB - INFO - Loaded 24 documents from data.jsonl
+2026-05-02 01:57:01 - VectorDB - INFO - Added 24 embeddings to index. Total: 24
+2026-05-02 01:57:01 - VectorDB - INFO - Indexing complete. Total documents: 24
+2026-05-02 01:57:01 - VectorDB - INFO - Successfully indexed 24 documents
+2026-05-02 01:57:16 - VectorDB - INFO - Search completed for query: 'bursa teknik universitesi'. Results: 3
+2026-05-02 01:57:16 - VectorDB - INFO - Search completed for query: 'bursa teknik universitesi' in 20.77ms
+2026-05-02 01:57:33 - VectorDB - INFO - Search completed for query: 'transportation in bursa'. Results: 3
+2026-05-02 01:57:33 - VectorDB - INFO - Search completed for query: 'transportation in bursa' in 21.01ms
+2026-05-02 01:57:43 - VectorDB - INFO - Search completed for query: 'yapay zeka nedir'. Results: 3
+2026-05-02 01:57:43 - VectorDB - INFO - Search completed for query: 'yapay zeka nedir' in 19.76ms
+2026-05-02 01:58:03 - VectorDB - INFO - Search completed for query: 'muhendislik fakultesi in btu'. Results: 3
+2026-05-02 01:58:03 - VectorDB - INFO - Search completed for query: 'muhendislik fakultesi in btu' in 27.04ms
+2026-05-02 01:58:21 - VectorDB - INFO - Search completed for query: 'what is machine learning'. Results: 3
+2026-05-02 01:58:21 - VectorDB - INFO - Search completed for query: 'what is machine learning' in 18.52ms
+2026-05-02 01:58:32 - VectorDB - INFO - Search completed for query: 'makine ogrenmesi nedir'. Results: 3
+2026-05-02 01:58:32 - VectorDB - INFO - Search completed for query: 'makine ogrenmesi nedir' in 22.54ms
+2026-05-02 02:00:23 - VectorDB - INFO - Initializing VectorDatabase from data.jsonl
+2026-05-02 02:00:23 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-02 02:00:28 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-02 02:00:28 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-02 02:00:28 - VectorDB - INFO - Vector Database initialized
+2026-05-02 02:00:28 - VectorDB - INFO - Indexing documents from data.jsonl
+2026-05-02 02:00:28 - VectorDB - INFO - Starting document indexing from data.jsonl
+2026-05-02 02:00:28 - VectorDB - INFO - Data file validated: data.jsonl
+2026-05-02 02:00:28 - VectorDB - INFO - Loaded 24 documents from data.jsonl
+2026-05-02 02:00:28 - VectorDB - INFO - Added 24 embeddings to index. Total: 24
+2026-05-02 02:00:28 - VectorDB - INFO - Indexing complete. Total documents: 24
+2026-05-02 02:00:28 - VectorDB - INFO - Successfully indexed 24 documents
+2026-05-02 02:00:39 - VectorDB - INFO - Search completed for query: 'bursa teknik universitesi'. Results: 3
+2026-05-02 02:00:39 - VectorDB - INFO - Search completed for query: 'bursa teknik universitesi' in 20.47ms
+2026-05-02 02:00:55 - VectorDB - INFO - Search completed for query: 'transportation in bursa'. Results: 3
+2026-05-02 02:00:55 - VectorDB - INFO - Search completed for query: 'transportation in bursa' in 18.90ms
+2026-05-02 02:01:05 - VectorDB - INFO - Search completed for query: 'yapay zeka nedir'. Results: 3
+2026-05-02 02:01:05 - VectorDB - INFO - Search completed for query: 'yapay zeka nedir' in 19.45ms
+2026-05-02 02:01:15 - VectorDB - INFO - Search completed for query: 'muhendislik fakultesi in btu'. Results: 3
+2026-05-02 02:01:15 - VectorDB - INFO - Search completed for query: 'muhendislik fakultesi in btu' in 20.11ms
+2026-05-02 02:01:34 - VectorDB - INFO - Search completed for query: 'makine ogrenmesi nedir'. Results: 3
+2026-05-02 02:01:34 - VectorDB - INFO - Search completed for query: 'makine ogrenmesi nedir' in 22.91ms
+2026-05-02 02:03:08 - VectorDB - INFO - Initializing VectorDatabase from data.jsonl
+2026-05-02 02:03:08 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-02 02:03:15 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-02 02:03:15 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-02 02:03:15 - VectorDB - INFO - Vector Database initialized
+2026-05-02 02:03:15 - VectorDB - INFO - Indexing documents from data.jsonl
+2026-05-02 02:03:15 - VectorDB - INFO - Starting document indexing from data.jsonl
+2026-05-02 02:03:15 - VectorDB - INFO - Data file validated: data.jsonl
+2026-05-02 02:03:15 - VectorDB - INFO - Loaded 24 documents from data.jsonl
+2026-05-02 02:03:15 - VectorDB - INFO - Added 24 embeddings to index. Total: 24
+2026-05-02 02:03:15 - VectorDB - INFO - Indexing complete. Total documents: 24
+2026-05-02 02:03:15 - VectorDB - INFO - Successfully indexed 24 documents
+2026-05-02 02:03:35 - VectorDB - INFO - Search completed for query: 'faculty of engineering'. Results: 3
+2026-05-02 02:03:35 - VectorDB - INFO - Search completed for query: 'faculty of engineering' in 30.51ms
+2026-05-02 02:03:54 - VectorDB - INFO - Search completed for query: 'engineering faculty in btu'. Results: 3
+2026-05-02 02:03:54 - VectorDB - INFO - Search completed for query: 'engineering faculty in btu' in 24.95ms
+2026-05-02 02:04:08 - VectorDB - INFO - Search completed for query: 'what is engineering'. Results: 3
+2026-05-02 02:04:08 - VectorDB - INFO - Search completed for query: 'what is engineering' in 23.30ms
+2026-05-02 02:04:14 - VectorDB - INFO - Search completed for query: 'engineering'. Results: 3
+2026-05-02 02:04:14 - VectorDB - INFO - Search completed for query: 'engineering' in 34.15ms
+2026-05-02 02:04:21 - VectorDB - INFO - Search completed for query: 'btu engineering'. Results: 3
+2026-05-02 02:04:21 - VectorDB - INFO - Search completed for query: 'btu engineering' in 22.82ms
+2026-05-02 02:04:36 - VectorDB - INFO - Search completed for query: 'muhendislik engineering in btu'. Results: 3
+2026-05-02 02:04:36 - VectorDB - INFO - Search completed for query: 'muhendislik engineering in btu' in 24.97ms
