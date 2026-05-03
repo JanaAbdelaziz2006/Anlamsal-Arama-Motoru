@@ -260,3 +260,63 @@
 2026-05-03 23:13:49 - VectorDB - INFO - Search completed for query: 'muhendislik fakultesi in btu' in 22.08ms
 2026-05-03 23:14:00 - VectorDB - INFO - Search completed for query: 'engineering in btu'. Results: 3
 2026-05-03 23:14:00 - VectorDB - INFO - Search completed for query: 'engineering in btu' in 27.52ms
+2026-05-03 23:48:46 - VectorDB - INFO - Vector Database module ready
+2026-05-03 23:50:58 - VectorDB - INFO - Initializing VectorDatabase from data.jsonl
+2026-05-03 23:50:58 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-03 23:51:02 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-03 23:51:02 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-03 23:51:02 - VectorDB - INFO - Vector Database initialized
+2026-05-03 23:51:02 - VectorDB - INFO - Indexing documents from data.jsonl
+2026-05-03 23:51:02 - VectorDB - INFO - Starting document indexing from data.jsonl
+2026-05-03 23:51:02 - VectorDB - INFO - Data file validated: data.jsonl
+2026-05-03 23:51:02 - VectorDB - INFO - Loaded 24 documents from data.jsonl
+2026-05-03 23:51:02 - VectorDB - INFO - Added 24 embeddings to index. Total: 24
+2026-05-03 23:51:02 - VectorDB - INFO - Indexing complete. Total documents: 24
+2026-05-03 23:51:02 - VectorDB - INFO - Successfully indexed 24 documents
+2026-05-03 23:51:26 - VectorDB - INFO - Search completed for query: 'restaurants in egypt'. Results: 3
+2026-05-03 23:51:26 - VectorDB - INFO - No strong results found. Using local fallback...
+2026-05-03 23:51:26 - VectorDB - INFO - Search completed for query: 'restaurants in egypt' in 19.73ms
+2026-05-03 23:51:58 - VectorDB - INFO - Search completed for query: 'transportation in bursa'. Results: 3
+2026-05-03 23:51:58 - VectorDB - INFO - Search completed for query: 'transportation in bursa' in 26.12ms
+2026-05-03 23:52:06 - VectorDB - INFO - Search completed for query: 'bursada ulasim'. Results: 3
+2026-05-03 23:52:06 - VectorDB - INFO - Search completed for query: 'bursada ulasim' in 16.72ms
+2026-05-03 23:52:26 - VectorDB - INFO - Search completed for query: 'yapay zeka nedir'. Results: 3
+2026-05-03 23:52:26 - VectorDB - INFO - Search completed for query: 'yapay zeka nedir' in 15.40ms
+2026-05-04 00:01:29 - VectorDB - INFO - Initializing VectorDatabase from data.jsonl
+2026-05-04 00:01:29 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-04 00:01:34 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-04 00:01:34 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-04 00:01:34 - VectorDB - INFO - Vector Database initialized
+2026-05-04 00:01:34 - VectorDB - INFO - Indexing documents from data.jsonl
+2026-05-04 00:01:34 - VectorDB - INFO - Starting document indexing from data.jsonl
+2026-05-04 00:01:34 - VectorDB - INFO - Data file validated: data.jsonl
+2026-05-04 00:01:35 - VectorDB - INFO - Added 32 embeddings to index. Total: 32
+2026-05-04 00:01:36 - VectorDB - INFO - Added 32 embeddings to index. Total: 64
+2026-05-04 00:01:36 - VectorDB - INFO - Added 32 embeddings to index. Total: 96
+2026-05-04 00:01:37 - VectorDB - INFO - Added 32 embeddings to index. Total: 128
+2026-05-04 00:01:37 - VectorDB - INFO - Added 32 embeddings to index. Total: 160
+2026-05-04 00:01:38 - VectorDB - INFO - Added 32 embeddings to index. Total: 192
+2026-05-04 00:01:38 - VectorDB - INFO - Added 32 embeddings to index. Total: 224
+2026-05-04 00:01:39 - VectorDB - INFO - Added 32 embeddings to index. Total: 256
+2026-05-04 00:01:39 - VectorDB - INFO - Added 32 embeddings to index. Total: 288
+2026-05-04 00:01:40 - VectorDB - INFO - Added 32 embeddings to index. Total: 320
+2026-05-04 00:01:40 - VectorDB - INFO - Added 32 embeddings to index. Total: 352
+2026-05-04 00:01:41 - VectorDB - INFO - Added 32 embeddings to index. Total: 384
+2026-05-04 00:01:41 - VectorDB - INFO - Added 32 embeddings to index. Total: 416
+2026-05-04 00:01:42 - VectorDB - INFO - Added 32 embeddings to index. Total: 448
+2026-05-04 00:01:42 - VectorDB - INFO - Added 32 embeddings to index. Total: 480
+2026-05-04 00:01:43 - VectorDB - INFO - Added 32 embeddings to index. Total: 512
+2026-05-04 00:01:43 - VectorDB - INFO - Loaded 524 documents from data.jsonl
+2026-05-04 00:01:43 - VectorDB - INFO - Added 12 embeddings to index. Total: 524
+2026-05-04 00:01:43 - VectorDB - INFO - Indexing complete. Total documents: 524
+2026-05-04 00:01:43 - VectorDB - INFO - Successfully indexed 524 documents
+2026-05-04 00:01:53 - VectorDB - INFO - Search completed for query: 'btu'. Results: 3
+2026-05-04 00:01:53 - VectorDB - INFO - No strong results found. Using local fallback...
+2026-05-04 00:01:53 - VectorDB - INFO - Search completed for query: 'btu' in 39.70ms
+2026-05-04 00:02:11 - VectorDB - INFO - Search completed for query: 'bursa teknik universitesi'. Results: 3
+2026-05-04 00:02:11 - VectorDB - INFO - Search completed for query: 'bursa teknik universitesi' in 28.38ms
+2026-05-04 00:02:37 - VectorDB - INFO - Search completed for query: 'otel'. Results: 3
+2026-05-04 00:02:37 - VectorDB - INFO - No strong results found. Using local fallback...
+2026-05-04 00:02:37 - VectorDB - INFO - Search completed for query: 'otel' in 24.51ms
+2026-05-04 00:02:44 - VectorDB - INFO - Search completed for query: 'bursada otel'. Results: 3
+2026-05-04 00:02:44 - VectorDB - INFO - Search completed for query: 'bursada otel' in 24.33ms
