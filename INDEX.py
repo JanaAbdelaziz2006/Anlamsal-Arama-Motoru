@@ -369,11 +369,11 @@ Test Installation:
 
 ╔════════════════════════════════════════════════════════════════════════════╗
 ║                                                                            ║
-║  VECTOR DATABASE SYSTEM - PRODUCTION READY                                ║
+║  VECTOR DATABASE SYSTEM - PRODUCTION READY                                 ║
 ║  All components implemented, tested, and documented                        ║
 ║                                                                            ║
-║  Start with: python start.py --demo                                       ║
-║  Then read: README.md                                                     ║
+║  Start with: python start.py --demo                                        ║
+║  Then read: README.md                                                      ║
 ║                                                                            ║
 ╚════════════════════════════════════════════════════════════════════════════╝
 """

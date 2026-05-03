@@ -13,7 +13,6 @@ Date: 2026
 """
 
 import logging
-from certifi import contents
 import numpy as np
 import faiss
 from typing import List, Tuple, Dict, Generator, Optional
