@@ -4,7 +4,7 @@ Professional Vector Database (VectorDB) System
 A high-performance, OOP-based vector database implementation using:
 - FAISS (IndexHNSWFlat) for efficient similarity search
 - Sentence Transformers for embeddings
-- Async processing for scalability
+- Batch processing for scalability
 - Generator-based data loading to minimize memory usage
 - Comprehensive logging and error handling
 
@@ -13,16 +13,14 @@ Date: 2026
 """
 
 import logging
+from certifi import contents
 import numpy as np
 import faiss
 from typing import List, Tuple, Dict, Generator, Optional
 from pathlib import Path
 from dataclasses import dataclass
 from sentence_transformers import SentenceTransformer
-import asyncio
-from concurrent.futures import ThreadPoolExecutor
 import json
-import os
 
 
 # ==================== Logging Configuration ====================
@@ -39,6 +37,10 @@ def setup_logger(name: str, log_file: str = "vector_db.log") -> logging.Logger:
         Configured logger instance
     """
     logger = logging.getLogger(name)
+
+    if logger.handlers:
+        return logger
+
     logger.setLevel(logging.DEBUG)
     
     # Formatter for both handlers
@@ -350,6 +352,9 @@ class FAISSIndexManager:
                 raise ValueError(f"Embedding dimension mismatch: expected {self.embedding_dim}, "
                                f"got {embeddings.shape[1]}")
             
+            # Normalize embeddings for cosine similarity
+            faiss.normalize_L2(embeddings)
+
             # Add to FAISS index
             self.index.add(embeddings)
             
@@ -388,12 +393,17 @@ class FAISSIndexManager:
                                f"expected {self.embedding_dim}, got {query_embedding.shape[0]}")
             
             # HNSW returns distances (not similarities)
+            query = query_embedding.reshape(1, -1).astype(np.float32)
+
+            # Normalize query for cosine similarity
+            faiss.normalize_L2(query)
+
             distances, indices = self.index.search(
-                query_embedding.reshape(1, -1),
+                query,
                 min(k, self.doc_count)
             )
             
-            # Convert distances to similarities (cosine similarity: 1 - distance)
+            # For normalized vectors, L2 distance can be converted to cosine similarity
             results = []
             for idx, dist in zip(indices[0], distances[0]):
                 if idx >= 0:  # Valid result
@@ -626,19 +636,16 @@ class VectorDatabase:
         except Exception as e:
             logger.error(f"Failed to load database: {str(e)}")
             raise
-
+    def add_list_of_documents(self, contents: List[str]) -> None:
+        """Hızlı testler için liste üzerinden döküman ekler."""
+        doc_ids = [f"doc_{i}" for i in range(len(contents))]
+        embeddings = self.embedding_manager.embed_batch(contents)
+    
+        # Dökümanları sözlüğe kaydet
+        for doc_id, text in zip(doc_ids, contents):
+            self.documents[doc_id] = {'content': text, 'metadata': None}
+        
+        self.index_manager.add_embeddings(embeddings, doc_ids)
 
 if __name__ == "__main__":
     logger.info("Vector Database module ready")
-
-# vector_db.py içindeki VectorDatabase sınıfına eklenebilir
-def add_list_of_documents(self, contents: List[str]) -> None:
-    """Hızlı testler için liste üzerinden döküman ekler."""
-    doc_ids = [f"doc_{i}" for i in range(len(contents))]
-    embeddings = self.embedding_manager.embed_batch(contents)
-    
-    # Dökümanları sözlüğe kaydet
-    for doc_id, text in zip(doc_ids, contents):
-        self.documents[doc_id] = {'content': text, 'metadata': None}
-        
-    self.index_manager.add_embeddings(embeddings, doc_ids)

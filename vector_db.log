@@ -232,3 +232,31 @@
 2026-05-02 02:04:21 - VectorDB - INFO - Search completed for query: 'btu engineering' in 22.82ms
 2026-05-02 02:04:36 - VectorDB - INFO - Search completed for query: 'muhendislik engineering in btu'. Results: 3
 2026-05-02 02:04:36 - VectorDB - INFO - Search completed for query: 'muhendislik engineering in btu' in 24.97ms
+2026-05-03 23:12:09 - VectorDB - INFO - Initializing VectorDatabase from data.jsonl
+2026-05-03 23:12:09 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-03 23:12:14 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-03 23:12:14 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-03 23:12:14 - VectorDB - INFO - Vector Database initialized
+2026-05-03 23:12:14 - VectorDB - INFO - Indexing documents from data.jsonl
+2026-05-03 23:12:14 - VectorDB - INFO - Starting document indexing from data.jsonl
+2026-05-03 23:12:14 - VectorDB - INFO - Data file validated: data.jsonl
+2026-05-03 23:12:14 - VectorDB - INFO - Loaded 24 documents from data.jsonl
+2026-05-03 23:12:14 - VectorDB - INFO - Added 24 embeddings to index. Total: 24
+2026-05-03 23:12:14 - VectorDB - INFO - Indexing complete. Total documents: 24
+2026-05-03 23:12:14 - VectorDB - INFO - Successfully indexed 24 documents
+2026-05-03 23:12:28 - VectorDB - INFO - Search completed for query: 'transportation in bursa'. Results: 3
+2026-05-03 23:12:28 - VectorDB - INFO - Search completed for query: 'transportation in bursa' in 48.83ms
+2026-05-03 23:12:37 - VectorDB - INFO - Search completed for query: 'bursada ulasim'. Results: 3
+2026-05-03 23:12:37 - VectorDB - INFO - Search completed for query: 'bursada ulasim' in 35.26ms
+2026-05-03 23:12:50 - VectorDB - INFO - Search completed for query: 'yapay xeka nedir'. Results: 3
+2026-05-03 23:12:50 - VectorDB - INFO - Search completed for query: 'yapay xeka nedir' in 29.25ms
+2026-05-03 23:13:07 - VectorDB - INFO - Search completed for query: 'what is machine learning'. Results: 3
+2026-05-03 23:13:07 - VectorDB - INFO - Search completed for query: 'what is machine learning' in 31.77ms
+2026-05-03 23:13:18 - VectorDB - INFO - Search completed for query: 'makine ogrenmesi nedir'. Results: 3
+2026-05-03 23:13:18 - VectorDB - INFO - Search completed for query: 'makine ogrenmesi nedir' in 21.25ms
+2026-05-03 23:13:37 - VectorDB - INFO - Search completed for query: 'bursa teknik university'. Results: 3
+2026-05-03 23:13:37 - VectorDB - INFO - Search completed for query: 'bursa teknik university' in 26.89ms
+2026-05-03 23:13:49 - VectorDB - INFO - Search completed for query: 'muhendislik fakultesi in btu'. Results: 3
+2026-05-03 23:13:49 - VectorDB - INFO - Search completed for query: 'muhendislik fakultesi in btu' in 22.08ms
+2026-05-03 23:14:00 - VectorDB - INFO - Search completed for query: 'engineering in btu'. Results: 3
+2026-05-03 23:14:00 - VectorDB - INFO - Search completed for query: 'engineering in btu' in 27.52ms

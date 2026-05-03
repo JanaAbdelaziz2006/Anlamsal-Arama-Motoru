@@ -63,14 +63,14 @@ class SemanticSearchUI:
         """Print application header."""
         header = f"""
 {SemanticSearchUI.BOLD}{SemanticSearchUI.CYAN}
-╔════════════════════════════════════════════════════════════════════════════╗
-║                                                                            ║
-║       🔍 MODERN VECTOR DATABASE - SEMANTIC SEARCH ENGINE 🔍               ║
-║                                                                            ║
-║   Milyonlarca doküman arasında anlamsal benzerlik üzerinden arama        ║
-║   Search millions of documents using semantic similarity                  ║
-║                                                                            ║
-╚════════════════════════════════════════════════════════════════════════════╝
+╔═════════════════════════════════════════════════════════════════════════════╗
+║                                                                             ║
+║       🔍 MODERN VECTOR DATABASE - SEMANTIC SEARCH ENGINE 🔍                ║
+║                                                                             ║
+║   Büyük veri kümelerinde anlamsal arama yapabilen ölçeklenebilir bir sistem ║
+║   Search millions of documents using semantic similarity                    ║
+║                                                                             ║
+╚═════════════════════════════════════════════════════════════════════════════╝
 {SemanticSearchUI.RESET}"""
         print(header)
     
