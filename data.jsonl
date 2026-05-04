@@ -16,6 +16,7 @@
 {"id": "ai_009", "content": "Derin öğrenme sinir ağlarını kullanarak karmaşık özellikleri öğrenir."}
 {"id": "ai_010", "content": "Elasticsearch ve Weaviate popüler vektör arama araçlarıdır."}
 {"id": "ai_0011", "content":"Yapay Zeka (AI), insan zekasını taklit eden makinelerin geliştirilmesidir. Makine öğrenmesi ve derin öğrenme alt dallarıdır."}
+{"id": "ai_0012", "content":"Yapay Zeka (AI); sistem, makine öğrenmesi, derin öğrenme ve vektör veritabanlarının çalışma mantığına dair en alakalı dökümanları getirir."}
 
 {"id": "trans_001", "content": "Bursa'da ulaşım için BursaRay (metro), T1 ve T2 tramvay hatları ile sarı belediye otobüsleri kullanılır."}
 {"id": "trans_002", "content": "T2 tramvay hattı Kent Meydanı ile Terminal arasında çalışır. İstanbul yolu (Yeni Yalova Yolu) güzergahını takip eder."}
@@ -53,3 +54,4 @@
 {"id": "food_def_001", "content": "Yemek, canlıların enerji toplamak ve hayatta kalmak için tükettikleri bitkisel veya hayvansal kaynaklı gıdalardır."}
 {"id": "food_def_002", "content": "Yemek, protein, karbonhidrat ve vitamin gibi besin değerlerini içeren, vücudun gelişmesini sağlayan maddelerdir."}
 {"id": "food_def_003", "content": "Yemek, insanların karınlarını doyurmak, sağlıklı kalmak ve bazen de keyif almak için hazırladıkları öğünlerdir."}
+{"id": "food_def_004", "content": "Yemek, Enerji ve sağlıkla ilgili temel tanımları döndürür."}

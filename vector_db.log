@@ -738,3 +738,99 @@
 2026-05-05 00:01:30 - VectorDB - INFO - Search completed for query: 'dil nedir' in 22.63ms
 2026-05-05 00:01:39 - VectorDB - INFO - Search completed for query: 'yemek nedir'. Results: 3
 2026-05-05 00:01:39 - VectorDB - INFO - Search completed for query: 'yemek nedir' in 23.29ms
+2026-05-05 00:03:39 - VectorDB - INFO - Initializing VectorDatabase from data.jsonl
+2026-05-05 00:03:39 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-05 00:03:44 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-05 00:03:44 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-05 00:03:44 - VectorDB - INFO - Vector Database initialized
+2026-05-05 00:03:44 - VectorDB - INFO - Indexing documents from data.jsonl
+2026-05-05 00:03:44 - VectorDB - INFO - Starting document indexing from data.jsonl
+2026-05-05 00:03:44 - VectorDB - INFO - Data file validated: data.jsonl
+2026-05-05 00:03:44 - VectorDB - INFO - Added 32 embeddings to index. Total: 32
+2026-05-05 00:03:44 - VectorDB - INFO - Loaded 50 documents from data.jsonl
+2026-05-05 00:03:44 - VectorDB - INFO - Added 18 embeddings to index. Total: 50
+2026-05-05 00:03:44 - VectorDB - INFO - Indexing complete. Total documents: 50
+2026-05-05 00:03:44 - VectorDB - INFO - Successfully indexed 50 documents
+2026-05-05 00:04:19 - VectorDB - INFO - Search completed for query: 'neden yemek yeriz'. Results: 3
+2026-05-05 00:04:19 - VectorDB - INFO - Search completed for query: 'neden yemek yeriz' in 36.02ms
+2026-05-05 00:06:04 - VectorDB - INFO - Initializing VectorDatabase from data.jsonl
+2026-05-05 00:06:04 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-05 00:06:09 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-05 00:06:09 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-05 00:06:09 - VectorDB - INFO - Vector Database initialized
+2026-05-05 00:06:09 - VectorDB - INFO - Indexing documents from data.jsonl
+2026-05-05 00:06:09 - VectorDB - INFO - Starting document indexing from data.jsonl
+2026-05-05 00:06:09 - VectorDB - INFO - Data file validated: data.jsonl
+2026-05-05 00:06:09 - VectorDB - INFO - Added 32 embeddings to index. Total: 32
+2026-05-05 00:06:09 - VectorDB - INFO - Loaded 51 documents from data.jsonl
+2026-05-05 00:06:09 - VectorDB - INFO - Added 19 embeddings to index. Total: 51
+2026-05-05 00:06:09 - VectorDB - INFO - Indexing complete. Total documents: 51
+2026-05-05 00:06:09 - VectorDB - INFO - Successfully indexed 51 documents
+2026-05-05 00:06:18 - VectorDB - INFO - Search completed for query: 'neden yemek yeriz'. Results: 3
+2026-05-05 00:06:18 - VectorDB - INFO - Search completed for query: 'neden yemek yeriz' in 28.31ms
+2026-05-05 00:10:09 - VectorDB - INFO - Initializing VectorDatabase from data.jsonl
+2026-05-05 00:10:09 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-05 00:10:14 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-05 00:10:14 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-05 00:10:14 - VectorDB - INFO - Vector Database initialized
+2026-05-05 00:10:14 - VectorDB - INFO - Indexing documents from data.jsonl
+2026-05-05 00:10:14 - VectorDB - INFO - Starting document indexing from data.jsonl
+2026-05-05 00:10:14 - VectorDB - INFO - Data file validated: data.jsonl
+2026-05-05 00:10:14 - VectorDB - INFO - Added 32 embeddings to index. Total: 32
+2026-05-05 00:10:14 - VectorDB - INFO - Loaded 51 documents from data.jsonl
+2026-05-05 00:10:14 - VectorDB - INFO - Added 19 embeddings to index. Total: 51
+2026-05-05 00:10:14 - VectorDB - INFO - Indexing complete. Total documents: 51
+2026-05-05 00:10:14 - VectorDB - INFO - Successfully indexed 51 documents
+2026-05-05 00:10:26 - VectorDB - INFO - Search completed for query: 'btu ulasim'. Results: 3
+2026-05-05 00:10:26 - VectorDB - INFO - Search completed for query: 'btu ulasim' in 37.17ms
+2026-05-05 00:10:40 - VectorDB - INFO - Search completed for query: 'bursada ulasim'. Results: 3
+2026-05-05 00:10:40 - VectorDB - INFO - Search completed for query: 'bursada ulasim' in 27.74ms
+2026-05-05 00:10:53 - VectorDB - INFO - Search completed for query: 'bursada ulasim hakkinda'. Results: 3
+2026-05-05 00:10:53 - VectorDB - INFO - Search completed for query: 'bursada ulasim hakkinda' in 36.53ms
+2026-05-05 00:11:12 - VectorDB - INFO - Search completed for query: 'ulasim in bursa'. Results: 3
+2026-05-05 00:11:12 - VectorDB - INFO - Search completed for query: 'ulasim in bursa' in 33.24ms
+2026-05-05 00:11:41 - VectorDB - INFO - Search completed for query: 'BTU'. Results: 3
+2026-05-05 00:11:41 - VectorDB - INFO - Search completed for query: 'BTU' in 27.02ms
+2026-05-05 00:11:56 - VectorDB - INFO - Search completed for query: 'bursa teknik universitesi hakkinda'. Results: 3
+2026-05-05 00:11:56 - VectorDB - INFO - Search completed for query: 'bursa teknik universitesi hakkinda' in 25.72ms
+2026-05-05 00:14:29 - VectorDB - INFO - Search completed for query: 'yapay zeka nedir'. Results: 3
+2026-05-05 00:14:29 - VectorDB - INFO - Search completed for query: 'yapay zeka nedir' in 22.87ms
+2026-05-05 00:14:49 - VectorDB - INFO - Search completed for query: 'yapay zeka hakkinda'. Results: 3
+2026-05-05 00:14:49 - VectorDB - INFO - Search completed for query: 'yapay zeka hakkinda' in 26.14ms
+2026-05-05 00:15:15 - VectorDB - INFO - Search completed for query: 'makine ogrenmesi nedir'. Results: 3
+2026-05-05 00:15:15 - VectorDB - INFO - Search completed for query: 'makine ogrenmesi nedir' in 25.61ms
+2026-05-05 00:15:38 - VectorDB - INFO - Search completed for query: 'yapay zeka onemi'. Results: 3
+2026-05-05 00:15:38 - VectorDB - INFO - Search completed for query: 'yapay zeka onemi' in 29.78ms
+2026-05-05 00:15:58 - VectorDB - INFO - Search completed for query: 'yapay xeka nedir'. Results: 3
+2026-05-05 00:15:58 - VectorDB - INFO - Search completed for query: 'yapay xeka nedir' in 32.71ms
+2026-05-05 00:16:09 - VectorDB - INFO - Search completed for query: 'yapay zeka'. Results: 3
+2026-05-05 00:16:09 - VectorDB - INFO - Search completed for query: 'yapay zeka' in 27.22ms
+2026-05-05 00:16:18 - VectorDB - INFO - Search completed for query: 'what is yapay zeka'. Results: 3
+2026-05-05 00:16:18 - VectorDB - INFO - Search completed for query: 'what is yapay zeka' in 22.53ms
+2026-05-05 00:16:33 - VectorDB - INFO - Search completed for query: 'yapay zeka ne'. Results: 3
+2026-05-05 00:16:33 - VectorDB - INFO - Search completed for query: 'yapay zeka ne' in 27.02ms
+2026-05-05 00:20:08 - VectorDB - INFO - Initializing VectorDatabase from data.jsonl
+2026-05-05 00:20:08 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-05 00:20:13 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-05 00:20:13 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-05 00:20:13 - VectorDB - INFO - Vector Database initialized
+2026-05-05 00:20:13 - VectorDB - INFO - Indexing documents from data.jsonl
+2026-05-05 00:20:13 - VectorDB - INFO - Starting document indexing from data.jsonl
+2026-05-05 00:20:13 - VectorDB - INFO - Data file validated: data.jsonl
+2026-05-05 00:20:13 - VectorDB - INFO - Added 32 embeddings to index. Total: 32
+2026-05-05 00:20:13 - VectorDB - INFO - Loaded 52 documents from data.jsonl
+2026-05-05 00:20:41 - VectorDB - INFO - Initializing VectorDatabase from data.jsonl
+2026-05-05 00:20:41 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-05 00:20:45 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-05 00:20:45 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-05 00:20:45 - VectorDB - INFO - Vector Database initialized
+2026-05-05 00:20:45 - VectorDB - INFO - Indexing documents from data.jsonl
+2026-05-05 00:20:45 - VectorDB - INFO - Starting document indexing from data.jsonl
+2026-05-05 00:20:45 - VectorDB - INFO - Data file validated: data.jsonl
+2026-05-05 00:20:46 - VectorDB - INFO - Added 32 embeddings to index. Total: 32
+2026-05-05 00:20:46 - VectorDB - INFO - Loaded 52 documents from data.jsonl
+2026-05-05 00:20:46 - VectorDB - INFO - Added 20 embeddings to index. Total: 52
+2026-05-05 00:20:46 - VectorDB - INFO - Indexing complete. Total documents: 52
+2026-05-05 00:20:46 - VectorDB - INFO - Successfully indexed 52 documents
+2026-05-05 00:20:58 - VectorDB - INFO - Search completed for query: 'yapay zeka nedir'. Results: 3
+2026-05-05 00:20:58 - VectorDB - INFO - Search completed for query: 'yapay zeka nedir' in 23.73ms
