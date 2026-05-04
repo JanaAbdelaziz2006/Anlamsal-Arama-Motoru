@@ -320,3 +320,352 @@
 2026-05-04 00:02:37 - VectorDB - INFO - Search completed for query: 'otel' in 24.51ms
 2026-05-04 00:02:44 - VectorDB - INFO - Search completed for query: 'bursada otel'. Results: 3
 2026-05-04 00:02:44 - VectorDB - INFO - Search completed for query: 'bursada otel' in 24.33ms
+2026-05-04 19:44:19 - VectorDB - INFO - Initializing VectorDatabase from data.jsonl
+2026-05-04 19:44:19 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-04 19:44:24 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-04 19:44:24 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-04 19:44:24 - VectorDB - INFO - Vector Database initialized
+2026-05-04 19:44:24 - VectorDB - INFO - Indexing documents from data.jsonl
+2026-05-04 19:44:24 - VectorDB - INFO - Starting document indexing from data.jsonl
+2026-05-04 19:44:24 - VectorDB - INFO - Data file validated: data.jsonl
+2026-05-04 19:44:24 - VectorDB - WARNING - Skipping invalid document: missing required fields
+2026-05-04 19:44:24 - VectorDB - WARNING - Skipping invalid document: missing required fields
+2026-05-04 19:44:24 - VectorDB - WARNING - Skipping invalid document: missing required fields
+2026-05-04 19:44:24 - VectorDB - WARNING - Skipping invalid document: missing required fields
+2026-05-04 19:44:24 - VectorDB - WARNING - Skipping invalid document: missing required fields
+2026-05-04 19:44:24 - VectorDB - WARNING - Skipping invalid document: missing required fields
+2026-05-04 19:44:24 - VectorDB - WARNING - Skipping invalid document: missing required fields
+2026-05-04 19:44:24 - VectorDB - WARNING - Skipping invalid document: missing required fields
+2026-05-04 19:44:24 - VectorDB - WARNING - Skipping invalid document: missing required fields
+2026-05-04 19:44:24 - VectorDB - WARNING - Skipping invalid document: missing required fields
+2026-05-04 19:44:24 - VectorDB - INFO - Loaded 24 documents from data.jsonl
+2026-05-04 19:44:25 - VectorDB - INFO - Added 24 embeddings to index. Total: 24
+2026-05-04 19:44:25 - VectorDB - INFO - Indexing complete. Total documents: 24
+2026-05-04 19:44:25 - VectorDB - INFO - Successfully indexed 24 documents
+2026-05-04 19:44:41 - VectorDB - INFO - Search completed for query: 'graflar nedir'. Results: 3
+2026-05-04 19:44:41 - VectorDB - INFO - Search completed for query: 'graflar nedir' in 25.65ms
+2026-05-04 19:44:49 - VectorDB - INFO - Search completed for query: 'graf'. Results: 3
+2026-05-04 19:44:49 - VectorDB - INFO - Search completed for query: 'graf' in 26.93ms
+2026-05-04 19:45:01 - VectorDB - INFO - Search completed for query: 'graph'. Results: 3
+2026-05-04 19:45:01 - VectorDB - INFO - Search completed for query: 'graph' in 28.99ms
+2026-05-04 19:48:44 - VectorDB - INFO - Initializing VectorDatabase from data.jsonl
+2026-05-04 19:48:44 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-04 19:48:49 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-04 19:48:49 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-04 19:48:49 - VectorDB - INFO - Vector Database initialized
+2026-05-04 19:48:49 - VectorDB - INFO - Indexing documents from data.jsonl
+2026-05-04 19:48:49 - VectorDB - INFO - Starting document indexing from data.jsonl
+2026-05-04 19:48:49 - VectorDB - INFO - Data file validated: data.jsonl
+2026-05-04 19:48:49 - VectorDB - WARNING - Skipping invalid document: missing required fields
+2026-05-04 19:48:49 - VectorDB - WARNING - Skipping invalid document: missing required fields
+2026-05-04 19:48:49 - VectorDB - WARNING - Skipping invalid document: missing required fields
+2026-05-04 19:48:49 - VectorDB - WARNING - Skipping invalid document: missing required fields
+2026-05-04 19:48:49 - VectorDB - INFO - Loaded 20 documents from data.jsonl
+2026-05-04 19:48:49 - VectorDB - INFO - Added 20 embeddings to index. Total: 20
+2026-05-04 19:48:49 - VectorDB - INFO - Indexing complete. Total documents: 20
+2026-05-04 19:48:49 - VectorDB - INFO - Successfully indexed 20 documents
+2026-05-04 19:49:24 - VectorDB - INFO - Search completed for query: 'BTU de nasil basarili olunur'. Results: 3
+2026-05-04 19:49:24 - VectorDB - INFO - Search completed for query: 'BTU de nasil basarili olunur' in 33.00ms
+2026-05-04 19:49:48 - VectorDB - INFO - Search completed for query: 'Misir nedir'. Results: 3
+2026-05-04 19:49:48 - VectorDB - INFO - Search completed for query: 'Misir nedir' in 30.97ms
+2026-05-04 19:49:57 - VectorDB - INFO - Search completed for query: 'Misir hakkinda'. Results: 3
+2026-05-04 19:49:57 - VectorDB - INFO - Search completed for query: 'Misir hakkinda' in 22.51ms
+2026-05-04 19:50:03 - VectorDB - INFO - Search completed for query: 'Misir tarihi'. Results: 3
+2026-05-04 19:50:03 - VectorDB - INFO - Search completed for query: 'Misir tarihi' in 25.08ms
+2026-05-04 19:50:09 - VectorDB - INFO - Search completed for query: 'Misir'. Results: 3
+2026-05-04 19:50:09 - VectorDB - INFO - Search completed for query: 'Misir' in 25.36ms
+2026-05-04 19:50:13 - VectorDB - INFO - Search completed for query: 'Egypt'. Results: 3
+2026-05-04 19:50:13 - VectorDB - INFO - Search completed for query: 'Egypt' in 24.71ms
+2026-05-04 19:51:53 - VectorDB - INFO - Initializing VectorDatabase from data.jsonl
+2026-05-04 19:51:53 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-04 19:51:58 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-04 19:51:58 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-04 19:51:58 - VectorDB - INFO - Vector Database initialized
+2026-05-04 19:51:58 - VectorDB - INFO - Indexing documents from data.jsonl
+2026-05-04 19:51:58 - VectorDB - INFO - Starting document indexing from data.jsonl
+2026-05-04 19:51:58 - VectorDB - INFO - Data file validated: data.jsonl
+2026-05-04 19:51:58 - VectorDB - INFO - Loaded 27 documents from data.jsonl
+2026-05-04 19:51:58 - VectorDB - INFO - Added 27 embeddings to index. Total: 27
+2026-05-04 19:51:58 - VectorDB - INFO - Indexing complete. Total documents: 27
+2026-05-04 19:51:58 - VectorDB - INFO - Successfully indexed 27 documents
+2026-05-04 19:52:13 - VectorDB - INFO - Search completed for query: 'transportation in bursa'. Results: 3
+2026-05-04 19:52:13 - VectorDB - INFO - Search completed for query: 'transportation in bursa' in 27.09ms
+2026-05-04 19:52:44 - VectorDB - INFO - Search completed for query: 'bursada ulasim'. Results: 3
+2026-05-04 19:52:44 - VectorDB - INFO - Search completed for query: 'bursada ulasim' in 26.51ms
+2026-05-04 19:53:23 - VectorDB - INFO - Search completed for query: 'Bursa terminalden hangi otobus var'. Results: 3
+2026-05-04 19:53:23 - VectorDB - INFO - Search completed for query: 'Bursa terminalden hangi otobus var' in 28.14ms
+2026-05-04 19:56:07 - VectorDB - INFO - Initializing VectorDatabase from data.jsonl
+2026-05-04 19:56:07 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-04 19:56:11 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-04 19:56:11 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-04 19:56:11 - VectorDB - INFO - Vector Database initialized
+2026-05-04 19:56:11 - VectorDB - INFO - Indexing documents from data.jsonl
+2026-05-04 19:56:11 - VectorDB - INFO - Starting document indexing from data.jsonl
+2026-05-04 19:56:11 - VectorDB - INFO - Data file validated: data.jsonl
+2026-05-04 19:56:11 - VectorDB - INFO - Loaded 27 documents from data.jsonl
+2026-05-04 19:56:12 - VectorDB - INFO - Added 27 embeddings to index. Total: 27
+2026-05-04 19:56:12 - VectorDB - INFO - Indexing complete. Total documents: 27
+2026-05-04 19:56:12 - VectorDB - INFO - Successfully indexed 27 documents
+2026-05-04 19:56:23 - VectorDB - INFO - Search completed for query: 'transportation in bursa'. Results: 3
+2026-05-04 19:56:23 - VectorDB - INFO - Search completed for query: 'transportation in bursa' in 21.73ms
+2026-05-04 19:56:32 - VectorDB - INFO - Search completed for query: 'bursada ulasim'. Results: 3
+2026-05-04 19:56:32 - VectorDB - INFO - Search completed for query: 'bursada ulasim' in 24.54ms
+2026-05-04 19:56:56 - VectorDB - INFO - Initializing VectorDatabase from data.jsonl
+2026-05-04 19:56:56 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-04 19:57:00 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-04 19:57:00 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-04 19:57:00 - VectorDB - INFO - Vector Database initialized
+2026-05-04 19:57:00 - VectorDB - INFO - Indexing documents from data.jsonl
+2026-05-04 19:57:00 - VectorDB - INFO - Starting document indexing from data.jsonl
+2026-05-04 19:57:00 - VectorDB - INFO - Data file validated: data.jsonl
+2026-05-04 19:57:00 - VectorDB - INFO - Loaded 27 documents from data.jsonl
+2026-05-04 19:57:01 - VectorDB - INFO - Added 27 embeddings to index. Total: 27
+2026-05-04 19:57:01 - VectorDB - INFO - Indexing complete. Total documents: 27
+2026-05-04 19:57:01 - VectorDB - INFO - Successfully indexed 27 documents
+2026-05-04 19:57:23 - VectorDB - INFO - Search completed for query: 'transportation in bursa'. Results: 3
+2026-05-04 19:57:23 - VectorDB - INFO - Search completed for query: 'transportation in bursa' in 19.03ms
+2026-05-04 19:57:50 - VectorDB - INFO - Search completed for query: 'bursa'. Results: 3
+2026-05-04 19:57:50 - VectorDB - INFO - Search completed for query: 'bursa' in 26.82ms
+2026-05-04 19:59:09 - VectorDB - INFO - Initializing VectorDatabase from data.jsonl
+2026-05-04 19:59:09 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-04 19:59:13 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-04 19:59:13 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-04 19:59:13 - VectorDB - INFO - Vector Database initialized
+2026-05-04 19:59:13 - VectorDB - INFO - Indexing documents from data.jsonl
+2026-05-04 19:59:13 - VectorDB - INFO - Starting document indexing from data.jsonl
+2026-05-04 19:59:13 - VectorDB - INFO - Data file validated: data.jsonl
+2026-05-04 19:59:13 - VectorDB - INFO - Loaded 27 documents from data.jsonl
+2026-05-04 19:59:14 - VectorDB - INFO - Added 27 embeddings to index. Total: 27
+2026-05-04 19:59:14 - VectorDB - INFO - Indexing complete. Total documents: 27
+2026-05-04 19:59:14 - VectorDB - INFO - Successfully indexed 27 documents
+2026-05-04 19:59:27 - VectorDB - INFO - Search completed for query: 'bursa sehir hastanesine nasil gidilir'. Results: 3
+2026-05-04 19:59:27 - VectorDB - INFO - Search completed for query: 'bursa sehir hastanesine nasil gidilir' in 37.97ms
+2026-05-04 19:59:58 - VectorDB - INFO - Search completed for query: 'bursada ulasim'. Results: 3
+2026-05-04 19:59:58 - VectorDB - INFO - Search completed for query: 'bursada ulasim' in 25.66ms
+2026-05-04 20:05:08 - VectorDB - INFO - Initializing VectorDatabase from data.jsonl
+2026-05-04 20:05:08 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-04 20:05:12 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-04 20:05:12 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-04 20:05:12 - VectorDB - INFO - Vector Database initialized
+2026-05-04 20:05:12 - VectorDB - INFO - Indexing documents from data.jsonl
+2026-05-04 20:05:12 - VectorDB - INFO - Starting document indexing from data.jsonl
+2026-05-04 20:05:12 - VectorDB - INFO - Data file validated: data.jsonl
+2026-05-04 20:05:13 - VectorDB - INFO - Added 32 embeddings to index. Total: 32
+2026-05-04 20:05:13 - VectorDB - INFO - Loaded 37 documents from data.jsonl
+2026-05-04 20:05:13 - VectorDB - INFO - Added 5 embeddings to index. Total: 37
+2026-05-04 20:05:13 - VectorDB - INFO - Indexing complete. Total documents: 37
+2026-05-04 20:05:13 - VectorDB - INFO - Successfully indexed 37 documents
+2026-05-04 20:06:30 - VectorDB - INFO - Initializing VectorDatabase from data.jsonl
+2026-05-04 20:06:30 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-04 20:06:35 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-04 20:06:35 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-04 20:06:35 - VectorDB - INFO - Vector Database initialized
+2026-05-04 20:06:35 - VectorDB - INFO - Indexing documents from data.jsonl
+2026-05-04 20:06:35 - VectorDB - INFO - Starting document indexing from data.jsonl
+2026-05-04 20:06:35 - VectorDB - INFO - Data file validated: data.jsonl
+2026-05-04 20:06:35 - VectorDB - INFO - Added 32 embeddings to index. Total: 32
+2026-05-04 20:06:35 - VectorDB - INFO - Loaded 37 documents from data.jsonl
+2026-05-04 20:06:35 - VectorDB - INFO - Added 5 embeddings to index. Total: 37
+2026-05-04 20:06:35 - VectorDB - INFO - Indexing complete. Total documents: 37
+2026-05-04 20:06:35 - VectorDB - INFO - Successfully indexed 37 documents
+2026-05-04 20:11:07 - VectorDB - INFO - Search completed for query: 'diller'. Results: 3
+2026-05-04 20:11:07 - VectorDB - INFO - Search completed for query: 'diller' in 21.95ms
+2026-05-04 20:11:13 - VectorDB - INFO - Search completed for query: 'turkce'. Results: 3
+2026-05-04 20:11:13 - VectorDB - INFO - Search completed for query: 'turkce' in 18.45ms
+2026-05-04 20:12:11 - VectorDB - INFO - Search completed for query: 'ingilizce'. Results: 3
+2026-05-04 20:12:11 - VectorDB - INFO - Search completed for query: 'ingilizce' in 24.94ms
+2026-05-04 20:12:18 - VectorDB - INFO - Search completed for query: 'arapca'. Results: 3
+2026-05-04 20:12:18 - VectorDB - INFO - Search completed for query: 'arapca' in 19.78ms
+2026-05-04 20:12:36 - VectorDB - INFO - Search completed for query: 'languages'. Results: 3
+2026-05-04 20:12:36 - VectorDB - INFO - Search completed for query: 'languages' in 25.89ms
+2026-05-04 20:12:44 - VectorDB - INFO - Search completed for query: 'dil soyle'. Results: 3
+2026-05-04 20:12:44 - VectorDB - INFO - Search completed for query: 'dil soyle' in 25.41ms
+2026-05-04 20:14:00 - VectorDB - INFO - Initializing VectorDatabase from data.jsonl
+2026-05-04 20:14:00 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-04 20:14:04 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-04 20:14:04 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-04 20:14:04 - VectorDB - INFO - Vector Database initialized
+2026-05-04 20:14:04 - VectorDB - INFO - Indexing documents from data.jsonl
+2026-05-04 20:14:04 - VectorDB - INFO - Starting document indexing from data.jsonl
+2026-05-04 20:14:04 - VectorDB - INFO - Data file validated: data.jsonl
+2026-05-04 20:14:04 - VectorDB - INFO - Added 32 embeddings to index. Total: 32
+2026-05-04 20:14:04 - VectorDB - INFO - Loaded 37 documents from data.jsonl
+2026-05-04 20:14:04 - VectorDB - INFO - Added 5 embeddings to index. Total: 37
+2026-05-04 20:14:04 - VectorDB - INFO - Indexing complete. Total documents: 37
+2026-05-04 20:14:04 - VectorDB - INFO - Successfully indexed 37 documents
+2026-05-04 20:20:17 - VectorDB - INFO - Search completed for query: 'countries'. Results: 3
+2026-05-04 20:20:17 - VectorDB - INFO - Search completed for query: 'countries' in 31.13ms
+2026-05-04 20:25:49 - VectorDB - INFO - Initializing VectorDatabase from data.jsonl
+2026-05-04 20:25:49 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-04 20:25:53 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-04 20:25:53 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-04 20:25:53 - VectorDB - INFO - Vector Database initialized
+2026-05-04 20:25:53 - VectorDB - INFO - Indexing documents from data.jsonl
+2026-05-04 20:25:53 - VectorDB - INFO - Starting document indexing from data.jsonl
+2026-05-04 20:25:53 - VectorDB - INFO - Data file validated: data.jsonl
+2026-05-04 20:25:54 - VectorDB - INFO - Added 32 embeddings to index. Total: 32
+2026-05-04 20:25:54 - VectorDB - INFO - Loaded 47 documents from data.jsonl
+2026-05-04 20:25:54 - VectorDB - INFO - Added 15 embeddings to index. Total: 47
+2026-05-04 20:25:54 - VectorDB - INFO - Indexing complete. Total documents: 47
+2026-05-04 20:25:54 - VectorDB - INFO - Successfully indexed 47 documents
+2026-05-04 20:26:03 - VectorDB - INFO - Search completed for query: 'languages'. Results: 3
+2026-05-04 20:26:03 - VectorDB - INFO - Search completed for query: 'languages' in 22.50ms
+2026-05-04 20:26:13 - VectorDB - INFO - Search completed for query: 'diller'. Results: 3
+2026-05-04 20:26:13 - VectorDB - INFO - Search completed for query: 'diller' in 23.86ms
+2026-05-04 20:26:20 - VectorDB - INFO - Search completed for query: 'dil nedir'. Results: 3
+2026-05-04 20:26:20 - VectorDB - INFO - Search completed for query: 'dil nedir' in 41.05ms
+2026-05-04 20:26:38 - VectorDB - INFO - Search completed for query: 'yeni diller ogrenir mi'. Results: 3
+2026-05-04 20:26:38 - VectorDB - INFO - Search completed for query: 'yeni diller ogrenir mi' in 27.26ms
+2026-05-04 20:31:00 - VectorDB - INFO - Initializing VectorDatabase from data.jsonl
+2026-05-04 20:31:00 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-04 20:31:11 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-04 20:31:11 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-04 20:31:11 - VectorDB - INFO - Vector Database initialized
+2026-05-04 20:31:11 - VectorDB - INFO - Indexing documents from data.jsonl
+2026-05-04 20:31:11 - VectorDB - INFO - Starting document indexing from data.jsonl
+2026-05-04 20:31:11 - VectorDB - INFO - Data file validated: data.jsonl
+2026-05-04 20:31:11 - VectorDB - INFO - Added 32 embeddings to index. Total: 32
+2026-05-04 20:31:11 - VectorDB - INFO - Loaded 57 documents from data.jsonl
+2026-05-04 20:31:11 - VectorDB - INFO - Added 25 embeddings to index. Total: 57
+2026-05-04 20:31:11 - VectorDB - INFO - Indexing complete. Total documents: 47
+2026-05-04 20:31:11 - VectorDB - INFO - Successfully indexed 47 documents
+2026-05-04 20:31:23 - VectorDB - INFO - Search completed for query: 'ulke nedir'. Results: 3
+2026-05-04 20:31:23 - VectorDB - INFO - Search completed for query: 'ulke nedir' in 26.68ms
+2026-05-04 20:31:39 - VectorDB - INFO - Search completed for query: 'ulke'. Results: 3
+2026-05-04 20:31:39 - VectorDB - INFO - Search completed for query: 'ulke' in 22.89ms
+2026-05-04 20:36:49 - VectorDB - INFO - Search completed for query: 'country'. Results: 3
+2026-05-04 20:36:49 - VectorDB - INFO - Search completed for query: 'country' in 23.10ms
+2026-05-04 20:36:58 - VectorDB - INFO - Search completed for query: 'ulkelerde ne var'. Results: 3
+2026-05-04 20:36:58 - VectorDB - INFO - Search completed for query: 'ulkelerde ne var' in 21.84ms
+2026-05-04 20:37:17 - VectorDB - INFO - Search completed for query: 'ulkenin ozellikleri'. Results: 3
+2026-05-04 20:37:17 - VectorDB - INFO - Search completed for query: 'ulkenin ozellikleri' in 24.35ms
+2026-05-04 20:37:36 - VectorDB - INFO - Search completed for query: 'ulke features'. Results: 3
+2026-05-04 20:37:36 - VectorDB - INFO - Search completed for query: 'ulke features' in 36.17ms
+2026-05-04 20:37:42 - VectorDB - INFO - Search completed for query: 'ulke nedir'. Results: 3
+2026-05-04 20:37:42 - VectorDB - INFO - Search completed for query: 'ulke nedir' in 23.35ms
+2026-05-04 20:38:11 - VectorDB - INFO - Search completed for query: 'ulkede ne ozellik var'. Results: 3
+2026-05-04 20:38:11 - VectorDB - INFO - Search completed for query: 'ulkede ne ozellik var' in 24.65ms
+2026-05-04 20:38:21 - VectorDB - INFO - Search completed for query: 'ulke hakkinda'. Results: 3
+2026-05-04 20:38:21 - VectorDB - INFO - Search completed for query: 'ulke hakkinda' in 22.47ms
+2026-05-04 20:38:42 - VectorDB - INFO - Search completed for query: 'ulke'. Results: 3
+2026-05-04 20:38:42 - VectorDB - INFO - Search completed for query: 'ulke' in 25.48ms
+2026-05-04 20:38:47 - VectorDB - INFO - Search completed for query: 'ulkeler'. Results: 3
+2026-05-04 20:38:47 - VectorDB - INFO - Search completed for query: 'ulkeler' in 21.01ms
+2026-05-04 20:38:58 - VectorDB - INFO - Search completed for query: 'ulke nedir'. Results: 3
+2026-05-04 20:38:58 - VectorDB - INFO - Search completed for query: 'ulke nedir' in 24.44ms
+2026-05-04 20:39:06 - VectorDB - INFO - Search completed for query: 'ulkeler nedir'. Results: 3
+2026-05-04 20:39:06 - VectorDB - INFO - Search completed for query: 'ulkeler nedir' in 20.70ms
+2026-05-04 20:39:59 - VectorDB - INFO - Search completed for query: 'ulke nedir'. Results: 3
+2026-05-04 20:39:59 - VectorDB - INFO - Search completed for query: 'ulke nedir' in 24.38ms
+2026-05-04 20:40:07 - VectorDB - INFO - Search completed for query: 'bazi ulkeler'. Results: 3
+2026-05-04 20:40:07 - VectorDB - INFO - Search completed for query: 'bazi ulkeler' in 20.78ms
+2026-05-04 20:40:36 - VectorDB - INFO - Search completed for query: 'ulkeler konusu'. Results: 3
+2026-05-04 20:40:36 - VectorDB - INFO - Search completed for query: 'ulkeler konusu' in 25.53ms
+2026-05-04 20:41:13 - VectorDB - INFO - Search completed for query: 'ulke neyidie'. Results: 3
+2026-05-04 20:41:13 - VectorDB - INFO - Search completed for query: 'ulke neyidie' in 30.93ms
+2026-05-04 20:43:49 - VectorDB - INFO - Initializing VectorDatabase from data.jsonl
+2026-05-04 20:43:49 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-04 20:43:53 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-04 20:43:53 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-04 20:43:53 - VectorDB - INFO - Vector Database initialized
+2026-05-04 20:43:53 - VectorDB - INFO - Indexing documents from data.jsonl
+2026-05-04 20:43:53 - VectorDB - INFO - Starting document indexing from data.jsonl
+2026-05-04 20:43:53 - VectorDB - INFO - Data file validated: data.jsonl
+2026-05-04 20:43:54 - VectorDB - INFO - Added 32 embeddings to index. Total: 32
+2026-05-04 20:43:54 - VectorDB - INFO - Added 32 embeddings to index. Total: 64
+2026-05-04 20:43:54 - VectorDB - INFO - Loaded 67 documents from data.jsonl
+2026-05-04 20:43:54 - VectorDB - INFO - Added 3 embeddings to index. Total: 67
+2026-05-04 20:43:54 - VectorDB - INFO - Indexing complete. Total documents: 57
+2026-05-04 20:43:54 - VectorDB - INFO - Successfully indexed 57 documents
+2026-05-04 20:44:56 - VectorDB - INFO - Search completed for query: 'spor nedir'. Results: 3
+2026-05-04 20:44:56 - VectorDB - INFO - Search completed for query: 'spor nedir' in 21.05ms
+2026-05-04 20:45:13 - VectorDB - INFO - Search completed for query: 'spor onemli mi'. Results: 3
+2026-05-04 20:45:13 - VectorDB - INFO - Search completed for query: 'spor onemli mi' in 24.75ms
+2026-05-04 20:45:23 - VectorDB - INFO - Search completed for query: 'spor faydasi nedir'. Results: 3
+2026-05-04 20:45:23 - VectorDB - INFO - Search completed for query: 'spor faydasi nedir' in 30.91ms
+2026-05-04 20:45:32 - VectorDB - INFO - Search completed for query: 'spor'. Results: 3
+2026-05-04 20:45:32 - VectorDB - INFO - Search completed for query: 'spor' in 18.57ms
+2026-05-04 20:45:46 - VectorDB - INFO - Search completed for query: 'sporlar ne onemi var'. Results: 3
+2026-05-04 20:45:46 - VectorDB - INFO - Search completed for query: 'sporlar ne onemi var' in 24.08ms
+2026-05-04 20:45:55 - VectorDB - INFO - Search completed for query: 'sporun ne onemi var'. Results: 3
+2026-05-04 20:45:55 - VectorDB - INFO - Search completed for query: 'sporun ne onemi var' in 22.71ms
+2026-05-04 20:46:09 - VectorDB - INFO - Search completed for query: 'spor onemli mi'. Results: 3
+2026-05-04 20:46:09 - VectorDB - INFO - Search completed for query: 'spor onemli mi' in 25.70ms
+2026-05-04 20:46:31 - VectorDB - INFO - Search completed for query: 'yaygin sporlar'. Results: 3
+2026-05-04 20:46:31 - VectorDB - INFO - Search completed for query: 'yaygin sporlar' in 23.76ms
+2026-05-04 20:46:47 - VectorDB - INFO - Search completed for query: 'temel sporlar'. Results: 3
+2026-05-04 20:46:47 - VectorDB - INFO - Search completed for query: 'temel sporlar' in 23.70ms
+2026-05-04 20:47:00 - VectorDB - INFO - Search completed for query: 'what is sport'. Results: 3
+2026-05-04 20:47:00 - VectorDB - INFO - Search completed for query: 'what is sport' in 98.39ms
+2026-05-04 20:47:09 - VectorDB - INFO - Search completed for query: 'sports import'. Results: 3
+2026-05-04 20:47:09 - VectorDB - INFO - Search completed for query: 'sports import' in 30.81ms
+2026-05-04 20:49:30 - VectorDB - INFO - Initializing VectorDatabase from data.jsonl
+2026-05-04 20:49:30 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-04 20:49:34 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-04 20:49:34 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-04 20:49:34 - VectorDB - INFO - Vector Database initialized
+2026-05-04 20:49:34 - VectorDB - INFO - Indexing documents from data.jsonl
+2026-05-04 20:49:34 - VectorDB - INFO - Starting document indexing from data.jsonl
+2026-05-04 20:49:34 - VectorDB - INFO - Data file validated: data.jsonl
+2026-05-04 20:49:35 - VectorDB - INFO - Added 32 embeddings to index. Total: 32
+2026-05-04 20:49:35 - VectorDB - INFO - Added 32 embeddings to index. Total: 64
+2026-05-04 20:49:35 - VectorDB - INFO - Loaded 67 documents from data.jsonl
+2026-05-04 20:49:35 - VectorDB - INFO - Added 3 embeddings to index. Total: 67
+2026-05-04 20:49:35 - VectorDB - INFO - Indexing complete. Total documents: 57
+2026-05-04 20:49:35 - VectorDB - INFO - Successfully indexed 57 documents
+2026-05-04 20:50:32 - VectorDB - INFO - Search completed for query: 'yuzme nedir'. Results: 3
+2026-05-04 20:50:32 - VectorDB - INFO - Search completed for query: 'yuzme nedir' in 27.07ms
+2026-05-04 20:50:37 - VectorDB - INFO - Search completed for query: 'yuzme'. Results: 3
+2026-05-04 20:50:37 - VectorDB - INFO - Search completed for query: 'yuzme' in 23.34ms
+2026-05-04 20:50:41 - VectorDB - INFO - Search completed for query: 'yuzme onemi'. Results: 3
+2026-05-04 20:50:41 - VectorDB - INFO - Search completed for query: 'yuzme onemi' in 22.16ms
+2026-05-04 21:25:47 - VectorDB - INFO - Initializing VectorDatabase from data.jsonl
+2026-05-04 21:25:47 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-04 21:25:51 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-04 21:25:51 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-04 21:25:51 - VectorDB - INFO - Vector Database initialized
+2026-05-04 21:25:51 - VectorDB - INFO - Indexing documents from data.jsonl
+2026-05-04 21:25:51 - VectorDB - INFO - Starting document indexing from data.jsonl
+2026-05-04 21:25:51 - VectorDB - INFO - Data file validated: data.jsonl
+2026-05-04 21:25:52 - VectorDB - INFO - Added 32 embeddings to index. Total: 32
+2026-05-04 21:25:52 - VectorDB - INFO - Added 32 embeddings to index. Total: 64
+2026-05-04 21:25:52 - VectorDB - INFO - Loaded 67 documents from data.jsonl
+2026-05-04 21:25:52 - VectorDB - INFO - Added 3 embeddings to index. Total: 67
+2026-05-04 21:25:52 - VectorDB - INFO - Indexing complete. Total documents: 57
+2026-05-04 21:25:52 - VectorDB - INFO - Successfully indexed 57 documents
+2026-05-04 21:25:58 - VectorDB - INFO - Search completed for query: 'spor nedir'. Results: 3
+2026-05-04 21:25:58 - VectorDB - INFO - Search completed for query: 'spor nedir' in 23.67ms
+2026-05-04 21:26:15 - VectorDB - INFO - Search completed for query: 'spor onemli mi'. Results: 3
+2026-05-04 21:26:15 - VectorDB - INFO - Search completed for query: 'spor onemli mi' in 26.09ms
+2026-05-04 21:26:30 - VectorDB - INFO - Search completed for query: 'spor'. Results: 3
+2026-05-04 21:26:30 - VectorDB - INFO - Search completed for query: 'spor' in 20.29ms
+2026-05-04 21:26:40 - VectorDB - INFO - Search completed for query: 'spor nedir'. Results: 3
+2026-05-04 21:26:40 - VectorDB - INFO - Search completed for query: 'spor nedir' in 23.07ms
+2026-05-04 22:40:50 - VectorDB - INFO - Initializing VectorDatabase from data.jsonl
+2026-05-04 22:40:50 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-04 22:40:54 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-04 22:40:54 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-04 22:40:54 - VectorDB - INFO - Vector Database initialized
+2026-05-04 22:40:54 - VectorDB - INFO - Indexing documents from data.jsonl
+2026-05-04 22:40:54 - VectorDB - INFO - Starting document indexing from data.jsonl
+2026-05-04 22:40:54 - VectorDB - INFO - Data file validated: data.jsonl
+2026-05-04 22:40:55 - VectorDB - INFO - Added 32 embeddings to index. Total: 32
+2026-05-04 22:40:55 - VectorDB - INFO - Added 32 embeddings to index. Total: 64
+2026-05-04 22:40:55 - VectorDB - INFO - Loaded 76 documents from data.jsonl
+2026-05-04 22:40:55 - VectorDB - INFO - Added 12 embeddings to index. Total: 76
+2026-05-04 22:40:55 - VectorDB - INFO - Indexing complete. Total documents: 66
+2026-05-04 22:40:55 - VectorDB - INFO - Successfully indexed 66 documents
+2026-05-04 22:41:11 - VectorDB - INFO - Search completed for query: 'yemegin onemi'. Results: 3
+2026-05-04 22:41:11 - VectorDB - INFO - Search completed for query: 'yemegin onemi' in 26.34ms
+2026-05-04 22:41:18 - VectorDB - INFO - Search completed for query: 'yemekler'. Results: 3
+2026-05-04 22:41:18 - VectorDB - INFO - Search completed for query: 'yemekler' in 24.13ms
+2026-05-04 22:41:22 - VectorDB - INFO - Search completed for query: 'yemek'. Results: 3
+2026-05-04 22:41:22 - VectorDB - INFO - Search completed for query: 'yemek' in 25.23ms
+2026-05-04 22:41:33 - VectorDB - INFO - Search completed for query: 'yemek nedir'. Results: 3
+2026-05-04 22:41:33 - VectorDB - INFO - Search completed for query: 'yemek nedir' in 21.31ms
+2026-05-04 22:41:43 - VectorDB - INFO - Search completed for query: 'yemek ne onemi var'. Results: 3
+2026-05-04 22:41:43 - VectorDB - INFO - Search completed for query: 'yemek ne onemi var' in 23.35ms
+2026-05-04 22:46:00 - VectorDB - INFO - Search completed for query: 'bursada ulasim'. Results: 3
+2026-05-04 22:46:00 - VectorDB - INFO - Search completed for query: 'bursada ulasim' in 36.50ms
+2026-05-04 22:46:44 - VectorDB - INFO - Search completed for query: 'transportation in bursa'. Results: 3
+2026-05-04 22:46:44 - VectorDB - INFO - Search completed for query: 'transportation in bursa' in 34.98ms

@@ -17,13 +17,15 @@
 {"id": "ai_010", "content": "Elasticsearch ve Weaviate popüler vektör arama araçlarıdır."}
 {"id": "ai_0011", "content":"Yapay Zeka (AI), insan zekasını taklit eden makinelerin geliştirilmesidir. Makine öğrenmesi ve derin öğrenme alt dallarıdır."}
 
-
 {"id": "trans_001", "content": "Bursa'da ulaşım için BursaRay (metro), T1 ve T2 tramvay hatları ile sarı belediye otobüsleri kullanılır."}
 {"id": "trans_002", "content": "T2 tramvay hattı Kent Meydanı ile Terminal arasında çalışır. İstanbul yolu (Yeni Yalova Yolu) güzergahını takip eder."}
 {"id": "trans_003", "content": "BursaRay metro hattı şehrin doğusunu ve batısını bağlar."}
+{"id": "trans_004", "content": "BursaRay Üniversite istasyonu, Bursa Teknik Üniversitesi (BTÜ) Mimar Sinan yerleşkesine ulaşım sağlar."}
+{"id": "trans_005", "content": "Bursa Şehir Hastanesi'ne ulaşım için Emek metrosundan kalkan H/1 numaralı otobüsler kullanılır."}
+{"id": "trans_006", "content": "Osmangazi ilçesindeki Kent Meydanı, Bursa'nın en merkezi aktarma noktalarından biridir."}
+{"id": "trans_007", "content": "Bursa Kart (BuKart), tüm metro, tramvay ve belediye otobüslerinde geçerli olan ödeme sistemidir."}
+{"id": "trans_008", "content": "Fatih Sultan Mehmet Bulvarı (FSM), Nilüfer ilçesinin en popüler sosyal ve ticari merkezidir."}
+{"id": "trans_009", "content": "T3 tramvay hattı (Çınarönü - Zafer Meydanı), tarihi çarşı bölgesinden geçen nostaljik bir hattır."}
+{"id": "trans_010", "content": "Bursa terminalinden kalkan 38 numaralı otobüsler, İstanbul yolu üzerinden şehir merkezine gider."}
 
-{"id": "math_001", "content": "Calculus dersinde limit, türev ve integral konuları işlenir. Bir fonksiyonun anlık değişim hızı türev ile hesaplanır."}
-{"id": "math_002", "content": "Lineer Cebir, matrisler, vektör uzayları ve lineer denklem sistemlerini inceleyen matematik dalıdır. AI için temeldir."}
 
-{"id": "career_001", "content": "Bilgisayar mühendisliği öğrencileri için Python, Java ve C++ dilleri sektörde en çok talep gören dillerdir."}
-{"id": "career_002", "content": "Staj ve iş arama süreçlerinde GitHub portfolyosu ve LinkedIn profili bir yazılımcı için en önemli araçlardır."}

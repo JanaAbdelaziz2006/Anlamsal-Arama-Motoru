@@ -129,7 +129,7 @@ class SemanticSearchUI:
         
         for i, result in enumerate(results, 1):
             # Score visualization
-            if result.score < 0.40:
+            if result.score < 0.40:  # Threshold for relevance
                 continue
             score_pct = int(result.score * 100)
             score_bar = SemanticSearchUI.SCORE_BAR * (score_pct // 5)
