@@ -57,7 +57,11 @@ Commands:
     • 'q' - Quit the application
 
 Example Queries:
-    "BTÜ'de nasıl başarılı olunur?"
+    "Bursa Teknik Üniversitesi hakkında"
+    "Yapay zeka nedir?"
+    "Dil nedir?"
+    "Spor nedir?"
+    "Yemek onemi"
     "Vektör veritabanı nedir?"
     "Yapay zeka uygulamaları"
     "Machine learning örnekleri"

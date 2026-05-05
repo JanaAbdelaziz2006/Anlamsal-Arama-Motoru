@@ -168,7 +168,7 @@ class SemanticSearchUI:
         SemanticSearchUI.print_separator()
         
         print(f"\n{SemanticSearchUI.BOLD}{SemanticSearchUI.YELLOW}How to use:{SemanticSearchUI.RESET}")
-        print(f"  1. Type your semantic query (e.g., 'BTÜ'de nasıl başarılı olunur?')")
+        print(f"  1. Type your semantic query (e.g., 'Bursa Teknik Üniversitesi hakkında')")
         print(f"  2. Press Enter to search")
         print(f"  3. View top 3 most similar documents")
         print(f"  4. Type 'q' to quit")
@@ -449,10 +449,17 @@ class InteractiveSearchLoop:
         print(f"  {SemanticSearchUI.BULLET} 'q' - Quit application")
         
         print(f"\n{SemanticSearchUI.BOLD}{SemanticSearchUI.YELLOW}Example Queries:{SemanticSearchUI.RESET}")
-        print(f"  {SemanticSearchUI.BULLET} 'BTÜ'de nasıl başarılı olunur?'")
-        print(f"  {SemanticSearchUI.BULLET} 'Vektör veritabanı nedir?'")
-        print(f"  {SemanticSearchUI.BULLET} 'Machine learning uygulamaları'")
-        print(f"  {SemanticSearchUI.BULLET} 'Yapay zeka ve etik'")
+        print(f"  {SemanticSearchUI.BULLET} 'Bursa Teknik Üniversitesi hakkında'")
+        print(f"  {SemanticSearchUI.BULLET} 'Dil nedir?'")
+        print(f"  {SemanticSearchUI.BULLET} 'Yapay zeka nedir?'")
+        print(f"  {SemanticSearchUI.BULLET} 'Spor nedir?'")
+        print(f"  {SemanticSearchUI.BULLET} 'Bursada ulaşım'")
+        print(f"  {SemanticSearchUI.BULLET} 'Yemek onemi'")
+        print(f"  {SemanticSearchUI.BULLET} 'Transportation in Bursa'")
+        print(f"  {SemanticSearchUI.BULLET} 'Makine öğrenmesi nedir?'")
+        print(f"  {SemanticSearchUI.BULLET} 'Muhendislik fakültesi in BTÜ'")
+
+        
         
         SemanticSearchUI.print_separator("sub")
     
