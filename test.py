@@ -65,7 +65,7 @@ class SemanticSearchUI:
 {SemanticSearchUI.BOLD}{SemanticSearchUI.CYAN}
 ╔═════════════════════════════════════════════════════════════════════════════╗
 ║                                                                             ║
-║       🔍 MODERN VECTOR DATABASE - SEMANTIC SEARCH ENGINE 🔍                ║
+║       🔍 MODERN VECTOR DATABASE - SEMANTIC SEARCH ENGINE 🔍                 ║
 ║                                                                             ║
 ║   Büyük veri kümelerinde anlamsal arama yapabilen ölçeklenebilir bir sistem ║
 ║   Search millions of documents using semantic similarity                    ║
@@ -173,6 +173,8 @@ class SemanticSearchUI:
         print(f"  3. View top 3 most similar documents")
         print(f"  4. Type 'q' to quit")
         print(f"  5. Type 'clear' to clear screen")
+        print(f"  6. Type 'help' to show help message")
+        print(f"  7. Type 'stats' to view search statistics")
         
         SemanticSearchUI.print_separator()
     

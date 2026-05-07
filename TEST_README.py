@@ -61,10 +61,12 @@ Example Queries:
     "Yapay zeka nedir?"
     "Dil nedir?"
     "Spor nedir?"
+    "Bursada ulaşım"
     "Yemek onemi"
-    "Vektör veritabanı nedir?"
-    "Yapay zeka uygulamaları"
-    "Machine learning örnekleri"
+    "Transportation in Bursa"
+    "Makine öğrenmesi nedir?"
+    "Muhendislik fakültesi in BTÜ"
+
 
 ARCHITECTURE
 ════════════

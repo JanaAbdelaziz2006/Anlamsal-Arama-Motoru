@@ -916,3 +916,16 @@
 2026-05-05 15:22:18 - VectorDB - INFO - Added 20 embeddings to index. Total: 52
 2026-05-05 15:22:18 - VectorDB - INFO - Indexing complete. Total documents: 52
 2026-05-05 15:22:18 - VectorDB - INFO - Successfully indexed 52 documents
+2026-05-05 15:29:56 - VectorDB - INFO - Initializing VectorDatabase from data.jsonl
+2026-05-05 15:29:56 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-05 15:30:00 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-05 15:30:00 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-05 15:30:00 - VectorDB - INFO - Vector Database initialized
+2026-05-05 15:30:00 - VectorDB - INFO - Indexing documents from data.jsonl
+2026-05-05 15:30:00 - VectorDB - INFO - Starting document indexing from data.jsonl
+2026-05-05 15:30:00 - VectorDB - INFO - Data file validated: data.jsonl
+2026-05-05 15:30:01 - VectorDB - INFO - Added 32 embeddings to index. Total: 32
+2026-05-05 15:30:01 - VectorDB - INFO - Loaded 52 documents from data.jsonl
+2026-05-05 15:30:01 - VectorDB - INFO - Added 20 embeddings to index. Total: 52
+2026-05-05 15:30:01 - VectorDB - INFO - Indexing complete. Total documents: 52
+2026-05-05 15:30:01 - VectorDB - INFO - Successfully indexed 52 documents
