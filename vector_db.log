@@ -929,3 +929,36 @@
 2026-05-05 15:30:01 - VectorDB - INFO - Added 20 embeddings to index. Total: 52
 2026-05-05 15:30:01 - VectorDB - INFO - Indexing complete. Total documents: 52
 2026-05-05 15:30:01 - VectorDB - INFO - Successfully indexed 52 documents
+2026-05-07 23:55:43 - VectorDB - INFO - Initializing VectorDatabase from data.jsonl
+2026-05-07 23:55:43 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-07 23:55:48 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-07 23:55:48 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-07 23:55:48 - VectorDB - INFO - Vector Database initialized
+2026-05-07 23:55:48 - VectorDB - INFO - Indexing documents from data.jsonl
+2026-05-07 23:55:48 - VectorDB - INFO - Starting document indexing from data.jsonl
+2026-05-07 23:55:48 - VectorDB - INFO - Data file validated: data.jsonl
+2026-05-07 23:55:49 - VectorDB - INFO - Added 32 embeddings to index. Total: 32
+2026-05-07 23:55:49 - VectorDB - INFO - Loaded 52 documents from data.jsonl
+2026-05-07 23:55:49 - VectorDB - INFO - Added 20 embeddings to index. Total: 52
+2026-05-07 23:55:49 - VectorDB - INFO - Indexing complete. Total documents: 52
+2026-05-07 23:55:49 - VectorDB - INFO - Successfully indexed 52 documents
+2026-05-08 00:00:04 - VectorDB - INFO - Search completed for query: 'bursa teknik universitesi'. Results: 3
+2026-05-08 00:00:04 - VectorDB - INFO - Search completed for query: 'bursa teknik universitesi' in 30.73ms
+2026-05-08 00:00:11 - VectorDB - INFO - Search completed for query: 'btu hakkinda'. Results: 3
+2026-05-08 00:00:11 - VectorDB - INFO - Search completed for query: 'btu hakkinda' in 33.38ms
+2026-05-08 00:00:16 - VectorDB - INFO - Search completed for query: 'btu'. Results: 3
+2026-05-08 00:00:16 - VectorDB - INFO - Search completed for query: 'btu' in 21.92ms
+2026-05-08 00:00:49 - VectorDB - INFO - Search completed for query: 'bursa teknik universitesi hakkinda'. Results: 3
+2026-05-08 00:00:49 - VectorDB - INFO - Search completed for query: 'bursa teknik universitesi hakkinda' in 28.07ms
+2026-05-08 00:01:04 - VectorDB - INFO - Search completed for query: 'bursada ulasim'. Results: 3
+2026-05-08 00:01:04 - VectorDB - INFO - Search completed for query: 'bursada ulasim' in 38.97ms
+2026-05-08 00:03:27 - VectorDB - INFO - Search completed for query: 'yapay zeka nedir'. Results: 3
+2026-05-08 00:03:27 - VectorDB - INFO - Search completed for query: 'yapay zeka nedir' in 23.79ms
+2026-05-08 00:03:37 - VectorDB - INFO - Search completed for query: 'makine ogrenmesi nedir'. Results: 3
+2026-05-08 00:03:37 - VectorDB - INFO - Search completed for query: 'makine ogrenmesi nedir' in 106.23ms
+2026-05-08 00:04:04 - VectorDB - INFO - Search completed for query: 'bursada muhendislik fakultesi'. Results: 3
+2026-05-08 00:04:04 - VectorDB - INFO - Search completed for query: 'bursada muhendislik fakultesi' in 25.72ms
+2026-05-08 00:04:34 - VectorDB - INFO - Search completed for query: 'spor nedir'. Results: 3
+2026-05-08 00:04:34 - VectorDB - INFO - Search completed for query: 'spor nedir' in 23.21ms
+2026-05-08 00:04:40 - VectorDB - INFO - Search completed for query: 'dil nedir'. Results: 3
+2026-05-08 00:04:40 - VectorDB - INFO - Search completed for query: 'dil nedir' in 23.92ms
