@@ -3677,3 +3677,87 @@
 2026-05-10 18:27:04 - VectorDB - INFO - Search completed for query: 'binary search alan karmasikligi nedir'. Results: 3
 2026-05-10 18:27:40 - VectorDB - INFO - Search completed for query: '25458667405 onun proje konusu nedir'. Results: 4
 2026-05-10 18:28:07 - VectorDB - INFO - Search completed for query: '25458667448 onun proje konusu nedir'. Results: 4
+2026-05-10 19:18:13 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-10 19:18:17 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-10 19:18:17 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-10 19:18:17 - VectorDB - INFO - Vector Database initialized
+2026-05-10 19:18:17 - VectorDB - INFO - Index loaded from main_index.faiss
+2026-05-10 19:18:17 - VectorDB - INFO - Database loaded from main_index.faiss
+2026-05-10 19:18:18 - VectorDB - INFO - Search completed for query: 'siralama algoritma nedir'. Results: 3
+2026-05-10 19:18:56 - VectorDB - INFO - Search completed for query: 'selection sort siralama algoritma mi'. Results: 3
+2026-05-10 19:19:31 - VectorDB - INFO - Search completed for query: 'selection sort nedir'. Results: 3
+2026-05-10 19:20:17 - VectorDB - INFO - Search completed for query: 'selection sort ne demek'. Results: 3
+2026-05-10 19:26:16 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-10 19:26:21 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-10 19:26:21 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-10 19:26:21 - VectorDB - INFO - Vector Database initialized
+2026-05-10 19:26:21 - VectorDB - INFO - Index loaded from main_index.faiss
+2026-05-10 19:26:21 - VectorDB - INFO - Database loaded from main_index.faiss
+2026-05-10 19:27:25 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-10 19:27:29 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-10 19:27:29 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-10 19:27:29 - VectorDB - INFO - Vector Database initialized
+2026-05-10 19:28:03 - VectorDB - INFO - Processing PDF: Arama ve Graf Temelleri.pdf
+2026-05-10 19:28:03 - VectorDB - INFO - Processing PDF: Cormen Introduction to Algorithms.pdf
+2026-05-10 19:28:33 - VectorDB - INFO - Processing PDF: projeler.pdf
+2026-05-10 19:28:34 - VectorDB - INFO - Processing PDF: YZM0104_Week0_v1.pdf
+2026-05-10 19:28:34 - VectorDB - INFO - Processing PDF: YZM0104_Week1 (2).pdf
+2026-05-10 19:29:15 - VectorDB - INFO - Added 512 embeddings to index. Total: 512
+2026-05-10 19:29:35 - VectorDB - INFO - Added 512 embeddings to index. Total: 1024
+2026-05-10 19:29:58 - VectorDB - INFO - Added 512 embeddings to index. Total: 1536
+2026-05-10 19:30:32 - VectorDB - INFO - Added 512 embeddings to index. Total: 2048
+2026-05-10 19:30:51 - VectorDB - INFO - Added 512 embeddings to index. Total: 2560
+2026-05-10 19:31:10 - VectorDB - INFO - Added 512 embeddings to index. Total: 3072
+2026-05-10 19:31:32 - VectorDB - INFO - Added 512 embeddings to index. Total: 3584
+2026-05-10 19:31:54 - VectorDB - INFO - Added 512 embeddings to index. Total: 4096
+2026-05-10 19:32:15 - VectorDB - INFO - Added 512 embeddings to index. Total: 4608
+2026-05-10 19:32:35 - VectorDB - INFO - Added 512 embeddings to index. Total: 5120
+2026-05-10 19:32:53 - VectorDB - INFO - Added 512 embeddings to index. Total: 5632
+2026-05-10 19:33:07 - VectorDB - INFO - Added 512 embeddings to index. Total: 6144
+2026-05-10 19:33:36 - VectorDB - INFO - Added 512 embeddings to index. Total: 6656
+2026-05-10 19:34:01 - VectorDB - INFO - Added 512 embeddings to index. Total: 7168
+2026-05-10 19:34:29 - VectorDB - INFO - Added 512 embeddings to index. Total: 7680
+2026-05-10 19:34:54 - VectorDB - INFO - Added 439 embeddings to index. Total: 8119
+2026-05-10 19:34:55 - VectorDB - INFO - Index saved to main_index.faiss
+2026-05-10 19:34:55 - VectorDB - INFO - Database saved to main_index.faiss
+2026-05-10 19:37:54 - VectorDB - INFO - Search completed for query: 'binary search alan karmasikligi nedir'. Results: 3
+2026-05-10 19:38:44 - VectorDB - INFO - Search completed for query: '25458667405 onun projesinin konusu nedir'. Results: 4
+2026-05-10 19:39:11 - VectorDB - INFO - Search completed for query: 'selection sort nedir'. Results: 3
+2026-05-10 19:39:30 - VectorDB - INFO - Search completed for query: 'selection sort algoritma nedir'. Results: 3
+2026-05-10 19:39:50 - VectorDB - INFO - Search completed for query: 'quick sort algoritma nedir'. Results: 3
+2026-05-10 19:40:18 - VectorDB - INFO - Search completed for query: 'graf nedir'. Results: 3
+2026-05-10 19:40:45 - VectorDB - INFO - Search completed for query: 'graflar nedir'. Results: 3
+2026-05-10 19:41:33 - VectorDB - INFO - Search completed for query: 'algoritmalar dersi icerikler nedir'. Results: 3
+2026-05-10 19:59:38 - VectorDB - INFO - Search completed for query: 'algoritmalar dersi icerikler nedir'. Results: 3
+2026-05-10 19:59:47 - VectorDB - INFO - Processing PDF: Arama ve Graf Temelleri.pdf
+2026-05-10 19:59:48 - VectorDB - INFO - Processing PDF: Cormen Introduction to Algorithms.pdf
+2026-05-10 20:00:18 - VectorDB - INFO - Processing PDF: Final report version 1.pdf
+2026-05-10 20:00:18 - VectorDB - INFO - Processing PDF: projeler.pdf
+2026-05-10 20:00:19 - VectorDB - INFO - Processing PDF: YZM0104_Week0_v1.pdf
+2026-05-10 20:00:19 - VectorDB - INFO - Processing PDF: YZM0104_Week1 (2).pdf
+2026-05-10 20:01:00 - VectorDB - INFO - Added 512 embeddings to index. Total: 8631
+2026-05-10 20:01:27 - VectorDB - INFO - Added 512 embeddings to index. Total: 9143
+2026-05-10 20:01:46 - VectorDB - INFO - Added 512 embeddings to index. Total: 9655
+2026-05-10 20:02:11 - VectorDB - INFO - Added 512 embeddings to index. Total: 10167
+2026-05-10 20:02:34 - VectorDB - INFO - Added 512 embeddings to index. Total: 10679
+2026-05-10 20:02:59 - VectorDB - INFO - Added 512 embeddings to index. Total: 11191
+2026-05-10 20:03:26 - VectorDB - INFO - Added 512 embeddings to index. Total: 11703
+2026-05-10 20:03:47 - VectorDB - INFO - Added 512 embeddings to index. Total: 12215
+2026-05-10 20:04:07 - VectorDB - INFO - Added 512 embeddings to index. Total: 12727
+2026-05-10 20:04:27 - VectorDB - INFO - Added 512 embeddings to index. Total: 13239
+2026-05-10 20:04:44 - VectorDB - INFO - Added 512 embeddings to index. Total: 13751
+2026-05-10 20:04:57 - VectorDB - INFO - Added 512 embeddings to index. Total: 14263
+2026-05-10 20:05:17 - VectorDB - INFO - Added 512 embeddings to index. Total: 14775
+2026-05-10 20:05:35 - VectorDB - INFO - Added 512 embeddings to index. Total: 15287
+2026-05-10 20:05:56 - VectorDB - INFO - Added 512 embeddings to index. Total: 15799
+2026-05-10 20:06:12 - VectorDB - INFO - Added 446 embeddings to index. Total: 16245
+2026-05-10 20:06:12 - VectorDB - INFO - Index saved to main_index.faiss
+2026-05-10 20:06:13 - VectorDB - INFO - Database saved to main_index.faiss
+2026-05-10 20:06:13 - VectorDB - INFO - Search completed for query: 'algoritmalar dersi icerikler nedir'. Results: 2
+2026-05-10 20:16:26 - VectorDB - INFO - Search completed for query: 'anlamsal arama motoru nedir'. Results: 2
+2026-05-10 21:12:22 - VectorDB - INFO - Search completed for query: 'binary search alan karmasikligi nedir'. Results: 2
+2026-05-10 21:13:43 - VectorDB - INFO - Search completed for query: '25458667405 onun projesinin konusu nedir'. Results: 3
+2026-05-10 21:14:32 - VectorDB - INFO - Search completed for query: '25458667405 onun projesinin konusu nedir'. Results: 2
+2026-05-10 21:14:34 - VectorDB - INFO - Search completed for query: '25458667405 onun projesinin konusu nedir'. Results: 2
+2026-05-10 21:15:10 - VectorDB - INFO - Search completed for query: '25458667405 onun projesinin konusu nedir'. Results: 3
+2026-05-10 21:15:22 - VectorDB - INFO - Search completed for query: '25458667405'. Results: 3

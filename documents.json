@@ -64950,5 +64950,61 @@
       "page": 14,
       "type": "pdf"
     }
+  },
+  "Final report version 1.pdf_p1_s0": {
+    "content": "Modern Vektör Veritabanı (VectorDB) ve Anlamsal Arama Sistemi 1. Giriş Bu projede, Python kullanılarak anahtar kelime eşleşmesi yerine anlamsal benzerlik (embedding) teknolojisini temel alan yüksek performanslı bir vektör veritabanı sistemi geliştirilmiştir.",
+    "metadata": {
+      "source": "Final report version 1.pdf",
+      "page": 1,
+      "type": "pdf"
+    }
+  },
+  "Final report version 1.pdf_p1_s1": {
+    "content": "Geleneksel arama motorlarının aksine, bu sistem kelimelerin matematiksel vektör değerlerini karşılaştırarak kullanıcıya en yakın anlamdaki sonuçları sunar. 2. Sistem Tasarımı Sistem üç temel katmandan oluşmaktadır: Embedding (Vektörleştirme): Metinleri sayısal verilere dönüştüren gelişmiş dil modelleri kullanılmıştır.",
+    "metadata": {
+      "source": "Final report version 1.pdf",
+      "page": 1,
+      "type": "pdf"
+    }
+  },
+  "Final report version 1.pdf_p1_s2": {
+    "content": "İndeksleme: Milyonlarca veri arasında hızlı arama yapabilmek için FAISS HNSW (Hierarchical Navigable Small World) algoritması tercih edilmiştir. Arama Metriği: Vektörler arasındaki anlamsal yakınlığı ölçmek için Kosinüs Benzerliği (Cosine Similarity) yöntemi uygulanmıştır. 3. Veri Seti Yapısı Veriler JSONL formatında organize edilmiştir.",
+    "metadata": {
+      "source": "Final report version 1.pdf",
+      "page": 1,
+      "type": "pdf"
+    }
+  },
+  "Final report version 1.pdf_p1_s3": {
+    "content": "Bu yapı, büyük veri setlerinin bellek dostu bir şekilde işlenmesini sağlar. Veri seti BTÜ, Bursa ulaşım ağları, dil ve kültürün önemi ve spor gibi konuları kapsamaktadır. 4. Performans Analizi",
+    "metadata": {
+      "source": "Final report version 1.pdf",
+      "page": 1,
+      "type": "pdf"
+    }
+  },
+  "Final report version 1.pdf_p2_s0": {
+    "content": "Doküman Sayısı Arama Süresi (ms) 25 22 ms 50 30 ms 100 48 ms Yapılan testler, sistemin veri boyutu arttığında bile milisaniyeler düzeyinde sonuç döndürerek ölçeklenebilir olduğunu göstermiştir. 5. Örnek Senaryolar Sorgu: Yapay zeka nedir? Sistem: Makine öğrenmesi, derin öğrenme ve vektör veritabanlarının çalışma mantığına dair en alakalı dökümanları getirir.",
+    "metadata": {
+      "source": "Final report version 1.pdf",
+      "page": 2,
+      "type": "pdf"
+    }
+  },
+  "Final report version 1.pdf_p2_s1": {
+    "content": "Sorgu: Bursa Teknik Üniversitesi hakkında Sistem: BTÜ, 2010 yılında kurulan Türkiyenin ikinci teknik üniversitesidir. Mühendislik ve Doğa Bilimleri ağırlıklıdır. Sorgu: Dil nedir? Sistem: Dil, kültürün bir parçasıdır ve dil öğrenmek, o kültürü anlamaya yardımcı olur. 6. Sonuç Bu çalışma, modern anlamsal arama teknolojileri için güvenilir bir prototip sunmaktadır.",
+    "metadata": {
+      "source": "Final report version 1.pdf",
+      "page": 2,
+      "type": "pdf"
+    }
+  },
+  "Final report version 1.pdf_p2_s2": {
+    "content": "Sistem, kelimelerin birebir eşleşmesi yerine anlamına göre sonuç üretmektedir.",
+    "metadata": {
+      "source": "Final report version 1.pdf",
+      "page": 2,
+      "type": "pdf"
+    }
   }
 }

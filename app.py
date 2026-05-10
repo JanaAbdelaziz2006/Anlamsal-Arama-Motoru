@@ -121,8 +121,8 @@ with st.sidebar:
                 with open(os.path.join("temp_uploads", uploaded_file.name), "wb") as f:
                     f.write(uploaded_file.getbuffer())
             
-            with st.spinner("🚀 Hızlı İndeksleme Başlatıldı..."):
-                st.session_state.db.index_directory(Path("temp_uploads"), batch_size=256)
+            with st.spinner("⚡ Süper Hızlı Vektör Oluşturma Devrede..."):
+                st.session_state.db.index_directory(Path("temp_uploads"), batch_size=512)
                 st.session_state.db.save(Path("main_index.faiss"))
             st.success(f"{len(uploaded_files)} dosya başarıyla işlendi!")
         else:
@@ -212,4 +212,4 @@ if query:
 st.markdown("---")
 st.caption("Powered by FAISS, Sentence-Transformers, and Streamlit")
 
-#to run: py -m streamlit run app.py
+#to run: py -m streamlit run app.py 

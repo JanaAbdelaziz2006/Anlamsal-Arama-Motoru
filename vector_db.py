@@ -182,7 +182,7 @@ class EmbeddingManager:
             logger.error(f"Embedding generation failed: {str(e)}")
             raise EmbeddingException(f"Failed to generate embedding: {str(e)}")
     
-    def embed_batch(self, texts: List[str], batch_size: int = 32) -> np.ndarray:
+    def embed_batch(self, texts: List[str], batch_size: int = 256) -> np.ndarray:
         """
         Generate embeddings for multiple texts efficiently.
         
@@ -204,7 +204,8 @@ class EmbeddingManager:
                 texts,
                 batch_size=batch_size,
                 convert_to_numpy=True,
-                show_progress_bar=True
+                show_progress_bar=False,
+                normalize_embeddings=True
             )
             return embeddings.astype(np.float32)
         except Exception as e:
@@ -600,7 +601,7 @@ class VectorDatabase:
         # Hızlandırma: Tüm parçaları tek tek değil, büyük paketler (batch) halinde işle
         if all_chunks:
             for i in range(0, len(all_chunks), batch_size):
-                self._process_batch(all_chunks[i:i + batch_size], all_ids[i:i + batch_size])
+                self._process_batch(all_chunks[i:i + batch_size], all_ids[i:i + batch_size], batch_size=batch_size)
 
     def index_documents(self, data_file: Path, batch_size: int = 32, 
                        max_documents: Optional[int] = None) -> None:
@@ -631,13 +632,13 @@ class VectorDatabase:
                 
                 # Process batch
                 if len(batch_docs) >= batch_size:
-                    self._process_batch(batch_docs, batch_ids)
+                    self._process_batch(batch_docs, batch_ids, batch_size=batch_size)
                     batch_docs = []
                     batch_ids = []
             
             # Process remaining documents
             if batch_docs:
-                self._process_batch(batch_docs, batch_ids)
+                self._process_batch(batch_docs, batch_ids, batch_size=batch_size)
             
             logger.info(f"Indexing complete. Total documents: {len(self.documents)}")
         
@@ -645,17 +646,18 @@ class VectorDatabase:
             logger.error(f"Document indexing failed: {str(e)}")
             raise
     
-    def _process_batch(self, texts: List[str], doc_ids: List[str]) -> None:
+    def _process_batch(self, texts: List[str], doc_ids: List[str], batch_size: int = 256) -> None:
         """
         Process a batch of documents.
         
         Args:
             texts: List of document texts
             doc_ids: List of document IDs
+            batch_size: Number of items to process
         """
         try:
             # Generate embeddings
-            embeddings = self.embedding_manager.embed_batch(texts)
+            embeddings = self.embedding_manager.embed_batch(texts, batch_size=batch_size)
             
             # Add to index
             self.index_manager.add_embeddings(embeddings, doc_ids)
