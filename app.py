@@ -71,13 +71,23 @@ def highlight_text(text, query):
     return text
 
 def get_ai_answer(question, context, tokenizer, model):
-    # Context çok uzunsa kısaltarak modelin kafasını karıştırmıyoruz
-    inputs = tokenizer(question, context, return_tensors="pt", truncation=True, max_length=450)
+    # truncation="only_second" sayesinde sorunuz korunur ve döküman metni sığdırılabildiği kadar eklenir
+    inputs = tokenizer(question, context, return_tensors="pt", truncation="only_second", max_length=512)
     with torch.no_grad():
         outputs = model(**inputs)
-    answer_start = torch.argmax(outputs.start_logits)
-    answer_end = torch.argmax(outputs.end_logits) + 1
-    return tokenizer.decode(inputs.input_ids[0][answer_start:answer_end], skip_special_tokens=True)
+    
+    start_logits = outputs.start_logits
+    end_logits = outputs.end_logits
+    
+    answer_start = torch.argmax(start_logits)
+    answer_end = torch.argmax(end_logits) + 1
+    
+    # Eğer model CLS token'ını (0. indeks) işaret ediyorsa, cevap bulamamış demektir
+    if answer_start == 0 or answer_end <= answer_start:
+        return ""
+        
+    answer = tokenizer.decode(inputs.input_ids[0][answer_start:answer_end], skip_special_tokens=True)
+    return answer.strip()
 
 # Initialize Database in session state so it doesn't reload every time
 if 'db' not in st.session_state:
@@ -153,10 +163,18 @@ if query:
         if not results:
             st.info("Eşleşen bir döküman bulunamadı.")
         else:
-            context = " ".join([res.content for res in results[:2]])
+            # Daha iyi analiz için bağlam derinliğini 4 dökümana çıkardık
+            context = " ".join([res.content for res in results[:4]])
             try:
                 answer = get_ai_answer(query, context, tokenizer, model)
-                if len(answer.strip()) < 2: answer = "İlgili bilgiler aşağıda listelenmiştir."
+                
+                # Akıllı Yedekleme: Eğer AI spesifik bir cevap çıkaramazsa, 
+                # en alakalı dökümanın giriş kısmını özet olarak sunar.
+                if len(answer) < 3:
+                    # En alakalı dökümanın ilk iki cümlesini al
+                    sentences = re.split(r'(?<=[.!?]) +', results[0].content)
+                    answer = " ".join(sentences[:2])
+                    if len(answer) < 10: answer = results[0].content[:250] + "..."
             except:
                 answer = "Sonuçlar bulundu:"
 
