@@ -14,8 +14,10 @@ def load_qa_model():
     model_name = "timpal0l/mdeberta-v3-base-squad2"
     try:
         with st.spinner("🤖 Akıllı analiz motoru hazırlanıyor..."):
+            device = "cuda" if torch.cuda.is_available() else "cpu"
             tokenizer = AutoTokenizer.from_pretrained(model_name, use_fast=False)
             model = AutoModelForQuestionAnswering.from_pretrained(model_name)
+            if device == "cuda": model = model.to("cuda")
         return tokenizer, model
     except Exception as e:
         st.error(f"Model yüklenemedi: {e}. Lütfen 'pip install tiktoken' komutunu deneyin.")
@@ -72,7 +74,9 @@ def highlight_text(text, query):
 
 def get_ai_answer(question, context, tokenizer, model):
     # truncation="only_second" sayesinde sorunuz korunur ve döküman metni sığdırılabildiği kadar eklenir
-    inputs = tokenizer(question, context, return_tensors="pt", truncation="only_second", max_length=512)
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    inputs = tokenizer(question, context, return_tensors="pt", truncation="only_second", max_length=512).to(device)
+    
     with torch.no_grad():
         outputs = model(**inputs)
     
@@ -82,12 +86,16 @@ def get_ai_answer(question, context, tokenizer, model):
     answer_start = torch.argmax(start_logits)
     answer_end = torch.argmax(end_logits) + 1
     
-    # Eğer model CLS token'ını (0. indeks) işaret ediyorsa, cevap bulamamış demektir
-    if answer_start == 0 or answer_end <= answer_start:
-        return ""
-        
     answer = tokenizer.decode(inputs.input_ids[0][answer_start:answer_end], skip_special_tokens=True)
-    return answer.strip()
+    clean_answer = answer.strip()
+
+    # KRİTİK: Eğer cevap sadece bir sayıdan ibaretse veya sorgudaki ID ile aynıysa, 
+    # model aslında soruyu cevaplamamış, sadece ID'yi bulmuş demektir.
+    # Bu durumda boş dönerek 'Akıllı Yedekleme' mekanizmasını tetikliyoruz.
+    if clean_answer.isdigit() or len(clean_answer) < 5:
+        return ""
+    
+    return clean_answer
 
 # Initialize Database in session state so it doesn't reload every time
 if 'db' not in st.session_state:
@@ -113,8 +121,8 @@ with st.sidebar:
                 with open(os.path.join("temp_uploads", uploaded_file.name), "wb") as f:
                     f.write(uploaded_file.getbuffer())
             
-            with st.spinner("Vektörler oluşturuluyor ve HNSW indeksine ekleniyor..."):
-                st.session_state.db.index_directory(Path("temp_uploads"))
+            with st.spinner("🚀 Hızlı İndeksleme Başlatıldı..."):
+                st.session_state.db.index_directory(Path("temp_uploads"), batch_size=256)
                 st.session_state.db.save(Path("main_index.faiss"))
             st.success(f"{len(uploaded_files)} dosya başarıyla işlendi!")
         else:
@@ -163,18 +171,27 @@ if query:
         if not results:
             st.info("Eşleşen bir döküman bulunamadı.")
         else:
-            # Daha iyi analiz için bağlam derinliğini 4 dökümana çıkardık
-            context = " ".join([res.content for res in results[:4]])
+            # ID eşleşmesi varsa (Skor > 1.0), sadece o dökümanları öncelikli context yap
+            exact_matches = [res.content for res in results if res.score > 1.5]
+            if exact_matches:
+                context = " ".join(exact_matches)
+            else:
+                context = " ".join([res.content for res in results[:3]])
+                
             try:
                 answer = get_ai_answer(query, context, tokenizer, model)
                 
-                # Akıllı Yedekleme: Eğer AI spesifik bir cevap çıkaramazsa, 
-                # en alakalı dökümanın giriş kısmını özet olarak sunar.
-                if len(answer) < 3:
-                    # En alakalı dökümanın ilk iki cümlesini al
-                    sentences = re.split(r'(?<=[.!?]) +', results[0].content)
-                    answer = " ".join(sentences[:2])
-                    if len(answer) < 10: answer = results[0].content[:250] + "..."
+                if not answer or len(answer) < 5:
+                    # Akıllı Yedekleme: Eğer AI başarısız olursa, ID'nin geçtiği yerin sonrasını ver
+                    top_content = results[0].content
+                    query_ids = re.findall(r'\d{9,}', query)
+                    if query_ids and query_ids[0] in top_content.replace(" ", ""):
+                        # Numaranın geçtiği yerden sonraki 200 karakteri al (Proje ismi oradadır)
+                        start_idx = top_content.find(query_ids[0][:5]) # Kısmi arama ile bul
+                        answer = top_content[start_idx:start_idx+300] + "..."
+                    else:
+                        sentences = re.split(r'(?<=[.!?]) +', top_content)
+                        answer = " ".join(sentences[:2])
             except:
                 answer = "Sonuçlar bulundu:"
 

@@ -22,6 +22,7 @@ from sentence_transformers import SentenceTransformer
 import json
 import os
 import re
+import torch
 try:
     import fitz  # PyMuPDF
 except ImportError:
@@ -150,7 +151,8 @@ class EmbeddingManager:
         """Load the sentence transformer model with error handling."""
         try:
             logger.info(f"Loading embedding model: {self.model_name}")
-            self.model = SentenceTransformer(self.model_name)
+            device = "cuda" if torch.cuda.is_available() else "cpu"
+            self.model = SentenceTransformer(self.model_name, device=device)
             self.embedding_dim = self.model.get_sentence_embedding_dimension()
             logger.info(f"Model loaded successfully. Embedding dimension: {self.embedding_dim}")
         except Exception as e:
@@ -421,9 +423,8 @@ class FAISSIndexManager:
                 raise ValueError(f"Embedding dimension mismatch: expected {self.embedding_dim}, "
                                f"got {embeddings.shape[1]}")
             
-            # Normalize embeddings for cosine similarity
-            faiss.normalize_L2(embeddings)
-
+            # Embeddings are already normalized by EmbeddingManager
+            
             # Add to FAISS index
             self.index.add(embeddings)
             
@@ -461,12 +462,9 @@ class FAISSIndexManager:
                 raise ValueError(f"Query embedding dimension mismatch: "
                                f"expected {self.embedding_dim}, got {query_embedding.shape[0]}")
             
-            # HNSW returns distances (not similarities)
+            # Query is already normalized
             query = query_embedding.reshape(1, -1).astype(np.float32)
-
-            # Normalize query for cosine similarity
-            faiss.normalize_L2(query)
-
+            
             distances, indices = self.index.search(
                 query,
                 min(k, self.doc_count)
@@ -559,10 +557,13 @@ class VectorDatabase:
         self.documents = {}  # Store document content by ID
         logger.info("Vector Database initialized")
 
-    def index_directory(self, directory_path: Path, chunk_size: int = 400) -> None:
+    def index_directory(self, directory_path: Path, chunk_size: int = 400, batch_size: int = 128) -> None:
         """Dizin içindeki dosyaları tara ve sayfa bazlı indeksle."""
         path = Path(directory_path)
         processor = DocumentProcessor()
+        
+        all_chunks = []
+        all_ids = []
         
         for file_path in path.rglob("*"):
             if file_path.suffix.lower() == ".pdf":
@@ -581,7 +582,8 @@ class VectorDatabase:
                                 'type': 'pdf'
                             }
                         }
-                    self._process_batch(chunks, batch_ids)
+                    all_chunks.extend(chunks)
+                    all_ids.extend(batch_ids)
             elif file_path.suffix.lower() in [".txt", ".md"]:
                 content = file_path.read_text(encoding="utf-8", errors="ignore")
                 clean_content = processor.clean_text(content)
@@ -592,8 +594,13 @@ class VectorDatabase:
                         'content': chunk,
                         'metadata': {'source': file_path.name, 'page': 1, 'type': 'text'}
                     }
-                self._process_batch(chunks, batch_ids)
-            # (Remaining text logic omitted for brevity, focusing on PDF excellence)
+                all_chunks.extend(chunks)
+                all_ids.extend(batch_ids)
+
+        # Hızlandırma: Tüm parçaları tek tek değil, büyük paketler (batch) halinde işle
+        if all_chunks:
+            for i in range(0, len(all_chunks), batch_size):
+                self._process_batch(all_chunks[i:i + batch_size], all_ids[i:i + batch_size])
 
     def index_documents(self, data_file: Path, batch_size: int = 32, 
                        max_documents: Optional[int] = None) -> None:
@@ -674,28 +681,59 @@ class VectorDatabase:
             if not query.strip():
                 raise ValueError("Query cannot be empty")
             
-            # Generate query embedding
-            query_embedding = self.embedding_manager.embed(query)
+            # 1. Sorgudan potansiyel sayısal kimlikleri (ID'leri) çıkar
+            # 9 veya daha fazla basamaklı sayıları ID olarak kabul ediyoruz
+            numeric_ids_in_query = re.findall(r'\b\d{9,}\b', query) 
+
+            exact_match_results = []
+            if numeric_ids_in_query:
+                logger.info(f"Sorguda potansiyel sayısal ID'ler tespit edildi: {numeric_ids_in_query}")
+                # Tüm dökümanlarda bu ID'ler için anahtar kelime araması yap
+                for doc_id, doc_data in self.documents.items():
+                    content = doc_data.get('content', '')
+                    for num_id in numeric_ids_in_query:
+                        # Tam eşleşme kontrolü
+                        if num_id in content:
+                            # Tam eşleşen dökümanlara en yüksek skoru ata
+                            exact_match_results.append(SearchResult(
+                                document_id=doc_id,
+                                content=content,
+                                score=1.0, # En yüksek skor
+                                metadata=doc_data.get('metadata', None)
+                            ))
+                            break # Bu döküman için başka ID aramaya gerek yok
+
+            # 2. Semantik arama yap
+            query_embedding = self.embedding_manager.embed(query) # Sorgu embedding'i oluştur
+            semantic_index_results = self.index_manager.search(query_embedding, top_k) # İndekste ara
             
-            # Search in index
-            results = self.index_manager.search(query_embedding, top_k)
-            
-            # Build search results
-            search_results = []
-            for idx, score in results:
+            semantic_search_results = []
+            for idx, score in semantic_index_results: # Semantik arama sonuçlarını SearchResult objelerine dönüştür
                 if idx in self.index_manager.document_map:
                     doc_id = self.index_manager.document_map[idx]
                     doc = self.documents.get(doc_id, {})
                     
-                    search_results.append(SearchResult(
+                    semantic_search_results.append(SearchResult(
                         document_id=doc_id,
                         content=doc.get('content', ''),
                         score=float(score),
                         metadata=doc.get('metadata', None)
                     ))
             
-            logger.info(f"Search completed for query: '{query}'. Results: {len(search_results)}")
-            return search_results
+            # 3. Sonuçları birleştir ve tekilleştir
+            merged_results_map = {}
+            for res in exact_match_results:
+                merged_results_map[res.document_id] = res # Tam eşleşmeleri ekle
+            for res in semantic_search_results:
+                # Eğer döküman zaten tam eşleşme olarak eklendiyse, tam eşleşmeyi koru
+                if res.document_id not in merged_results_map:
+                    merged_results_map[res.document_id] = res # Semantik sonuçları ekle
+            
+            final_results = list(merged_results_map.values())
+            final_results.sort(key=lambda x: x.score, reverse=True) # Skorlara göre sırala
+            
+            logger.info(f"Search completed for query: '{query}'. Results: {len(final_results)}")
+            return final_results[:top_k] # top_k kadar sonuç döndür
         
         except Exception as e:
             logger.error(f"Search operation failed: {str(e)}")
