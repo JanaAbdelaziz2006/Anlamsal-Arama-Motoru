@@ -14,15 +14,12 @@ Date: 2026
 
 import logging
 import numpy as np
-import faiss
 from typing import List, Tuple, Dict, Generator, Optional, Union
 from pathlib import Path
 from dataclasses import dataclass
-from sentence_transformers import SentenceTransformer
 import json
 import os
 import re
-import torch
 try:
     import fitz  # PyMuPDF
 except ImportError:
@@ -150,6 +147,10 @@ class EmbeddingManager:
     def _load_model(self) -> None:
         """Load the sentence transformer model with error handling."""
         try:
+            # Lazy import to speed up initial system start
+            from sentence_transformers import SentenceTransformer
+            import torch
+            
             logger.info(f"Loading embedding model: {self.model_name}")
             device = "cuda" if torch.cuda.is_available() else "cpu"
             self.model = SentenceTransformer(self.model_name, device=device)
@@ -338,26 +339,25 @@ class DocumentProcessor:
         return text
 
     @staticmethod
-    def chunk_text(text: str, chunk_size: int = 350) -> List[str]:
-        """Daha küçük parçalar (350 karakter) arama sonuçlarını çok daha net yapar."""
-        # Split by sentences but keep punctuation
-        sentences = re.split(r'(?<=[.!?]) +', text)
+    def chunk_text(text: str, chunk_size: int = 500, overlap: int = 50) -> List[str]:
+        """Implement overlapping chunks to maintain context between snippets."""
         chunks = []
-        current_chunk = []
-        current_length = 0
-        
-        for sentence in sentences:
-            sentence_len = len(sentence)
-            # If adding this sentence exceeds chunk_size, start a new chunk
-            if current_length + sentence_len > chunk_size and len(current_chunk) > 0:
-                chunks.append(" ".join(current_chunk))
-                current_chunk = []
-                current_length = 0
-            current_chunk.append(sentence)
-            current_length += sentence_len
+        start = 0
+        text_len = len(text)
+
+        while start < text_len:
+            end = start + chunk_size
+            # Don't cut in the middle of a word if possible
+            if end < text_len:
+                last_space = text.rfind(' ', start, end)
+                if last_space != -1:
+                    end = last_space
             
-        if current_chunk:
-            chunks.append(" ".join(current_chunk))
+            chunks.append(text[start:end].strip())
+            start = end - overlap if end < text_len else text_len
+            if start < 0: start = 0
+            if end >= text_len: break
+            
         return chunks
 
 # ==================== FAISS Index Manager ====================
@@ -386,6 +386,9 @@ class FAISSIndexManager:
     def _create_index(self) -> None:
         """Create HNSW index with optimized parameters."""
         try:
+            # Lazy import to speed up initial system start
+            import faiss
+            
             # Create HNSW index
             # ef_construction: controls index quality/speed trade-off (higher = more accurate but slower)
             self.index = faiss.IndexHNSWFlat(
@@ -492,6 +495,7 @@ class FAISSIndexManager:
             filepath: Path to save index
         """
         try:
+            import faiss
             filepath = Path(filepath)
             filepath.parent.mkdir(parents=True, exist_ok=True)
             
@@ -515,6 +519,7 @@ class FAISSIndexManager:
             filepath: Path to load index from
         """
         try:
+            import faiss
             filepath = Path(filepath)
             if not filepath.exists():
                 raise ValueError(f"Index file not found: {filepath}")
@@ -683,59 +688,25 @@ class VectorDatabase:
             if not query.strip():
                 raise ValueError("Query cannot be empty")
             
-            # 1. Sorgudan potansiyel sayısal kimlikleri (ID'leri) çıkar
-            # 9 veya daha fazla basamaklı sayıları ID olarak kabul ediyoruz
-            numeric_ids_in_query = re.findall(r'\b\d{9,}\b', query) 
-
-            exact_match_results = []
-            if numeric_ids_in_query:
-                logger.info(f"Sorguda potansiyel sayısal ID'ler tespit edildi: {numeric_ids_in_query}")
-                # Tüm dökümanlarda bu ID'ler için anahtar kelime araması yap
-                for doc_id, doc_data in self.documents.items():
-                    content = doc_data.get('content', '')
-                    for num_id in numeric_ids_in_query:
-                        # Tam eşleşme kontrolü
-                        if num_id in content:
-                            # Tam eşleşen dökümanlara en yüksek skoru ata
-                            exact_match_results.append(SearchResult(
-                                document_id=doc_id,
-                                content=content,
-                                score=1.0, # En yüksek skor
-                                metadata=doc_data.get('metadata', None)
-                            ))
-                            break # Bu döküman için başka ID aramaya gerek yok
-
-            # 2. Semantik arama yap
-            query_embedding = self.embedding_manager.embed(query) # Sorgu embedding'i oluştur
-            semantic_index_results = self.index_manager.search(query_embedding, top_k) # İndekste ara
+            # Semantik arama yap
+            query_embedding = self.embedding_manager.embed(query)
+            results = self.index_manager.search(query_embedding, top_k)
             
-            semantic_search_results = []
-            for idx, score in semantic_index_results: # Semantik arama sonuçlarını SearchResult objelerine dönüştür
+            search_results = []
+            for idx, score in results:
                 if idx in self.index_manager.document_map:
                     doc_id = self.index_manager.document_map[idx]
                     doc = self.documents.get(doc_id, {})
                     
-                    semantic_search_results.append(SearchResult(
+                    search_results.append(SearchResult(
                         document_id=doc_id,
                         content=doc.get('content', ''),
                         score=float(score),
                         metadata=doc.get('metadata', None)
                     ))
             
-            # 3. Sonuçları birleştir ve tekilleştir
-            merged_results_map = {}
-            for res in exact_match_results:
-                merged_results_map[res.document_id] = res # Tam eşleşmeleri ekle
-            for res in semantic_search_results:
-                # Eğer döküman zaten tam eşleşme olarak eklendiyse, tam eşleşmeyi koru
-                if res.document_id not in merged_results_map:
-                    merged_results_map[res.document_id] = res # Semantik sonuçları ekle
-            
-            final_results = list(merged_results_map.values())
-            final_results.sort(key=lambda x: x.score, reverse=True) # Skorlara göre sırala
-            
-            logger.info(f"Search completed for query: '{query}'. Results: {len(final_results)}")
-            return final_results[:top_k] # top_k kadar sonuç döndür
+            logger.info(f"Search completed for query: '{query}'. Results: {len(search_results)}")
+            return search_results
         
         except Exception as e:
             logger.error(f"Search operation failed: {str(e)}")

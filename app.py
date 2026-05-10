@@ -1,11 +1,10 @@
 import streamlit as st
-from vector_db import VectorDatabase
+import streamlit.components.v1 as components
 from pathlib import Path
 import os
 import time
-import torch
 import re
-from transformers import AutoTokenizer, AutoModelForQuestionAnswering
+import base64
 
 # Akıllı Cevap Oluşturucu (Manuel Yükleme)
 @st.cache_resource
@@ -14,6 +13,9 @@ def load_qa_model():
     model_name = "timpal0l/mdeberta-v3-base-squad2"
     try:
         with st.spinner("🤖 Akıllı analiz motoru hazırlanıyor..."):
+            import torch
+            from transformers import AutoTokenizer, AutoModelForQuestionAnswering
+            
             device = "cuda" if torch.cuda.is_available() else "cpu"
             tokenizer = AutoTokenizer.from_pretrained(model_name, use_fast=False)
             model = AutoModelForQuestionAnswering.from_pretrained(model_name)
@@ -23,8 +25,42 @@ def load_qa_model():
         st.error(f"Model yüklenemedi: {e}. Lütfen 'pip install tiktoken' komutunu deneyin.")
         return None, None
 
+# Global Database Instance (Shared across all users to save memory and time)
+@st.cache_resource
+def get_vector_db():
+    from vector_db import VectorDatabase
+    db = VectorDatabase()
+    if os.path.exists("main_index.faiss"):
+        db.load(Path("main_index.faiss"))
+    return db
+
 # Page Config
 st.set_page_config(page_title="Cognitive Search Pro", page_icon="🧠", layout="wide")
+
+# --- PROFESSIONAL PRE-LOADER ---
+if "initialized" not in st.session_state:
+    placeholder = st.empty()
+    with placeholder.container():
+        st.markdown("""
+            <div style="display: flex; justify-content: center; align-items: center; height: 80vh; flex-direction: column;">
+                <div style="width: 60px; height: 60px; border: 6px solid #f3f3f3; border-top: 6px solid #4285f4; border-radius: 50%; animation: spin 1s linear infinite;"></div>
+                <style>@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }</style>
+                <h2 style="margin-top: 25px; font-family: 'Segoe UI', sans-serif; color: #4285f4; font-weight: 400;">Cognitive Search Pro Başlatılıyor</h2>
+                <p style="color: #70757a; font-family: 'Segoe UI', sans-serif; font-size: 15px;">Vektör veritabanı ve AI motoru hazırlanıyor, lütfen bekleyin...</p>
+            </div>
+        """, unsafe_allow_html=True)
+        
+        try:
+            # Perform heavy initializations
+            st.session_state.db = get_vector_db()
+            load_qa_model() # Pre-load model to avoid wait during first search
+            st.session_state.initialized = True
+            time.sleep(0.5) # Smooth transition
+        except Exception as e:
+            st.error(f"Sistem başlatılamadı: {e}")
+            st.stop()
+    placeholder.empty()
+# --- END PRE-LOADER ---
 
 st.title("🧠 Cognitive Search & Knowledge Engine")
 st.markdown("""
@@ -67,15 +103,36 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 def highlight_text(text, query):
+    import re
     for word in query.split():
         if len(word) > 2:
             text = re.sub(f"({re.escape(word)})", r'<span class="highlight">\1</span>', text, flags=re.IGNORECASE)
     return text
 
+def display_pdf(file_path, page_number):
+    """PDF sayfasını resim olarak render eder ve st.image ile gösterir."""
+    try:
+        import fitz
+        # PDF dosyasını aç
+        doc = fitz.open(file_path)
+        # Sayfa numarası metadata'da 1'den başladığı için 0-index'e çeviriyoruz
+        page = doc.load_page(page_number - 1)
+        # Netlik için 2x zoom ile resim oluşturuyoruz
+        pix = page.get_pixmap(matrix=fitz.Matrix(2, 2))
+        img_bytes = pix.tobytes("png")
+        st.image(img_bytes, caption=f"Sayfa {page_number}", use_container_width=True)
+        doc.close()
+    except Exception as e:
+        st.error(f"Önizleme yüklenirken hata oluştu: {e}")
+
 def get_ai_answer(question, context, tokenizer, model):
+    # Sade Baseline Prompt
+    full_context = "Aşağıdaki döküman içeriğine dayanarak soruyu cevapla:\n\n" + context
+    
+    import torch
     # truncation="only_second" sayesinde sorunuz korunur ve döküman metni sığdırılabildiği kadar eklenir
     device = "cuda" if torch.cuda.is_available() else "cpu"
-    inputs = tokenizer(question, context, return_tensors="pt", truncation="only_second", max_length=512).to(device)
+    inputs = tokenizer(question, full_context, return_tensors="pt", truncation="only_second", max_length=512).to(device)
     
     with torch.no_grad():
         outputs = model(**inputs)
@@ -97,20 +154,36 @@ def get_ai_answer(question, context, tokenizer, model):
     
     return clean_answer
 
-# Initialize Database in session state so it doesn't reload every time
-if 'db' not in st.session_state:
-    try:
-        st.session_state.db = VectorDatabase()
-        # Load index if exists
-        if os.path.exists("main_index.faiss"):
-            st.session_state.db.load(Path("main_index.faiss"))
-    except Exception as e:
-        st.error(f"Initialization Error: {e}")
-        st.stop()
-
 # Sidebar - Data Ingestion
 with st.sidebar:
     st.header("📂 Veri Yönetimi")
+    
+    # 1. Mevcut Dosyaları Listele ve Yönet (Kalıcılık Bölümü)
+    if os.path.exists("temp_uploads"):
+        existing_files = [f for f in os.listdir("temp_uploads") if os.path.isfile(os.path.join("temp_uploads", f))]
+        if existing_files:
+            st.subheader("📚 Kayıtlı Dökümanlar")
+            for f_name in existing_files:
+                col_txt, col_btn = st.columns([0.8, 0.2])
+                col_txt.caption(f"📄 {f_name}")
+                if col_btn.button("❌", key=f"del_{f_name}", help="Dosyayı sil ve indeksi güncelle"):
+                    os.remove(os.path.join("temp_uploads", f_name))
+                    with st.spinner(f"{f_name} çıkarılıyor..."):
+                        if not os.listdir("temp_uploads"):
+                            # Klasör boşaldıysa her şeyi temizle
+                            for f in ["main_index.faiss", "main_index.json", "documents.json"]:
+                                if os.path.exists(f): os.remove(f)
+                            st.cache_resource.clear()
+                            st.session_state.db = get_vector_db()
+                        else:
+                            # Kalan dosyalarla indeksi baştan oluştur (Senkronizasyon için)
+                            from vector_db import VectorDatabase
+                            st.session_state.db = VectorDatabase() 
+                            st.session_state.db.index_directory(Path("temp_uploads"), batch_size=512)
+                            st.session_state.db.save(Path("main_index.faiss"))
+                    st.rerun()
+            st.divider()
+
     uploaded_files = st.file_uploader("PDF veya Metin Dosyası Yükle", accept_multiple_files=True, type=['pdf', 'txt', 'md'])
     
     if st.button("Dökümanları İndeksle"):
@@ -122,9 +195,12 @@ with st.sidebar:
                     f.write(uploaded_file.getbuffer())
             
             with st.spinner("⚡ Süper Hızlı Vektör Oluşturma Devrede..."):
+                from vector_db import VectorDatabase
+                st.session_state.db = VectorDatabase() 
                 st.session_state.db.index_directory(Path("temp_uploads"), batch_size=512)
                 st.session_state.db.save(Path("main_index.faiss"))
             st.success(f"{len(uploaded_files)} dosya başarıyla işlendi!")
+            st.rerun()
         else:
             st.warning("Lütfen önce dosya seçin.")
 
@@ -139,10 +215,21 @@ with st.sidebar:
             import shutil
             shutil.rmtree("temp_uploads")
             
-        st.session_state.db = VectorDatabase()
+        st.cache_resource.clear()
+        st.session_state.db = get_vector_db()
         st.success("Veritabanı ve tüm önbellek tamamen temizlendi!")
 
     st.divider()
+    st.header("🔍 Arama Ayarları")
+    sensitivity = st.slider(
+        "Arama Hassasiyeti (Eşik)", 
+        min_value=0.0, 
+        max_value=1.0, 
+        value=0.30, 
+        step=0.05,
+        help="1.0: Sadece tam eşleşen kimlikleri getirir. 0.0: Her şeyi getirir."
+    )
+    
     col1, col2 = st.columns(2)
     col1.metric("Toplam Parça", len(st.session_state.db.documents))
     col2.metric("Hız", "O(log N)")
@@ -162,6 +249,7 @@ top_k = st.slider("Getirilecek sonuç sayısı", 1, 10, 3)
 
 if query:
     tokenizer, model = load_qa_model()
+    
     if tokenizer:
         start_time = time.time()
         with st.spinner("🧠 Arıyor ve analiz ediyorum..."):
@@ -171,12 +259,8 @@ if query:
         if not results:
             st.info("Eşleşen bir döküman bulunamadı.")
         else:
-            # ID eşleşmesi varsa (Skor > 1.0), sadece o dökümanları öncelikli context yap
-            exact_matches = [res.content for res in results if res.score > 1.5]
-            if exact_matches:
-                context = " ".join(exact_matches)
-            else:
-                context = " ".join([res.content for res in results[:3]])
+            results = [res for res in results if res.score >= sensitivity]
+            context = " ".join([res.content for res in results])
                 
             try:
                 answer = get_ai_answer(query, context, tokenizer, model)
@@ -195,21 +279,37 @@ if query:
             except:
                 answer = "Sonuçlar bulundu:"
 
-            st.markdown(f'<div class="answer-box"><div class="ai-label">🤖 ÖZET CEVAP</div><br>{answer}</div>', unsafe_allow_html=True)
-            st.subheader(f"🔍 Bilgi Kaynakları ({ (end_time-start_time)*1000:.0f}ms)")
-            
-            for res in results:
-                display_content = highlight_text(res.content, query)
-                st.markdown(f"""
-                <div class="result-card">
-                    <div class="pdf-title">📄 {res.metadata.get('source')}</div>
-                    <div class="metadata-tag">SAYFA: {res.metadata.get('page')} • ALAKA: %{res.score*100:.0f}</div>
-                    <div class="snippet">...{display_content}...</div>
-                </div>
-                """, unsafe_allow_html=True)
+            if not results:
+                st.warning("Belirlenen hassasiyet seviyesinde sonuç bulunamadı. Lütfen sürgüyü sola kaydırın.")
+            else:
+                st.markdown(f'<div class="answer-box"><div class="ai-label">🤖 ÖZET CEVAP</div><br>{answer}</div>', unsafe_allow_html=True)
+                st.subheader(f"🔍 Bilgi Kaynakları ({ (end_time-start_time)*1000:.0f}ms)")
+                
+                for res in results:
+                    display_content = highlight_text(res.content, query)
+                    # Skoru %100 ile sınırla (ID eşleşmesi 2.0 olsa bile %100 görünür)
+                    display_score = min(100.0, res.score * 100)
+                    
+                    with st.container():
+                        st.markdown(f"""
+                        <div class="result-card">
+                            <div class="pdf-title">📄 {res.metadata.get('source')}</div>
+                            <div class="metadata-tag">SAYFA: {res.metadata.get('page')} • ALAKA: %{display_score:.0f}</div>
+                            <div class="snippet">...{display_content}...</div>
+                        </div>
+                        """, unsafe_allow_html=True)
+                        
+                        # PDF Önizleme ve Dışarıda Açma İşlemleri
+                        pdf_source = res.metadata.get('source')
+                        pdf_path = os.path.join("temp_uploads", pdf_source)
+                        
+                        if os.path.exists(pdf_path):
+                            with st.expander(f"👁️ Sayfa {res.metadata.get('page')} Önizle"):
+                                display_pdf(pdf_path, res.metadata.get('page'))
 
 # Footer
 st.markdown("---")
 st.caption("Powered by FAISS, Sentence-Transformers, and Streamlit")
 
 #to run: py -m streamlit run app.py 
+#ex: Sıralı bir dizide en hızlı arama yöntemlerinden biri hangisidir?
