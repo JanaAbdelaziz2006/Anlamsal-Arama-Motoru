@@ -15,11 +15,17 @@ Date: 2026
 import logging
 import numpy as np
 import faiss
-from typing import List, Tuple, Dict, Generator, Optional
+from typing import List, Tuple, Dict, Generator, Optional, Union
 from pathlib import Path
 from dataclasses import dataclass
 from sentence_transformers import SentenceTransformer
 import json
+import os
+import re
+try:
+    import fitz  # PyMuPDF
+except ImportError:
+    fitz = None
 
 
 # ==================== Logging Configuration ====================
@@ -286,6 +292,70 @@ class DataLoader:
             logger.error(f"Error during data loading: {str(e)}")
             raise DataLoadingException(f"Failed to load data: {str(e)}")
 
+class DocumentProcessor:
+    """Handles different file formats and text chunking for large documents."""
+    
+    @staticmethod
+    def extract_pages_from_pdf(pdf_path: Path) -> List[Dict]:
+        """Extract text and page numbers from PDF."""
+        if fitz is None:
+            raise ImportError("PyMuPDF (fitz) is required for PDF processing. Install with: pip install pymupdf")
+        
+        pages = []
+        try:
+            with fitz.open(str(pdf_path)) as doc:
+                for page_num, page in enumerate(doc, 1):
+                    # Metni bloklar halinde alarak yapısal bütünlüğü koruyoruz
+                    text = page.get_text("text", sort=True)
+                    clean = DocumentProcessor.clean_text(text)
+                    # Çok kısa sayfaları (boş veya sadece resim) atla
+                    if len(clean) > 30: 
+                        pages.append({
+                            "text": clean,
+                            "page": page_num
+                        })
+            return pages
+        except Exception as e:
+            logger.error(f"Failed to read PDF {pdf_path}: {e}")
+            return []
+
+    @staticmethod
+    def clean_text(text: str) -> str:
+        """Extract edilen metindeki sayfa numaraları, hoca isimleri ve gereksiz boşlukları temizler."""
+        # 1. Sayfa numaraları ve altbilgileri temizle (Örn: 13 / 47, sayfa 1)
+        text = re.sub(r'\d+\s*/\s*\d+', '', text)
+        text = re.sub(r'Sayfa\s*\d+', '', text, flags=re.IGNORECASE)
+        # 2. Hocanın ismini ve ünvanını temizle
+        text = re.sub(r'Dr\.\s*Öğr\.\s*Üyesi\s*Adem\s*AVCI', '', text, flags=re.IGNORECASE)
+        # 3. URL, mail ve gereksiz karakterleri temizle (Algoritma sembollerini koru)
+        text = re.sub(r'https?://\S+|www\.\S+', '', text)
+        text = re.sub(r'\S+@\S+', '', text)
+        text = re.sub(r'[^a-zA-Z0-9çğıöşüÇĞİÖŞÜ\s\.\,\?\!\:\(\)\[\]\<\>\=\+\-\*\/]', '', text)
+        text = re.sub(r'\s+', ' ', text).strip()
+        return text
+
+    @staticmethod
+    def chunk_text(text: str, chunk_size: int = 350) -> List[str]:
+        """Daha küçük parçalar (350 karakter) arama sonuçlarını çok daha net yapar."""
+        # Split by sentences but keep punctuation
+        sentences = re.split(r'(?<=[.!?]) +', text)
+        chunks = []
+        current_chunk = []
+        current_length = 0
+        
+        for sentence in sentences:
+            sentence_len = len(sentence)
+            # If adding this sentence exceeds chunk_size, start a new chunk
+            if current_length + sentence_len > chunk_size and len(current_chunk) > 0:
+                chunks.append(" ".join(current_chunk))
+                current_chunk = []
+                current_length = 0
+            current_chunk.append(sentence)
+            current_length += sentence_len
+            
+        if current_chunk:
+            chunks.append(" ".join(current_chunk))
+        return chunks
 
 # ==================== FAISS Index Manager ====================
 
@@ -488,7 +558,43 @@ class VectorDatabase:
         )
         self.documents = {}  # Store document content by ID
         logger.info("Vector Database initialized")
-    
+
+    def index_directory(self, directory_path: Path, chunk_size: int = 400) -> None:
+        """Dizin içindeki dosyaları tara ve sayfa bazlı indeksle."""
+        path = Path(directory_path)
+        processor = DocumentProcessor()
+        
+        for file_path in path.rglob("*"):
+            if file_path.suffix.lower() == ".pdf":
+                logger.info(f"Processing PDF: {file_path.name}")
+                pages = processor.extract_pages_from_pdf(file_path)
+                for page_data in pages:
+                    chunks = processor.chunk_text(page_data["text"], chunk_size=chunk_size)
+                    batch_ids = [f"{file_path.name}_p{page_data['page']}_s{i}" for i in range(len(chunks))]
+                    
+                    for i, chunk in enumerate(chunks):
+                        self.documents[batch_ids[i]] = {
+                            'content': chunk,
+                            'metadata': {
+                                'source': file_path.name,
+                                'page': page_data["page"],
+                                'type': 'pdf'
+                            }
+                        }
+                    self._process_batch(chunks, batch_ids)
+            elif file_path.suffix.lower() in [".txt", ".md"]:
+                content = file_path.read_text(encoding="utf-8", errors="ignore")
+                clean_content = processor.clean_text(content)
+                chunks = processor.chunk_text(clean_content, chunk_size=chunk_size)
+                batch_ids = [f"{file_path.name}_c{i}" for i in range(len(chunks))]
+                for i, chunk in enumerate(chunks):
+                    self.documents[batch_ids[i]] = {
+                        'content': chunk,
+                        'metadata': {'source': file_path.name, 'page': 1, 'type': 'text'}
+                    }
+                self._process_batch(chunks, batch_ids)
+            # (Remaining text logic omitted for brevity, focusing on PDF excellence)
+
     def index_documents(self, data_file: Path, batch_size: int = 32, 
                        max_documents: Optional[int] = None) -> None:
         """
