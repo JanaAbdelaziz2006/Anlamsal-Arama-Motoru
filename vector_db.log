@@ -1996,3 +1996,5 @@
 2026-05-10 17:54:35 - VectorDB - INFO - Vector Database initialized
 2026-05-10 17:54:35 - VectorDB - ERROR - Search operation failed: Index is empty
 2026-05-10 17:54:35 - VectorDB - ERROR - Search operation failed: Search failed: Index is empty
+2026-05-10 17:55:13 - VectorDB - ERROR - Search operation failed: Index is empty
+2026-05-10 17:55:13 - VectorDB - ERROR - Search operation failed: Search failed: Index is empty
