@@ -3891,3 +3891,413 @@
 2026-05-10 23:04:26 - VectorDB - INFO - Database saved to main_index.faiss
 2026-05-10 23:06:27 - VectorDB - INFO - Search completed for query: 'Can I combine two calls on my iPhone?'. Results: 3
 2026-05-10 23:08:07 - VectorDB - INFO - Search completed for query: 'Smartphone setup instructions'. Results: 3
+2026-05-11 23:48:01 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-11 23:48:06 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-11 23:48:06 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-11 23:48:06 - VectorDB - INFO - Vector Database initialized
+2026-05-11 23:48:06 - VectorDB - INFO - Index loaded from main_index.faiss
+2026-05-11 23:48:06 - VectorDB - INFO - Database loaded from main_index.faiss
+2026-05-11 23:54:23 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-11 23:54:27 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-11 23:54:27 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-11 23:54:27 - VectorDB - INFO - Vector Database initialized
+2026-05-11 23:54:27 - VectorDB - INFO - Processing PDF: Arama ve Graf Temelleri.pdf
+2026-05-11 23:54:27 - VectorDB - INFO - Processing PDF: hafta 3.pdf
+2026-05-11 23:54:28 - VectorDB - INFO - Processing PDF: projeler.pdf
+2026-05-11 23:54:28 - VectorDB - INFO - Processing PDF: Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf
+2026-05-11 23:54:32 - VectorDB - INFO - Added 79 embeddings to index. Total: 79
+2026-05-11 23:54:32 - VectorDB - INFO - Index saved to main_index.faiss
+2026-05-11 23:54:32 - VectorDB - INFO - Database saved to main_index.faiss
+2026-05-11 23:55:01 - VectorDB - INFO - Search completed for query: 'nokta nedir'. Results: 3
+2026-05-11 23:55:24 - VectorDB - INFO - Search completed for query: 'hafta 3 pdfdeki nokta nedir'. Results: 3
+2026-05-11 23:55:49 - VectorDB - INFO - Search completed for query: 'noktalama isaretleri nedir'. Results: 3
+2026-05-11 23:56:00 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-11 23:56:04 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-11 23:56:04 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-11 23:56:04 - VectorDB - INFO - Vector Database initialized
+2026-05-11 23:56:04 - VectorDB - INFO - Processing PDF: Arama ve Graf Temelleri.pdf
+2026-05-11 23:56:04 - VectorDB - INFO - Processing PDF: projeler.pdf
+2026-05-11 23:56:04 - VectorDB - INFO - Processing PDF: Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf
+2026-05-11 23:56:07 - VectorDB - INFO - Added 79 embeddings to index. Total: 79
+2026-05-11 23:56:07 - VectorDB - INFO - Index saved to main_index.faiss
+2026-05-11 23:56:07 - VectorDB - INFO - Database saved to main_index.faiss
+2026-05-12 00:00:19 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-12 00:00:23 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-12 00:00:23 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-12 00:00:23 - VectorDB - INFO - Vector Database initialized
+2026-05-12 00:00:23 - VectorDB - INFO - Processing PDF: Arama ve Graf Temelleri.pdf
+2026-05-12 00:00:23 - VectorDB - INFO - Processing PDF: hafta 3.pdf
+2026-05-12 00:00:23 - VectorDB - INFO - Processing PDF: projeler.pdf
+2026-05-12 00:00:23 - VectorDB - INFO - Processing PDF: Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf
+2026-05-12 00:00:26 - VectorDB - INFO - Added 79 embeddings to index. Total: 79
+2026-05-12 00:00:26 - VectorDB - INFO - Index saved to main_index.faiss
+2026-05-12 00:00:26 - VectorDB - INFO - Database saved to main_index.faiss
+2026-05-12 00:00:41 - VectorDB - INFO - Search completed for query: 'noktalama isaretleri'. Results: 3
+2026-05-12 00:02:38 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-12 00:02:42 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-12 00:02:42 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-12 00:02:42 - VectorDB - INFO - Vector Database initialized
+2026-05-12 00:02:42 - VectorDB - INFO - Processing PDF: Arama ve Graf Temelleri.pdf
+2026-05-12 00:02:42 - VectorDB - INFO - Processing PDF: projeler.pdf
+2026-05-12 00:02:42 - VectorDB - INFO - Processing PDF: Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf
+2026-05-12 00:02:45 - VectorDB - INFO - Added 79 embeddings to index. Total: 79
+2026-05-12 00:02:45 - VectorDB - INFO - Index saved to main_index.faiss
+2026-05-12 00:02:45 - VectorDB - INFO - Database saved to main_index.faiss
+2026-05-12 00:02:54 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-12 00:02:58 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-12 00:02:58 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-12 00:02:58 - VectorDB - INFO - Vector Database initialized
+2026-05-12 00:02:58 - VectorDB - INFO - Processing PDF: Arama ve Graf Temelleri.pdf
+2026-05-12 00:02:58 - VectorDB - INFO - Processing PDF: hafta 3.pdf
+2026-05-12 00:02:58 - VectorDB - INFO - Processing PDF: projeler.pdf
+2026-05-12 00:02:58 - VectorDB - INFO - Processing PDF: Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf
+2026-05-12 00:03:01 - VectorDB - INFO - Added 79 embeddings to index. Total: 79
+2026-05-12 00:03:01 - VectorDB - INFO - Index saved to main_index.faiss
+2026-05-12 00:03:01 - VectorDB - INFO - Database saved to main_index.faiss
+2026-05-12 00:03:17 - VectorDB - INFO - Search completed for query: 'noktalama isaretleri nedir'. Results: 3
+2026-05-12 00:03:26 - VectorDB - INFO - Search completed for query: 'noktalama isaretleri nedir'. Results: 3
+2026-05-12 00:03:30 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-12 00:03:34 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-12 00:03:34 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-12 00:03:34 - VectorDB - INFO - Vector Database initialized
+2026-05-12 00:03:34 - VectorDB - INFO - Processing PDF: Arama ve Graf Temelleri.pdf
+2026-05-12 00:03:34 - VectorDB - INFO - Processing PDF: projeler.pdf
+2026-05-12 00:03:34 - VectorDB - INFO - Processing PDF: Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf
+2026-05-12 00:03:37 - VectorDB - INFO - Added 79 embeddings to index. Total: 79
+2026-05-12 00:03:37 - VectorDB - INFO - Index saved to main_index.faiss
+2026-05-12 00:03:37 - VectorDB - INFO - Database saved to main_index.faiss
+2026-05-12 00:09:28 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-12 00:09:32 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-12 00:09:32 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-12 00:09:32 - VectorDB - INFO - Vector Database initialized
+2026-05-12 00:09:32 - VectorDB - INFO - Index loaded from main_index.faiss
+2026-05-12 00:09:32 - VectorDB - INFO - Database loaded from main_index.faiss
+2026-05-12 00:10:53 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-12 00:10:56 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-12 00:10:56 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-12 00:10:56 - VectorDB - INFO - Vector Database initialized
+2026-05-12 00:11:00 - VectorDB - ERROR - Search operation failed: Index is empty
+2026-05-12 00:11:00 - VectorDB - ERROR - Search operation failed: Search failed: Index is empty
+2026-05-12 00:11:09 - VectorDB - ERROR - Search operation failed: Index is empty
+2026-05-12 00:11:09 - VectorDB - ERROR - Search operation failed: Search failed: Index is empty
+2026-05-12 00:11:18 - VectorDB - ERROR - Search operation failed: Index is empty
+2026-05-12 00:11:18 - VectorDB - ERROR - Search operation failed: Search failed: Index is empty
+2026-05-12 00:11:22 - VectorDB - ERROR - Search operation failed: Index is empty
+2026-05-12 00:11:22 - VectorDB - ERROR - Search operation failed: Search failed: Index is empty
+2026-05-12 00:11:24 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-12 00:11:28 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-12 00:11:28 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-12 00:11:28 - VectorDB - INFO - Vector Database initialized
+2026-05-12 00:11:28 - VectorDB - INFO - Processing PDF: Arama ve Graf Temelleri.pdf
+2026-05-12 00:11:28 - VectorDB - INFO - Processing PDF: projeler.pdf
+2026-05-12 00:11:30 - VectorDB - INFO - Added 58 embeddings to index. Total: 58
+2026-05-12 00:11:30 - VectorDB - INFO - Index saved to main_index.faiss
+2026-05-12 00:11:30 - VectorDB - INFO - Database saved to main_index.faiss
+2026-05-12 00:13:34 - VectorDB - ERROR - Search operation failed: Index is empty
+2026-05-12 00:13:34 - VectorDB - ERROR - Search operation failed: Search failed: Index is empty
+2026-05-12 00:13:56 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-12 00:14:00 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-12 00:14:00 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-12 00:14:00 - VectorDB - INFO - Vector Database initialized
+2026-05-12 00:14:00 - VectorDB - INFO - Processing PDF: projeler.pdf
+2026-05-12 00:14:00 - VectorDB - INFO - Added 7 embeddings to index. Total: 7
+2026-05-12 00:14:00 - VectorDB - INFO - Index saved to main_index.faiss
+2026-05-12 00:14:00 - VectorDB - INFO - Database saved to main_index.faiss
+2026-05-12 00:14:02 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-12 00:14:06 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-12 00:14:06 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-12 00:14:06 - VectorDB - INFO - Vector Database initialized
+2026-05-12 00:14:23 - VectorDB - ERROR - Search operation failed: Index is empty
+2026-05-12 00:14:23 - VectorDB - ERROR - Search operation failed: Search failed: Index is empty
+2026-05-12 00:14:25 - VectorDB - ERROR - Search operation failed: Index is empty
+2026-05-12 00:14:25 - VectorDB - ERROR - Search operation failed: Search failed: Index is empty
+2026-05-12 00:14:26 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-12 00:14:30 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-12 00:14:30 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-12 00:14:30 - VectorDB - INFO - Vector Database initialized
+2026-05-12 00:14:30 - VectorDB - INFO - Processing PDF: Arama ve Graf Temelleri.pdf
+2026-05-12 00:14:31 - VectorDB - INFO - Processing PDF: projeler.pdf
+2026-05-12 00:14:33 - VectorDB - INFO - Added 58 embeddings to index. Total: 58
+2026-05-12 00:14:33 - VectorDB - INFO - Index saved to main_index.faiss
+2026-05-12 00:14:33 - VectorDB - INFO - Database saved to main_index.faiss
+2026-05-12 00:15:58 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-12 00:16:02 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-12 00:16:02 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-12 00:16:02 - VectorDB - INFO - Vector Database initialized
+2026-05-12 00:16:02 - VectorDB - INFO - Index loaded from main_index.faiss
+2026-05-12 00:16:02 - VectorDB - INFO - Database loaded from main_index.faiss
+2026-05-12 00:17:11 - VectorDB - INFO - Search completed for query: 'binary search alan karmasikligi nedir'. Results: 3
+2026-05-12 00:26:53 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-12 00:26:55 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-12 00:26:57 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-12 00:26:57 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-12 00:26:57 - VectorDB - INFO - Vector Database initialized
+2026-05-12 00:26:58 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-12 00:26:58 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-12 00:26:58 - VectorDB - INFO - Vector Database initialized
+2026-05-12 00:27:05 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-12 00:27:09 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-12 00:27:09 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-12 00:27:09 - VectorDB - INFO - Vector Database initialized
+2026-05-12 00:27:12 - VectorDB - ERROR - Search operation failed: Index is empty
+2026-05-12 00:27:12 - VectorDB - ERROR - Search operation failed: Search failed: Index is empty
+2026-05-12 00:28:08 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-12 00:28:15 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-12 00:28:15 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-12 00:28:15 - VectorDB - INFO - Vector Database initialized
+2026-05-12 00:28:32 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-12 00:28:36 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-12 00:28:36 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-12 00:28:36 - VectorDB - INFO - Vector Database initialized
+2026-05-12 00:28:36 - VectorDB - INFO - Processing PDF: Arama ve Graf Temelleri.pdf
+2026-05-12 00:28:36 - VectorDB - INFO - Processing PDF: projeler.pdf
+2026-05-12 00:28:38 - VectorDB - INFO - Added 47 embeddings to index. Total: 47
+2026-05-12 00:28:38 - VectorDB - INFO - Index saved to main_index.faiss
+2026-05-12 00:28:38 - VectorDB - INFO - Database saved to main_index.faiss
+2026-05-12 00:28:49 - VectorDB - INFO - Search completed for query: 'binary search alan karmasikligi nedir'. Results: 3
+2026-05-12 00:31:55 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-12 00:31:59 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-12 00:31:59 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-12 00:31:59 - VectorDB - INFO - Vector Database initialized
+2026-05-12 00:31:59 - VectorDB - INFO - Index loaded from main_index.faiss
+2026-05-12 00:31:59 - VectorDB - INFO - Database loaded from main_index.faiss
+2026-05-12 00:37:14 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-12 00:37:18 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-12 00:37:18 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-12 00:37:18 - VectorDB - INFO - Vector Database initialized
+2026-05-12 00:37:18 - VectorDB - INFO - Index loaded from main_index.faiss
+2026-05-12 00:37:18 - VectorDB - INFO - Database loaded from main_index.faiss
+2026-05-12 00:42:44 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-12 00:42:49 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-12 00:42:49 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-12 00:42:49 - VectorDB - INFO - Vector Database initialized
+2026-05-12 00:42:49 - VectorDB - INFO - Index loaded from main_index.faiss
+2026-05-12 00:42:49 - VectorDB - INFO - Database loaded from main_index.faiss
+2026-05-12 00:43:34 - VectorDB - INFO - Search completed for query: 'binary search alan karmasikligi nedir'. Results: 3
+2026-05-12 00:43:47 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-12 00:43:51 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-12 00:43:51 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-12 00:43:51 - VectorDB - INFO - Vector Database initialized
+2026-05-12 00:43:54 - VectorDB - ERROR - Search operation failed: Index is empty
+2026-05-12 00:43:54 - VectorDB - ERROR - Search operation failed: Search failed: Index is empty
+2026-05-12 00:43:59 - VectorDB - ERROR - Search operation failed: Index is empty
+2026-05-12 00:43:59 - VectorDB - ERROR - Search operation failed: Search failed: Index is empty
+2026-05-12 00:44:20 - VectorDB - ERROR - Search operation failed: Index is empty
+2026-05-12 00:44:20 - VectorDB - ERROR - Search operation failed: Search failed: Index is empty
+2026-05-12 00:44:23 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-12 00:44:27 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-12 00:44:27 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-12 00:44:27 - VectorDB - INFO - Vector Database initialized
+2026-05-12 00:44:27 - VectorDB - INFO - Processing PDF: Arama ve Graf Temelleri.pdf
+2026-05-12 00:44:27 - VectorDB - INFO - Processing PDF: Cormen Introduction to Algorithms.pdf
+2026-05-12 00:44:53 - VectorDB - INFO - Processing PDF: projeler.pdf
+2026-05-12 00:44:53 - VectorDB - INFO - Processing PDF: YZM0104_Week0_v1.pdf
+2026-05-12 00:44:53 - VectorDB - INFO - Processing PDF: YZM0104_Week1 (2).pdf
+2026-05-12 00:45:37 - VectorDB - INFO - Added 512 embeddings to index. Total: 512
+2026-05-12 00:46:22 - VectorDB - INFO - Added 512 embeddings to index. Total: 1024
+2026-05-12 00:46:50 - VectorDB - INFO - Added 512 embeddings to index. Total: 1536
+2026-05-12 00:47:10 - VectorDB - INFO - Added 512 embeddings to index. Total: 2048
+2026-05-12 00:47:30 - VectorDB - INFO - Added 512 embeddings to index. Total: 2560
+2026-05-12 00:47:57 - VectorDB - INFO - Added 512 embeddings to index. Total: 3072
+2026-05-12 00:48:26 - VectorDB - INFO - Added 512 embeddings to index. Total: 3584
+2026-05-12 00:48:49 - VectorDB - INFO - Added 512 embeddings to index. Total: 4096
+2026-05-12 00:49:14 - VectorDB - INFO - Added 512 embeddings to index. Total: 4608
+2026-05-12 00:49:37 - VectorDB - INFO - Added 512 embeddings to index. Total: 5120
+2026-05-12 00:50:00 - VectorDB - INFO - Added 512 embeddings to index. Total: 5632
+2026-05-12 00:50:07 - VectorDB - INFO - Added 85 embeddings to index. Total: 5717
+2026-05-12 00:50:07 - VectorDB - INFO - Index saved to main_index.faiss
+2026-05-12 00:50:07 - VectorDB - INFO - Database saved to main_index.faiss
+2026-05-12 00:50:45 - VectorDB - INFO - Search completed for query: 'binary search alan karmasikligi nedir'. Results: 3
+2026-05-12 00:50:53 - VectorDB - INFO - Search completed for query: 'binary search alan karmasikligi nedir'. Results: 3
+2026-05-12 00:52:06 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-12 00:52:08 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-12 00:52:10 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-12 00:52:10 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-12 00:52:10 - VectorDB - INFO - Vector Database initialized
+2026-05-12 00:52:12 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-12 00:52:12 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-12 00:52:12 - VectorDB - INFO - Vector Database initialized
+2026-05-12 00:52:12 - VectorDB - INFO - Processing PDF: Arama ve Graf Temelleri.pdf
+2026-05-12 00:52:12 - VectorDB - INFO - Processing PDF: projeler.pdf
+2026-05-12 00:52:13 - VectorDB - INFO - Processing PDF: YZM0104_Week0_v1.pdf
+2026-05-12 00:52:13 - VectorDB - INFO - Processing PDF: YZM0104_Week1 (2).pdf
+2026-05-12 00:52:13 - VectorDB - ERROR - Search operation failed: Index is empty
+2026-05-12 00:52:13 - VectorDB - ERROR - Search operation failed: Search failed: Index is empty
+2026-05-12 00:52:14 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-12 00:52:19 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-12 00:52:19 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-12 00:52:19 - VectorDB - INFO - Vector Database initialized
+2026-05-12 00:52:19 - VectorDB - INFO - Processing PDF: Arama ve Graf Temelleri.pdf
+2026-05-12 00:52:19 - VectorDB - INFO - Processing PDF: projeler.pdf
+2026-05-12 00:52:20 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-12 00:52:20 - VectorDB - INFO - Processing PDF: YZM0104_Week0_v1.pdf
+2026-05-12 00:52:20 - VectorDB - INFO - Processing PDF: YZM0104_Week1 (2).pdf
+2026-05-12 00:52:24 - VectorDB - ERROR - Search operation failed: Index is empty
+2026-05-12 00:52:24 - VectorDB - ERROR - Search operation failed: Search failed: Index is empty
+2026-05-12 00:52:25 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-12 00:52:25 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-12 00:52:26 - VectorDB - INFO - Vector Database initialized
+2026-05-12 00:52:27 - VectorDB - INFO - Added 184 embeddings to index. Total: 184
+2026-05-12 00:52:30 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-12 00:52:31 - VectorDB - INFO - Added 144 embeddings to index. Total: 144
+2026-05-12 00:52:34 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-12 00:52:35 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-12 00:52:35 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-12 00:52:35 - VectorDB - INFO - Vector Database initialized
+2026-05-12 00:52:37 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-12 00:52:38 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-12 00:52:38 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-12 00:52:38 - VectorDB - INFO - Vector Database initialized
+2026-05-12 00:52:41 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-12 00:52:41 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-12 00:52:41 - VectorDB - INFO - Vector Database initialized
+2026-05-12 00:52:41 - VectorDB - INFO - Processing PDF: Arama ve Graf Temelleri.pdf
+2026-05-12 00:52:42 - VectorDB - INFO - Processing PDF: projeler.pdf
+2026-05-12 00:52:44 - VectorDB - INFO - Added 47 embeddings to index. Total: 47
+2026-05-12 00:52:44 - VectorDB - INFO - Index saved to main_index.faiss
+2026-05-12 00:52:44 - VectorDB - INFO - Database saved to main_index.faiss
+2026-05-12 00:53:04 - VectorDB - INFO - Search completed for query: 'graf nedir'. Results: 3
+2026-05-12 00:53:27 - VectorDB - INFO - Search completed for query: 'binary search alan karmasikligi'. Results: 3
+2026-05-12 00:54:02 - VectorDB - INFO - Search completed for query: 'binary search zaman karmasikligi'. Results: 3
+2026-05-12 00:56:27 - VectorDB - INFO - Search completed for query: '25458667405'. Results: 3
+2026-05-12 00:56:46 - VectorDB - INFO - Search completed for query: '25458667405 projesi nedir'. Results: 3
+2026-05-12 01:02:26 - VectorDB - ERROR - Search operation failed: Index is empty
+2026-05-12 01:02:26 - VectorDB - ERROR - Search operation failed: Search failed: Index is empty
+2026-05-12 01:02:51 - VectorDB - ERROR - Search operation failed: Index is empty
+2026-05-12 01:02:51 - VectorDB - ERROR - Search operation failed: Search failed: Index is empty
+2026-05-12 01:02:57 - VectorDB - ERROR - Search operation failed: Index is empty
+2026-05-12 01:02:57 - VectorDB - ERROR - Search operation failed: Search failed: Index is empty
+2026-05-12 01:02:59 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-12 01:03:03 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-12 01:03:03 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-12 01:03:03 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-12 01:03:03 - VectorDB - INFO - Vector Database initialized
+2026-05-12 01:03:07 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-12 01:03:07 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-12 01:03:07 - VectorDB - INFO - Vector Database initialized
+2026-05-12 01:03:07 - VectorDB - INFO - Processing PDF: projeler.pdf
+2026-05-12 01:03:07 - VectorDB - INFO - Added 6 embeddings to index. Total: 6
+2026-05-12 01:03:07 - VectorDB - INFO - Index saved to main_index.faiss
+2026-05-12 01:03:07 - VectorDB - INFO - Database saved to main_index.faiss
+2026-05-12 01:03:12 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-12 01:03:16 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-12 01:03:18 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-12 01:03:18 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-12 01:03:18 - VectorDB - INFO - Vector Database initialized
+2026-05-12 01:03:20 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-12 01:03:20 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-12 01:03:20 - VectorDB - INFO - Vector Database initialized
+2026-05-12 01:03:20 - VectorDB - INFO - Processing PDF: Arama ve Graf Temelleri.pdf
+2026-05-12 01:03:22 - VectorDB - INFO - Added 45 embeddings to index. Total: 45
+2026-05-12 01:03:22 - VectorDB - INFO - Index saved to main_index.faiss
+2026-05-12 01:03:22 - VectorDB - INFO - Database saved to main_index.faiss
+2026-05-12 01:04:12 - VectorDB - INFO - Search completed for query: 'binary search alan karmasikligi nedir'. Results: 3
+2026-05-12 01:04:13 - VectorDB - INFO - Search completed for query: 'binary search alan karmasikligi nedir'. Results: 3
+2026-05-12 01:04:17 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-12 01:04:21 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-12 01:04:21 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-12 01:04:21 - VectorDB - INFO - Vector Database initialized
+2026-05-12 01:04:21 - VectorDB - INFO - Processing PDF: Arama ve Graf Temelleri.pdf
+2026-05-12 01:04:22 - VectorDB - INFO - Processing PDF: projeler.pdf
+2026-05-12 01:04:24 - VectorDB - INFO - Added 51 embeddings to index. Total: 51
+2026-05-12 01:04:24 - VectorDB - INFO - Index saved to main_index.faiss
+2026-05-12 01:04:24 - VectorDB - INFO - Database saved to main_index.faiss
+2026-05-12 01:04:34 - VectorDB - INFO - Search completed for query: 'binary search alan karmasikligi nedir'. Results: 3
+2026-05-12 01:04:57 - VectorDB - INFO - Search completed for query: '25458667405'. Results: 3
+2026-05-12 01:05:11 - VectorDB - INFO - Search completed for query: '25458667405'. Results: 3
+2026-05-12 01:05:45 - VectorDB - INFO - Search completed for query: '25458667405 onun projesi nedir'. Results: 3
+2026-05-12 01:12:49 - VectorDB - ERROR - Search operation failed: Index is empty
+2026-05-12 01:12:49 - VectorDB - ERROR - Search operation failed: Search failed: Index is empty
+2026-05-12 01:12:56 - VectorDB - ERROR - Search operation failed: Index is empty
+2026-05-12 01:12:56 - VectorDB - ERROR - Search operation failed: Search failed: Index is empty
+2026-05-12 01:13:16 - VectorDB - ERROR - Search operation failed: Index is empty
+2026-05-12 01:13:16 - VectorDB - ERROR - Search operation failed: Search failed: Index is empty
+2026-05-12 01:13:25 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-12 01:13:28 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-12 01:13:29 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-12 01:13:29 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-12 01:13:29 - VectorDB - INFO - Vector Database initialized
+2026-05-12 01:13:31 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-12 01:13:31 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-12 01:13:31 - VectorDB - INFO - Vector Database initialized
+2026-05-12 01:13:40 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-12 01:13:44 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-12 01:13:44 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-12 01:13:44 - VectorDB - INFO - Vector Database initialized
+2026-05-12 01:13:44 - VectorDB - INFO - Processing PDF: Arama ve Graf Temelleri.pdf
+2026-05-12 01:13:44 - VectorDB - INFO - Processing PDF: projeler.pdf
+2026-05-12 01:13:46 - VectorDB - INFO - Added 51 embeddings to index. Total: 51
+2026-05-12 01:13:46 - VectorDB - INFO - Index saved to main_index.faiss
+2026-05-12 01:13:46 - VectorDB - INFO - Database saved to main_index.faiss
+2026-05-12 01:14:17 - VectorDB - INFO - Search completed for query: 'binary search alan karmasikligi nedir'. Results: 3
+2026-05-12 01:15:15 - VectorDB - INFO - Search completed for query: '25458667405'. Results: 3
+2026-05-12 01:16:50 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-12 01:16:54 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-12 01:16:54 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-12 01:16:54 - VectorDB - INFO - Vector Database initialized
+2026-05-12 01:16:57 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-12 01:17:03 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-12 01:17:03 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-12 01:17:03 - VectorDB - INFO - Vector Database initialized
+2026-05-12 01:17:03 - VectorDB - INFO - Processing PDF: Arama ve Graf Temelleri.pdf
+2026-05-12 01:17:03 - VectorDB - INFO - Processing PDF: projeler.pdf
+2026-05-12 01:17:06 - VectorDB - INFO - Added 57 embeddings to index. Total: 57
+2026-05-12 01:17:06 - VectorDB - INFO - Index saved to main_index.faiss
+2026-05-12 01:17:06 - VectorDB - INFO - Database saved to main_index.faiss
+2026-05-12 01:17:22 - VectorDB - INFO - Search completed for query: '25458667405 projesi nedir'. Results: 3
+2026-05-12 01:17:33 - VectorDB - INFO - Search completed for query: '25458667405'. Results: 3
+2026-05-12 01:24:11 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-12 01:24:16 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-12 01:24:16 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-12 01:24:16 - VectorDB - INFO - Vector Database initialized
+2026-05-12 01:24:19 - VectorDB - ERROR - Search operation failed: Index is empty
+2026-05-12 01:24:19 - VectorDB - ERROR - Search operation failed: Search failed: Index is empty
+2026-05-12 01:24:29 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-12 01:24:33 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-12 01:24:33 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-12 01:24:33 - VectorDB - INFO - Vector Database initialized
+2026-05-12 01:24:33 - VectorDB - INFO - Processing PDF: Arama ve Graf Temelleri.pdf
+2026-05-12 01:24:33 - VectorDB - INFO - Processing PDF: projeler.pdf
+2026-05-12 01:24:36 - VectorDB - INFO - Added 57 embeddings to index. Total: 57
+2026-05-12 01:24:36 - VectorDB - INFO - Index saved to main_index.faiss
+2026-05-12 01:24:36 - VectorDB - INFO - Database saved to main_index.faiss
+2026-05-12 01:25:13 - VectorDB - INFO - Search completed for query: 'binary search alan karmasikligi nedir'. Results: 30
+2026-05-12 01:26:04 - VectorDB - INFO - Search completed for query: '25458667405'. Results: 30
+2026-05-12 01:26:27 - VectorDB - INFO - Search completed for query: '25458667405 projesi nedir'. Results: 30
+2026-05-12 01:30:39 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-12 01:30:43 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-12 01:30:43 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-12 01:30:43 - VectorDB - INFO - Vector Database initialized
+2026-05-12 01:30:49 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-12 01:30:53 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-12 01:30:53 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-12 01:30:53 - VectorDB - INFO - Vector Database initialized
+2026-05-12 01:30:53 - VectorDB - INFO - Processing PDF: Arama ve Graf Temelleri.pdf
+2026-05-12 01:30:53 - VectorDB - INFO - Processing PDF: projeler.pdf
+2026-05-12 01:30:56 - VectorDB - INFO - Added 57 embeddings to index. Total: 57
+2026-05-12 01:30:56 - VectorDB - INFO - Index saved to main_index.faiss
+2026-05-12 01:30:56 - VectorDB - INFO - Database saved to main_index.faiss
+2026-05-12 01:30:58 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-12 01:31:02 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-12 01:31:02 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-12 01:31:02 - VectorDB - INFO - Vector Database initialized
+2026-05-12 01:31:02 - VectorDB - INFO - Processing PDF: Arama ve Graf Temelleri.pdf
+2026-05-12 01:31:02 - VectorDB - INFO - Processing PDF: projeler.pdf
+2026-05-12 01:31:04 - VectorDB - INFO - Added 57 embeddings to index. Total: 57
+2026-05-12 01:31:04 - VectorDB - INFO - Index saved to main_index.faiss
+2026-05-12 01:31:04 - VectorDB - INFO - Database saved to main_index.faiss
+2026-05-12 01:31:13 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-12 01:31:16 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-12 01:31:16 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-12 01:31:16 - VectorDB - INFO - Vector Database initialized
+2026-05-12 01:31:16 - VectorDB - INFO - Processing PDF: Arama ve Graf Temelleri.pdf
+2026-05-12 01:31:17 - VectorDB - INFO - Processing PDF: projeler.pdf
+2026-05-12 01:31:19 - VectorDB - INFO - Added 57 embeddings to index. Total: 57
+2026-05-12 01:37:07 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-12 01:37:11 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-12 01:37:11 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-12 01:37:11 - VectorDB - INFO - Vector Database initialized
+2026-05-12 01:37:11 - VectorDB - INFO - Index loaded from main_index.faiss
+2026-05-12 01:37:11 - VectorDB - INFO - Database loaded from main_index.faiss
+2026-05-12 01:38:11 - VectorDB - INFO - Search completed for query: 'binary search alan karmasikligi nedir'. Results: 3
+2026-05-12 01:38:40 - VectorDB - INFO - Search completed for query: '25458667405 projesi nedir'. Results: 3

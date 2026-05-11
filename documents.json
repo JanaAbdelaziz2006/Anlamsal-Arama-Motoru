@@ -1,6 +1,6 @@
 {
   "Arama ve Graf Temelleri.pdf_p2_s0": {
-    "content": "AramaArama veve GrafGraf TemelleriTemelleri Algoritmalar ve Veri Yapıları Hafta: 5 Çalıştırmak için Space basın",
+    "content": "AramaArama veve GrafGraf TemelleriTemelleri Algoritmalar ve Veri Yapıları | Hafta: 5 Çalıştırmak için Space basın 2 / 47",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 2,
@@ -8,7 +8,7 @@
     }
   },
   "Arama ve Graf Temelleri.pdf_p3_s0": {
-    "content": "Arama Algoritmalarına Giriş Veri yığınları içinde hedef bilgiyi bulma stratejileri. Performans kritiği: Zaman (Time) ve Alan (Space) karmaşıklığı. Veri organizasyonunun (sıralı vs sırasız) arama hızına etkisi.",
+    "content": "Arama Algoritmalarına Giriş Veri yığınları içinde hedef bilgiyi bulma stratejileri. Performans kritiği: Zaman (Time) ve Alan (Space) karmaşıklığı. Veri organizasyonunun (sıralı vs sırasız) arama hızına etkisi. 3 / 47",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 3,
@@ -16,7 +16,7 @@
     }
   },
   "Arama ve Graf Temelleri.pdf_p4_s0": {
-    "content": "Doğrusal Arama (Linear Search) Diziyi baştan sona tek tek tarayan en ilkel yöntemdir. Verinin sıralı olmasına ihtiyaç duymaz. En kötü durumda (Worst Case) tüm elemanlara bakılır.",
+    "content": "Doğrusal Arama (Linear Search) Diziyi baştan sona tek tek tarayan en ilkel yöntemdir. Verinin sıralı olmasına ihtiyaç duymaz. En kötü durumda (Worst Case) tüm elemanlara bakılır. 4 / 47",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 4,
@@ -24,7 +24,7 @@
     }
   },
   "Arama ve Graf Temelleri.pdf_p5_s0": {
-    "content": "Doğrusal Arama: Karmaşıklık Analizi Best Case: Hedef ilk elemanda ( O(1) ). Worst Case: Hedef sonda veya yok ( O(n) ). Average Case: Ortalama n/2 karşılaştırma ( O(n) ).",
+    "content": "Doğrusal Arama: Karmaşıklık Analizi Best Case: Hedef ilk elemanda ( O(1) ). Worst Case: Hedef sonda veya yok ( O(n) ). Average Case: Ortalama n/2 karşılaştırma ( O(n) ). 5 / 47",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 5,
@@ -32,7 +32,7 @@
     }
   },
   "Arama ve Graf Temelleri.pdf_p6_s0": {
-    "content": "Doğrusal Arama Ne Zaman Kullanılır? Veri kümesi küçükse ( n < 50 ). Veri tamamen düzensizse ve sıralama maliyeti yüksekse. Sadece bir kez arama yapılacaksa.",
+    "content": "Doğrusal Arama Ne Zaman Kullanılır? Veri kümesi küçükse ( n < 50 ). Veri tamamen düzensizse ve sıralama maliyeti yüksekse. Sadece bir kez arama yapılacaksa. 6 / 47",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 6,
@@ -40,23 +40,23 @@
     }
   },
   "Arama ve Graf Temelleri.pdf_p7_s0": {
-    "content": "İkili Arama (Binary Search) Böl ve Yönet (Divide and Conquer) paradigmasıyla çalışır. Arama uzayını her adımda yarıya indirir. Logaritmik performans ( O(log n) ) sağlar.",
+    "content": "İkili Arama (Binary Search) Böl ve Yönet (Divide and Conquer) paradigmasıyla çalışır. Arama uzayını her adımda yarıya indirir. Logaritmik performans ( O(log n) ) sağlar. 7 / 47",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 7,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p9_s0": {
-    "content": "O(log n) BinaryBinary SearchSearch Time Complexity: Sıralı bir dizide aranan elemanı bulmak için arama aralığını her adımda yarıya indirir. Zaman karmaşıklığı O(log n)dir. binarysearch.py Status: Ready def binarysearch(arr, target): low = 0 high = len(arr) - 1 while low <= high: mid = (low + high) // 2 if arr[mid] == target: return mid elif arr[mid] < target: low = mid + 1 else: high = mid - 1",
+  "Arama ve Graf Temelleri.pdf_p8_s0": {
+    "content": "8 / 47",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
-      "page": 9,
+      "page": 8,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p9_s1": {
-    "content": "[mid] < target: low = mid + 1 else: high = mid - 1 return -1 6 8 16 30 33 36 45 54 56 76 78 85 92 94 99 Target Value: Steps 76 0 Play Speed Elements",
+  "Arama ve Graf Temelleri.pdf_p9_s0": {
+    "content": "O(log n) BinaryBinary SearchSearch Time Complexity: Sıralı bir dizide aranan elemanı bulmak için arama aralığını her adımda yarıya indirir. Zaman karmaşıklığı O(log n)'dir. binary_search.py Status: Ready def binary_search(arr, target): low = 0 high = len(arr) - 1 while low <= high: mid = (low + high) // 2 if arr[mid] == target: return mid elif arr[mid] < target: low = mid + 1 else: high = mid - 1 return -1 6 8 16 30 33 36 45 54 56 76 78 85 92 94 99 Target Value: Steps 76 0   Play  Speed Elements 9 / 47",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 9,
@@ -64,7 +64,7 @@
     }
   },
   "Arama ve Graf Temelleri.pdf_p10_s0": {
-    "content": "Kritik Şart: Sıralı Veri Binary Search sadece sıralı (sorted) dizilerde çalışır. Sıralı veri, arama uzayını elemenize imkan tanır. Sıralı değilse, önce sıralama maliyeti ( O(n log n) ) göze alınmalıdır.",
+    "content": "Kritik Şart: Sıralı Veri Binary Search sadece sıralı (sorted) dizilerde çalışır. Sıralı veri, arama uzayını elemenize imkan tanır. Sıralı değilse, önce sıralama maliyeti ( O(n log n) ) göze alınmalıdır. 10 / 47",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 10,
@@ -72,7 +72,7 @@
     }
   },
   "Arama ve Graf Temelleri.pdf_p11_s0": {
-    "content": "İkili Arama: Adım Adım Mantık Dizinin orta elemanını (mid) belirle. Hedef == Mid ise, bulundu! Hedef < Mid ise, sol yarıyı tara (sağı çöpe at). Hedef > Mid ise, sağ yarıyı tara (solu çöpe at).",
+    "content": "İkili Arama: Adım Adım Mantık Dizinin orta elemanını (mid) belirle. Hedef == Mid ise, bulundu! Hedef < Mid ise, sol yarıyı tara (sağı çöpe at). Hedef > Mid ise, sağ yarıyı tara (solu çöpe at). 11 / 47",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 11,
@@ -80,7 +80,7 @@
     }
   },
   "Arama ve Graf Temelleri.pdf_p12_s0": {
-    "content": "Binary Search: Özyinelemeli (Recursive) Problemi her seferinde kendisinin bir kopyasıyla ama daha küçük aralıkla çözer. Base Case: low > high ise bulunamadı. Kod okunabilirliği yüksektir.",
+    "content": "Binary Search: Özyinelemeli (Recursive) Problemi her seferinde kendisinin bir kopyasıyla ama daha küçük aralıkla çözer. Base Case: low > high ise bulunamadı. Kod okunabilirliği yüksektir. 12 / 47",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 12,
@@ -88,7 +88,7 @@
     }
   },
   "Arama ve Graf Temelleri.pdf_p13_s0": {
-    "content": "Binary Search: Özyinelemeli (Recursive) (Algoritma) 1 binarysearch(A, low, high, target): 2 if low > high: return -1 3 mid = low + (high - low) / 2 4 if A[mid] == target: return mid 5 if A[mid] > target: return binarysearch(A, low, mid-1, target) 6 return binarysearch(A, mid+1, high, target)",
+    "content": "Binary Search: Özyinelemeli (Recursive) (Algoritma) 1 binary_search(A, low, high, target): 2 if low > high: return -1 3 mid = low + (high - low) / 2 4 if A[mid] == target: return mid 5 if A[mid] > target: return binary_search(A, low, mid-1, target) 6 return binary_search(A, mid+1, high, target) 13 / 47",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 13,
@@ -96,7 +96,7 @@
     }
   },
   "Arama ve Graf Temelleri.pdf_p14_s0": {
-    "content": "Binary Search: İteratif (Döngüsel) Hafıza dostu: Sabit alan karmaşıklığı ( O(1) ). Stack Overflow riski taşımaz. Endüstriyel kodlamada genellikle bu yöntem tercih edilir.",
+    "content": "Binary Search: İteratif (Döngüsel) Hafıza dostu: Sabit alan karmaşıklığı ( O(1) ). Stack Overflow riski taşımaz. Endüstriyel kodlamada genellikle bu yöntem tercih edilir. 14 / 47",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 14,
@@ -104,7 +104,7 @@
     }
   },
   "Arama ve Graf Temelleri.pdf_p15_s0": {
-    "content": "Binary Search: İteratif (Döngüsel) (Kod Uygulaması) 1 def binarysearch(arr, target): 2 low, high = 0, len(arr)-1 3 while low <= high: 4 mid = low + (high - low) // 2 5 if arr[mid] == target: return mid 6 if arr[mid] < target: low = mid + 1 7 else: high = mid - 1 8 return -1",
+    "content": "Binary Search: İteratif (Döngüsel) (Kod Uygulaması) 1 def binary_search(arr, target): 2 low, high = 0, len(arr)-1 3 while low <= high: 4 mid = low + (high - low) // 2 5 if arr[mid] == target: return mid 6 if arr[mid] < target: low = mid + 1 7 else: high = mid - 1 8 return -1 15 / 47",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 15,
@@ -112,7 +112,7 @@
     }
   },
   "Arama ve Graf Temelleri.pdf_p16_s0": {
-    "content": "Doğrusal vs İkili Arama Özeti Linear: 109 eleman 109 adım. Binary: 109 eleman log 2 (10 9 ) 30 adım. Fark: Saniyeler vs Milisaniyeler.",
+    "content": "Doğrusal vs İkili Arama Özeti Linear: 109 eleman →109 adım. Binary: 109 eleman →log 2 ​(10 9 ) ≈ 30 adım. Fark: Saniyeler vs Milisaniyeler. 16 / 47",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 16,
@@ -120,15 +120,7 @@
     }
   },
   "Arama ve Graf Temelleri.pdf_p17_s0": {
-    "content": "Graf Teorisine Giriş Bilgisayar bilimlerinde karmaşık ilişkileri ve sistemleri modellemenin matematiksel yoludur. Aşağıda bazı yaygın uygulamaların graflar üzerinden modelleme mantığını görebilirsiniz: Uygulama Eleman (Düğüm - Node) Bağlantı (Kenar - Edge) Harita ve Navigasyon Kavşak, Şehir Yol, Otoban World Wide Web İnternet Sayfası (URL) Hiper Bağlayıcı (Link) E-Ticaret ve Öneriler Müşteri,",
-    "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
-      "page": 17,
-      "type": "pdf"
-    }
-  },
-  "Arama ve Graf Temelleri.pdf_p17_s1": {
-    "content": "er Bağlayıcı (Link) E-Ticaret ve Öneriler Müşteri, Ürün Alışveriş, Görüntüleme Sosyal Ağlar Kişi, Kullanıcı Arkadaşlık, Takip",
+    "content": "Graf Teorisine Giriş Bilgisayar bilimlerinde karmaşık ilişkileri ve sistemleri modellemenin matematiksel yoludur. Aşağıda bazı yaygın uygulamaların graflar üzerinden modelleme mantığını görebilirsiniz: Uygulama Eleman (Düğüm - Node) Bağlantı (Kenar - Edge) Harita ve Navigasyon Kavşak, Şehir Yol, Otoban World Wide Web İnternet Sayfası (URL) Hiper Bağlayıcı (Link) E-Ticaret ve Öneriler Müşteri, Ürün Alışveriş, Görüntüleme Sosyal Ağlar Kişi, Kullanıcı Arkadaşlık, Takip 17 / 47",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 17,
@@ -136,7 +128,7 @@
     }
   },
   "Arama ve Graf Temelleri.pdf_p18_s0": {
-    "content": "Matematiksel Tanım: G = (V, E) V (Vertices): Bağımsız nesneler veya noktalar. E (Edges): Nesneler arasındaki her türlü ilişki. İlişki varlığı bir küme eşleşmesi olarak ifade edilir.",
+    "content": "Matematiksel Tanım: G = (V, E) V (Vertices): Bağımsız nesneler veya noktalar. E (Edges): Nesneler arasındaki her türlü ilişki. İlişki varlığı bir küme eşleşmesi olarak ifade edilir. 18 / 47",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 18,
@@ -144,15 +136,31 @@
     }
   },
   "Arama ve Graf Temelleri.pdf_p19_s0": {
-    "content": "Matematiksel Tanım ve Yönsüz Graflar Bir Graf G , düğümlerden (Vertices - V ) ve kenarlardan (Edges - E ) oluşur: G = (V , E) Yönsüz Graf (Undirected): İlişki karşılıklıdır, yön belirtilmez. (Örn: 1 ile 2 bağlıysa 2 de 1 ile bağlıdır). Undirected: İlişki karşılıklıdır (Örn: Facebook arkadaşlığı). Kümelerle İfade: V := 1, 2, 3, 4, 5 E := 1, 2, 1, 5, 2, 5, 2, 3, 2, 4, 3, 4, 4, 5",
+    "content": "Matematiksel Tanım ve Yönsüz Graflar Bir Graf G , düğümlerden (Vertices - V ) ve kenarlardan (Edges - E ) oluşur: G = (V , E) Yönsüz Graf (Undirected): İlişki karşılıklıdır, yön belirtilmez. (Örn: 1 ile 2 bağlıysa 2 de 1 ile bağlıdır). Undirected: İlişki karşılıklıdır (Örn: Facebook arkadaşlığı). Kümelerle İfade: V := {1, 2, 3, 4, 5} E := {{1, 2}, {1, 5}, {2, 5}, {2, 3}, {2, 4}, {3, 4}, {4, 5}} 19 / 47",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 19,
       "type": "pdf"
     }
   },
+  "Arama ve Graf Temelleri.pdf_p20_s0": {
+    "content": "1 2 3 4 5 20 / 47",
+    "metadata": {
+      "source": "Arama ve Graf Temelleri.pdf",
+      "page": 20,
+      "type": "pdf"
+    }
+  },
+  "Arama ve Graf Temelleri.pdf_p21_s0": {
+    "content": "21 / 47",
+    "metadata": {
+      "source": "Arama ve Graf Temelleri.pdf",
+      "page": 21,
+      "type": "pdf"
+    }
+  },
   "Arama ve Graf Temelleri.pdf_p22_s0": {
-    "content": "Graf Terminolojisi: Derece (Degree) Degree: Bir düğüme bağlı olan kenar sayısıdır. In-Degree: Düğüme gelen oklar (Directed). Out-Degree: Düğümden çıkan oklar (Directed). Popülerlik veya kritiklik ölçütü olarak kullanılır.",
+    "content": "Graf Terminolojisi: Derece (Degree) Degree: Bir düğüme bağlı olan kenar sayısıdır. In-Degree: Düğüme gelen oklar (Directed). Out-Degree: Düğümden çıkan oklar (Directed). Popülerlik veya kritiklik ölçütü olarak kullanılır. 22 / 47",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 22,
@@ -160,7 +168,7 @@
     }
   },
   "Arama ve Graf Temelleri.pdf_p23_s0": {
-    "content": "Yönlü Graflar (Directed Graphs - Digraph) İlişkinin tek yönlü akabildiği graflardır. (Örn: Twitter takibi, web sayfası linkleri). V := 1, 2, 3, 4, 5, 6 E := (1, 2), (1, 4), (2, 5), (4, 2), (5, 4), (3, 3), (3, 5), (3, 6) (u, v) gösterimi kullanılır, yön u dan v ye doğrudur. Teorem (Derece Toplamı): Yönsüz için: deg(v) = 2E Yönlü için: indeg(v) = outdeg(v) = E",
+    "content": "Yönlü Graflar (Directed Graphs - Digraph) İlişkinin tek yönlü akabildiği graflardır. (Örn: Twitter takibi, web sayfası linkleri). V := {1, 2, 3, 4, 5, 6} E := {(1, 2), (1, 4), (2, 5), (4, 2), (5, 4), (3, 3), (3, 5), (3, 6)} (u, v) gösterimi kullanılır, yön u ’dan v ’ye doğrudur. Teorem (Derece Toplamı): Yönsüz için: ∑ deg(v) = 2E Yönlü için: ∑ indeg(v) = ∑ outdeg(v) = E 23 / 47",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 23,
@@ -168,7 +176,7 @@
     }
   },
   "Arama ve Graf Temelleri.pdf_p24_s0": {
-    "content": "1 2 3 6 5 4 (Not: 3 numaralı düğümün kendine döngüsü (self loop) vardır.)",
+    "content": "1 2 3 6 5 4 (Not: 3 numaralı düğümün 'kendine döngüsü' (self loop) vardır.) 24 / 47",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 24,
@@ -176,15 +184,23 @@
     }
   },
   "Arama ve Graf Temelleri.pdf_p25_s0": {
-    "content": "Özel Bir Yapı: DAG Directed Acyclic Graph (Yönlü Döngüsüz Graf). İçinde döngü yoktur, bir akış her zaman ilerler. İş akışları ve bağımlılık haritaları (Build system) DAGdır.",
+    "content": "Özel Bir Yapı: DAG Directed Acyclic Graph (Yönlü Döngüsüz Graf). İçinde döngü yoktur, bir akış her zaman ilerler. İş akışları ve bağımlılık haritaları (Build system) DAG’dır. 25 / 47",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 25,
       "type": "pdf"
     }
   },
+  "Arama ve Graf Temelleri.pdf_p26_s0": {
+    "content": "26 / 47",
+    "metadata": {
+      "source": "Arama ve Graf Temelleri.pdf",
+      "page": 26,
+      "type": "pdf"
+    }
+  },
   "Arama ve Graf Temelleri.pdf_p27_s0": {
-    "content": "Ağırlıklı Graflar (Weighted) Kenarlara sayısal bir değer atanmasıdır. Ağırlık: Mesafe, Maliyet, Kapasite veya Gecikme olabilir. Navigasyon sistemlerinde en kısa yol hesabı bu ağırlıklarla yapılır.",
+    "content": "Ağırlıklı Graflar (Weighted) Kenarlara sayısal bir değer atanmasıdır. Ağırlık: Mesafe, Maliyet, Kapasite veya Gecikme olabilir. Navigasyon sistemlerinde 'en kısa yol' hesabı bu ağırlıklarla yapılır. 27 / 47",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 27,
@@ -192,7 +208,7 @@
     }
   },
   "Arama ve Graf Temelleri.pdf_p28_s0": {
-    "content": "Önemli Graf Terminolojileri Paralel Kenarlar: Aynı düğüm çiftini birbirine bağlayan birden fazla kenar (Çok şeritli yol gibi). Kendine Döngü (Self Loop): Bir düğümü kendine bağlayan kenardır. Yol (Path): Düğümler arası geçiş dizisidir. (Örn: A-B-C-D) Basit Yol (Simple Path): Hiçbir düğümün tekrar etmediği geçiş dizisidir. Döngü (Cycle): Başladığı noktada biten kapalı yoldur. Yazılımlarda",
+    "content": "Önemli Graf Terminolojileri Paralel Kenarlar: Aynı düğüm çiftini birbirine bağlayan birden fazla kenar (Çok şeritli yol gibi). Kendine Döngü (Self Loop): Bir düğümü kendine bağlayan kenardır. Yol (Path): Düğümler arası geçiş dizisidir. (Örn: A-B-C-D) Basit Yol (Simple Path): Hiçbir düğümün tekrar etmediği geçiş dizisidir. Döngü (Cycle): Başladığı noktada biten kapalı yoldur. Yazılımlarda tehlikeli (sonsuz döngü) veya finansal sahtecilik analizinde (para aklama zinciri) kâr getiren bir keşif olabilir.",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 28,
@@ -200,7 +216,7 @@
     }
   },
   "Arama ve Graf Temelleri.pdf_p28_s1": {
-    "content": "aşladığı noktada biten kapalı yoldur. Yazılımlarda tehlikeli (sonsuz döngü) veya finansal sahtecilik analizinde (para aklama zinciri) kr getiren bir keşif olabilir. Bağlılık (Connectivity): Her düğümden her düğüme ulaşmanın mümkün olduğu, kopuk bir ada (Component) barındırmayan sistemlerdir.",
+    "content": "Yazılımlarda tehlikeli (sonsuz döngü) veya finansal sahtecilik analizinde (para aklama zinciri) kâr getiren bir keşif olabilir. Bağlılık (Connectivity): Her düğümden her düğüme ulaşmanın mümkün olduğu, kopuk bir 'ada' (Component) barındırmayan sistemlerdir. 28 / 47",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 28,
@@ -208,15 +224,7 @@
     }
   },
   "Arama ve Graf Temelleri.pdf_p29_s0": {
-    "content": "Ağaçlar (Trees): Kurallı Graflar Ağaçlar, aslında çok katı kuralları olan birer graftır. Bir grafın ağaç olabilmesi için şu özelliklere sahip olması gerekir: Tamamen Bağlı (Connected) olmalıdır. İçinde hiçbir Döngü (Acyclic) barındırmamalıdır. Düğüm sayısı V ise, tam olarak V 1 adet kenarı olmalıdır. Herhangi iki düğüm arasında sadece tek bir basit yol vardır. Orman (Forest): Ağaçların bir araya",
-    "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
-      "page": 29,
-      "type": "pdf"
-    }
-  },
-  "Arama ve Graf Temelleri.pdf_p29_s1": {
-    "content": "it yol vardır. Orman (Forest): Ağaçların bir araya gelerek oluşturduğu kümedir (bağlantısız ağaçlar bütünü).",
+    "content": "Ağaçlar (Trees): Kurallı Graflar Ağaçlar, aslında çok katı kuralları olan birer graftır. Bir grafın ağaç olabilmesi için şu özelliklere sahip olması gerekir: Tamamen Bağlı (Connected) olmalıdır. İçinde hiçbir Döngü (Acyclic) barındırmamalıdır. Düğüm sayısı V ise, tam olarak V −1 adet kenarı olmalıdır. Herhangi iki düğüm arasında sadece tek bir basit yol vardır. Orman (Forest): Ağaçların bir araya gelerek oluşturduğu kümedir (bağlantısız ağaçlar bütünü). 29 / 47",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 29,
@@ -224,7 +232,7 @@
     }
   },
   "Arama ve Graf Temelleri.pdf_p30_s0": {
-    "content": "Özel Graflar: Bipartite ve Komple Bipartite Graflar (İki Kümeli): Düğümleri kırmızı ve mavi olarak ayırdığımızda, hiçbir kırmızı bir başka kırmızıyla (veya mavi maviyle) bağlanamaz. İş-İşçi, Öğrenci-Ders atamaları için mükemmel modeldir. Complete Graflar (Tam Graf): Herkesin herkesle doğrudan komşu (bağlı) olduğu ütopik graflardır. V V (V 1) düğümlü tam grafta kenar sayısı maksimumdur: 2",
+    "content": "Özel Graflar: Bipartite ve Komple Bipartite Graflar (İki Kümeli): Düğümleri kırmızı ve mavi olarak ayırdığımızda, hiçbir kırmızı bir başka kırmızıyla (veya mavi maviyle) bağlanamaz. İş-İşçi, Öğrenci-Ders atamaları için mükemmel modeldir. Complete Graflar (Tam Graf): Herkesin herkesle doğrudan komşu (bağlı) olduğu ütopik graflardır. V V (V −1) ​ düğümlü tam grafta kenar sayısı maksimumdur: 2 30 / 47",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 30,
@@ -232,15 +240,23 @@
     }
   },
   "Arama ve Graf Temelleri.pdf_p31_s0": {
-    "content": "Graf Temsili: Komşuluk Matrisi (Adjacency Matrix) Grafı hafızada tutmanın en direk yolu 2-Boyutlu Array kullanmaktır. Boyutlar: V V . Kenar varsa 1 (veya ağırlık), yoksa 0 yazılır. A B C D B A 0 1 1 0 A D B 1 0 0 1 C C 1 0 0 1 Karmaşıklık: O(V 2 ) bellek. Kenar sorgusu: O(1) . D 0 1 1 0",
+    "content": "Graf Temsili: Komşuluk Matrisi (Adjacency Matrix) Grafı hafızada tutmanın en direk yolu 2-Boyutlu Array kullanmaktır. Boyutlar: V × V . Kenar varsa 1 (veya ağırlık), yoksa 0 yazılır. A B C D B A 0 1 1 0 A D B 1 0 0 1 C C 1 0 0 1 Karmaşıklık: O(V 2 ) bellek. Kenar sorgusu: O(1) . D 0 1 1 0 31 / 47",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 31,
       "type": "pdf"
     }
   },
+  "Arama ve Graf Temelleri.pdf_p32_s0": {
+    "content": "32 / 47",
+    "metadata": {
+      "source": "Arama ve Graf Temelleri.pdf",
+      "page": 32,
+      "type": "pdf"
+    }
+  },
   "Arama ve Graf Temelleri.pdf_p33_s0": {
-    "content": "Ara Soru: Matris Maliyeti 1 Milyon ( 106 ) kullanıcısı olan bir sosyal ağı Komşuluk Matrisi ile RAMde tutmak istiyoruz. Her bir hücrenin değeri için sadece 1 Byte (8 bit) harcarsek, matrisin boyutu toplamda yaklaşık kaç Terabyte (TB) olur? Çözüm Adımları: 1. V = 1.000.000 düğüm. 2. Matris hücre sayısı = V V = 1012 hücre. 3. Her hücre 1 Byte ise toplam = 1012 Byte. 4. 1012 Byte 1 Terabyte (TB)",
+    "content": "Ara Soru: Matris Maliyeti 1 Milyon ( 106 ) kullanıcısı olan bir sosyal ağı Komşuluk Matrisi ile RAM’de tutmak istiyoruz. Her bir hücrenin değeri için sadece 1 Byte (8 bit) harcarsek, matrisin boyutu toplamda yaklaşık kaç Terabyte (TB) olur? Çözüm Adımları: 1. V = 1.000.000 düğüm. 2. Matris hücre sayısı = V × V = 1012 hücre. 3. Her hücre 1 Byte ise toplam = 1012 Byte. 4. 1012 Byte ≈1 Terabyte (TB) sadece yapıyı tutmak için! (İçinde \"1\" olmayan %99 boşluk). Kazanım: Seyrek (Sparse) graflarda matris",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 33,
@@ -248,7 +264,7 @@
     }
   },
   "Arama ve Graf Temelleri.pdf_p33_s1": {
-    "content": "e toplam = 1012 Byte. 4. 1012 Byte 1 Terabyte (TB) sadece yapıyı tutmak için! (İçinde 1 olmayan 99 boşluk). Kazanım: Seyrek (Sparse) graflarda matris kullanımının hafıza iflasına yol açacağının ve matematiksel hesaplama kapasitesinin kavratılması.",
+    "content": "1012 Byte ≈1 Terabyte (TB) sadece yapıyı tutmak için! (İçinde \"1\" olmayan %99 boşluk). Kazanım: Seyrek (Sparse) graflarda matris kullanımının hafıza iflasına yol açacağının ve matematiksel hesaplama kapasitesinin kavratılması. 33 / 47",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 33,
@@ -256,15 +272,7 @@
     }
   },
   "Arama ve Graf Temelleri.pdf_p34_s0": {
-    "content": "Soru: Matris Maliyeti ve Hafıza İflası () 1 Milyon ( 106 ) kullanıcısı olan bir sosyal ağı Komşuluk Matrisi ile RAMde tutmak istiyoruz. Her bir hücre için sadece 1 Byte harcarsak, bu matrisin boyutu yaklaşık kaç Terabyte (TB) olur? Hücre Sayısının Tespiti: Hesap 1 Matris V V boyutunda olduğu için: 10 6 10 6 = 1012 (1 Trilyon) hücre. Toplam Byte Miktarı: Hesap 2 Her hücre 1 Byte yer kapladığından:",
-    "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
-      "page": 34,
-      "type": "pdf"
-    }
-  },
-  "Arama ve Graf Temelleri.pdf_p34_s1": {
-    "content": "ktarı: Hesap 2 Her hücre 1 Byte yer kapladığından: 10 12 1 Byte = 10 12 Byte",
+    "content": "Soru: Matris Maliyeti ve Hafıza İflası (1/2) 1 Milyon ( 106 ) kullanıcısı olan bir sosyal ağı Komşuluk Matrisi ile RAM’de tutmak istiyoruz. Her bir hücre için sadece 1 Byte harcarsak, bu matrisin boyutu yaklaşık kaç Terabyte (TB) olur? Hücre Sayısının Tespiti: Hesap 1 Matris V × V boyutunda olduğu için: 10 6 × 10 6 = 1012 (1 Trilyon) hücre. Toplam Byte Miktarı: Hesap 2 Her hücre 1 Byte yer kapladığından: 10 12 × 1 Byte = 10 12 Byte 34 / 47",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 34,
@@ -272,15 +280,7 @@
     }
   },
   "Arama ve Graf Temelleri.pdf_p35_s0": {
-    "content": "Soru: Birim Dönüşümü ve Analiz () Birimlerin Karşılaştırılması: 103 Byte = 1 KB Dönüşüm 106 Byte = 1 MB 109 Byte = 1 GB 1012 Byte = 1 Terabyte (TB) Sonuç Final: Yaklaşık 1 TB RAM gereklidir! Kazanım (Analiz): Sosyal ağlarda bir kişi genellikle en fazla birkaç bin kişiyle bağlantılıdır. Bu durumda matrisin 99.9u sıfır (boş) olacaktır. 1 TBlık bu alanın neredeyse tamamı hiçlik tutmak için israf",
-    "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
-      "page": 35,
-      "type": "pdf"
-    }
-  },
-  "Arama ve Graf Temelleri.pdf_p35_s1": {
-    "content": "u alanın neredeyse tamamı hiçlik tutmak için israf edilir. İşte bu yüzden Seyrek (Sparse) Graflar için her zaman liste yapısı tercih edilir.",
+    "content": "Soru: Birim Dönüşümü ve Analiz (2/2) Birimlerin Karşılaştırılması: 103 Byte = 1 KB Dönüşüm 106 Byte = 1 MB 109 Byte = 1 GB 1012 Byte = 1 Terabyte (TB) Sonuç Final: Yaklaşık 1 TB RAM gereklidir! Kazanım (Analiz): Sosyal ağlarda bir kişi genellikle en fazla birkaç bin kişiyle bağlantılıdır. Bu durumda matrisin %99.9’u sıfır (boş) olacaktır. 1 TB’lık bu alanın neredeyse tamamı \"hiçlik\" tutmak için israf edilir. İşte bu yüzden Seyrek (Sparse) Graflar için her zaman liste yapısı tercih edilir. 35 / 47",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 35,
@@ -288,7 +288,7 @@
     }
   },
   "Arama ve Graf Temelleri.pdf_p36_s0": {
-    "content": "3 Edges: 2 GraphGraph RepresentationsRepresentations Nodes: Graf yapılarını görselleştirin ve Adjacency Matrix ile Adjacency List arasındaki farkı inceleyin. Click to add node, drag to move, shift+drag between nodes to add edge. Clear Adjacency Matrix Adjacency List 0 1 2 0 0 1 0 0 1 1 1 0 1 2 0 1 0 2",
+    "content": "3 Edges: 2 GraphGraph RepresentationsRepresentations Nodes: Graf yapılarını görselleştirin ve Adjacency Matrix ile Adjacency List arasındaki farkı inceleyin.  Click to add node, drag to move, shift+drag between nodes to add edge. Clear Adjacency Matrix Adjacency List 0 1 2 0 0 1 0 0 1 1 1 0 1 2 0 1 0 2 36 / 47",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 36,
@@ -296,15 +296,31 @@
     }
   },
   "Arama ve Graf Temelleri.pdf_p37_s0": {
-    "content": "Graf Temsili: Komşuluk Listesi (Adjacency List) Her düğüm için, sadece o düğüme bağlı olan (komşusu olan) düğümlerin listesini tutma stratejisidir. A [B, C] B [A, D] C [A, D] D [B, C] Karmaşıklık: O(V + E) bellek harcar. Kim komşu? sorusunu satırı tarayarak O(deg(V )) sürede çözer. Seyrek (Sparse) graflar için en çok tercih edilen tiptir.",
+    "content": "Graf Temsili: Komşuluk Listesi (Adjacency List) Her düğüm için, sadece o düğüme bağlı olan (komşusu olan) düğümlerin listesini tutma stratejisidir. A →[B, C] B →[A, D] C →[A, D] D →[B, C] Karmaşıklık: O(V + E) bellek harcar. \"Kim komşu?\" sorusunu satırı tarayarak O(deg(V )) sürede çözer. Seyrek (Sparse) graflar için en çok tercih edilen tiptir. 37 / 47",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 37,
       "type": "pdf"
     }
   },
+  "Arama ve Graf Temelleri.pdf_p38_s0": {
+    "content": "38 / 47",
+    "metadata": {
+      "source": "Arama ve Graf Temelleri.pdf",
+      "page": 38,
+      "type": "pdf"
+    }
+  },
+  "Arama ve Graf Temelleri.pdf_p39_s0": {
+    "content": "39 / 47",
+    "metadata": {
+      "source": "Arama ve Graf Temelleri.pdf",
+      "page": 39,
+      "type": "pdf"
+    }
+  },
   "Arama ve Graf Temelleri.pdf_p40_s0": {
-    "content": "Diğer Modeller: Kenar Listesi ve Çapraz Kenar Listesi (Edge List): Tüm grafi sadece bir dizi veya tablo satırı gibi (Başlangıç, Bitiş, Ağırlık) tupleları halinde ardışık saklamak. Özellikle Kruskal gibi graf kenarlarını ağırlığına göre sıralayan algoritmalar için muazzamdır. Örn: (A, B, 15) , (B, C, 22) Çapraz Bağlantılı Listeler (Incidence List): Her düğüm ve her kenar için ayrı nesne (class)",
+    "content": "Diğer Modeller: Kenar Listesi ve Çapraz Kenar Listesi (Edge List): Tüm grafi sadece bir dizi veya tablo satırı gibi (Başlangıç, Bitiş, Ağırlık) tuple’ları halinde ardışık saklamak. Özellikle Kruskal gibi graf kenarlarını ağırlığına göre 'sıralayan' algoritmalar için muazzamdır. Örn: (A, B, 15) , (B, C, 22) Çapraz Bağlantılı Listeler (Incidence List): Her düğüm ve her kenar için ayrı nesne (class) oluşturulup obje referanslarıyla birbirlerine bağlanmasıdır. Nesne Yönelimli Programlamada (OOP) esneklik",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 40,
@@ -312,7 +328,7 @@
     }
   },
   "Arama ve Graf Temelleri.pdf_p40_s1": {
-    "content": "t): Her düğüm ve her kenar için ayrı nesne (class) oluşturulup obje referanslarıyla birbirlerine bağlanmasıdır. Nesne Yönelimli Programlamada (OOP) esneklik sağlar ancak bellek (pointer vs.) tüketimi daha büyüktür.",
+    "content": "çin ayrı nesne (class) oluşturulup obje referanslarıyla birbirlerine bağlanmasıdır. Nesne Yönelimli Programlamada (OOP) esneklik sağlar ancak bellek (pointer vs.) tüketimi daha büyüktür. 40 / 47",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 40,
@@ -320,15 +336,7 @@
     }
   },
   "Arama ve Graf Temelleri.pdf_p41_s0": {
-    "content": "Graf Temsilleri: Karşılaştırma Matrisi Hangi yapı, hangi durumda daha avantajlıdır? Komşuluk Komşuluk İşlem Kenar Listesi Çapraz Bağlantılı Matrisi Listesi Kurulum Alanı O(V 2 ) O(V + E) O(E) O(V + E) (Bellek) Kenar (u,v) Var Mı? O(1) O(deg(v)) O(E) O(min(deg(u), deg(v))) Tüm Komşuları O(V ) O(deg(v)) O(E) O(deg(V )) Bulma Kenar Ekleme O(1) O(1) O(1) O(1) Uygun Olduğu Yoğun Seyrek Çok Seyrek /",
-    "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
-      "page": 41,
-      "type": "pdf"
-    }
-  },
-  "Arama ve Graf Temelleri.pdf_p41_s1": {
-    "content": ") O(1) O(1) Uygun Olduğu Yoğun Seyrek Çok Seyrek / Kenar Karma / OOP Senaryo (Dense) (Sparse) Sıralı",
+    "content": "Graf Temsilleri: Karşılaştırma Matrisi Hangi yapı, hangi durumda daha avantajlıdır? Komşuluk Komşuluk İşlem Kenar Listesi Çapraz Bağlantılı Matrisi Listesi Kurulum Alanı O(V 2 ) O(V + E) O(E) O(V + E) (Bellek) Kenar (u,v) Var Mı? O(1) O(deg(v)) O(E) O(min(deg(u), deg(v))) Tüm Komşuları O(V ) O(deg(v)) O(E) O(deg(V )) Bulma Kenar Ekleme O(1) O(1) O(1) O(1) Uygun Olduğu Yoğun Seyrek Çok Seyrek / Kenar Karma / OOP Senaryo (Dense) (Sparse) Sıralı 41 / 47",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 41,
@@ -336,31 +344,23 @@
     }
   },
   "Arama ve Graf Temelleri.pdf_p42_s0": {
-    "content": "Hafta 5 Özeti ve Gelecek Hafta Sıralı verinin Binary Search ile O(log n) büyüklüğündeki operasyonel gücünü gördük. Gerçek dünya sistemlerini modellemek için Graf kavramını ve Yönlü/Yönsüz yapıları öğrendik. Hafıza/Hız denklemlerinde Matris ve Liste gösterimlerinin matematiksel maliyetlerini çıkardık. Gelecek Hafta: Kurduğumuz bu düğüm ve kenarlar dünyasında labirentleri nasıl çözeceğimizi, BFS",
+    "content": "Hafta 5 Özeti ve Gelecek Hafta Sıralı verinin Binary Search ile O(log n) büyüklüğündeki operasyonel gücünü gördük. Gerçek dünya sistemlerini modellemek için Graf kavramını ve Yönlü/Yönsüz yapıları öğrendik. Hafıza/Hız denklemlerinde Matris ve Liste gösterimlerinin matematiksel maliyetlerini çıkardık. Gelecek Hafta: Kurduğumuz bu düğüm ve kenarlar dünyasında labirentleri nasıl çözeceğimizi, BFS (Arama) algoritmalarını işleyeceğiz. 42 / 47",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 42,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p42_s1": {
-    "content": "ar dünyasında labirentleri nasıl çözeceğimizi, BFS (Arama) algoritmalarını işleyeceğiz.",
+  "Arama ve Graf Temelleri.pdf_p43_s0": {
+    "content": "Konu Sonu Soruları 43 / 47",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
-      "page": 42,
+      "page": 43,
       "type": "pdf"
     }
   },
   "Arama ve Graf Temelleri.pdf_p44_s0": {
-    "content": "Soru: Binary Search Performans Analizi () 1.000.000 elemanlı sıralı bir dizide Binary Search (İkili Arama) algoritması hedef elemanı bulmak için en fazla kaç karşılaştırma yapar? Zaman Karmaşıklığı: Teori Binary Search, her adımda arama uzayını yarıya indirdiği için Logaritmik Zaman Karmaşıklığına ( O(log 2 n) ) sahiptir. Karşılaştırma Sayısı: Maksimum karşılaştırma sayısı, eleman sayısını 1e",
-    "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
-      "page": 44,
-      "type": "pdf"
-    }
-  },
-  "Arama ve Graf Temelleri.pdf_p44_s1": {
-    "content": "Maksimum karşılaştırma sayısı, eleman sayısını 1e indirene kadar kaç kez 2ye bölebileceğimize Mantık eşittir: Steps log 2 (1.000.000)",
+    "content": "Soru: Binary Search Performans Analizi (1/2) 1.000.000 elemanlı sıralı bir dizide Binary Search (İkili Arama) algoritması hedef elemanı bulmak için en fazla kaç karşılaştırma yapar? Zaman Karmaşıklığı: Teori Binary Search, her adımda arama uzayını yarıya indirdiği için Logaritmik Zaman Karmaşıklığına ( ​ O(log 2 n) ) sahiptir. Karşılaştırma Sayısı: Maksimum karşılaştırma sayısı, eleman sayısını 1’e indirene kadar kaç kez 2’ye bölebileceğimize Mantık eşittir: Steps ≈log 2 ​(1.000.000) 44 / 47",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 44,
@@ -368,7 +368,7 @@
     }
   },
   "Arama ve Graf Temelleri.pdf_p45_s0": {
-    "content": "Soru: Üstel Büyüme ve Karar () 2nin Kuvvetleri ile Yaklaşım: 2 10 = 1.024 Hesap 2 19 524.288 2 20 1.048.576 Final Sonuç: En fazla 20 karşılaştırma yapılır. Kazanım: Doğrusal aramada (Linear Search) 1 milyon adım sürebilecek bir işlem, Binary Search ile sadece 20 adımda biter. Bu, verinin büyüklüğüne rağmen algoritmanın hızı korumasını sağlayan logaritmik verimliliğin en net kanıtıdır.",
+    "content": "Soru: Üstel Büyüme ve Karar (2/2) 2’nin Kuvvetleri ile Yaklaşım: 2 10 = 1.024 Hesap 2 19 ≈ 524.288 2 20 ≈ 1.048.576 Final Sonuç: En fazla 20 karşılaştırma yapılır. Kazanım: Doğrusal aramada (Linear Search) 1 milyon adım sürebilecek bir işlem, Binary Search ile sadece 20 adımda biter. Bu, verinin büyüklüğüne rağmen algoritmanın hızı korumasını sağlayan logaritmik verimliliğin en net kanıtıdır. 45 / 47",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 45,
@@ -376,7 +376,7 @@
     }
   },
   "Arama ve Graf Temelleri.pdf_p46_s0": {
-    "content": "Soru: Binary Search ve Aritmetik Taşma () Binary Search algoritmasında orta noktayı bulurken mid = (low + high) / 2 yerine neden mid = low + (high - low) / 2 yazılması önerilir? Integer Overflow (Tam Sayı Taşması): Sorun Eğer low ve high değerleri veri tipinin (örneğin 32-bit işaretli tamsayı) üst sınırına yakınsa ( > 230 ), (low + high) işlemi bellekte ayrılan sınırı aşarak negatif bir sonuç",
+    "content": "Soru: Binary Search ve Aritmetik Taşma (1/2) Binary Search algoritmasında orta noktayı bulurken mid = (low + high) / 2 yerine neden mid = low + (high - low) / 2 yazılması önerilir? Integer Overflow (Tam Sayı Taşması): Sorun Eğer low ve high değerleri veri tipinin (örneğin 32-bit işaretli tamsayı) üst sınırına yakınsa ( > 230 ), (low + high) işlemi bellekte ayrılan sınırı aşarak negatif bir sonuç üretir. Program Çöküşü: Etki Taşma sonucu oluşan negatif değer 2 ’ye bölündüğünde, ortaya çıkan negatif indeks (",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 46,
@@ -384,7 +384,7 @@
     }
   },
   "Arama ve Graf Temelleri.pdf_p46_s1": {
-    "content": "i bellekte ayrılan sınırı aşarak negatif bir sonuç üretir. Program Çöküşü: Etki Taşma sonucu oluşan negatif değer 2 ye bölündüğünde, ortaya çıkan negatif indeks ( ArrayIndexOutOfBoundsException ) programın beklenmedik şekilde durmasına yol açar.",
+    "content": "gatif bir sonuç üretir. Program Çöküşü: Etki Taşma sonucu oluşan negatif değer 2 ’ye bölündüğünde, ortaya çıkan negatif indeks ( ArrayIndexOutOfBoundsException ) programın beklenmedik şekilde durmasına yol açar. 46 / 47",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 46,
@@ -392,7 +392,7 @@
     }
   },
   "Arama ve Graf Temelleri.pdf_p47_s0": {
-    "content": "Soru: Güvenli Tasarım ve İspat () Matematiksel Eşdeğerlik: highlow 2low+highlow low+high low + = = Çözüm 2 2 2 Formül matematiksel olarak aynıdır, ancak işlem sırasında low + high toplamı hiçbir zaman gerçekleşmez. Önce fark ( high - low ) hesaplandığı için sonuç her zaman küçülür, ardından low üzerine ekleme yapıldığında Fark toplam değer asla high değerini aşmaz. Bu, süreci güvenli aralıkta",
+    "content": "Soru: Güvenli Tasarım ve İspat (2/2) Matematiksel Eşdeğerlik: high−low 2⋅low+high−low low+high ​ ​ ​ low + = = Çözüm 2 2 2 Formül matematiksel olarak aynıdır, ancak işlem sırasında low + high toplamı hiçbir zaman gerçekleşmez. Önce fark ( high - low ) hesaplandığı için sonuç her zaman küçülür, ardından low üzerine ekleme yapıldığında Fark toplam değer asla high değerini aşmaz. Bu, süreci güvenli aralıkta tutar. Best-Practice: Bu durum, 20 yıl boyunca Java’nın standart kütüphanesinde gizli kalmış meşhur bir",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 47,
@@ -400,7 +400,7 @@
     }
   },
   "Arama ve Graf Temelleri.pdf_p47_s1": {
-    "content": "a high değerini aşmaz. Bu, süreci güvenli aralıkta tutar. Best-Practice: Bu durum, 20 yıl boyunca Javanın standart kütüphanesinde gizli kalmış meşhur bir hatadır. Modern sistemlerde büyük veri setleri ile çalışırken bu güvenli hesaplama yöntemi zorunluluktur.",
+    "content": "süreci güvenli aralıkta tutar. Best-Practice: Bu durum, 20 yıl boyunca Java’nın standart kütüphanesinde gizli kalmış meşhur bir hatadır. Modern sistemlerde büyük veri setleri ile çalışırken bu \"güvenli hesaplama\" yöntemi zorunluluktur. 47 / 47",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 47,
@@ -408,7 +408,7 @@
     }
   },
   "projeler.pdf_p1_s0": {
-    "content": "25458667006 AI-Destekli Akıllı Şehir Lojistik ve Acil Durum Yönetimi 1 25458667018 --Bir şehrin dijital ikizinde ambulansların, itfaiyenin ve kargo dronlarının yönetimi. Trafik yoğunluğu ve aciliyet durumuna göre dinamik rota planlaması yapılır. 24458667032 24458667024 Modern Vektör Veritabanı (VectorDB) ve Anlamsal Arama Motoru 2 25458667405 -- Milyonlarca doküman arasında anahtar kelime yerine",
+    "content": "25458667006 AI-Destekli Akıllı Şehir Lojistik ve Acil Durum Yönetimi 1 25458667018 --Bir şehrin dijital ikizinde ambulansların, itfaiyenin ve kargo dronlarının yönetimi. Trafik yoğunluğu ve aciliyet durumuna göre dinamik rota planlaması yapılır. 24458667032 24458667024 Modern Vektör Veritabanı (VectorDB) ve Anlamsal Arama Motoru 2 25458667405 -- Milyonlarca doküman arasında anahtar kelime yerine anlamsal (embedding) benzerlik üzerinden arama yapan yüksek performanslı bir motor. 25458667450 25458667448",
     "metadata": {
       "source": "projeler.pdf",
       "page": 1,
@@ -416,7 +416,7 @@
     }
   },
   "projeler.pdf_p1_s1": {
-    "content": "Milyonlarca doküman arasında anahtar kelime yerine anlamsal (embedding) benzerlik üzerinden arama yapan yüksek performanslı bir motor. 25458667450 25458667448 Algoritmik Finansal Denetçi ve Fraud Tespit Sistemi 3 25458667015 -- Bankacılık sisteminde gerçekleşen milyonlarca işlemin içindeki sahtecilik (fraud) ve para aklama döngülerinin tespiti. 24458667019 25458667009 Akıllı E-Ticaret",
+    "content": "nahtar kelime yerine anlamsal (embedding) benzerlik üzerinden arama yapan yüksek performanslı bir motor. 25458667450 25458667448 Algoritmik Finansal Denetçi ve Fraud Tespit Sistemi 3 25458667015 -- Bankacılık sisteminde gerçekleşen milyonlarca işlemin içindeki sahtecilik (fraud) ve para aklama döngülerinin tespiti. 24458667019 25458667009 Akıllı E-Ticaret Kişiselleştirme ve Sıralama Motoru 4 24458667028 --Kullanıcı davranışlarına, stok durumuna ve AI tahminlerine göre ürünleri dinamik olarak sıralayan bir",
     "metadata": {
       "source": "projeler.pdf",
       "page": 1,
@@ -424,7 +424,7 @@
     }
   },
   "projeler.pdf_p1_s2": {
-    "content": "tespiti. 24458667019 25458667009 Akıllı E-Ticaret Kişiselleştirme ve Sıralama Motoru 4 24458667028 --Kullanıcı davranışlarına, stok durumuna ve AI tahminlerine göre ürünleri dinamik olarak sıralayan bir platform. 24458667015 25458667021 Gerçek Zamanlı Genom Dizileme ve Hastalık Tahmin Aracı 5 24458667031 --DNA dizilerini referans genomlarla karşılaştırarak benzerlikleri ve olası genetik",
+    "content": "ama Motoru 4 24458667028 --Kullanıcı davranışlarına, stok durumuna ve AI tahminlerine göre ürünleri dinamik olarak sıralayan bir platform. 24458667015 25458667021 Gerçek Zamanlı Genom Dizileme ve Hastalık Tahmin Aracı 5 24458667031 --DNA dizilerini referans genomlarla karşılaştırarak benzerlikleri ve olası genetik mutasyonları bulan biyoinformatik aracı. 25458667008 24458667017 Sosyal Bağlantı Analizörü ve \"Aralardaki En Kısa Yol\" Keşfi 6 25458667027 --LinkedIn veya Twitter benzeri bir yapıdan alınan",
     "metadata": {
       "source": "projeler.pdf",
       "page": 1,
@@ -432,7 +432,7 @@
     }
   },
   "projeler.pdf_p1_s3": {
-    "content": "rla karşılaştırarak benzerlikleri ve olası genetik mutasyonları bulan biyoinformatik aracı. 25458667008 24458667017 Sosyal Bağlantı Analizörü ve Aralardaki En Kısa Yol Keşfi 6 25458667027 --LinkedIn veya Twitter benzeri bir yapıdan alınan verilerle kişiler arasındaki bağlantı derecesini ve etkileşim gücünü analiz eden sistem. 25458667449 25458667014 Küresel Uçuş Rezervasyon ve Rota Optimizasyon",
+    "content": "017 Sosyal Bağlantı Analizörü ve \"Aralardaki En Kısa Yol\" Keşfi 6 25458667027 --LinkedIn veya Twitter benzeri bir yapıdan alınan verilerle kişiler arasındaki bağlantı derecesini ve etkileşim gücünü analiz eden sistem. 25458667449 25458667014 Küresel Uçuş Rezervasyon ve Rota Optimizasyon Sistemi 7 25458667446 --Binlerce şehir ve havayolu arasında aktarma süresi, maliyet ve mesafe dengesini kuran rezervasyon motoru. 25458667002 24458667004 Gerçek Zamanlı İşbirlikçi Metin Editörü (CRDT Mantığı) 8 25458667001",
     "metadata": {
       "source": "projeler.pdf",
       "page": 1,
@@ -440,7 +440,7 @@
     }
   },
   "projeler.pdf_p1_s4": {
-    "content": "7014 Küresel Uçuş Rezervasyon ve Rota Optimizasyon Sistemi 7 25458667446 --Binlerce şehir ve havayolu arasında aktarma süresi, maliyet ve mesafe dengesini kuran rezervasyon motoru. 25458667002 24458667004 Gerçek Zamanlı İşbirlikçi Metin Editörü (CRDT Mantığı) 8 25458667001 -- Google Docs benzeri, birden fazla kullanıcının aynı anda veri kaybı yaşamadan metin üzerinde çalıştığı bir sistem.",
+    "content": "dengesini kuran rezervasyon motoru. 25458667002 24458667004 Gerçek Zamanlı İşbirlikçi Metin Editörü (CRDT Mantığı) 8 25458667001 -- Google Docs benzeri, birden fazla kullanıcının aynı anda veri kaybı yaşamadan metin üzerinde çalıştığı bir sistem. 24458667009 24458667030 Global Tedarik Zinciri Görünürlük ve Risk Analitik Platformu 9 25458667004 --Hammaddeden son ürüne kadar tüm aşamaların izlendiği, lojistik darboğazların (bottleneck) tespit edildiği sistem. 25458667454 24458667023 Oyun Motoru Yol Bulma ve",
     "metadata": {
       "source": "projeler.pdf",
       "page": 1,
@@ -448,186 +448,10 @@
     }
   },
   "projeler.pdf_p1_s5": {
-    "content": "ybı yaşamadan metin üzerinde çalıştığı bir sistem. 24458667009 24458667030 Global Tedarik Zinciri Görünürlük ve Risk Analitik Platformu 9 25458667004 --Hammaddeden son ürüne kadar tüm aşamaların izlendiği, lojistik darboğazların (bottleneck) tespit edildiği sistem. 25458667454 24458667023 Oyun Motoru Yol Bulma ve Mekansal Zeka Sistemi 10 25458667029 -- Strateji oyunlarında veya 3D ortamlarda",
+    "content": "amaların izlendiği, lojistik darboğazların (bottleneck) tespit edildiği sistem. 25458667454 24458667023 Oyun Motoru Yol Bulma ve Mekansal Zeka Sistemi 10 25458667029 -- Strateji oyunlarında veya 3D ortamlarda binlerce karakterin birbirine çarpmadan hedef yola ulaşması. 24458667005 25458667017 24458667013 11 24458667025 Akıllı Enerji Şebekesi (Smart Grid) Balancing ve Dağıtım Ünitesi 25458667026 --Yenilenebilir enerji kaynaklarından gelen elektriğin tüketicilere en az kayıpla ve dengeli dağıtılması.",
     "metadata": {
       "source": "projeler.pdf",
       "page": 1,
-      "type": "pdf"
-    }
-  },
-  "projeler.pdf_p1_s6": {
-    "content": "8667029 -- Strateji oyunlarında veya 3D ortamlarda binlerce karakterin birbirine çarpmadan hedef yola ulaşması. 24458667005 25458667017 24458667013 11 24458667025 Akıllı Enerji Şebekesi (Smart Grid) Balancing ve Dağıtım Ünitesi 25458667026 --Yenilenebilir enerji kaynaklarından gelen elektriğin tüketicilere en az kayıpla ve dengeli dağıtılması.",
-    "metadata": {
-      "source": "projeler.pdf",
-      "page": 1,
-      "type": "pdf"
-    }
-  },
-  "Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf_p1_s0": {
-    "content": "HOW TO MAKE A CONFERENCE CALL ON AN ANDROID PHONE 1. Phone the first person. 2. After the call connects, touch the Add Call icon. After touching that icon, or a similar icon, the first person is put on hold. 3. Dial the second person. You can use the dial pad or choose the second person from the phones address book or the recent calls log. Inform the party that the call is about to be merged. 4.",
-    "metadata": {
-      "source": "Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf",
-      "page": 1,
-      "type": "pdf"
-    }
-  },
-  "Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf_p1_s1": {
-    "content": "the party that the call is about to be merged. 4. Touch the Merge or Merge Calls icon. The two calls are now joined: The touchscreen says Conference Call, and the End Last Call icon appears. Everyone youve dialed can talk to and hear everyone else. 5. Touch the End Call icon to end the conference call. All calls are disconnected. Your Android phone may feature the Manage icon while youre in a",
-    "metadata": {
-      "source": "Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf",
-      "page": 1,
-      "type": "pdf"
-    }
-  },
-  "Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf_p1_s2": {
-    "content": "phone may feature the Manage icon while youre in a conference call. Touch this icon to list the various calls, to mute one, or to select a call to disconnect. 1",
-    "metadata": {
-      "source": "Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf",
-      "page": 1,
-      "type": "pdf"
-    }
-  },
-  "Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf_p2_s0": {
-    "content": "HOW TO MAKE A CONFERENCE CALL ON YOUR IPHONE The iPhone lets you merge up to five calls at a time to turn them into a conference call. 1. Make a call. 2. Tap Add Call and dial in the second phone number. The first call recipient will be placed on hold. 3. Tap Merge Calls to connect both parties together. 4. Repeat steps two and three to add if needed. Other tips for iPhone conference calling If",
-    "metadata": {
-      "source": "Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf",
-      "page": 2,
-      "type": "pdf"
-    }
-  },
-  "Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf_p2_s1": {
-    "content": "eeded. Other tips for iPhone conference calling If you want to drop a call from a conference, tap Conference and then tap the red circle with the little picture of the phone in it that appears next to the call. Tap End Call to make that caller go bye-bye. You can speak privately (one-on-one) with one of the callers in a conference. Tap Conference, and then tap Private next to the caller you want",
-    "metadata": {
-      "source": "Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf",
-      "page": 2,
-      "type": "pdf"
-    }
-  },
-  "Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf_p2_s2": {
-    "content": ", and then tap Private next to the caller you want to talk with. Tap Merge Calls to bring the caller back into the Conference so everyone can hear him or her. You can add a new incoming caller to an existing conference call by tapping Hold Call + Answer followed by Merge Calls. 2",
-    "metadata": {
-      "source": "Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf",
-      "page": 2,
-      "type": "pdf"
-    }
-  },
-  "Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf_p3_s0": {
-    "content": "REFERENCE GUIDE FOR VIDEO PLATFORMS For PT meetings, Ontarios School boards will be using Google Meet, Microsoft Teams, and Zoom to access interpretation services via video between teachers and parents. You can either use a computer or a mobile device. Computer MUST HAVE stable high speed internet access with a headset, microphone and webcam. For mobile devices, access to high speed Wi-Fi",
-    "metadata": {
-      "source": "Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf",
-      "page": 3,
-      "type": "pdf"
-    }
-  },
-  "Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf_p3_s1": {
-    "content": "am. For mobile devices, access to high speed Wi-Fi connection is highly recommended. Google Meet Using a computer: Google Meet doesnt have an installation package to be installed on a computer but it can be accessed directly via your internet browser (Google Chrome recommended). After that, you can just join/start a new meeting using your webcam and audio equipment. You dont need to have a Google",
-    "metadata": {
-      "source": "Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf",
-      "page": 3,
-      "type": "pdf"
-    }
-  },
-  "Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf_p3_s2": {
-    "content": "nd audio equipment. You dont need to have a Google account to be able to join the meeting. In this case, when joining the meeting, it will prompt you for your name. Once entered, the teacher/school will admit you to the meeting. However, you are the one starting the meeting, you will need to a Google account. Here is the information on how to change your computers video and audio settings: 1. In",
-    "metadata": {
-      "source": "Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf",
-      "page": 3,
-      "type": "pdf"
-    }
-  },
-  "Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf_p3_s3": {
-    "content": "nge your computers video and audio settings: 1. In a Web browser, enter (you might be prompted to provide you google credentials) 2. Click New meeting or enter a code or link. 3. In the next window, you will see a preview of your video on the left. Click Join now on the right side of the window. 3",
-    "metadata": {
-      "source": "Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf",
-      "page": 3,
-      "type": "pdf"
-    }
-  },
-  "Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf_p4_s0": {
-    "content": "Using Mobile devices (Android, IPhone): For mobile devices, you can download the Google Meet app from Google Play or App Store. Once done, run the app and provide your google credentials if needed. After that, you can just start or join a meeting (Start an instant meeting). If you are able to see yourself, you are all set. In the event of any issues, please visit the follow link with",
-    "metadata": {
-      "source": "Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf",
-      "page": 4,
-      "type": "pdf"
-    }
-  },
-  "Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf_p4_s1": {
-    "content": "t of any issues, please visit the follow link with troubleshooting tips. 746834154rd=1 VIDEO TUTORIALS ON HOW TO USE GOOGLE MEET How to Use Google Meet - Detailed Tutorial - How to use Google Meet - HOW TO USE GOOGLE MEET Video Conferencing Tutorial for Beginners (FREE for Everyone) Microsoft Teams Download the app on your computer or your mobile device ( teams/download-app). If you have a",
-    "metadata": {
-      "source": "Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf",
-      "page": 4,
-      "type": "pdf"
-    }
-  },
-  "Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf_p4_s2": {
-    "content": "mobile device ( teams/download-app). If you have a personal Hotmail, Outlook or Skype account, you can use your credentials to join. 4",
-    "metadata": {
-      "source": "Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf",
-      "page": 4,
-      "type": "pdf"
-    }
-  },
-  "Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf_p5_s0": {
-    "content": "Using a computer: Using a personal computer is recommended for better quality. To learn how to test Microsoft in your computer, follow the following link: it.com/blog/how-to-use-test-call-in-microsoft-teams/ Using Mobile devices (Android, IPhone): Using mobile devices for video interpretation jobs is possible provided your equipment has a frontal camera and can possibly be used for video calls in",
-    "metadata": {
-      "source": "Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf",
-      "page": 5,
-      "type": "pdf"
-    }
-  },
-  "Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf_p5_s1": {
-    "content": "camera and can possibly be used for video calls in other platforms such as Skype, WhatsApp video calls, etc. For privacy reasons and for better sound quality, it is recommended to use earbuds with microphone compatible with your device. VIDEO TUTORIALS ON HOW TO USE MS TEAMS How to use Microsoft Teams for Remote and Online learning - How to use Microsoft Teams - Zoom Using a computer: 1. Open an",
-    "metadata": {
-      "source": "Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf",
-      "page": 5,
-      "type": "pdf"
-    }
-  },
-  "Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf_p5_s2": {
-    "content": "icrosoft Teams - Zoom Using a computer: 1. Open an email invitation and click on the link to join Zoom Meeting at the scheduled time, or copy and paste it into your browser. 5",
-    "metadata": {
-      "source": "Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf",
-      "page": 5,
-      "type": "pdf"
-    }
-  },
-  "Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf_p6_s0": {
-    "content": "2. This is the first time you are using Zoom on your computer, you will be asked to download a Zoom file. When ready, click on the Open Zoom button that pops up on your browser (If you dont see this pop-up, click the link at the bottom). When connected, check your video preview and click on Join with Video. Click on Join with Computer Audio. You can also test your Speaker and Microphone. You can",
-    "metadata": {
-      "source": "Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf",
-      "page": 6,
-      "type": "pdf"
-    }
-  },
-  "Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf_p6_s1": {
-    "content": "can also test your Speaker and Microphone. You can also check the Automatically join audio by computer when joining a meeting option if you know your equipment is set up properly. The SP may already be there, or you will need to wait for them to arrive. When all parties are present, proceed with your interpreters introduction and interpretation. Zoom tools during meeting (on computer): Using",
-    "metadata": {
-      "source": "Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf",
-      "page": 6,
-      "type": "pdf"
-    }
-  },
-  "Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf_p6_s2": {
-    "content": "on. Zoom tools during meeting (on computer): Using Mobile devices (Android, IPhone): You must download the Zoom app from Google Play or App Store. Once done, run the app, and you will need to enter the meeting ID and password. VIDEO TUTORIALS ON HOW TO USE ZOOM See this tutorial on how to set up Zoom on a Windows: See this tutorial on how to set up Zoom on a Mac: See this tutorial on how to set",
-    "metadata": {
-      "source": "Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf",
-      "page": 6,
-      "type": "pdf"
-    }
-  },
-  "Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf_p6_s3": {
-    "content": "up Zoom on a Mac: See this tutorial on how to set up Zoom on an iPad: 6",
-    "metadata": {
-      "source": "Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf",
-      "page": 6,
-      "type": "pdf"
-    }
-  },
-  "Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf_p7_s0": {
-    "content": "See this tutorial on how to set up Zoom on an Android tablet: (the video uses a phone as demo, but it works the same on a tablet or phone.) HOW TO USE ZOOM Video Conferencing Tutorial for Beginners: How To Use Zoom (How To Set Up Zoom Beginners Guide): 7",
-    "metadata": {
-      "source": "Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf",
-      "page": 7,
       "type": "pdf"
     }
   }
