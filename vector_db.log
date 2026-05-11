@@ -3860,3 +3860,34 @@
 2026-05-10 21:55:38 - VectorDB - INFO - Search completed for query: 'binary search alan karmasikligi nedir'. Results: 3
 2026-05-10 22:01:46 - VectorDB - INFO - Search completed for query: 'binary search alan karmasikligi nedir'. Results: 3
 2026-05-10 22:05:50 - VectorDB - INFO - Search completed for query: 'binary search alan karmasikligi nedir'. Results: 3
+2026-05-10 22:59:07 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-10 22:59:11 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-10 22:59:11 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-10 22:59:11 - VectorDB - INFO - Vector Database initialized
+2026-05-10 22:59:11 - VectorDB - INFO - Processing PDF: Arama ve Graf Temelleri.pdf
+2026-05-10 22:59:12 - VectorDB - INFO - Processing PDF: ENG 102 All Units  Modules List.pdf
+2026-05-10 22:59:12 - VectorDB - INFO - Processing PDF: projeler.pdf
+2026-05-10 22:59:14 - VectorDB - INFO - Added 62 embeddings to index. Total: 62
+2026-05-10 22:59:14 - VectorDB - INFO - Index saved to main_index.faiss
+2026-05-10 22:59:14 - VectorDB - INFO - Database saved to main_index.faiss
+2026-05-10 22:59:58 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-10 23:00:03 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-10 23:00:03 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-10 23:00:03 - VectorDB - INFO - Vector Database initialized
+2026-05-10 23:00:03 - VectorDB - INFO - Processing PDF: Arama ve Graf Temelleri.pdf
+2026-05-10 23:00:03 - VectorDB - INFO - Processing PDF: projeler.pdf
+2026-05-10 23:00:06 - VectorDB - INFO - Added 58 embeddings to index. Total: 58
+2026-05-10 23:00:06 - VectorDB - INFO - Index saved to main_index.faiss
+2026-05-10 23:00:06 - VectorDB - INFO - Database saved to main_index.faiss
+2026-05-10 23:04:18 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-10 23:04:23 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-10 23:04:23 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-10 23:04:23 - VectorDB - INFO - Vector Database initialized
+2026-05-10 23:04:23 - VectorDB - INFO - Processing PDF: Arama ve Graf Temelleri.pdf
+2026-05-10 23:04:23 - VectorDB - INFO - Processing PDF: projeler.pdf
+2026-05-10 23:04:23 - VectorDB - INFO - Processing PDF: Reference-Guide-for-Remote-Assignments-for-Interpreters.pdf
+2026-05-10 23:04:26 - VectorDB - INFO - Added 79 embeddings to index. Total: 79
+2026-05-10 23:04:26 - VectorDB - INFO - Index saved to main_index.faiss
+2026-05-10 23:04:26 - VectorDB - INFO - Database saved to main_index.faiss
+2026-05-10 23:06:27 - VectorDB - INFO - Search completed for query: 'Can I combine two calls on my iPhone?'. Results: 3
+2026-05-10 23:08:07 - VectorDB - INFO - Search completed for query: 'Smartphone setup instructions'. Results: 3

@@ -254,12 +254,12 @@ if query:
         start_time = time.time()
         with st.spinner("🧠 Arıyor ve analiz ediyorum..."):
             results = st.session_state.db.search(query, top_k=top_k)
+            results = [res for res in results if res.score >= sensitivity]
         end_time = time.time()
         
         if not results:
             st.info("Eşleşen bir döküman bulunamadı.")
         else:
-            results = [res for res in results if res.score >= sensitivity]
             context = " ".join([res.content for res in results])
                 
             try:
