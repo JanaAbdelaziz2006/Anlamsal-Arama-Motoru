@@ -50,7 +50,7 @@ if "initialized" not in st.session_state:
                 <div style="width: 60px; height: 60px; border: 6px solid #f3f3f3; border-top: 6px solid #4285f4; border-radius: 50%; animation: spin 1s linear infinite;"></div>
                 <style>@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }</style>
                 <h2 style="margin-top: 25px; font-family: 'Segoe UI', sans-serif; color: #4285f4; font-weight: 400;">Cognitive Search Pro Başlatılıyor</h2>
-                <p style="color: #70757a; font-family: 'Segoe UI', sans-serif; font-size: 15px;">Vektör veritabanı ve AI motoru hazırlanıyor, lütfen bekleyin...</p>
+                <p style="color: #70757a; font-family: 'Segoe UI', sans-serif; font-size: 15px;">Vektör veritabanı hazırlanıyor, lütfen bekleyin...</p>
             </div>
         """, unsafe_allow_html=True)
         
@@ -345,4 +345,10 @@ st.markdown("---")
 st.caption("Powered by FAISS, Sentence-Transformers, and Streamlit")
 
 #to run: py -m streamlit run app.py 
-#ex: Sıralı bir dizide en hızlı arama yöntemlerinden biri hangisidir?
+
+#ex: DAG nedir ve hangi sistemlerde kullanılır?
+#ex: Arama algoritmalarında performans hangi iki kritere göre değerlendirilir?
+#ex: Graf teorisinde bir Yol (Path) ile Döngü (Cycle) arasındaki fark nedir?
+#ex: Navigasyon sistemlerinde en kısa yolu hesaplamak için hangi graf özelliği kullanılır?
+#ex: 25458667405 projesi nedir?
+#ex: binary search alan karmaşıklığı nedir?
