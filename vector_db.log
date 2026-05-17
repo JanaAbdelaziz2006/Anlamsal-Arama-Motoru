@@ -4343,3 +4343,4 @@
 2026-05-18 00:09:18 - VectorDB - INFO - Vector Database initialized
 2026-05-18 00:09:18 - VectorDB - INFO - Index loaded from main_index.faiss
 2026-05-18 00:09:18 - VectorDB - INFO - Database loaded from main_index.faiss
+2026-05-18 00:10:12 - VectorDB - INFO - Search completed for query: 'w'. Results: 3
