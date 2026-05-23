@@ -394,11 +394,14 @@ st.caption("Powered by FAISS, Sentence-Transformers, and Streamlit")
 
 #to run: py -m streamlit run app.py 
 
-#ex: DAG nedir ve hangi sistemlerde kullanılır?
+#ex: binary search alan karmaşıklığı nedir?
 #ex: Arama algoritmalarında performans hangi iki kritere göre değerlendirilir?
-#ex: Graf teorisinde bir Yol (Path) ile Döngü (Cycle) arasındaki fark nedir?
 #ex: Navigasyon sistemlerinde en kısa yolu hesaplamak için hangi graf özelliği kullanılır?
-#ex: Sıralı bir dizide en hızlı arama yöntemlerinden biri hangisidir?
 #ex: Bilgisiz Arama nedir
 #ex: 25458667405 projesi nedir?
-#ex: binary search alan karmaşıklığı nedir?
+
+#ex: Sıralı bir dizide en hızlı arama yöntemlerinden biri hangisidir?
+#ex: DAG nedir ve hangi sistemlerde kullanılır?
+#ex: Graf teorisinde bir Yol (Path) ile Döngü (Cycle) arasındaki fark nedir?
+
+

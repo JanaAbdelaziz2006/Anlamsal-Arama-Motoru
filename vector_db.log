@@ -4484,3 +4484,62 @@
 2026-05-22 12:52:24 - VectorDB - INFO - Search completed for query: 'BFS nedir'. Results: 3
 2026-05-22 12:52:52 - VectorDB - INFO - Search completed for query: 'best first search'. Results: 3
 2026-05-22 12:53:21 - VectorDB - INFO - Search completed for query: 'Bilgisiz Arama nedir'. Results: 3
+2026-05-23 21:25:00 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-23 21:25:03 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-23 21:25:03 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-23 21:25:03 - VectorDB - INFO - Vector Database initialized
+2026-05-23 21:25:03 - VectorDB - INFO - Index loaded from main_index.faiss
+2026-05-23 21:25:03 - VectorDB - INFO - Database loaded from main_index.faiss
+2026-05-23 21:26:02 - VectorDB - INFO - Search completed for query: 'binary search nedir'. Results: 3
+2026-05-23 21:26:19 - VectorDB - INFO - Search completed for query: 'binary search alan karmasikligi nedir'. Results: 3
+2026-05-23 21:48:14 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-23 21:48:18 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-23 21:48:18 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-23 21:48:18 - VectorDB - INFO - Vector Database initialized
+2026-05-23 21:48:18 - VectorDB - INFO - Index loaded from main_index.faiss
+2026-05-23 21:48:18 - VectorDB - INFO - Database loaded from main_index.faiss
+2026-05-23 21:51:12 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-23 21:51:16 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-23 21:51:16 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-23 21:51:16 - VectorDB - INFO - Vector Database initialized
+2026-05-23 21:51:16 - VectorDB - INFO - Index loaded from main_index.faiss
+2026-05-23 21:51:16 - VectorDB - INFO - Database loaded from main_index.faiss
+2026-05-23 21:58:45 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-23 21:58:49 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-23 21:58:49 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-23 21:58:49 - VectorDB - INFO - Vector Database initialized
+2026-05-23 21:59:27 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-23 21:59:30 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-23 21:59:30 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-23 21:59:30 - VectorDB - INFO - Vector Database initialized
+2026-05-23 22:00:00 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-23 22:00:04 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-23 22:00:04 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-23 22:00:04 - VectorDB - INFO - Vector Database initialized
+2026-05-23 22:00:04 - VectorDB - INFO - Processing PDF: Arama ve Graf Temelleri.pdf
+2026-05-23 22:00:04 - VectorDB - INFO - Processing PDF: projeler.pdf
+2026-05-23 22:00:04 - VectorDB - INFO - Processing PDF: YZM0101_week10.pdf
+2026-05-23 22:00:04 - VectorDB - INFO - Processing PDF: YZM0101_week11_v1.pdf
+2026-05-23 22:00:04 - VectorDB - INFO - Processing PDF: YZM0101_week12.pdf
+2026-05-23 22:00:04 - VectorDB - INFO - Processing PDF: YZM0101_week13v1.pdf
+2026-05-23 22:00:05 - VectorDB - INFO - Processing PDF: YZM0101_week1_2.pdf
+2026-05-23 22:00:05 - VectorDB - INFO - Processing PDF: YZM0101_week2.pdf
+2026-05-23 22:00:05 - VectorDB - INFO - Processing PDF: YZM0101_week3.pdf
+2026-05-23 22:00:05 - VectorDB - INFO - Processing PDF: YZM0101_week4.pdf
+2026-05-23 22:00:05 - VectorDB - INFO - Processing PDF: YZM0101_week5.pdf
+2026-05-23 22:00:05 - VectorDB - INFO - Processing PDF: YZM0101_week6.pdf
+2026-05-23 22:00:05 - VectorDB - INFO - Processing PDF: YZM0101_week7.pdf
+2026-05-23 22:00:06 - VectorDB - INFO - Processing PDF: YZM0101_week8.pdf
+2026-05-23 22:00:06 - VectorDB - INFO - Processing PDF: YZM0101_week9.pdf
+2026-05-23 22:00:34 - VectorDB - INFO - Added 436 embeddings to index. Total: 436
+2026-05-23 22:00:34 - VectorDB - INFO - Index saved to main_index.faiss
+2026-05-23 22:00:34 - VectorDB - INFO - Database saved to main_index.faiss
+2026-05-23 22:00:35 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-23 22:00:39 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-23 22:00:39 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-23 22:00:39 - VectorDB - INFO - Vector Database initialized
+2026-05-23 22:00:39 - VectorDB - INFO - Index loaded from main_index.faiss
+2026-05-23 22:00:39 - VectorDB - INFO - Database loaded from main_index.faiss
+2026-05-23 22:03:28 - VectorDB - INFO - Search completed for query: 'binary search alan karmasikligi nedir'. Results: 3
+2026-05-23 22:09:34 - VectorDB - INFO - Search completed for query: 'Bilgisiz Arama nedir'. Results: 3
+2026-05-23 22:09:58 - VectorDB - INFO - Search completed for query: '25458667405 projesi nedir?'. Results: 3
