@@ -4543,3 +4543,214 @@
 2026-05-23 22:03:28 - VectorDB - INFO - Search completed for query: 'binary search alan karmasikligi nedir'. Results: 3
 2026-05-23 22:09:34 - VectorDB - INFO - Search completed for query: 'Bilgisiz Arama nedir'. Results: 3
 2026-05-23 22:09:58 - VectorDB - INFO - Search completed for query: '25458667405 projesi nedir?'. Results: 3
+2026-05-24 19:53:42 - VectorDB - INFO - Loading embedding model: all-MiniLM-L6-v2
+2026-05-24 19:53:46 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-24 19:53:46 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-24 19:53:46 - VectorDB - INFO - Vector Database initialized
+2026-05-24 19:53:46 - VectorDB - INFO - Index loaded from main_index.faiss
+2026-05-24 19:53:46 - VectorDB - INFO - Database loaded from main_index.faiss
+2026-05-24 19:57:01 - VectorDB - INFO - Search completed for query: 'binary search alan karmasikligi nedir'. Results: 3
+2026-05-24 20:09:34 - VectorDB - INFO - Loading embedding model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-05-24 20:09:41 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-24 20:09:41 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-24 20:09:41 - VectorDB - INFO - Vector Database initialized
+2026-05-24 20:09:41 - VectorDB - INFO - Index loaded from main_index.faiss
+2026-05-24 20:09:41 - VectorDB - INFO - Database loaded from main_index.faiss
+2026-05-24 20:10:20 - VectorDB - INFO - Loading embedding model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-05-24 20:10:27 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-24 20:10:27 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-24 20:10:27 - VectorDB - INFO - Vector Database initialized
+2026-05-24 20:10:39 - VectorDB - INFO - Loading embedding model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-05-24 20:10:45 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-24 20:10:45 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-24 20:10:45 - VectorDB - INFO - Vector Database initialized
+2026-05-24 20:12:08 - VectorDB - INFO - Loading embedding model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-05-24 20:12:15 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-24 20:12:15 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-24 20:12:15 - VectorDB - INFO - Vector Database initialized
+2026-05-24 20:12:15 - VectorDB - INFO - Processing PDF: Arama ve Graf Temelleri.pdf
+2026-05-24 20:12:16 - VectorDB - INFO - Processing PDF: projeler.pdf
+2026-05-24 20:12:16 - VectorDB - INFO - Processing PDF: YZM0101_week10.pdf
+2026-05-24 20:12:16 - VectorDB - INFO - Processing PDF: YZM0101_week11_v1.pdf
+2026-05-24 20:12:16 - VectorDB - INFO - Processing PDF: YZM0101_week12.pdf
+2026-05-24 20:12:16 - VectorDB - INFO - Processing PDF: YZM0101_week13v1.pdf
+2026-05-24 20:12:16 - VectorDB - INFO - Processing PDF: YZM0101_week1_2.pdf
+2026-05-24 20:12:16 - VectorDB - INFO - Processing PDF: YZM0101_week2.pdf
+2026-05-24 20:12:17 - VectorDB - INFO - Processing PDF: YZM0101_week3.pdf
+2026-05-24 20:12:17 - VectorDB - INFO - Processing PDF: YZM0101_week4.pdf
+2026-05-24 20:12:17 - VectorDB - INFO - Processing PDF: YZM0101_week5.pdf
+2026-05-24 20:12:17 - VectorDB - INFO - Processing PDF: YZM0101_week6.pdf
+2026-05-24 20:12:17 - VectorDB - INFO - Processing PDF: YZM0101_week7.pdf
+2026-05-24 20:12:17 - VectorDB - INFO - Processing PDF: YZM0101_week8.pdf
+2026-05-24 20:12:17 - VectorDB - INFO - Processing PDF: YZM0101_week9.pdf
+2026-05-24 20:12:33 - VectorDB - INFO - Added 354 embeddings to index. Total: 354
+2026-05-24 20:12:33 - VectorDB - INFO - Index saved to main_index.faiss
+2026-05-24 20:12:34 - VectorDB - INFO - Database saved to main_index.faiss
+2026-05-24 20:12:37 - VectorDB - INFO - Loading embedding model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-05-24 20:12:47 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-24 20:12:47 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-24 20:12:47 - VectorDB - INFO - Vector Database initialized
+2026-05-24 20:12:47 - VectorDB - INFO - Index loaded from main_index.faiss
+2026-05-24 20:12:47 - VectorDB - INFO - Database loaded from main_index.faiss
+2026-05-24 20:15:34 - VectorDB - INFO - Search completed for query: 'graf teorisinde bir Yol (Path) nedir?'. Results: 3
+2026-05-24 20:16:14 - VectorDB - INFO - Search completed for query: 'Bilgisiz Arama nedir'. Results: 3
+2026-05-24 20:17:48 - VectorDB - INFO - Search completed for query: 'Bilgisiz Arama nedir?'. Results: 3
+2026-05-24 20:18:02 - VectorDB - INFO - Search completed for query: 'Bilgisiz Arama ne yapiyor?'. Results: 3
+2026-05-24 20:18:15 - VectorDB - INFO - Search completed for query: 'Bilgili Arama ne yapiyor?'. Results: 3
+2026-05-24 20:19:45 - VectorDB - INFO - Search completed for query: 'Bilgisiz Arama nedie?'. Results: 3
+2026-05-24 20:19:48 - VectorDB - INFO - Search completed for query: 'Bilgisiz Arama nedir'. Results: 3
+2026-05-24 20:19:52 - VectorDB - INFO - Search completed for query: 'Bilgisiz Arama nedi'. Results: 3
+2026-05-24 20:19:58 - VectorDB - INFO - Search completed for query: 'Bilgisiz Arama nedir'. Results: 3
+2026-05-24 20:31:37 - VectorDB - INFO - Search completed for query: '25458667405 projesi nedir?'. Results: 3
+2026-05-24 20:31:51 - VectorDB - INFO - Search completed for query: '25458667405 projesi nedir?'. Results: 10
+2026-05-24 20:32:03 - VectorDB - INFO - Search completed for query: '25458667405 projesi nedir?'. Results: 5
+2026-05-24 20:32:07 - VectorDB - INFO - Search completed for query: '25458667405 projesi nedir?'. Results: 3
+2026-05-24 20:32:09 - VectorDB - INFO - Search completed for query: '25458667405 projesi nedir?'. Results: 3
+2026-05-24 20:32:10 - VectorDB - INFO - Search completed for query: '25458667405 projesi nedir?'. Results: 4
+2026-05-24 20:32:26 - VectorDB - INFO - Search completed for query: '25458667405 projesi nedir?'. Results: 4
+2026-05-24 20:32:29 - VectorDB - INFO - Search completed for query: '25458667405 projesi nedir?'. Results: 5
+2026-05-24 20:42:00 - VectorDB - INFO - Loading embedding model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-05-24 20:42:07 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-24 20:42:07 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-24 20:42:07 - VectorDB - INFO - Vector Database initialized
+2026-05-24 20:42:07 - VectorDB - INFO - Index loaded from main_index.faiss
+2026-05-24 20:42:07 - VectorDB - INFO - Database loaded from main_index.faiss
+2026-05-24 20:43:14 - VectorDB - INFO - Loading embedding model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-05-24 20:43:21 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-24 20:43:21 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-24 20:43:21 - VectorDB - INFO - Vector Database initialized
+2026-05-24 20:43:21 - VectorDB - INFO - Index loaded from main_index.faiss
+2026-05-24 20:43:21 - VectorDB - INFO - Database loaded from main_index.faiss
+2026-05-24 20:43:21 - VectorDB - INFO - Loading embedding model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-05-24 20:43:28 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-24 20:43:28 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-24 20:43:28 - VectorDB - INFO - Vector Database initialized
+2026-05-24 20:45:44 - VectorDB - INFO - Loading embedding model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-05-24 20:45:50 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-24 20:45:50 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-24 20:45:50 - VectorDB - INFO - Vector Database initialized
+2026-05-24 20:45:50 - VectorDB - INFO - Processing PDF: Arama ve Graf Temelleri.pdf
+2026-05-24 20:45:50 - VectorDB - INFO - Processing PDF: projeler.pdf
+2026-05-24 20:45:50 - VectorDB - INFO - Processing PDF: YZM0101_week10.pdf
+2026-05-24 20:45:50 - VectorDB - INFO - Processing PDF: YZM0101_week11_v1.pdf
+2026-05-24 20:45:50 - VectorDB - INFO - Processing PDF: YZM0101_week12.pdf
+2026-05-24 20:45:50 - VectorDB - INFO - Processing PDF: YZM0101_week13v1.pdf
+2026-05-24 20:45:50 - VectorDB - INFO - Processing PDF: YZM0101_week1_2.pdf
+2026-05-24 20:45:50 - VectorDB - INFO - Processing PDF: YZM0101_week2.pdf
+2026-05-24 20:45:51 - VectorDB - INFO - Processing PDF: YZM0101_week3.pdf
+2026-05-24 20:45:51 - VectorDB - INFO - Processing PDF: YZM0101_week4.pdf
+2026-05-24 20:45:51 - VectorDB - INFO - Processing PDF: YZM0101_week5.pdf
+2026-05-24 20:45:51 - VectorDB - INFO - Processing PDF: YZM0101_week6.pdf
+2026-05-24 20:45:51 - VectorDB - INFO - Processing PDF: YZM0101_week7.pdf
+2026-05-24 20:45:51 - VectorDB - INFO - Processing PDF: YZM0101_week8.pdf
+2026-05-24 20:45:51 - VectorDB - INFO - Processing PDF: YZM0101_week9.pdf
+2026-05-24 20:46:06 - VectorDB - INFO - Added 356 embeddings to index. Total: 356
+2026-05-24 20:46:06 - VectorDB - INFO - Index saved to main_index.faiss
+2026-05-24 20:46:06 - VectorDB - INFO - Database saved to main_index.faiss
+2026-05-24 20:46:07 - VectorDB - INFO - Loading embedding model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-05-24 20:46:14 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-24 20:46:14 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-24 20:46:14 - VectorDB - INFO - Vector Database initialized
+2026-05-24 20:46:14 - VectorDB - INFO - Index loaded from main_index.faiss
+2026-05-24 20:46:14 - VectorDB - INFO - Database loaded from main_index.faiss
+2026-05-24 20:46:38 - VectorDB - ERROR - Search operation failed: 'VectorDatabase' object has no attribute 'doc_count'
+2026-05-24 20:46:53 - VectorDB - ERROR - Search operation failed: 'VectorDatabase' object has no attribute 'doc_count'
+2026-05-24 20:46:54 - VectorDB - ERROR - Search operation failed: 'VectorDatabase' object has no attribute 'doc_count'
+2026-05-24 20:46:57 - VectorDB - ERROR - Search operation failed: 'VectorDatabase' object has no attribute 'doc_count'
+2026-05-24 20:46:58 - VectorDB - ERROR - Search operation failed: 'VectorDatabase' object has no attribute 'doc_count'
+2026-05-24 20:46:59 - VectorDB - ERROR - Search operation failed: 'VectorDatabase' object has no attribute 'doc_count'
+2026-05-24 20:47:01 - VectorDB - ERROR - Search operation failed: 'VectorDatabase' object has no attribute 'doc_count'
+2026-05-24 20:47:06 - VectorDB - ERROR - Search operation failed: 'VectorDatabase' object has no attribute 'doc_count'
+2026-05-24 20:47:07 - VectorDB - ERROR - Search operation failed: 'VectorDatabase' object has no attribute 'doc_count'
+2026-05-24 20:47:07 - VectorDB - ERROR - Search operation failed: 'VectorDatabase' object has no attribute 'doc_count'
+2026-05-24 20:47:08 - VectorDB - ERROR - Search operation failed: 'VectorDatabase' object has no attribute 'doc_count'
+2026-05-24 20:47:17 - VectorDB - ERROR - Search operation failed: 'VectorDatabase' object has no attribute 'doc_count'
+2026-05-24 20:47:42 - VectorDB - ERROR - Search operation failed: 'VectorDatabase' object has no attribute 'doc_count'
+2026-05-24 20:52:39 - VectorDB - INFO - Loading embedding model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-05-24 20:52:45 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-24 20:52:45 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-24 20:52:45 - VectorDB - INFO - Vector Database initialized
+2026-05-24 20:52:45 - VectorDB - INFO - Index loaded from main_index.faiss
+2026-05-24 20:52:45 - VectorDB - INFO - Database loaded from main_index.faiss
+2026-05-24 20:53:05 - VectorDB - INFO - Loading embedding model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-05-24 20:53:13 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-24 20:53:13 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-24 20:53:13 - VectorDB - INFO - Vector Database initialized
+2026-05-24 20:53:13 - VectorDB - INFO - Index loaded from main_index.faiss
+2026-05-24 20:53:13 - VectorDB - INFO - Database loaded from main_index.faiss
+2026-05-24 20:53:13 - VectorDB - INFO - Loading embedding model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-05-24 20:53:20 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-24 20:53:20 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-24 20:53:20 - VectorDB - INFO - Vector Database initialized
+2026-05-24 20:54:07 - VectorDB - INFO - Loading embedding model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-05-24 20:54:13 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-24 20:54:13 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-24 20:54:13 - VectorDB - INFO - Vector Database initialized
+2026-05-24 20:54:13 - VectorDB - INFO - Processing PDF: Arama ve Graf Temelleri.pdf
+2026-05-24 20:54:13 - VectorDB - INFO - Processing PDF: projeler.pdf
+2026-05-24 20:54:13 - VectorDB - INFO - Processing PDF: YZM0101_week10.pdf
+2026-05-24 20:54:14 - VectorDB - INFO - Processing PDF: YZM0101_week11_v1.pdf
+2026-05-24 20:54:14 - VectorDB - INFO - Processing PDF: YZM0101_week12.pdf
+2026-05-24 20:54:14 - VectorDB - INFO - Processing PDF: YZM0101_week13v1.pdf
+2026-05-24 20:54:14 - VectorDB - INFO - Processing PDF: YZM0101_week1_2.pdf
+2026-05-24 20:54:14 - VectorDB - INFO - Processing PDF: YZM0101_week2.pdf
+2026-05-24 20:54:14 - VectorDB - INFO - Processing PDF: YZM0101_week3.pdf
+2026-05-24 20:54:14 - VectorDB - INFO - Processing PDF: YZM0101_week4.pdf
+2026-05-24 20:54:14 - VectorDB - INFO - Processing PDF: YZM0101_week5.pdf
+2026-05-24 20:54:15 - VectorDB - INFO - Processing PDF: YZM0101_week6.pdf
+2026-05-24 20:54:15 - VectorDB - INFO - Processing PDF: YZM0101_week7.pdf
+2026-05-24 20:54:15 - VectorDB - INFO - Processing PDF: YZM0101_week8.pdf
+2026-05-24 20:54:15 - VectorDB - INFO - Processing PDF: YZM0101_week9.pdf
+2026-05-24 20:54:29 - VectorDB - INFO - Added 356 embeddings to index. Total: 356
+2026-05-24 20:54:29 - VectorDB - INFO - Index saved to main_index.faiss
+2026-05-24 20:54:29 - VectorDB - INFO - Database saved to main_index.faiss
+2026-05-24 20:54:31 - VectorDB - INFO - Loading embedding model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-05-24 20:54:37 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-24 20:54:37 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-24 20:54:37 - VectorDB - INFO - Vector Database initialized
+2026-05-24 20:54:37 - VectorDB - INFO - Index loaded from main_index.faiss
+2026-05-24 20:54:37 - VectorDB - INFO - Database loaded from main_index.faiss
+2026-05-24 20:54:56 - VectorDB - INFO - Search completed for query: 'binary search alan karmasikligi nedir'. Results: 3
+2026-05-24 20:57:55 - VectorDB - INFO - Loading embedding model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-05-24 20:58:03 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-24 20:58:03 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-24 20:58:03 - VectorDB - INFO - Vector Database initialized
+2026-05-24 20:58:04 - VectorDB - ERROR - Search operation failed: Index is empty
+2026-05-24 20:58:04 - VectorDB - ERROR - Search operation failed: Search failed: Index is empty
+2026-05-24 20:58:46 - VectorDB - INFO - Loading embedding model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-05-24 20:58:52 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-24 20:58:52 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-24 20:58:52 - VectorDB - INFO - Vector Database initialized
+2026-05-24 20:59:03 - VectorDB - INFO - Loading embedding model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-05-24 20:59:09 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-24 20:59:09 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-24 20:59:09 - VectorDB - INFO - Vector Database initialized
+2026-05-24 20:59:09 - VectorDB - INFO - Processing PDF: Arama ve Graf Temelleri.pdf
+2026-05-24 20:59:09 - VectorDB - INFO - Processing PDF: projeler.pdf
+2026-05-24 20:59:09 - VectorDB - INFO - Processing PDF: YZM0101_week10.pdf
+2026-05-24 20:59:09 - VectorDB - INFO - Processing PDF: YZM0101_week11_v1.pdf
+2026-05-24 20:59:09 - VectorDB - INFO - Processing PDF: YZM0101_week12.pdf
+2026-05-24 20:59:10 - VectorDB - INFO - Processing PDF: YZM0101_week13v1.pdf
+2026-05-24 20:59:10 - VectorDB - INFO - Processing PDF: YZM0101_week1_2.pdf
+2026-05-24 20:59:10 - VectorDB - INFO - Processing PDF: YZM0101_week2.pdf
+2026-05-24 20:59:10 - VectorDB - INFO - Processing PDF: YZM0101_week3.pdf
+2026-05-24 20:59:10 - VectorDB - INFO - Processing PDF: YZM0101_week4.pdf
+2026-05-24 20:59:10 - VectorDB - INFO - Processing PDF: YZM0101_week5.pdf
+2026-05-24 20:59:10 - VectorDB - INFO - Processing PDF: YZM0101_week6.pdf
+2026-05-24 20:59:10 - VectorDB - INFO - Processing PDF: YZM0101_week7.pdf
+2026-05-24 20:59:11 - VectorDB - INFO - Processing PDF: YZM0101_week8.pdf
+2026-05-24 20:59:11 - VectorDB - INFO - Processing PDF: YZM0101_week9.pdf
+2026-05-24 20:59:26 - VectorDB - INFO - Added 354 embeddings to index. Total: 354
+2026-05-24 20:59:26 - VectorDB - INFO - Index saved to main_index.faiss
+2026-05-24 20:59:26 - VectorDB - INFO - Database saved to main_index.faiss
+2026-05-24 20:59:26 - VectorDB - INFO - Loading embedding model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-05-24 20:59:34 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-24 20:59:34 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-24 20:59:34 - VectorDB - INFO - Vector Database initialized
+2026-05-24 20:59:34 - VectorDB - INFO - Index loaded from main_index.faiss
+2026-05-24 20:59:34 - VectorDB - INFO - Database loaded from main_index.faiss
+2026-05-24 21:01:10 - VectorDB - INFO - Search completed for query: 'Graf teorisinde bir Yol (Path) nedir?'. Results: 5
+2026-05-24 21:01:37 - VectorDB - INFO - Search completed for query: '25458667405 projesi nedir?'. Results: 5
+2026-05-24 21:02:03 - VectorDB - INFO - Search completed for query: 'Bilgisiz Arama nedir?'. Results: 5
+2026-05-24 21:02:14 - VectorDB - INFO - Search completed for query: 'Bilgisiz Arama ornekler?'. Results: 5
+2026-05-24 21:02:33 - VectorDB - INFO - Search completed for query: 'Bilgisiz Arama ornekleri?'. Results: 5

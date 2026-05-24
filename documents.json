@@ -208,15 +208,7 @@
     }
   },
   "Arama ve Graf Temelleri.pdf_p28_s0": {
-    "content": "Önemli Graf Terminolojileri Paralel Kenarlar: Aynı düğüm çiftini birbirine bağlayan birden fazla kenar (Çok şeritli yol gibi). Kendine Döngü (Self Loop): Bir düğümü kendine bağlayan kenardır. Yol (Path): Düğümler arası geçiş dizisidir. (Örn: A-B-C-D) Basit Yol (Simple Path): Hiçbir düğümün tekrar etmediği geçiş dizisidir. Döngü (Cycle): Başladığı noktada biten kapalı yoldur. Yazılımlarda tehlikeli (sonsuz döngü) veya finansal sahtecilik analizinde (para aklama zinciri) kâr getiren bir keşif olabilir.",
-    "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
-      "page": 28,
-      "type": "pdf"
-    }
-  },
-  "Arama ve Graf Temelleri.pdf_p28_s1": {
-    "content": "Yazılımlarda tehlikeli (sonsuz döngü) veya finansal sahtecilik analizinde (para aklama zinciri) kâr getiren bir keşif olabilir. Bağlılık (Connectivity): Her düğümden her düğüme ulaşmanın mümkün olduğu, kopuk bir 'ada' (Component) barındırmayan sistemlerdir. 28 / 47",
+    "content": "Önemli Graf Terminolojileri Paralel Kenarlar: Aynı düğüm çiftini birbirine bağlayan birden fazla kenar (Çok şeritli yol gibi). Kendine Döngü (Self Loop): Bir düğümü kendine bağlayan kenardır. Yol (Path): Düğümler arası geçiş dizisidir. (Örn: A-B-C-D) Basit Yol (Simple Path): Hiçbir düğümün tekrar etmediği geçiş dizisidir. Döngü (Cycle): Başladığı noktada biten kapalı yoldur. Yazılımlarda tehlikeli (sonsuz döngü) veya finansal sahtecilik analizinde (para aklama zinciri) kâr getiren bir keşif olabilir. Bağlılık (Connectivity): Her düğümden her düğüme ulaşmanın mümkün olduğu, kopuk bir 'ada' (Component) barındırmayan sistemlerdir. 28 / 47",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 28,
@@ -256,15 +248,7 @@
     }
   },
   "Arama ve Graf Temelleri.pdf_p33_s0": {
-    "content": "Ara Soru: Matris Maliyeti 1 Milyon ( 106 ) kullanıcısı olan bir sosyal ağı Komşuluk Matrisi ile RAM’de tutmak istiyoruz. Her bir hücrenin değeri için sadece 1 Byte (8 bit) harcarsek, matrisin boyutu toplamda yaklaşık kaç Terabyte (TB) olur? Çözüm Adımları: 1. V = 1.000.000 düğüm. 2. Matris hücre sayısı = V × V = 1012 hücre. 3. Her hücre 1 Byte ise toplam = 1012 Byte. 4. 1012 Byte ≈1 Terabyte (TB) sadece yapıyı tutmak için! (İçinde \"1\" olmayan %99 boşluk). Kazanım: Seyrek (Sparse) graflarda matris",
-    "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
-      "page": 33,
-      "type": "pdf"
-    }
-  },
-  "Arama ve Graf Temelleri.pdf_p33_s1": {
-    "content": "1012 Byte ≈1 Terabyte (TB) sadece yapıyı tutmak için! (İçinde \"1\" olmayan %99 boşluk). Kazanım: Seyrek (Sparse) graflarda matris kullanımının hafıza iflasına yol açacağının ve matematiksel hesaplama kapasitesinin kavratılması. 33 / 47",
+    "content": "Ara Soru: Matris Maliyeti 1 Milyon ( 106 ) kullanıcısı olan bir sosyal ağı Komşuluk Matrisi ile RAM’de tutmak istiyoruz. Her bir hücrenin değeri için sadece 1 Byte (8 bit) harcarsek, matrisin boyutu toplamda yaklaşık kaç Terabyte (TB) olur? Çözüm Adımları: 1. V = 1.000.000 düğüm. 2. Matris hücre sayısı = V × V = 1012 hücre. 3. Her hücre 1 Byte ise toplam = 1012 Byte. 4. 1012 Byte ≈1 Terabyte (TB) sadece yapıyı tutmak için! (İçinde \"1\" olmayan %99 boşluk). Kazanım: Seyrek (Sparse) graflarda matris kullanımının hafıza iflasına yol açacağının ve matematiksel hesaplama kapasitesinin kavratılması. 33 / 47",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 33,
@@ -320,15 +304,7 @@
     }
   },
   "Arama ve Graf Temelleri.pdf_p40_s0": {
-    "content": "Diğer Modeller: Kenar Listesi ve Çapraz Kenar Listesi (Edge List): Tüm grafi sadece bir dizi veya tablo satırı gibi (Başlangıç, Bitiş, Ağırlık) tuple’ları halinde ardışık saklamak. Özellikle Kruskal gibi graf kenarlarını ağırlığına göre 'sıralayan' algoritmalar için muazzamdır. Örn: (A, B, 15) , (B, C, 22) Çapraz Bağlantılı Listeler (Incidence List): Her düğüm ve her kenar için ayrı nesne (class) oluşturulup obje referanslarıyla birbirlerine bağlanmasıdır. Nesne Yönelimli Programlamada (OOP) esneklik",
-    "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
-      "page": 40,
-      "type": "pdf"
-    }
-  },
-  "Arama ve Graf Temelleri.pdf_p40_s1": {
-    "content": "çin ayrı nesne (class) oluşturulup obje referanslarıyla birbirlerine bağlanmasıdır. Nesne Yönelimli Programlamada (OOP) esneklik sağlar ancak bellek (pointer vs.) tüketimi daha büyüktür. 40 / 47",
+    "content": "Diğer Modeller: Kenar Listesi ve Çapraz Kenar Listesi (Edge List): Tüm grafi sadece bir dizi veya tablo satırı gibi (Başlangıç, Bitiş, Ağırlık) tuple’ları halinde ardışık saklamak. Özellikle Kruskal gibi graf kenarlarını ağırlığına göre 'sıralayan' algoritmalar için muazzamdır. Örn: (A, B, 15) , (B, C, 22) Çapraz Bağlantılı Listeler (Incidence List): Her düğüm ve her kenar için ayrı nesne (class) oluşturulup obje referanslarıyla birbirlerine bağlanmasıdır. Nesne Yönelimli Programlamada (OOP) esneklik sağlar ancak bellek (pointer vs.) tüketimi daha büyüktür. 40 / 47",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 40,
@@ -376,15 +352,7 @@
     }
   },
   "Arama ve Graf Temelleri.pdf_p46_s0": {
-    "content": "Soru: Binary Search ve Aritmetik Taşma (1/2) Binary Search algoritmasında orta noktayı bulurken mid = (low + high) / 2 yerine neden mid = low + (high - low) / 2 yazılması önerilir? Integer Overflow (Tam Sayı Taşması): Sorun Eğer low ve high değerleri veri tipinin (örneğin 32-bit işaretli tamsayı) üst sınırına yakınsa ( > 230 ), (low + high) işlemi bellekte ayrılan sınırı aşarak negatif bir sonuç üretir. Program Çöküşü: Etki Taşma sonucu oluşan negatif değer 2 ’ye bölündüğünde, ortaya çıkan negatif indeks (",
-    "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
-      "page": 46,
-      "type": "pdf"
-    }
-  },
-  "Arama ve Graf Temelleri.pdf_p46_s1": {
-    "content": "gatif bir sonuç üretir. Program Çöküşü: Etki Taşma sonucu oluşan negatif değer 2 ’ye bölündüğünde, ortaya çıkan negatif indeks ( ArrayIndexOutOfBoundsException ) programın beklenmedik şekilde durmasına yol açar. 46 / 47",
+    "content": "Soru: Binary Search ve Aritmetik Taşma (1/2) Binary Search algoritmasında orta noktayı bulurken mid = (low + high) / 2 yerine neden mid = low + (high - low) / 2 yazılması önerilir? Integer Overflow (Tam Sayı Taşması): Sorun Eğer low ve high değerleri veri tipinin (örneğin 32-bit işaretli tamsayı) üst sınırına yakınsa ( > 230 ), (low + high) işlemi bellekte ayrılan sınırı aşarak negatif bir sonuç üretir. Program Çöküşü: Etki Taşma sonucu oluşan negatif değer 2 ’ye bölündüğünde, ortaya çıkan negatif indeks ( ArrayIndexOutOfBoundsException ) programın beklenmedik şekilde durmasına yol açar. 46 / 47",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 46,
@@ -392,15 +360,7 @@
     }
   },
   "Arama ve Graf Temelleri.pdf_p47_s0": {
-    "content": "Soru: Güvenli Tasarım ve İspat (2/2) Matematiksel Eşdeğerlik: high−low 2⋅low+high−low low+high ​ ​ ​ low + = = Çözüm 2 2 2 Formül matematiksel olarak aynıdır, ancak işlem sırasında low + high toplamı hiçbir zaman gerçekleşmez. Önce fark ( high - low ) hesaplandığı için sonuç her zaman küçülür, ardından low üzerine ekleme yapıldığında Fark toplam değer asla high değerini aşmaz. Bu, süreci güvenli aralıkta tutar. Best-Practice: Bu durum, 20 yıl boyunca Java’nın standart kütüphanesinde gizli kalmış meşhur bir",
-    "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
-      "page": 47,
-      "type": "pdf"
-    }
-  },
-  "Arama ve Graf Temelleri.pdf_p47_s1": {
-    "content": "süreci güvenli aralıkta tutar. Best-Practice: Bu durum, 20 yıl boyunca Java’nın standart kütüphanesinde gizli kalmış meşhur bir hatadır. Modern sistemlerde büyük veri setleri ile çalışırken bu \"güvenli hesaplama\" yöntemi zorunluluktur. 47 / 47",
+    "content": "Soru: Güvenli Tasarım ve İspat (2/2) Matematiksel Eşdeğerlik: high−low 2⋅low+high−low low+high ​ ​ ​ low + = = Çözüm 2 2 2 Formül matematiksel olarak aynıdır, ancak işlem sırasında low + high toplamı hiçbir zaman gerçekleşmez. Önce fark ( high - low ) hesaplandığı için sonuç her zaman küçülür, ardından low üzerine ekleme yapıldığında Fark toplam değer asla high değerini aşmaz. Bu, süreci güvenli aralıkta tutar. Best-Practice: Bu durum, 20 yıl boyunca Java’nın standart kütüphanesinde gizli kalmış meşhur bir hatadır. Modern sistemlerde büyük veri setleri ile çalışırken bu \"güvenli hesaplama\" yöntemi zorunluluktur. 47 / 47",
     "metadata": {
       "source": "Arama ve Graf Temelleri.pdf",
       "page": 47,
@@ -408,7 +368,7 @@
     }
   },
   "projeler.pdf_p1_s0": {
-    "content": "25458667006 AI-Destekli Akıllı Şehir Lojistik ve Acil Durum Yönetimi 1 25458667018 --Bir şehrin dijital ikizinde ambulansların, itfaiyenin ve kargo dronlarının yönetimi. Trafik yoğunluğu ve aciliyet durumuna göre dinamik rota planlaması yapılır. 24458667032 24458667024 Modern Vektör Veritabanı (VectorDB) ve Anlamsal Arama Motoru 2 25458667405 -- Milyonlarca doküman arasında anahtar kelime yerine anlamsal (embedding) benzerlik üzerinden arama yapan yüksek performanslı bir motor. 25458667450 25458667448",
+    "content": "25458667006 AI-Destekli Akıllı Şehir Lojistik ve Acil Durum Yönetimi 1 25458667018 --Bir şehrin dijital ikizinde ambulansların, itfaiyenin ve kargo dronlarının yönetimi. Trafik yoğunluğu ve aciliyet durumuna göre dinamik rota planlaması yapılır. 24458667032 24458667024 Modern Vektör Veritabanı (VectorDB) ve Anlamsal Arama Motoru 2 25458667405 -- Milyonlarca doküman arasında anahtar kelime yerine anlamsal (embedding) benzerlik üzerinden arama yapan yüksek performanslı bir motor. 25458667450 25458667448 Algoritmik Finansal Denetçi ve Fraud Tespit Sistemi 3 25458667015 -- Bankacılık sisteminde gerçekleşen milyonlarca işlemin içindeki sahtecilik (fraud) ve para aklama döngülerinin tespiti. 24458667019 25458667009 Akıllı E-Ticaret Kişiselleştirme ve Sıralama Motoru 4 24458667028 --Kullanıcı davranışlarına, stok durumuna ve AI tahminlerine göre ürünleri dinamik olarak sıralayan bir platform. 24458667015 25458667021 Gerçek Zamanlı Genom Dizileme ve Hastalık Tahmin Aracı 5 24458667031 --DNA dizilerini referans genomlarla karşılaştırarak benzerlikleri ve olası genetik mutasyonları bulan biyoinformatik aracı. 25458667008 24458667017 Sosyal Bağlantı Analizörü ve \"Aralardaki En Kısa Yol\" Keşfi 6 25458667027 --LinkedIn veya Twitter benzeri bir yapıdan alınan verilerle kişiler arasındaki bağlantı derecesini ve etkileşim gücünü analiz eden sistem. 25458667449",
     "metadata": {
       "source": "projeler.pdf",
       "page": 1,
@@ -416,39 +376,7 @@
     }
   },
   "projeler.pdf_p1_s1": {
-    "content": "nahtar kelime yerine anlamsal (embedding) benzerlik üzerinden arama yapan yüksek performanslı bir motor. 25458667450 25458667448 Algoritmik Finansal Denetçi ve Fraud Tespit Sistemi 3 25458667015 -- Bankacılık sisteminde gerçekleşen milyonlarca işlemin içindeki sahtecilik (fraud) ve para aklama döngülerinin tespiti. 24458667019 25458667009 Akıllı E-Ticaret Kişiselleştirme ve Sıralama Motoru 4 24458667028 --Kullanıcı davranışlarına, stok durumuna ve AI tahminlerine göre ürünleri dinamik olarak sıralayan bir",
-    "metadata": {
-      "source": "projeler.pdf",
-      "page": 1,
-      "type": "pdf"
-    }
-  },
-  "projeler.pdf_p1_s2": {
-    "content": "ama Motoru 4 24458667028 --Kullanıcı davranışlarına, stok durumuna ve AI tahminlerine göre ürünleri dinamik olarak sıralayan bir platform. 24458667015 25458667021 Gerçek Zamanlı Genom Dizileme ve Hastalık Tahmin Aracı 5 24458667031 --DNA dizilerini referans genomlarla karşılaştırarak benzerlikleri ve olası genetik mutasyonları bulan biyoinformatik aracı. 25458667008 24458667017 Sosyal Bağlantı Analizörü ve \"Aralardaki En Kısa Yol\" Keşfi 6 25458667027 --LinkedIn veya Twitter benzeri bir yapıdan alınan",
-    "metadata": {
-      "source": "projeler.pdf",
-      "page": 1,
-      "type": "pdf"
-    }
-  },
-  "projeler.pdf_p1_s3": {
-    "content": "017 Sosyal Bağlantı Analizörü ve \"Aralardaki En Kısa Yol\" Keşfi 6 25458667027 --LinkedIn veya Twitter benzeri bir yapıdan alınan verilerle kişiler arasındaki bağlantı derecesini ve etkileşim gücünü analiz eden sistem. 25458667449 25458667014 Küresel Uçuş Rezervasyon ve Rota Optimizasyon Sistemi 7 25458667446 --Binlerce şehir ve havayolu arasında aktarma süresi, maliyet ve mesafe dengesini kuran rezervasyon motoru. 25458667002 24458667004 Gerçek Zamanlı İşbirlikçi Metin Editörü (CRDT Mantığı) 8 25458667001",
-    "metadata": {
-      "source": "projeler.pdf",
-      "page": 1,
-      "type": "pdf"
-    }
-  },
-  "projeler.pdf_p1_s4": {
-    "content": "dengesini kuran rezervasyon motoru. 25458667002 24458667004 Gerçek Zamanlı İşbirlikçi Metin Editörü (CRDT Mantığı) 8 25458667001 -- Google Docs benzeri, birden fazla kullanıcının aynı anda veri kaybı yaşamadan metin üzerinde çalıştığı bir sistem. 24458667009 24458667030 Global Tedarik Zinciri Görünürlük ve Risk Analitik Platformu 9 25458667004 --Hammaddeden son ürüne kadar tüm aşamaların izlendiği, lojistik darboğazların (bottleneck) tespit edildiği sistem. 25458667454 24458667023 Oyun Motoru Yol Bulma ve",
-    "metadata": {
-      "source": "projeler.pdf",
-      "page": 1,
-      "type": "pdf"
-    }
-  },
-  "projeler.pdf_p1_s5": {
-    "content": "amaların izlendiği, lojistik darboğazların (bottleneck) tespit edildiği sistem. 25458667454 24458667023 Oyun Motoru Yol Bulma ve Mekansal Zeka Sistemi 10 25458667029 -- Strateji oyunlarında veya 3D ortamlarda binlerce karakterin birbirine çarpmadan hedef yola ulaşması. 24458667005 25458667017 24458667013 11 24458667025 Akıllı Enerji Şebekesi (Smart Grid) Balancing ve Dağıtım Ünitesi 25458667026 --Yenilenebilir enerji kaynaklarından gelen elektriğin tüketicilere en az kayıpla ve dengeli dağıtılması.",
+    "content": "aracı. 25458667008 24458667017 Sosyal Bağlantı Analizörü ve \"Aralardaki En Kısa Yol\" Keşfi 6 25458667027 --LinkedIn veya Twitter benzeri bir yapıdan alınan verilerle kişiler arasındaki bağlantı derecesini ve etkileşim gücünü analiz eden sistem. 25458667449 25458667014 Küresel Uçuş Rezervasyon ve Rota Optimizasyon Sistemi 7 25458667446 --Binlerce şehir ve havayolu arasında aktarma süresi, maliyet ve mesafe dengesini kuran rezervasyon motoru. 25458667002 24458667004 Gerçek Zamanlı İşbirlikçi Metin Editörü (CRDT Mantığı) 8 25458667001 -- Google Docs benzeri, birden fazla kullanıcının aynı anda veri kaybı yaşamadan metin üzerinde çalıştığı bir sistem. 24458667009 24458667030 Global Tedarik Zinciri Görünürlük ve Risk Analitik Platformu 9 25458667004 --Hammaddeden son ürüne kadar tüm aşamaların izlendiği, lojistik darboğazların (bottleneck) tespit edildiği sistem. 25458667454 24458667023 Oyun Motoru Yol Bulma ve Mekansal Zeka Sistemi 10 25458667029 -- Strateji oyunlarında veya 3D ortamlarda binlerce karakterin birbirine çarpmadan hedef yola ulaşması. 24458667005 25458667017 24458667013 11 24458667025 Akıllı Enerji Şebekesi (Smart Grid) Balancing ve Dağıtım Ünitesi 25458667026 --Yenilenebilir enerji kaynaklarından gelen elektriğin tüketicilere en az kayıpla ve dengeli dağıtılması.",
     "metadata": {
       "source": "projeler.pdf",
       "page": 1,
@@ -496,15 +424,7 @@
     }
   },
   "YZM0101_week10.pdf_p8_s0": {
-    "content": "Yeni Bir Hata Ölçümü • Lineer regresyondaki MSE (Ortalama Kare Hata) maliyet fonksiyonunu Lojistik Regresyon İçin burada kullanabilir miyiz? • Hayır. Sigmoid fonksiyonu nedeniyle, MSE kullanırsak maliyet Maliyet fonksiyonu 'dışbükey olmayan' (non-convex) bir hal alır. Bu, Gradyan Azalması'nın yerel minimumlara takılıp kalmasına neden olabilir. Fonksiyonu • Çözüm: Logaritmik Kayıp (Log Loss) veya Çapraz Entropi Kaybı (Cross-Entropy Loss) adı verilen yeni bir maliyet fonksiyonu kullanılır. • Bu fonksiyon,",
-    "metadata": {
-      "source": "YZM0101_week10.pdf",
-      "page": 8,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week10.pdf_p8_s1": {
-    "content": "ıp (Log Loss) veya Çapraz Entropi Kaybı (Cross-Entropy Loss) adı verilen yeni bir maliyet fonksiyonu kullanılır. • Bu fonksiyon, modelin yanlış tahminlerine (özellikle emin olduğu yanlış tahminlere) büyük bir ceza verir.",
+    "content": "Yeni Bir Hata Ölçümü • Lineer regresyondaki MSE (Ortalama Kare Hata) maliyet fonksiyonunu Lojistik Regresyon İçin burada kullanabilir miyiz? • Hayır. Sigmoid fonksiyonu nedeniyle, MSE kullanırsak maliyet Maliyet fonksiyonu 'dışbükey olmayan' (non-convex) bir hal alır. Bu, Gradyan Azalması'nın yerel minimumlara takılıp kalmasına neden olabilir. Fonksiyonu • Çözüm: Logaritmik Kayıp (Log Loss) veya Çapraz Entropi Kaybı (Cross-Entropy Loss) adı verilen yeni bir maliyet fonksiyonu kullanılır. • Bu fonksiyon, modelin yanlış tahminlerine (özellikle emin olduğu yanlış tahminlere) büyük bir ceza verir.",
     "metadata": {
       "source": "YZM0101_week10.pdf",
       "page": 8,
@@ -520,15 +440,7 @@
     }
   },
   "YZM0101_week10.pdf_p12_s0": {
-    "content": "Algoritmanın Ayarlanması • K Değeri: Algoritmanın en önemli hiperparametresidir. • - Küçük K: Gürültüye karşı hassas, karmaşık karar sınırları KNN: K Değerini (overfitting riski). • - Büyük K: Daha pürüzsüz karar sınırları, ancak sınıflar arasındaki Seçmek ve ince detayları kaçırabilir (underfitting riski). • - Genellikle tek bir sayı seçilir (beraberliği önlemek için).Mesafe Ölçümü • Mesafe Ölçümü: 'Yakınlığı' nasıl tanımlarız? • - Öklid Mesafesi: En yaygın kullanılan, iki nokta arasındaki düz çizgi",
-    "metadata": {
-      "source": "YZM0101_week10.pdf",
-      "page": 12,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week10.pdf_p12_s1": {
-    "content": "e Ölçümü • Mesafe Ölçümü: 'Yakınlığı' nasıl tanımlarız? • - Öklid Mesafesi: En yaygın kullanılan, iki nokta arasındaki düz çizgi mesafesi. • - Manhattan Mesafesi: Şehir bloklarında yürür gibi, eksenler boyunca alınan toplam mesafe.",
+    "content": "Algoritmanın Ayarlanması • K Değeri: Algoritmanın en önemli hiperparametresidir. • - Küçük K: Gürültüye karşı hassas, karmaşık karar sınırları KNN: K Değerini (overfitting riski). • - Büyük K: Daha pürüzsüz karar sınırları, ancak sınıflar arasındaki Seçmek ve ince detayları kaçırabilir (underfitting riski). • - Genellikle tek bir sayı seçilir (beraberliği önlemek için).Mesafe Ölçümü • Mesafe Ölçümü: 'Yakınlığı' nasıl tanımlarız? • - Öklid Mesafesi: En yaygın kullanılan, iki nokta arasındaki düz çizgi mesafesi. • - Manhattan Mesafesi: Şehir bloklarında yürür gibi, eksenler boyunca alınan toplam mesafe.",
     "metadata": {
       "source": "YZM0101_week10.pdf",
       "page": 12,
@@ -552,15 +464,7 @@
     }
   },
   "YZM0101_week10.pdf_p16_s0": {
-    "content": "Farklı Hata Türlerine Odaklanmak • Precision (Kesinlik): Pozitif olarak tahmin ettiklerimizin ne kadarı gerçekten pozitif? • - `Precision = TP / (TP + FP)` • - Amacı: Yanlış Pozitif (FP) sayısını minimize etmek. (Spam filtresi:Precision ve Recall Normal bir maili spam klasörüne atmamak önemlidir). • Recall (Duyarlılık veya Hassasiyet): Gerçekte pozitif olanların ne kadarını doğru tespit edebildik? • - `Recall = TP / (TP + FN)` • - Amacı: Yanlış Negatif (FN) sayısını minimize etmek. (Hastalık teşhisi: Hasta",
-    "metadata": {
-      "source": "YZM0101_week10.pdf",
-      "page": 16,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week10.pdf_p16_s1": {
-    "content": "tespit edebildik? • - `Recall = TP / (TP + FN)` • - Amacı: Yanlış Negatif (FN) sayısını minimize etmek. (Hastalık teşhisi: Hasta birini gözden kaçırmamak önemlidir).",
+    "content": "Farklı Hata Türlerine Odaklanmak • Precision (Kesinlik): Pozitif olarak tahmin ettiklerimizin ne kadarı gerçekten pozitif? • - `Precision = TP / (TP + FP)` • - Amacı: Yanlış Pozitif (FP) sayısını minimize etmek. (Spam filtresi:Precision ve Recall Normal bir maili spam klasörüne atmamak önemlidir). • Recall (Duyarlılık veya Hassasiyet): Gerçekte pozitif olanların ne kadarını doğru tespit edebildik? • - `Recall = TP / (TP + FN)` • - Amacı: Yanlış Negatif (FN) sayısını minimize etmek. (Hastalık teşhisi: Hasta birini gözden kaçırmamak önemlidir).",
     "metadata": {
       "source": "YZM0101_week10.pdf",
       "page": 16,
@@ -624,15 +528,7 @@
     }
   },
   "YZM0101_week10.pdf_p28_s0": {
-    "content": "Akılda Kalması Gerekenler • Sınıflandırma: Bir öğeyi önceden tanımlanmış kategorilere atama görevi. • Lojistik Regresyon: Çıktısı 0-1 arasında bir olasılık olan, doğrusal bir sınıflandırma modeli. Haftanın • Karar Sınırı: Modelin farklı sınıflar arasında karar verdiği ayırıcı çizgi/yüzey. Kavramları: Özet • KNN: Tüm eğitim verisini hafızada tutan ve en yakın komşuların oyuna göre karar veren 'tembel' bir algoritma. • Karmaşıklık Matrisi: Modelin TP, TN, FP, FN sayılarını gösteren ve performans analizinin",
-    "metadata": {
-      "source": "YZM0101_week10.pdf",
-      "page": 28,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week10.pdf_p28_s1": {
-    "content": "e karar veren 'tembel' bir algoritma. • Karmaşıklık Matrisi: Modelin TP, TN, FP, FN sayılarını gösteren ve performans analizinin temelini oluşturan tablo. • Precision, Recall, F1-Skoru: Dengesiz veri setlerinde doğruluktan daha anlamlı olan ve farklı hata türlerine odaklanan değerlendirme metrikleri.",
+    "content": "Akılda Kalması Gerekenler • Sınıflandırma: Bir öğeyi önceden tanımlanmış kategorilere atama görevi. • Lojistik Regresyon: Çıktısı 0-1 arasında bir olasılık olan, doğrusal bir sınıflandırma modeli. Haftanın • Karar Sınırı: Modelin farklı sınıflar arasında karar verdiği ayırıcı çizgi/yüzey. Kavramları: Özet • KNN: Tüm eğitim verisini hafızada tutan ve en yakın komşuların oyuna göre karar veren 'tembel' bir algoritma. • Karmaşıklık Matrisi: Modelin TP, TN, FP, FN sayılarını gösteren ve performans analizinin temelini oluşturan tablo. • Precision, Recall, F1-Skoru: Dengesiz veri setlerinde doğruluktan daha anlamlı olan ve farklı hata türlerine odaklanan değerlendirme metrikleri.",
     "metadata": {
       "source": "YZM0101_week10.pdf",
       "page": 28,
@@ -648,15 +544,7 @@
     }
   },
   "YZM0101_week10.pdf_p30_s0": {
-    "content": "Yanlış Pozitif mi, Yanlış Negatif mi? • Aşağıdaki iki senaryoyu düşünün: • Senaryo A: E-posta Spam Filtresi • - FP Hatası: Önemli bir iş teklifi maili spam klasörüne düşer. Düşünme • - FN Hatası: Gelen kutunuza bir reklam maili düşer. Sorusu: Hangi • Senaryo B: Kanser Teşhis Modeli Hata Daha Kötü? • - FP Hatası: Sağlıklı bir hastaya 'kanser olabilirsin, ek testler gerekiyor' denir. • - FN Hatası: Kanserli bir hastaya 'tamamen sağlıklısın' denir. • Bu senaryolarda hangi hata türü daha maliyetlidir? Bu",
-    "metadata": {
-      "source": "YZM0101_week10.pdf",
-      "page": 30,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week10.pdf_p30_s1": {
-    "content": "denir. • - FN Hatası: Kanserli bir hastaya 'tamamen sağlıklısın' denir. • Bu senaryolarda hangi hata türü daha maliyetlidir? Bu durum, modelimizi geliştirirken Precision'a mı yoksa Recall'a mı daha fazla önem vermemiz gerektiğini nasıl etkiler?",
+    "content": "Yanlış Pozitif mi, Yanlış Negatif mi? • Aşağıdaki iki senaryoyu düşünün: • Senaryo A: E-posta Spam Filtresi • - FP Hatası: Önemli bir iş teklifi maili spam klasörüne düşer. Düşünme • - FN Hatası: Gelen kutunuza bir reklam maili düşer. Sorusu: Hangi • Senaryo B: Kanser Teşhis Modeli Hata Daha Kötü? • - FP Hatası: Sağlıklı bir hastaya 'kanser olabilirsin, ek testler gerekiyor' denir. • - FN Hatası: Kanserli bir hastaya 'tamamen sağlıklısın' denir. • Bu senaryolarda hangi hata türü daha maliyetlidir? Bu durum, modelimizi geliştirirken Precision'a mı yoksa Recall'a mı daha fazla önem vermemiz gerektiğini nasıl etkiler?",
     "metadata": {
       "source": "YZM0101_week10.pdf",
       "page": 30,
@@ -664,15 +552,7 @@
     }
   },
   "YZM0101_week10.pdf_p31_s0": {
-    "content": "Sınıflandırmanın Finanstaki Rolü • Bankalar ve finans kuruluşları, bir müşterinin kredisini zamanında geri ödeyip ödemeyeceğini tahmin etmek için sınıflandırma modelleri kullanır.Gerçek Dünya • Problem: Bir kredi başvurusunu 'onayla' (düşük risk) veya 'reddet' Örneği: Kredi Skoru (yüksek risk) olarak sınıflandırmak. • Özellikler (Girdiler): Müşterinin yaşı, geliri, mevcut borçları, kredi geçmişi, mesleği vb. • Hedef (Çıktı): Kredi temerrüdü (default) (Evet/Hayır). • Bu modellerde, özellikle Yanlış Pozitif",
-    "metadata": {
-      "source": "YZM0101_week10.pdf",
-      "page": 31,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week10.pdf_p31_s1": {
-    "content": "ı, kredi geçmişi, mesleği vb. • Hedef (Çıktı): Kredi temerrüdü (default) (Evet/Hayır). • Bu modellerde, özellikle Yanlış Pozitif (kötü bir müşteriyi onaylamak) hatasını minimize etmek kritik öneme sahiptir.",
+    "content": "Sınıflandırmanın Finanstaki Rolü • Bankalar ve finans kuruluşları, bir müşterinin kredisini zamanında geri ödeyip ödemeyeceğini tahmin etmek için sınıflandırma modelleri kullanır.Gerçek Dünya • Problem: Bir kredi başvurusunu 'onayla' (düşük risk) veya 'reddet' Örneği: Kredi Skoru (yüksek risk) olarak sınıflandırmak. • Özellikler (Girdiler): Müşterinin yaşı, geliri, mevcut borçları, kredi geçmişi, mesleği vb. • Hedef (Çıktı): Kredi temerrüdü (default) (Evet/Hayır). • Bu modellerde, özellikle Yanlış Pozitif (kötü bir müşteriyi onaylamak) hatasını minimize etmek kritik öneme sahiptir.",
     "metadata": {
       "source": "YZM0101_week10.pdf",
       "page": 31,
@@ -680,15 +560,7 @@
     }
   },
   "YZM0101_week10.pdf_p32_s0": {
-    "content": "KNN ve Gradyan Tabanlı Modeller İçin Kritik Adım • Eğer veri setindeki özellikler çok farklı ölçeklerdeyse (örn: yaş 20-70, Önemli Not: maaş 5000-50000), bazı algoritmalar yanlış çalışabilir. Özellik • KNN: Mesafe hesaplamaları, büyük ölçekli özellikler tarafından domine edilir. Maaştaki bir fark, yaştaki bir farktan çok daha önemli hale Ölçeklendirme (Feature Scaling) gelir. • Lojistik Regresyon (ve diğer gradyan tabanlı modeller): Gradyan Azalması'nın yakınsaması çok yavaşlayabilir veya zorlaşabilir. •",
-    "metadata": {
-      "source": "YZM0101_week10.pdf",
-      "page": 32,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week10.pdf_p32_s1": {
-    "content": "Lojistik Regresyon (ve diğer gradyan tabanlı modeller): Gradyan Azalması'nın yakınsaması çok yavaşlayabilir veya zorlaşabilir. • Çözüm: Tüm özellikleri benzer bir ölçeğe getirmek (örn: 0-1 arasına veya ortalaması 0, standart sapması 1 olacak şekilde). Buna Özellik Ölçeklendirme denir",
+    "content": "KNN ve Gradyan Tabanlı Modeller İçin Kritik Adım • Eğer veri setindeki özellikler çok farklı ölçeklerdeyse (örn: yaş 20-70, Önemli Not: maaş 5000-50000), bazı algoritmalar yanlış çalışabilir. Özellik • KNN: Mesafe hesaplamaları, büyük ölçekli özellikler tarafından domine edilir. Maaştaki bir fark, yaştaki bir farktan çok daha önemli hale Ölçeklendirme (Feature Scaling) gelir. • Lojistik Regresyon (ve diğer gradyan tabanlı modeller): Gradyan Azalması'nın yakınsaması çok yavaşlayabilir veya zorlaşabilir. • Çözüm: Tüm özellikleri benzer bir ölçeğe getirmek (örn: 0-1 arasına veya ortalaması 0, standart sapması 1 olacak şekilde). Buna Özellik Ölçeklendirme denir",
     "metadata": {
       "source": "YZM0101_week10.pdf",
       "page": 32,
@@ -728,15 +600,7 @@
     }
   },
   "YZM0101_week11_v1.pdf_p5_s0": {
-    "content": "Veriyi En 'Saf' Hale Getirmek • Karar ağacını oluştururken her adımda amaç, veri setini en 'saf' alt gruplara ayıracak soruyu (özelliği ve eşik değeri) bulmaktır. • 'Saflık', bir düğümdeki tüm örneklerin aynı sınıfa ait olma derecesidir. En İyi Soruyu • Saflık Ölçütleri (Impurity Metrics): • - Gini Belirsizliği (Gini Impurity): Bir düğümden rastgele seçilen bir Nasıl Buluruz? örneğin, o düğümdeki dağılıma göre yanlış sınıflandırılma olasılığı. • - Entropi (Entropy): Bir düğümdeki 'düzensizliğin' veya",
-    "metadata": {
-      "source": "YZM0101_week11_v1.pdf",
-      "page": 5,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week11_v1.pdf_p5_s1": {
-    "content": "? örneğin, o düğümdeki dağılıma göre yanlış sınıflandırılma olasılığı. • - Entropi (Entropy): Bir düğümdeki 'düzensizliğin' veya 'belirsizliğin' bir ölçüsü. (Bilgi Teorisi'nden gelir). • Algoritma, Bilgi Kazancını (Information Gain) maksimize eden, yani belirsizliği en çok azaltan soruyu seçer.",
+    "content": "Veriyi En 'Saf' Hale Getirmek • Karar ağacını oluştururken her adımda amaç, veri setini en 'saf' alt gruplara ayıracak soruyu (özelliği ve eşik değeri) bulmaktır. • 'Saflık', bir düğümdeki tüm örneklerin aynı sınıfa ait olma derecesidir. En İyi Soruyu • Saflık Ölçütleri (Impurity Metrics): • - Gini Belirsizliği (Gini Impurity): Bir düğümden rastgele seçilen bir Nasıl Buluruz? örneğin, o düğümdeki dağılıma göre yanlış sınıflandırılma olasılığı. • - Entropi (Entropy): Bir düğümdeki 'düzensizliğin' veya 'belirsizliğin' bir ölçüsü. (Bilgi Teorisi'nden gelir). • Algoritma, Bilgi Kazancını (Information Gain) maksimize eden, yani belirsizliği en çok azaltan soruyu seçer.",
     "metadata": {
       "source": "YZM0101_week11_v1.pdf",
       "page": 5,
@@ -760,15 +624,7 @@
     }
   },
   "YZM0101_week11_v1.pdf_p9_s0": {
-    "content": "Ne Zaman Kullanmalı? • Avantajları: • - Yorumlanması Kolay: Modelin kararlarını anlamak ve görselleştirmek basittir. Karar Ağaçları: • - Az Veri Ön İşleme: Özellik ölçeklendirme gerektirmez. Hem sayısal hem kategorik verilerle doğal olarak çalışabilir. Avantajlar ve Dezavantajlar • - Doğrusal Olmayan İlişkileri Yakalar: Karmaşık karar sınırları oluşturabilir. • Dezavantajları: • - Aşırı Öğrenmeye (Overfitting) Eğilimli: Ağaç çok derinleşirse, eğitim verisindeki gürültüyü ezberleyebilir. • - Kararsız",
-    "metadata": {
-      "source": "YZM0101_week11_v1.pdf",
-      "page": 9,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week11_v1.pdf_p9_s1": {
-    "content": "rı: • - Aşırı Öğrenmeye (Overfitting) Eğilimli: Ağaç çok derinleşirse, eğitim verisindeki gürültüyü ezberleyebilir. • - Kararsız (Unstable): Eğitim verisindeki küçük bir değişiklik, tamamen farklı bir ağacın oluşmasına neden olabilir.",
+    "content": "Ne Zaman Kullanmalı? • Avantajları: • - Yorumlanması Kolay: Modelin kararlarını anlamak ve görselleştirmek basittir. Karar Ağaçları: • - Az Veri Ön İşleme: Özellik ölçeklendirme gerektirmez. Hem sayısal hem kategorik verilerle doğal olarak çalışabilir. Avantajlar ve Dezavantajlar • - Doğrusal Olmayan İlişkileri Yakalar: Karmaşık karar sınırları oluşturabilir. • Dezavantajları: • - Aşırı Öğrenmeye (Overfitting) Eğilimli: Ağaç çok derinleşirse, eğitim verisindeki gürültüyü ezberleyebilir. • - Kararsız (Unstable): Eğitim verisindeki küçük bir değişiklik, tamamen farklı bir ağacın oluşmasına neden olabilir.",
     "metadata": {
       "source": "YZM0101_week11_v1.pdf",
       "page": 9,
@@ -776,15 +632,7 @@
     }
   },
   "YZM0101_week11_v1.pdf_p10_s0": {
-    "content": "Ağacın Karmaşıklığını Kontrol Etme • Aşırı öğrenmeyi engellemek için ağacın büyümesini kısıtlamamız gerekir. Buna budama denir.Aşırı Öğrenmeyi • Yöntemler: Önleme: • - Maksimum Derinlik (max_depth): Ağacın ne kadar derine Budama inebileceğini sınırlar. (Pruning) • - Minimum Örnek Sayısı (min_samples_split): Bir düğümü bölmek için gereken minimum örnek sayısını belirler. • - Minimum Yaprak Boyutu (min_samples_leaf): Bir yaprak düğümde olması gereken minimum örnek sayısını belirler. • Bu hiperparametreler,",
-    "metadata": {
-      "source": "YZM0101_week11_v1.pdf",
-      "page": 10,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week11_v1.pdf_p10_s1": {
-    "content": "mum Yaprak Boyutu (min_samples_leaf): Bir yaprak düğümde olması gereken minimum örnek sayısını belirler. • Bu hiperparametreler, modelin genelleme yeteneğini artırmak için ayarlanır.",
+    "content": "Ağacın Karmaşıklığını Kontrol Etme • Aşırı öğrenmeyi engellemek için ağacın büyümesini kısıtlamamız gerekir. Buna budama denir.Aşırı Öğrenmeyi • Yöntemler: Önleme: • - Maksimum Derinlik (max_depth): Ağacın ne kadar derine Budama inebileceğini sınırlar. (Pruning) • - Minimum Örnek Sayısı (min_samples_split): Bir düğümü bölmek için gereken minimum örnek sayısını belirler. • - Minimum Yaprak Boyutu (min_samples_leaf): Bir yaprak düğümde olması gereken minimum örnek sayısını belirler. • Bu hiperparametreler, modelin genelleme yeteneğini artırmak için ayarlanır.",
     "metadata": {
       "source": "YZM0101_week11_v1.pdf",
       "page": 10,
@@ -808,15 +656,7 @@
     }
   },
   "YZM0101_week11_v1.pdf_p16_s0": {
-    "content": "Birçok Ağacın Gücü Adına! • Fikir: Tek bir karar ağacının kararsızlığını ve aşırı öğrenme eğilimini, Topluluk birçok farklı ağaç oluşturup sonuçlarını birleştirerek gidermek. Öğrenmesi: • Rastgele Ormanlar (Random Forests): • 1. Orijinal veri setinden rastgele örneklemler (bootstrap) alarak birçok Rastgele Ormanlar alt veri seti oluşturur. • 2. Her bir alt veri seti üzerinde bir karar ağacı eğitir. Ağaçları eğitirken, her düğümde özelliklerin sadece rastgele bir alt kümesini dikkate alır. • 3. Tahmin",
-    "metadata": {
-      "source": "YZM0101_week11_v1.pdf",
-      "page": 16,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week11_v1.pdf_p16_s1": {
-    "content": "bir karar ağacı eğitir. Ağaçları eğitirken, her düğümde özelliklerin sadece rastgele bir alt kümesini dikkate alır. • 3. Tahmin yapmak için, tüm ağaçların tahminlerini alır ve çoğunluğun oyunu (sınıflandırma) veya ortalamayı (regresyon) sonuç olarak verir.",
+    "content": "Birçok Ağacın Gücü Adına! • Fikir: Tek bir karar ağacının kararsızlığını ve aşırı öğrenme eğilimini, Topluluk birçok farklı ağaç oluşturup sonuçlarını birleştirerek gidermek. Öğrenmesi: • Rastgele Ormanlar (Random Forests): • 1. Orijinal veri setinden rastgele örneklemler (bootstrap) alarak birçok Rastgele Ormanlar alt veri seti oluşturur. • 2. Her bir alt veri seti üzerinde bir karar ağacı eğitir. Ağaçları eğitirken, her düğümde özelliklerin sadece rastgele bir alt kümesini dikkate alır. • 3. Tahmin yapmak için, tüm ağaçların tahminlerini alır ve çoğunluğun oyunu (sınıflandırma) veya ortalamayı (regresyon) sonuç olarak verir.",
     "metadata": {
       "source": "YZM0101_week11_v1.pdf",
       "page": 16,
@@ -856,15 +696,7 @@
     }
   },
   "YZM0101_week12.pdf_p3_s0": {
-    "content": "Verideki Doğal Grupları Bulmak • **Görev:** Birbirine benzeyen veri noktalarını aynı gruba (kümeye), benzemeyenleri ise farklı gruplara atamak. • **'Benzerlik'** genellikle mesafe (örn: Öklid mesafesi) ile ölçülür. • **Uygulama Alanları:** Kümeleme • - **Müşteri Segmentasyonu:** Müşterileri satın alma davranışlarına(Clustering) göre gruplara ayırmak. • - **Görüntü Segmentasyonu:** Bir görüntüdeki pikselleri renklerine veya dokularına göre gruplayarak nesneleri ayırmak. • - **Anomali Tespiti:** Herhangi bir",
-    "metadata": {
-      "source": "YZM0101_week12.pdf",
-      "page": 3,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week12.pdf_p3_s1": {
-    "content": "Bir görüntüdeki pikselleri renklerine veya dokularına göre gruplayarak nesneleri ayırmak. • - **Anomali Tespiti:** Herhangi bir kümeye ait olmayan aykırı veri noktalarını (outliers) bulmak.",
+    "content": "Verideki Doğal Grupları Bulmak • **Görev:** Birbirine benzeyen veri noktalarını aynı gruba (kümeye), benzemeyenleri ise farklı gruplara atamak. • **'Benzerlik'** genellikle mesafe (örn: Öklid mesafesi) ile ölçülür. • **Uygulama Alanları:** Kümeleme • - **Müşteri Segmentasyonu:** Müşterileri satın alma davranışlarına(Clustering) göre gruplara ayırmak. • - **Görüntü Segmentasyonu:** Bir görüntüdeki pikselleri renklerine veya dokularına göre gruplayarak nesneleri ayırmak. • - **Anomali Tespiti:** Herhangi bir kümeye ait olmayan aykırı veri noktalarını (outliers) bulmak.",
     "metadata": {
       "source": "YZM0101_week12.pdf",
       "page": 3,
@@ -880,15 +712,7 @@
     }
   },
   "YZM0101_week12.pdf_p6_s0": {
-    "content": "Merkezleri Hareket Ettirmek • **1. Başlatma:** K adet küme merkezini (centroid) rastgele K-Means konumlara yerleştir. • **2. Atama Adımı:** Her bir veri noktasını, kendisine en yakın olan Algoritmasının küme merkezinin kümesine ata. Adımları • **3. Güncelleme Adımı:** Her bir küme için, o kümeye atanan tüm veri noktalarının ortalamasını alarak küme merkezinin yerini güncelle (merkezi, kümenin yeni ağırlık merkezine taşı). • **4. Tekrarlama:** Küme merkezlerinin konumu artık değişmeyene (veya çok az",
-    "metadata": {
-      "source": "YZM0101_week12.pdf",
-      "page": 6,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week12.pdf_p6_s1": {
-    "content": "le (merkezi, kümenin yeni ağırlık merkezine taşı). • **4. Tekrarlama:** Küme merkezlerinin konumu artık değişmeyene (veya çok az değişene) kadar 2. ve 3. adımları tekrarla.",
+    "content": "Merkezleri Hareket Ettirmek • **1. Başlatma:** K adet küme merkezini (centroid) rastgele K-Means konumlara yerleştir. • **2. Atama Adımı:** Her bir veri noktasını, kendisine en yakın olan Algoritmasının küme merkezinin kümesine ata. Adımları • **3. Güncelleme Adımı:** Her bir küme için, o kümeye atanan tüm veri noktalarının ortalamasını alarak küme merkezinin yerini güncelle (merkezi, kümenin yeni ağırlık merkezine taşı). • **4. Tekrarlama:** Küme merkezlerinin konumu artık değişmeyene (veya çok az değişene) kadar 2. ve 3. adımları tekrarla.",
     "metadata": {
       "source": "YZM0101_week12.pdf",
       "page": 6,
@@ -920,15 +744,7 @@
     }
   },
   "YZM0101_week12.pdf_p11_s0": {
-    "content": "Daha Azıyla Daha Çoğunu Anlamak • **Amaç:** Bir veri setindeki özellik (sütun) sayısını, en önemli bilgileri koruyarak azaltmak. Boyut Azaltma • **Neden Önemli?** • - **Görselleştirme:** Yüksek boyutlu veriyi 2D veya 3D'ye(Dimensionality Reduction) indirgeyerek insan tarafından anlaşılabilir hale getirmek. • - **Hesaplama Verimliliği:** Daha az özellikle, makine öğrenmesi modelleri daha hızlı eğitilir. • - **Gürültü Azaltma:** Önemsiz veya gürültülü özellikleri kaldırarak model performansını artırabilir",
-    "metadata": {
-      "source": "YZM0101_week12.pdf",
-      "page": 11,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week12.pdf_p11_s1": {
-    "content": "leri daha hızlı eğitilir. • - **Gürültü Azaltma:** Önemsiz veya gürültülü özellikleri kaldırarak model performansını artırabilir (Boyutluluk Laneti - Curse of Dimensionality).",
+    "content": "Daha Azıyla Daha Çoğunu Anlamak • **Amaç:** Bir veri setindeki özellik (sütun) sayısını, en önemli bilgileri koruyarak azaltmak. Boyut Azaltma • **Neden Önemli?** • - **Görselleştirme:** Yüksek boyutlu veriyi 2D veya 3D'ye(Dimensionality Reduction) indirgeyerek insan tarafından anlaşılabilir hale getirmek. • - **Hesaplama Verimliliği:** Daha az özellikle, makine öğrenmesi modelleri daha hızlı eğitilir. • - **Gürültü Azaltma:** Önemsiz veya gürültülü özellikleri kaldırarak model performansını artırabilir (Boyutluluk Laneti - Curse of Dimensionality).",
     "metadata": {
       "source": "YZM0101_week12.pdf",
       "page": 11,
@@ -936,15 +752,7 @@
     }
   },
   "YZM0101_week12.pdf_p12_s0": {
-    "content": "Verideki Maksimum Varyans Yönlerini Bulmak • En yaygın kullanılan boyut azaltma tekniğidir. Temel Bileşen Analizi (Principal • **Fikir:** Veri setindeki en büyük varyansın (değişimin, yayılımın) olduğu yönleri bulur. Bu yönlere **Temel Bileşenler (Principal Component Components)** denir. • İlk temel bileşen, verideki en büyük varyansı yakalayan yöndür. Analysis - PCA) • İkinci temel bileşen, birinciye dik olan ve geri kalan varyansın en büyüğünü yakalayan yöndür. • Veriyi, bu yeni temel bileşen eksenleri",
-    "metadata": {
-      "source": "YZM0101_week12.pdf",
-      "page": 12,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week12.pdf_p12_s1": {
-    "content": "emel bileşen, birinciye dik olan ve geri kalan varyansın en büyüğünü yakalayan yöndür. • Veriyi, bu yeni temel bileşen eksenleri üzerine 'projekte ederek' (izdüşümünü alarak) boyutunu azaltır.",
+    "content": "Verideki Maksimum Varyans Yönlerini Bulmak • En yaygın kullanılan boyut azaltma tekniğidir. Temel Bileşen Analizi (Principal • **Fikir:** Veri setindeki en büyük varyansın (değişimin, yayılımın) olduğu yönleri bulur. Bu yönlere **Temel Bileşenler (Principal Component Components)** denir. • İlk temel bileşen, verideki en büyük varyansı yakalayan yöndür. Analysis - PCA) • İkinci temel bileşen, birinciye dik olan ve geri kalan varyansın en büyüğünü yakalayan yöndür. • Veriyi, bu yeni temel bileşen eksenleri üzerine 'projekte ederek' (izdüşümünü alarak) boyutunu azaltır.",
     "metadata": {
       "source": "YZM0101_week12.pdf",
       "page": 12,
@@ -952,15 +760,7 @@
     }
   },
   "YZM0101_week12.pdf_p14_s0": {
-    "content": "Yeni Eksenler Yaratmak • **1. Veriyi Ölçeklendirme:** PCA, varyansa dayalı olduğu için, başlamadan önce tüm özelliklerin aynı ölçekte olması **çok önemlidir**. (StandardScaler kullanılır). • **2. Kovaryans Matrisini Hesaplama:** Özelliklerin birbirleriyle nasıl birlikte değiştiklerini (kovaryans) ölçen bir matris oluşturur.PCA'in Adımları (Sezgisel) • **3. Özvektörleri ve Özdeğerleri Bulma:** Kovaryans matrisinin özvektörleri, temel bileşenlerin (yeni eksenlerin) yönünü, özdeğerleri ise bu yönlerdeki",
-    "metadata": {
-      "source": "YZM0101_week12.pdf",
-      "page": 14,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week12.pdf_p14_s1": {
-    "content": "değerleri Bulma:** Kovaryans matrisinin özvektörleri, temel bileşenlerin (yeni eksenlerin) yönünü, özdeğerleri ise bu yönlerdeki varyansın büyüklüğünü (önemini) verir. • **4. Temel Bileşenleri Seçme:** En büyük özdeğerlere sahip olan ilk 'k' adet özvektörü (temel bileşeni) seçeriz. • **5. Veriyi Dönüştürme:** Orijinal veriyi, bu seçilen 'k' adet temel bileşen üzerine projekte ederiz.",
+    "content": "Yeni Eksenler Yaratmak • **1. Veriyi Ölçeklendirme:** PCA, varyansa dayalı olduğu için, başlamadan önce tüm özelliklerin aynı ölçekte olması **çok önemlidir**. (StandardScaler kullanılır). • **2. Kovaryans Matrisini Hesaplama:** Özelliklerin birbirleriyle nasıl birlikte değiştiklerini (kovaryans) ölçen bir matris oluşturur.PCA'in Adımları (Sezgisel) • **3. Özvektörleri ve Özdeğerleri Bulma:** Kovaryans matrisinin özvektörleri, temel bileşenlerin (yeni eksenlerin) yönünü, özdeğerleri ise bu yönlerdeki varyansın büyüklüğünü (önemini) verir. • **4. Temel Bileşenleri Seçme:** En büyük özdeğerlere sahip olan ilk 'k' adet özvektörü (temel bileşeni) seçeriz. • **5. Veriyi Dönüştürme:** Orijinal veriyi, bu seçilen 'k' adet temel bileşen üzerine projekte ederiz.",
     "metadata": {
       "source": "YZM0101_week12.pdf",
       "page": 14,
@@ -1000,15 +800,7 @@
     }
   },
   "YZM0101_week12.pdf_p19_s0": {
-    "content": "Akılda Kalması Gerekenler • **Denetimsiz Öğrenme:** Etiketlenmemiş verideki içsel yapıyı ve desenleri keşfetme. • **Kümeleme:** Benzer veri noktalarını gruplara ayırma görevi. • **K-Means:** Veriyi K adet kümeye, küme merkezlerine olan uzaklığı Haftanın minimize ederek ayıran bir algoritma. Kavramları: Özet • **Centroid:** Bir kümedeki noktaların ortalama konumu, yani küme merkezi. • **Boyut Azaltma:** Verinin içerdiği bilgiyi koruyarak özellik sayısını azaltma tekniği. • **PCA:** Verideki maksimum varyans",
-    "metadata": {
-      "source": "YZM0101_week12.pdf",
-      "page": 19,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week12.pdf_p19_s1": {
-    "content": ". • **Boyut Azaltma:** Verinin içerdiği bilgiyi koruyarak özellik sayısını azaltma tekniği. • **PCA:** Verideki maksimum varyans yönlerini (temel bileşenleri) bularak boyut azaltan bir algoritma.",
+    "content": "Akılda Kalması Gerekenler • **Denetimsiz Öğrenme:** Etiketlenmemiş verideki içsel yapıyı ve desenleri keşfetme. • **Kümeleme:** Benzer veri noktalarını gruplara ayırma görevi. • **K-Means:** Veriyi K adet kümeye, küme merkezlerine olan uzaklığı Haftanın minimize ederek ayıran bir algoritma. Kavramları: Özet • **Centroid:** Bir kümedeki noktaların ortalama konumu, yani küme merkezi. • **Boyut Azaltma:** Verinin içerdiği bilgiyi koruyarak özellik sayısını azaltma tekniği. • **PCA:** Verideki maksimum varyans yönlerini (temel bileşenleri) bularak boyut azaltan bir algoritma.",
     "metadata": {
       "source": "YZM0101_week12.pdf",
       "page": 19,
@@ -1024,15 +816,7 @@
     }
   },
   "YZM0101_week12.pdf_p21_s0": {
-    "content": "Veri Ön İşlemenin Önemi • Bir müşteri veri setiniz olduğunu ve iki özelliğiniz olduğunu düşünün: Düşünme • - **Özellik A:** Müşterinin yıllık geliri (örn: 50,000 - 250,000 TL Sorusu: K-Means aralığında). • - **Özellik B:** Müşterinin son bir ayda yaptığı alışveriş sayısı (örn: ve Ölçeklendirme 1 - 50 aralığında). • Bu veri setine, özellikleri **ölçeklendirmeden** doğrudan K-Means uygularsanız ne olur? • Algoritmanın mesafe hesaplamaları nasıl etkilenir? Hangi özellik, kümelemeyi daha fazla domine eder?",
-    "metadata": {
-      "source": "YZM0101_week12.pdf",
-      "page": 21,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week12.pdf_p21_s1": {
-    "content": "ans uygularsanız ne olur? • Algoritmanın mesafe hesaplamaları nasıl etkilenir? Hangi özellik, kümelemeyi daha fazla domine eder? Neden? .",
+    "content": "Veri Ön İşlemenin Önemi • Bir müşteri veri setiniz olduğunu ve iki özelliğiniz olduğunu düşünün: Düşünme • - **Özellik A:** Müşterinin yıllık geliri (örn: 50,000 - 250,000 TL Sorusu: K-Means aralığında). • - **Özellik B:** Müşterinin son bir ayda yaptığı alışveriş sayısı (örn: ve Ölçeklendirme 1 - 50 aralığında). • Bu veri setine, özellikleri **ölçeklendirmeden** doğrudan K-Means uygularsanız ne olur? • Algoritmanın mesafe hesaplamaları nasıl etkilenir? Hangi özellik, kümelemeyi daha fazla domine eder? Neden? .",
     "metadata": {
       "source": "YZM0101_week12.pdf",
       "page": 21,
@@ -1040,15 +824,7 @@
     }
   },
   "YZM0101_week12.pdf_p22_s0": {
-    "content": "Boyut Azaltma ile Ortak Zevkleri Keşfetmek • Netflix veya Spotify gibi platformlar, kullanıcılara yeni içerikler önermek için tavsiye sistemleri kullanır. • **Problem:** Binlerce film/şarkı (özellik) ve milyonlarca kullanıcı (örnek) Gerçek Dünya içeren devasa bir matris. • **Boyut Azaltmanın Rolü:** PCA'in bir uzantısı olan SVD (Singular ValueÖrneği: Tavsiye Sistemleri Decomposition) gibi teknikler, bu devasa matrisin boyutunu azaltmak için kullanılır. • Bu teknikler, filmlerin/şarkıların altında yatan",
-    "metadata": {
-      "source": "YZM0101_week12.pdf",
-      "page": 22,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week12.pdf_p22_s1": {
-    "content": "sition) gibi teknikler, bu devasa matrisin boyutunu azaltmak için kullanılır. • Bu teknikler, filmlerin/şarkıların altında yatan gizli 'türleri' veya 'konseptleri' (örn: 'aksiyon-bilimkurgu', 'romantik-komedi') otomatik olarak keşfeder. • Bir kullanıcının bu gizli türlere olan ilgisi, ona yeni tavsiyeler yapmak için kullanılır.",
+    "content": "Boyut Azaltma ile Ortak Zevkleri Keşfetmek • Netflix veya Spotify gibi platformlar, kullanıcılara yeni içerikler önermek için tavsiye sistemleri kullanır. • **Problem:** Binlerce film/şarkı (özellik) ve milyonlarca kullanıcı (örnek) Gerçek Dünya içeren devasa bir matris. • **Boyut Azaltmanın Rolü:** PCA'in bir uzantısı olan SVD (Singular ValueÖrneği: Tavsiye Sistemleri Decomposition) gibi teknikler, bu devasa matrisin boyutunu azaltmak için kullanılır. • Bu teknikler, filmlerin/şarkıların altında yatan gizli 'türleri' veya 'konseptleri' (örn: 'aksiyon-bilimkurgu', 'romantik-komedi') otomatik olarak keşfeder. • Bir kullanıcının bu gizli türlere olan ilgisi, ona yeni tavsiyeler yapmak için kullanılır.",
     "metadata": {
       "source": "YZM0101_week12.pdf",
       "page": 22,
@@ -1328,15 +1104,7 @@
     }
   },
   "YZM0101_week1_2.pdf_p2_s0": {
-    "content": "Farklı Tanımlar ve Yaklaşımlar • İnsan Gibi Düşünme (Thinking Humanly): Bilişsel modelleme yaklaşımı. • Rasyonel Düşünme (Thinking Rationally): 'Düşünce yasaları' ve mantık yaklaşımı. • İnsan Gibi Davranma (Acting Humanly): Turing TestiYapay Zeka’ya yaklaşımı. • Rasyonel Davranma (Acting Rationally): Rasyonel ajan Kısa Bir Bakış yaklaşımı. Perspektifler • Russell & Norvig: Akıllı ajanlar bilimi • Poole & Mackworth: Algıla, akıl yürüt, hareket et • Endüstri perspektifi: Veri + modeli üretime taşıma •",
-    "metadata": {
-      "source": "YZM0101_week1_2.pdf",
-      "page": 2,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week1_2.pdf_p2_s1": {
-    "content": "Akıllı ajanlar bilimi • Poole & Mackworth: Algıla, akıl yürüt, hareket et • Endüstri perspektifi: Veri + modeli üretime taşıma • Araştırma perspektifi: Karmaşık problemleri modelleme",
+    "content": "Farklı Tanımlar ve Yaklaşımlar • İnsan Gibi Düşünme (Thinking Humanly): Bilişsel modelleme yaklaşımı. • Rasyonel Düşünme (Thinking Rationally): 'Düşünce yasaları' ve mantık yaklaşımı. • İnsan Gibi Davranma (Acting Humanly): Turing TestiYapay Zeka’ya yaklaşımı. • Rasyonel Davranma (Acting Rationally): Rasyonel ajan Kısa Bir Bakış yaklaşımı. Perspektifler • Russell & Norvig: Akıllı ajanlar bilimi • Poole & Mackworth: Algıla, akıl yürüt, hareket et • Endüstri perspektifi: Veri + modeli üretime taşıma • Araştırma perspektifi: Karmaşık problemleri modelleme",
     "metadata": {
       "source": "YZM0101_week1_2.pdf",
       "page": 2,
@@ -1344,15 +1112,7 @@
     }
   },
   "YZM0101_week1_2.pdf_p3_s0": {
-    "content": "Önemli Kilometre Taşları • Doğuş (1943-1956): McCulloch-Pitts nöron modeli, Dartmouth Konferansı. • İlk Heyecan ve Beklentiler (1952-1969): LISP'in geliştirilmesi, Yapay Zeka ilk 'chatbot' ELIZA. • İlk YZ Kışı (1974-1980): Beklentilerin karşılanamaması, Tarihçesi fonların kesilmesi. • Uzman Sistemlerin Yükselişi (1980-1987): Bilgi-tabanlı sistemlerin başarısı. • İkinci YZ Kışı (1987-1993): Uzman sistem pazarının çöküşü. • Modern YZ (1993-Günümüz): Makine öğrenmesi, derin öğrenme ve büyük verinin yükselişi.",
-    "metadata": {
-      "source": "YZM0101_week1_2.pdf",
-      "page": 3,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week1_2.pdf_p3_s1": {
-    "content": "87-1993): Uzman sistem pazarının çöküşü. • Modern YZ (1993-Günümüz): Makine öğrenmesi, derin öğrenme ve büyük verinin yükselişi. • Derin öğrenme atılımı ve güncel trendler",
+    "content": "Önemli Kilometre Taşları • Doğuş (1943-1956): McCulloch-Pitts nöron modeli, Dartmouth Konferansı. • İlk Heyecan ve Beklentiler (1952-1969): LISP'in geliştirilmesi, Yapay Zeka ilk 'chatbot' ELIZA. • İlk YZ Kışı (1974-1980): Beklentilerin karşılanamaması, Tarihçesi fonların kesilmesi. • Uzman Sistemlerin Yükselişi (1980-1987): Bilgi-tabanlı sistemlerin başarısı. • İkinci YZ Kışı (1987-1993): Uzman sistem pazarının çöküşü. • Modern YZ (1993-Günümüz): Makine öğrenmesi, derin öğrenme ve büyük verinin yükselişi. • Derin öğrenme atılımı ve güncel trendler",
     "metadata": {
       "source": "YZM0101_week1_2.pdf",
       "page": 3,
@@ -1360,15 +1120,7 @@
     }
   },
   "YZM0101_week1_2.pdf_p4_s0": {
-    "content": "Temel Bileşenler • Algılayıcılar(Sensörler), eyleyiciler(Aktüatörler), durum modeli • Algı (percept) akışı ve eylem seçimi • Çevreyle etkileşim döngüsü • Rasyonellik kriterleri Yapay Zekanın Merkezindeki Fikir Ajan Kavramı • Ajan (Agent): Çevresini sensörler (sensors) aracılığıyla algılayan ve aktüatörler (actuators) aracılığıyla o çevre üzerinde hareket eden herhangi bir şeydir. • Rasyonel Ajan: Performans ölçütünü maksimize etmek için hareket eden ajandır. • Örnek: Bir otonom araç. • - Sensörler: Kamera,",
-    "metadata": {
-      "source": "YZM0101_week1_2.pdf",
-      "page": 4,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week1_2.pdf_p4_s1": {
-    "content": "• Rasyonel Ajan: Performans ölçütünü maksimize etmek için hareket eden ajandır. • Örnek: Bir otonom araç. • - Sensörler: Kamera, GPS, Lidar • - Aktüatörler: Direksiyon, gaz, fren • - Çevre: Yollar, trafik, yayalar",
+    "content": "Temel Bileşenler • Algılayıcılar(Sensörler), eyleyiciler(Aktüatörler), durum modeli • Algı (percept) akışı ve eylem seçimi • Çevreyle etkileşim döngüsü • Rasyonellik kriterleri Yapay Zekanın Merkezindeki Fikir Ajan Kavramı • Ajan (Agent): Çevresini sensörler (sensors) aracılığıyla algılayan ve aktüatörler (actuators) aracılığıyla o çevre üzerinde hareket eden herhangi bir şeydir. • Rasyonel Ajan: Performans ölçütünü maksimize etmek için hareket eden ajandır. • Örnek: Bir otonom araç. • - Sensörler: Kamera, GPS, Lidar • - Aktüatörler: Direksiyon, gaz, fren • - Çevre: Yollar, trafik, yayalar",
     "metadata": {
       "source": "YZM0101_week1_2.pdf",
       "page": 4,
@@ -1384,15 +1136,7 @@
     }
   },
   "YZM0101_week1_2.pdf_p6_s0": {
-    "content": "Performans, Çevre, Eyleyici, Algılayıcı Performance, Environment, Actuators, Sensors Bir ajanın görev tanımını standart hale getirmek için kullanılır • Performans ölçütü: Başarı kriterlerini belirtir (Ajanın başarısını PEAS Analizi neye• Çevre:göreAjanınölçeriz?etkileştiği(Örn: Güvenlik,dünya (Ajanhız, neredekonfor))faaliyet gösteriyor? (Örn: Şehir içi yollar, otoyol)) • Eyleyiciler: Kararların uygulandığı mekanizma (Ajan hangi araçlarla eylemde bulunuyor? (Örn: Direksiyon, fren)) • Algılayıcılar: Veri ve",
-    "metadata": {
-      "source": "YZM0101_week1_2.pdf",
-      "page": 6,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week1_2.pdf_p6_s1": {
-    "content": "ler: Kararların uygulandığı mekanizma (Ajan hangi araçlarla eylemde bulunuyor? (Örn: Direksiyon, fren)) • Algılayıcılar: Veri ve geri bildirim kaynakları (Ajan çevreyi nasıl algılıyor? (Örn: Kamera, Lidar))",
+    "content": "Performans, Çevre, Eyleyici, Algılayıcı Performance, Environment, Actuators, Sensors Bir ajanın görev tanımını standart hale getirmek için kullanılır • Performans ölçütü: Başarı kriterlerini belirtir (Ajanın başarısını PEAS Analizi neye• Çevre:göreAjanınölçeriz?etkileştiği(Örn: Güvenlik,dünya (Ajanhız, neredekonfor))faaliyet gösteriyor? (Örn: Şehir içi yollar, otoyol)) • Eyleyiciler: Kararların uygulandığı mekanizma (Ajan hangi araçlarla eylemde bulunuyor? (Örn: Direksiyon, fren)) • Algılayıcılar: Veri ve geri bildirim kaynakları (Ajan çevreyi nasıl algılıyor? (Örn: Kamera, Lidar))",
     "metadata": {
       "source": "YZM0101_week1_2.pdf",
       "page": 6,
@@ -1416,15 +1160,7 @@
     }
   },
   "YZM0101_week1_2.pdf_p9_s0": {
-    "content": "Deterministik, Epizodik, Statik, Ayrık... • Deterministik vs. Stokastik (Deterministic vs. Stochastic): Bir sonraki durum, mevcut durum ve eylem tarafından tamamen belirleniyor mu? Satranç deterministik, zar atılan oyunlar stokastiktir. • Epizodik vs. Sıralı (Episodic vs. Sequential): Ajanın deneyimi, birbirinden bağımsız bölümlere (epizotlara) ayrılmış mı? E-Ortam Türleri - II postalardaki spam tespiti epizodik, satranç sıralıdır (her hamle bir sonrakini etkiler). • Statik vs. Dinamik (Static vs.",
-    "metadata": {
-      "source": "YZM0101_week1_2.pdf",
-      "page": 9,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week1_2.pdf_p9_s1": {
-    "content": "i - II postalardaki spam tespiti epizodik, satranç sıralıdır (her hamle bir sonrakini etkiler). • Statik vs. Dinamik (Static vs. Dynamic): Ajan düşünürken çevre değişiyor mu? Bulmaca statik, trafik dinamiktir. • Ayrık vs. Sürekli (Discrete vs. Continuous): Durumlar, zaman ve eylemler sonlu mu? Satranç ayrık, otonom sürüş süreklidir (hız, konum gibi değerler sürekli değişir).",
+    "content": "Deterministik, Epizodik, Statik, Ayrık... • Deterministik vs. Stokastik (Deterministic vs. Stochastic): Bir sonraki durum, mevcut durum ve eylem tarafından tamamen belirleniyor mu? Satranç deterministik, zar atılan oyunlar stokastiktir. • Epizodik vs. Sıralı (Episodic vs. Sequential): Ajanın deneyimi, birbirinden bağımsız bölümlere (epizotlara) ayrılmış mı? E-Ortam Türleri - II postalardaki spam tespiti epizodik, satranç sıralıdır (her hamle bir sonrakini etkiler). • Statik vs. Dinamik (Static vs. Dynamic): Ajan düşünürken çevre değişiyor mu? Bulmaca statik, trafik dinamiktir. • Ayrık vs. Sürekli (Discrete vs. Continuous): Durumlar, zaman ve eylemler sonlu mu? Satranç ayrık, otonom sürüş süreklidir (hız, konum gibi değerler sürekli değişir).",
     "metadata": {
       "source": "YZM0101_week1_2.pdf",
       "page": 9,
@@ -1472,15 +1208,7 @@
     }
   },
   "YZM0101_week1_2.pdf_p15_s0": {
-    "content": "• Deneyimlerinden Ders Çıkaran Ajan • Başlangıçta bilmediği ortamlarda çalışabilir ve zamanlaÖğrenen Ajan – performansını artırabilir. – • Dört ana bileşenden oluşur: (Learning – • - Performans Elemanı: Ajanın eylemleri seçtiği kısım (önceki ajan türleri gibi). Agent) – • - Kritikçi (Critic): Ajanın ne kadar iyi performans gösterdiğini geri bildirim olarak verir. – • - Öğrenme Elemanı: Performansı artırmak için modelde değişiklikler yapar. – • - Problem Üreteci: Yeni ve bilgilendirici deneyimler için eylem",
-    "metadata": {
-      "source": "YZM0101_week1_2.pdf",
-      "page": 15,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week1_2.pdf_p15_s1": {
-    "content": "manı: Performansı artırmak için modelde değişiklikler yapar. – • - Problem Üreteci: Yeni ve bilgilendirici deneyimler için eylem önerir.",
+    "content": "• Deneyimlerinden Ders Çıkaran Ajan • Başlangıçta bilmediği ortamlarda çalışabilir ve zamanlaÖğrenen Ajan – performansını artırabilir. – • Dört ana bileşenden oluşur: (Learning – • - Performans Elemanı: Ajanın eylemleri seçtiği kısım (önceki ajan türleri gibi). Agent) – • - Kritikçi (Critic): Ajanın ne kadar iyi performans gösterdiğini geri bildirim olarak verir. – • - Öğrenme Elemanı: Performansı artırmak için modelde değişiklikler yapar. – • - Problem Üreteci: Yeni ve bilgilendirici deneyimler için eylem önerir.",
     "metadata": {
       "source": "YZM0101_week1_2.pdf",
       "page": 15,
@@ -1608,15 +1336,7 @@
     }
   },
   "YZM0101_week2.pdf_p3_s0": {
-    "content": "Bir Problemi Formüle Etmek • Bir problemi çözmeden önce onu net bir şekilde tanımlamalıyız. • İyi tanımlanmış bir problem dört temel bileşenden oluşur: İyi • 1. Başlangıç Durumu (Initial State): Ajanın başladığı durum. Tanımlanmış • 2. Aksiyonlar (Actions) veya Operatörler: Ajanın herhangi bir durumda yapabileceği olası eylemler. Problemler • 3. Hedef Testi (Goal Test): Mevcut durumun bir hedef durumu olup olmadığını belirler. • 4. Yol Maliyeti (Path Cost): Başlangıçtan hedefe giden bir yolun maliyetini",
-    "metadata": {
-      "source": "YZM0101_week2.pdf",
-      "page": 3,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week2.pdf_p3_s1": {
-    "content": "durumun bir hedef durumu olup olmadığını belirler. • 4. Yol Maliyeti (Path Cost): Başlangıçtan hedefe giden bir yolun maliyetini (örn: mesafe, zaman) hesaplar.",
+    "content": "Bir Problemi Formüle Etmek • Bir problemi çözmeden önce onu net bir şekilde tanımlamalıyız. • İyi tanımlanmış bir problem dört temel bileşenden oluşur: İyi • 1. Başlangıç Durumu (Initial State): Ajanın başladığı durum. Tanımlanmış • 2. Aksiyonlar (Actions) veya Operatörler: Ajanın herhangi bir durumda yapabileceği olası eylemler. Problemler • 3. Hedef Testi (Goal Test): Mevcut durumun bir hedef durumu olup olmadığını belirler. • 4. Yol Maliyeti (Path Cost): Başlangıçtan hedefe giden bir yolun maliyetini (örn: mesafe, zaman) hesaplar.",
     "metadata": {
       "source": "YZM0101_week2.pdf",
       "page": 3,
@@ -1672,15 +1392,7 @@
     }
   },
   "YZM0101_week2.pdf_p10_s0": {
-    "content": "Bilgisiz(Uninformed) ve Bilgili(Informed) Arama • Bilgisiz Arama (Uninformed Search): • Sadece problem tanımındaki bilgileri kullanır. Arama • Hedefe ne kadar yakın veya uzak olduğu hakkında hiçbir fikri yoktur.Stratejilerine • Kör arama (blind search) olarak da adlandırılır. Genel Bakış • Örnekler: BFS, DFS, UCS. • Bilgili Arama (Informed Search): • Probleme özgü ek bilgileri (sezgiselleri) kullanır. • Hangi düğümün hedefe daha yakın olduğuna dair bir 'tahminde' bulunur. • Genellikle çok daha verimlidir.",
-    "metadata": {
-      "source": "YZM0101_week2.pdf",
-      "page": 10,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week2.pdf_p10_s1": {
-    "content": "ezgiselleri) kullanır. • Hangi düğümün hedefe daha yakın olduğuna dair bir 'tahminde' bulunur. • Genellikle çok daha verimlidir. • Örnekler: Greedy Search, A*.",
+    "content": "Bilgisiz(Uninformed) ve Bilgili(Informed) Arama • Bilgisiz Arama (Uninformed Search): • Sadece problem tanımındaki bilgileri kullanır. Arama • Hedefe ne kadar yakın veya uzak olduğu hakkında hiçbir fikri yoktur.Stratejilerine • Kör arama (blind search) olarak da adlandırılır. Genel Bakış • Örnekler: BFS, DFS, UCS. • Bilgili Arama (Informed Search): • Probleme özgü ek bilgileri (sezgiselleri) kullanır. • Hangi düğümün hedefe daha yakın olduğuna dair bir 'tahminde' bulunur. • Genellikle çok daha verimlidir. • Örnekler: Greedy Search, A*.",
     "metadata": {
       "source": "YZM0101_week2.pdf",
       "page": 10,
@@ -1712,15 +1424,7 @@
     }
   },
   "YZM0101_week2.pdf_p14_s0": {
-    "content": "Örnek Problem: 8-Vezir Problemi • Kısıt Sağlama Problemi • Problem: 8x8'lik bir satranç tahtasına 8 veziri, birbirlerini tehdit etmeyecek şekilde yerleştirmek. • Durumlar: Tahtaya k vezirin (0 <= k <= 8) yerleştirildiği herhangi bir konfigürasyon. • Başlangıç Durumu: Boş bir satranç tahtası. • Aksiyonlar: Bir sonraki boş sütuna bir vezir yerleştirmek. • Hedef Testi: 8 vezir tahtada ve hiçbiri birbirini tehdit etmiyor. • Yol Maliyeti: Genellikle bu problemde maliyet önemli değildir, sadece çözümün bulunması",
-    "metadata": {
-      "source": "YZM0101_week2.pdf",
-      "page": 14,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week2.pdf_p14_s1": {
-    "content": "a ve hiçbiri birbirini tehdit etmiyor. • Yol Maliyeti: Genellikle bu problemde maliyet önemli değildir, sadece çözümün bulunması yeterlidir.",
+    "content": "Örnek Problem: 8-Vezir Problemi • Kısıt Sağlama Problemi • Problem: 8x8'lik bir satranç tahtasına 8 veziri, birbirlerini tehdit etmeyecek şekilde yerleştirmek. • Durumlar: Tahtaya k vezirin (0 <= k <= 8) yerleştirildiği herhangi bir konfigürasyon. • Başlangıç Durumu: Boş bir satranç tahtası. • Aksiyonlar: Bir sonraki boş sütuna bir vezir yerleştirmek. • Hedef Testi: 8 vezir tahtada ve hiçbiri birbirini tehdit etmiyor. • Yol Maliyeti: Genellikle bu problemde maliyet önemli değildir, sadece çözümün bulunması yeterlidir.",
     "metadata": {
       "source": "YZM0101_week2.pdf",
       "page": 14,
@@ -1744,15 +1448,7 @@
     }
   },
   "YZM0101_week2.pdf_p17_s0": {
-    "content": "Arama Algoritmalarının Hafızası Altyapı: Sınır • Arama algoritmaları genellikle iki ana veri yapısı kullanır: (Frontier) ve • Frontier (Sınır):Henüz genişletilmemiş, ancak keşfedilmiş Keşfedilenler düğümlerin tutulduğu koleksiyon. Bir sonraki adımda hangi düğümün seçileceği buradan belirlenir.(Explored Set) • Farklı algoritmalar, frontier için farklı veri yapıları kullanır (Kuyruk, Yığın, Öncelikli Kuyruk). • Explored Set (Keşfedilenler Kümesi): Daha önce genişletilmiş olan durumların tutulduğu küme. •",
-    "metadata": {
-      "source": "YZM0101_week2.pdf",
-      "page": 17,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week2.pdf_p17_s1": {
-    "content": "yruk, Yığın, Öncelikli Kuyruk). • Explored Set (Keşfedilenler Kümesi): Daha önce genişletilmiş olan durumların tutulduğu küme. • Tekrarlanan durumları ve döngüleri önlemek için kullanılır.",
+    "content": "Arama Algoritmalarının Hafızası Altyapı: Sınır • Arama algoritmaları genellikle iki ana veri yapısı kullanır: (Frontier) ve • Frontier (Sınır):Henüz genişletilmemiş, ancak keşfedilmiş Keşfedilenler düğümlerin tutulduğu koleksiyon. Bir sonraki adımda hangi düğümün seçileceği buradan belirlenir.(Explored Set) • Farklı algoritmalar, frontier için farklı veri yapıları kullanır (Kuyruk, Yığın, Öncelikli Kuyruk). • Explored Set (Keşfedilenler Kümesi): Daha önce genişletilmiş olan durumların tutulduğu küme. • Tekrarlanan durumları ve döngüleri önlemek için kullanılır.",
     "metadata": {
       "source": "YZM0101_week2.pdf",
       "page": 17,
@@ -1848,15 +1544,7 @@
     }
   },
   "YZM0101_week3.pdf_p5_s0": {
-    "content": "Avantajlar ve Dezavantajlar • Tamlık (Completeness): Evet. Eğer en sığ hedef 'd' derinliğindeyse ve dallanma faktörü 'b' sonlu ise, BFS çözümü bulmayı garanti eder. BFS • Optimalite (Optimality): Evet, ancak sadece tüm aksiyonPerformans maliyetleri eşitse. Çünkü en az adıma sahip yolu bulur, en düşük Analizi maliyetli yolu değil. • Zaman Karmaşıklığı: O(b^d). En kötü durumda, 'd' derinliğindeki hedefi bulmadan önce o seviyeye kadar olan tüm düğümleri üretir. • Uzay Karmaşıklığı: O(b^d). En kötü durumda,",
-    "metadata": {
-      "source": "YZM0101_week3.pdf",
-      "page": 5,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week3.pdf_p5_s1": {
-    "content": "d' derinliğindeki hedefi bulmadan önce o seviyeye kadar olan tüm düğümleri üretir. • Uzay Karmaşıklığı: O(b^d). En kötü durumda, frontier'da (kuyrukta) bir seviyedeki tüm düğümleri tutması gerekir.",
+    "content": "Avantajlar ve Dezavantajlar • Tamlık (Completeness): Evet. Eğer en sığ hedef 'd' derinliğindeyse ve dallanma faktörü 'b' sonlu ise, BFS çözümü bulmayı garanti eder. BFS • Optimalite (Optimality): Evet, ancak sadece tüm aksiyonPerformans maliyetleri eşitse. Çünkü en az adıma sahip yolu bulur, en düşük Analizi maliyetli yolu değil. • Zaman Karmaşıklığı: O(b^d). En kötü durumda, 'd' derinliğindeki hedefi bulmadan önce o seviyeye kadar olan tüm düğümleri üretir. • Uzay Karmaşıklığı: O(b^d). En kötü durumda, frontier'da (kuyrukta) bir seviyedeki tüm düğümleri tutması gerekir.",
     "metadata": {
       "source": "YZM0101_week3.pdf",
       "page": 5,
@@ -1888,15 +1576,7 @@
     }
   },
   "YZM0101_week3.pdf_p9_s0": {
-    "content": "Avantajlar ve Dezavantajlar • Tamlık (Completeness): Hayır. Döngüler içeren (sonsuz) arama DFS uzaylarında, sonsuz bir yola saplanıp kalabilir. Sonlu uzaylarda tamdır. • Optimalite (Optimality): Hayır. Genellikle bulduğu ilk çözüm,Performans Analizi optimal çözüm değildir. Daha derinde ama daha kötü bir çözümü, daha sığdaki iyi bir çözümden önce bulabilir. • Zaman Karmaşıklığı: O(b^m). En kötü durumda, durum uzayının en derin noktasına (`m`) kadar olan tüm düğümleri ziyaret edebilir. • Uzay Karmaşıklığı:",
-    "metadata": {
-      "source": "YZM0101_week3.pdf",
-      "page": 9,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week3.pdf_p9_s1": {
-    "content": "O(b^m). En kötü durumda, durum uzayının en derin noktasına (`m`) kadar olan tüm düğümleri ziyaret edebilir. • Uzay Karmaşıklığı: O(b*m). Bu, DFS'nin en büyük avantajıdır. Hafızada sadece mevcut yolu ve o yoldaki her düğümün keşfedilmemiş kardeşlerini tutması yeterlidir.",
+    "content": "Avantajlar ve Dezavantajlar • Tamlık (Completeness): Hayır. Döngüler içeren (sonsuz) arama DFS uzaylarında, sonsuz bir yola saplanıp kalabilir. Sonlu uzaylarda tamdır. • Optimalite (Optimality): Hayır. Genellikle bulduğu ilk çözüm,Performans Analizi optimal çözüm değildir. Daha derinde ama daha kötü bir çözümü, daha sığdaki iyi bir çözümden önce bulabilir. • Zaman Karmaşıklığı: O(b^m). En kötü durumda, durum uzayının en derin noktasına (`m`) kadar olan tüm düğümleri ziyaret edebilir. • Uzay Karmaşıklığı: O(b*m). Bu, DFS'nin en büyük avantajıdır. Hafızada sadece mevcut yolu ve o yoldaki her düğümün keşfedilmemiş kardeşlerini tutması yeterlidir.",
     "metadata": {
       "source": "YZM0101_week3.pdf",
       "page": 9,
@@ -1952,15 +1632,7 @@
     }
   },
   "YZM0101_week3.pdf_p16_s0": {
-    "content": "Python'da Nasıl Kodlanır? Uygulama • Kuyruk (Queue) - BFS için: Notları: • - Python'un `collections.deque` objesi verimli bir kuyruk olarak kullanılabilir. • - `append()` ile sona ekleme, `popleft()` ile baştan çıkarma.Frontier Veri Yapıları • Yığın (Stack) - DFS için: • - Python'un standart `list` objesi bir yığın gibi davranabilir. • - `append()` ile sona (üste) ekleme, `pop()` ile sondan (üstten) çıkarma. • Öncelikli Kuyruk (Priority Queue) - UCS için: • - Python'un `heapq` modülü, bir liste üzerinde",
-    "metadata": {
-      "source": "YZM0101_week3.pdf",
-      "page": 16,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week3.pdf_p16_s1": {
-    "content": ")` ile sondan (üstten) çıkarma. • Öncelikli Kuyruk (Priority Queue) - UCS için: • - Python'un `heapq` modülü, bir liste üzerinde min-heap (en küçük eleman her zaman tepededir) yapısı kurar. • - `heappush()` ile ekleme, `heappop()` ile en küçük elemanı çıkarma.",
+    "content": "Python'da Nasıl Kodlanır? Uygulama • Kuyruk (Queue) - BFS için: Notları: • - Python'un `collections.deque` objesi verimli bir kuyruk olarak kullanılabilir. • - `append()` ile sona ekleme, `popleft()` ile baştan çıkarma.Frontier Veri Yapıları • Yığın (Stack) - DFS için: • - Python'un standart `list` objesi bir yığın gibi davranabilir. • - `append()` ile sona (üste) ekleme, `pop()` ile sondan (üstten) çıkarma. • Öncelikli Kuyruk (Priority Queue) - UCS için: • - Python'un `heapq` modülü, bir liste üzerinde min-heap (en küçük eleman her zaman tepededir) yapısı kurar. • - `heappush()` ile ekleme, `heappop()` ile en küçük elemanı çıkarma.",
     "metadata": {
       "source": "YZM0101_week3.pdf",
       "page": 16,
@@ -2000,15 +1672,7 @@
     }
   },
   "YZM0101_week3.pdf_p21_s0": {
-    "content": "• Arama Algoritmalarını Kodlarken • **Modüler Düşünün:** Problemi okuyan, aksiyonları üreten, hedef testi yapan fonksiyonları ayrı ayrı yazın. • **Düğüm Sınıfı (Node Class):** Durum, ata, aksiyon ve maliyet bilgilerini bir arada tutan bir 'Node' sınıfı veya yapısı oluşturmakÖdev İpucu işinizi çok kolaylaştırır. • **Veri Yapılarına Dikkat:** BFS için `deque`, DFS için `list`, UCS için `heapq` kullandığınızdan emin olun. • **Test Edin:** Basit, çözümü bilinen küçük bir graf üzerinde algoritmanızın doğru",
-    "metadata": {
-      "source": "YZM0101_week3.pdf",
-      "page": 21,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week3.pdf_p21_s1": {
-    "content": "UCS için `heapq` kullandığınızdan emin olun. • **Test Edin:** Basit, çözümü bilinen küçük bir graf üzerinde algoritmanızın doğru çalışıp çalışmadığını test ederek başlayın.",
+    "content": "• Arama Algoritmalarını Kodlarken • **Modüler Düşünün:** Problemi okuyan, aksiyonları üreten, hedef testi yapan fonksiyonları ayrı ayrı yazın. • **Düğüm Sınıfı (Node Class):** Durum, ata, aksiyon ve maliyet bilgilerini bir arada tutan bir 'Node' sınıfı veya yapısı oluşturmakÖdev İpucu işinizi çok kolaylaştırır. • **Veri Yapılarına Dikkat:** BFS için `deque`, DFS için `list`, UCS için `heapq` kullandığınızdan emin olun. • **Test Edin:** Basit, çözümü bilinen küçük bir graf üzerinde algoritmanızın doğru çalışıp çalışmadığını test ederek başlayın.",
     "metadata": {
       "source": "YZM0101_week3.pdf",
       "page": 21,
@@ -2080,15 +1744,7 @@
     }
   },
   "YZM0101_week4.pdf_p7_s0": {
-    "content": "Hızlı Ama Kusurlu • Tamlık (Completeness): Hayır. Döngü kontrolü ile sonlu uzaylarda dezavantaj Açgözlü tam hale gelir, ancak sonsuz uzaylarda bir döngüye takılabilir. • Optimalite (Optimality): Hayır. Sezgisel fonksiyon onu yanlış Arama dezavantaj yönlendirebilir ve en kısa olmayan bir yola saptırabilir.Performans Analizi • Zaman Karmaşıklığı: O(b^m). En kötü durumda, yanlış bir yolda en derine kadar gidebilir (DFS gibi). Ancak iyi bir sezgisel ile O(b^d)'den çok daha iyi olabilir. dezavantaj • Uzay",
-    "metadata": {
-      "source": "YZM0101_week4.pdf",
-      "page": 7,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week4.pdf_p7_s1": {
-    "content": "ş bir yolda en derine kadar gidebilir (DFS gibi). Ancak iyi bir sezgisel ile O(b^d)'den çok daha iyi olabilir. dezavantaj • Uzay Karmaşıklığı: O(b^m). En kötü durumda tüm düğümleri hafızada tutar (BFS gibi). dezavantaj",
+    "content": "Hızlı Ama Kusurlu • Tamlık (Completeness): Hayır. Döngü kontrolü ile sonlu uzaylarda dezavantaj Açgözlü tam hale gelir, ancak sonsuz uzaylarda bir döngüye takılabilir. • Optimalite (Optimality): Hayır. Sezgisel fonksiyon onu yanlış Arama dezavantaj yönlendirebilir ve en kısa olmayan bir yola saptırabilir.Performans Analizi • Zaman Karmaşıklığı: O(b^m). En kötü durumda, yanlış bir yolda en derine kadar gidebilir (DFS gibi). Ancak iyi bir sezgisel ile O(b^d)'den çok daha iyi olabilir. dezavantaj • Uzay Karmaşıklığı: O(b^m). En kötü durumda tüm düğümleri hafızada tutar (BFS gibi). dezavantaj",
     "metadata": {
       "source": "YZM0101_week4.pdf",
       "page": 7,
@@ -2152,15 +1808,7 @@
     }
   },
   "YZM0101_week4.pdf_p15_s0": {
-    "content": "Optimal ve Verimli avantaj • Tamlık (Completeness): Evet. • Optimalite (Optimality): Evet, eğer h(n) kabul edilebilir (admissible) ise. Eğer h(n) tutarlı (consistent) ise daha da verimlidir. avantaj • Zaman Karmaşıklığı: Karmaşıktır, ancak sezgiselin kalitesine İyi sezgisel → Avantaj • Kötü sezgisel → DezavantajA* Performans bağlıdır. İyi bir sezgisel ile üssel karmaşıklıktan kurtulabilir. • Uzay Karmaşıklığı: O(b^d). En kötü durumda tüm üretilen düğümleri Analizi hafızada tutar. Bu, A*'ın en büyük",
-    "metadata": {
-      "source": "YZM0101_week4.pdf",
-      "page": 15,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week4.pdf_p15_s1": {
-    "content": "tan kurtulabilir. • Uzay Karmaşıklığı: O(b^d). En kötü durumda tüm üretilen düğümleri Analizi hafızada tutar. Bu, A*'ın en büyük zayıflığıdır. dezavantaj hafıza sorununu çözmek için IDA* ve RBFS gibi A*'ın hafıza-verimli versiyonları",
+    "content": "Optimal ve Verimli avantaj • Tamlık (Completeness): Evet. • Optimalite (Optimality): Evet, eğer h(n) kabul edilebilir (admissible) ise. Eğer h(n) tutarlı (consistent) ise daha da verimlidir. avantaj • Zaman Karmaşıklığı: Karmaşıktır, ancak sezgiselin kalitesine İyi sezgisel → Avantaj • Kötü sezgisel → DezavantajA* Performans bağlıdır. İyi bir sezgisel ile üssel karmaşıklıktan kurtulabilir. • Uzay Karmaşıklığı: O(b^d). En kötü durumda tüm üretilen düğümleri Analizi hafızada tutar. Bu, A*'ın en büyük zayıflığıdır. dezavantaj hafıza sorununu çözmek için IDA* ve RBFS gibi A*'ın hafıza-verimli versiyonları",
     "metadata": {
       "source": "YZM0101_week4.pdf",
       "page": 15,
@@ -2168,15 +1816,7 @@
     }
   },
   "YZM0101_week4.pdf_p16_s0": {
-    "content": "İyi Bir Tahmin Nasıl Yapılır? • İyi bir sezgisel tasarlamak, bilgili aramanın en zor kısmıdır. • Yöntem 1: Problemi Basitleştirmek (Relaxed Problem) • - Problemin bazı kısıtlarını kaldırarak daha kolay çözülebilir bir versiyonunu oluşturun. Sezgisel • - Bu basitleştirilmiş problemin çözüm maliyeti, orijinal probleminFonksiyon maliyeti için kabul edilebilir bir sezgisel olur. Tasarımı • Örnek: 8-Bulmaca • - h1(n) = Yanlış yerde olan karoların sayısı (Manhattan mesafesi değil). • - h2(n) = Her karonun kendi",
-    "metadata": {
-      "source": "YZM0101_week4.pdf",
-      "page": 16,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week4.pdf_p16_s1": {
-    "content": "rımı • Örnek: 8-Bulmaca • - h1(n) = Yanlış yerde olan karoların sayısı (Manhattan mesafesi değil). • - h2(n) = Her karonun kendi yerinden olan Manhattan mesafelerinin toplamı.",
+    "content": "İyi Bir Tahmin Nasıl Yapılır? • İyi bir sezgisel tasarlamak, bilgili aramanın en zor kısmıdır. • Yöntem 1: Problemi Basitleştirmek (Relaxed Problem) • - Problemin bazı kısıtlarını kaldırarak daha kolay çözülebilir bir versiyonunu oluşturun. Sezgisel • - Bu basitleştirilmiş problemin çözüm maliyeti, orijinal probleminFonksiyon maliyeti için kabul edilebilir bir sezgisel olur. Tasarımı • Örnek: 8-Bulmaca • - h1(n) = Yanlış yerde olan karoların sayısı (Manhattan mesafesi değil). • - h2(n) = Her karonun kendi yerinden olan Manhattan mesafelerinin toplamı.",
     "metadata": {
       "source": "YZM0101_week4.pdf",
       "page": 16,
@@ -2224,15 +1864,7 @@
     }
   },
   "YZM0101_week4.pdf_p22_s0": {
-    "content": "Oyunlardan Robotiğe • Video Oyunları: Birçok oyunda karakterlerin (NPC) harita üzerinde en A*'ın Gerçek kısa yolu bularak hareket etmesi (pathfinding) için kullanılır. • Robotik ve Navigasyon: Mars Rover'ları gibi otonom araçların bir Dünya Uygulamaları noktadan diğerine en güvenli ve en verimli rotayı planlaması. • Doğal Dil İşleme: Cümle ayrıştırma (parsing) gibi problemlerde, en olası dilbilgisi yapısını bulmak için bir arama süreci olarak modellenebilir. • Biyoinformatik: Gen dizilimlerini hizalamak",
-    "metadata": {
-      "source": "YZM0101_week4.pdf",
-      "page": 22,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week4.pdf_p22_s1": {
-    "content": ", en olası dilbilgisi yapısını bulmak için bir arama süreci olarak modellenebilir. • Biyoinformatik: Gen dizilimlerini hizalamak için en olası eşleşmeyi bulmada kullanılır.",
+    "content": "Oyunlardan Robotiğe • Video Oyunları: Birçok oyunda karakterlerin (NPC) harita üzerinde en A*'ın Gerçek kısa yolu bularak hareket etmesi (pathfinding) için kullanılır. • Robotik ve Navigasyon: Mars Rover'ları gibi otonom araçların bir Dünya Uygulamaları noktadan diğerine en güvenli ve en verimli rotayı planlaması. • Doğal Dil İşleme: Cümle ayrıştırma (parsing) gibi problemlerde, en olası dilbilgisi yapısını bulmak için bir arama süreci olarak modellenebilir. • Biyoinformatik: Gen dizilimlerini hizalamak için en olası eşleşmeyi bulmada kullanılır.",
     "metadata": {
       "source": "YZM0101_week4.pdf",
       "page": 22,
@@ -2248,15 +1880,7 @@
     }
   },
   "YZM0101_week4.pdf_p24_s0": {
-    "content": "A*'ın Hafıza Sorununa Çözümler • A*'ın en büyük zayıflığı uzay karmaşıklığıdır. • IDA* (Iterative Deepening A*): Yinelemeli derinleştirmenin A*'a uyarlanmış halidir. Derinlik yerine f-maliyeti üzerinden limitler koyar. Hafıza Kısıtlı • RBFS (Recursive Best-First Search): A*'ın özyineli bir Arama uygulamasıdır. Yetersiz hafıza durumunda, en iyi alternatif yolu hatırlayarak geri döner. • SMA* (Simplified Memory-Bounded A*): Hafıza dolduğunda, en kötü (en yüksek f-değerli) yaprak düğümü siler ve atasının",
-    "metadata": {
-      "source": "YZM0101_week4.pdf",
-      "page": 24,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week4.pdf_p24_s1": {
-    "content": "i döner. • SMA* (Simplified Memory-Bounded A*): Hafıza dolduğunda, en kötü (en yüksek f-değerli) yaprak düğümü siler ve atasının f-değerini günceller.",
+    "content": "A*'ın Hafıza Sorununa Çözümler • A*'ın en büyük zayıflığı uzay karmaşıklığıdır. • IDA* (Iterative Deepening A*): Yinelemeli derinleştirmenin A*'a uyarlanmış halidir. Derinlik yerine f-maliyeti üzerinden limitler koyar. Hafıza Kısıtlı • RBFS (Recursive Best-First Search): A*'ın özyineli bir Arama uygulamasıdır. Yetersiz hafıza durumunda, en iyi alternatif yolu hatırlayarak geri döner. • SMA* (Simplified Memory-Bounded A*): Hafıza dolduğunda, en kötü (en yüksek f-değerli) yaprak düğümü siler ve atasının f-değerini günceller.",
     "metadata": {
       "source": "YZM0101_week4.pdf",
       "page": 24,
@@ -2272,15 +1896,7 @@
     }
   },
   "YZM0101_week4.pdf_p26_s0": {
-    "content": "Desen Veritabanları (Pattern Databases) • Karmaşık problemler için iyi sezgiselleri elle tasarlamak zordur. • Fikir: Problemin alt-problemlerini önceden çözüp sonuçları birSezgisellerin veritabanında saklamak. Otomatik • Örnek (8-Bulmaca): Sadece 1,2,3,4 karolarının doğru yerde olduğu bir Üretimi duruma ulaşmanın maliyetini önceden hesapla ve sakla. • Arama sırasında, mevcut durumun bu desenlerden hangisine uyduğuna bakarak sezgisel değeri veritabanından al. • Bu, çok daha doğru ve güçlü sezgiseller",
-    "metadata": {
-      "source": "YZM0101_week4.pdf",
-      "page": 26,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week4.pdf_p26_s1": {
-    "content": "t durumun bu desenlerden hangisine uyduğuna bakarak sezgisel değeri veritabanından al. • Bu, çok daha doğru ve güçlü sezgiseller üretebilir.",
+    "content": "Desen Veritabanları (Pattern Databases) • Karmaşık problemler için iyi sezgiselleri elle tasarlamak zordur. • Fikir: Problemin alt-problemlerini önceden çözüp sonuçları birSezgisellerin veritabanında saklamak. Otomatik • Örnek (8-Bulmaca): Sadece 1,2,3,4 karolarının doğru yerde olduğu bir Üretimi duruma ulaşmanın maliyetini önceden hesapla ve sakla. • Arama sırasında, mevcut durumun bu desenlerden hangisine uyduğuna bakarak sezgisel değeri veritabanından al. • Bu, çok daha doğru ve güçlü sezgiseller üretebilir.",
     "metadata": {
       "source": "YZM0101_week4.pdf",
       "page": 26,
@@ -2288,15 +1904,7 @@
     }
   },
   "YZM0101_week4.pdf_p27_s0": {
-    "content": "Ne Zaman Hangisi? • Eğer problemin yapısı hakkında çok az şey biliyorsanız veya iyi bir sezgisel tasarlamak mümkün değilse, bilgisiz arama (IDS gibi) iyi bir Bilgili ve başlangıç noktasıdır.Bilgisiz Arama Arasındaki • Eğer probleme özgü, kabul edilebilir ve hesaplaması ucuz bir sezgisel fonksiyon tasarlayabiliyorsanız, A* neredeyse her zaman daha iyi bir Seçim seçimdir. • Eğer hafıza en büyük kısıtınız ise, IDA* veya RBFS gibi hafıza- verimli bilgili arama algoritmalarını düşünmelisiniz. • Eğer optimalite",
-    "metadata": {
-      "source": "YZM0101_week4.pdf",
-      "page": 27,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week4.pdf_p27_s1": {
-    "content": "fıza en büyük kısıtınız ise, IDA* veya RBFS gibi hafıza- verimli bilgili arama algoritmalarını düşünmelisiniz. • Eğer optimalite önemli değilse ve sadece 'yeterince iyi' bir çözüm hızlıca bulunsun istiyorsanız, Açgözlü Arama bir seçenek olabilir.",
+    "content": "Ne Zaman Hangisi? • Eğer problemin yapısı hakkında çok az şey biliyorsanız veya iyi bir sezgisel tasarlamak mümkün değilse, bilgisiz arama (IDS gibi) iyi bir Bilgili ve başlangıç noktasıdır.Bilgisiz Arama Arasındaki • Eğer probleme özgü, kabul edilebilir ve hesaplaması ucuz bir sezgisel fonksiyon tasarlayabiliyorsanız, A* neredeyse her zaman daha iyi bir Seçim seçimdir. • Eğer hafıza en büyük kısıtınız ise, IDA* veya RBFS gibi hafıza- verimli bilgili arama algoritmalarını düşünmelisiniz. • Eğer optimalite önemli değilse ve sadece 'yeterince iyi' bir çözüm hızlıca bulunsun istiyorsanız, Açgözlü Arama bir seçenek olabilir.",
     "metadata": {
       "source": "YZM0101_week4.pdf",
       "page": 27,
@@ -2384,15 +1992,7 @@
     }
   },
   "YZM0101_week5.pdf_p11_s0": {
-    "content": "Tuzaklardan Kaçma Yolları • Stokastik Tepe Tırmanma: Komşular arasından en iyisini değil, daha iyi olanlardan rastgele birini seçer. Tepe • İlk Seçim (First-Choice) Tepe Tırmanma: Kendisinden daha iyi olan ilk komşuyu bulduğu anda oraya hareket eder, hepsini değerlendirmez. Tırmanma Varyasyonları • Rastgele Yeniden Başlatmalı Tepe Tırmanma (Random-Restart Hill Climbing): En etkili yöntemlerden biridir. Algoritma bir yerel maksimumda takıldığında, durum uzayında tamamen rastgele yeni bir noktadan aramayı",
-    "metadata": {
-      "source": "YZM0101_week5.pdf",
-      "page": 11,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week5.pdf_p11_s1": {
-    "content": "ili yöntemlerden biridir. Algoritma bir yerel maksimumda takıldığında, durum uzayında tamamen rastgele yeni bir noktadan aramayı tekrar başlatır. Belirli bir süre sonunda bulunan en iyi tepeyi çözüm olarak kabul eder.",
+    "content": "Tuzaklardan Kaçma Yolları • Stokastik Tepe Tırmanma: Komşular arasından en iyisini değil, daha iyi olanlardan rastgele birini seçer. Tepe • İlk Seçim (First-Choice) Tepe Tırmanma: Kendisinden daha iyi olan ilk komşuyu bulduğu anda oraya hareket eder, hepsini değerlendirmez. Tırmanma Varyasyonları • Rastgele Yeniden Başlatmalı Tepe Tırmanma (Random-Restart Hill Climbing): En etkili yöntemlerden biridir. Algoritma bir yerel maksimumda takıldığında, durum uzayında tamamen rastgele yeni bir noktadan aramayı tekrar başlatır. Belirli bir süre sonunda bulunan en iyi tepeyi çözüm olarak kabul eder.",
     "metadata": {
       "source": "YZM0101_week5.pdf",
       "page": 11,
@@ -2400,15 +2000,7 @@
     }
   },
   "YZM0101_week5.pdf_p12_s0": {
-    "content": "Bazen Geri Adım Atmak İyidir • Metalürjideki tavlama (annealing) sürecinden esinlenilmiştir. Tavlama • Tepe Tırmanma'dan farklı olarak, sadece daha iyi komşulara değil, bazen daha kötü komşulara da geçmeye izin verir. Benzetimi • Bu 'kötü' hamleleri yapma olasılığı, sistemin 'sıcaklığına' (temperature)(Simulated bağlıdır. Annealing) • Başlangıçta: Sıcaklık yüksektir, kötü hamle yapma olasılığı fazladır (araziyi keşfetme). • Zamanla: Sıcaklık yavaş yavaş düşürülür, kötü hamle yapma olasılığı azalır (en iyi",
-    "metadata": {
-      "source": "YZM0101_week5.pdf",
-      "page": 12,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week5.pdf_p12_s1": {
-    "content": "apma olasılığı fazladır (araziyi keşfetme). • Zamanla: Sıcaklık yavaş yavaş düşürülür, kötü hamle yapma olasılığı azalır (en iyi tepeye yerleşme).",
+    "content": "Bazen Geri Adım Atmak İyidir • Metalürjideki tavlama (annealing) sürecinden esinlenilmiştir. Tavlama • Tepe Tırmanma'dan farklı olarak, sadece daha iyi komşulara değil, bazen daha kötü komşulara da geçmeye izin verir. Benzetimi • Bu 'kötü' hamleleri yapma olasılığı, sistemin 'sıcaklığına' (temperature)(Simulated bağlıdır. Annealing) • Başlangıçta: Sıcaklık yüksektir, kötü hamle yapma olasılığı fazladır (araziyi keşfetme). • Zamanla: Sıcaklık yavaş yavaş düşürülür, kötü hamle yapma olasılığı azalır (en iyi tepeye yerleşme).",
     "metadata": {
       "source": "YZM0101_week5.pdf",
       "page": 12,
@@ -2416,15 +2008,7 @@
     }
   },
   "YZM0101_week5.pdf_p13_s0": {
-    "content": "Doğal Seçilimden Esinlenen Arama • Tek bir durum yerine, bir 'popülasyon' (population) yani bir grup durumu aynı anda değerlendirir. • Her durum (birey), bir 'kromozom' (genellikle bir bit dizisi) ile temsil edilir. Genetik • Evrimsel Süreç:Algoritmalar • 1. Uygunluk (Fitness): Her bireyin ne kadar iyi olduğu bir uygunluk (Genetic fonksiyonu ile ölçülür. • 2. Seçilim (Selection): Daha uygun bireylerin bir sonraki nesle aktarılma Algorithms) olasılığı daha yüksektir. • 3. Çaprazlama (Crossover): İki",
-    "metadata": {
-      "source": "YZM0101_week5.pdf",
-      "page": 13,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week5.pdf_p13_s1": {
-    "content": "ction): Daha uygun bireylerin bir sonraki nesle aktarılma Algorithms) olasılığı daha yüksektir. • 3. Çaprazlama (Crossover): İki ebeveynin kromozomları birleştirilerek yeni bir çocuk (çözüm adayı) oluşturulur. • 4. Mutasyon (Mutation):Bir bireyin kromozomunda rastgele küçük bir değişiklik yapılır.",
+    "content": "Doğal Seçilimden Esinlenen Arama • Tek bir durum yerine, bir 'popülasyon' (population) yani bir grup durumu aynı anda değerlendirir. • Her durum (birey), bir 'kromozom' (genellikle bir bit dizisi) ile temsil edilir. Genetik • Evrimsel Süreç:Algoritmalar • 1. Uygunluk (Fitness): Her bireyin ne kadar iyi olduğu bir uygunluk (Genetic fonksiyonu ile ölçülür. • 2. Seçilim (Selection): Daha uygun bireylerin bir sonraki nesle aktarılma Algorithms) olasılığı daha yüksektir. • 3. Çaprazlama (Crossover): İki ebeveynin kromozomları birleştirilerek yeni bir çocuk (çözüm adayı) oluşturulur. • 4. Mutasyon (Mutation):Bir bireyin kromozomunda rastgele küçük bir değişiklik yapılır.",
     "metadata": {
       "source": "YZM0101_week5.pdf",
       "page": 13,
@@ -2432,15 +2016,7 @@
     }
   },
   "YZM0101_week5.pdf_p14_s0": {
-    "content": "Genel Bir Bakış • Avantajları: • - Hafıza Verimliliği: Genellikle sadece birkaç durumu hafızada tuttukları için çok az bellek kullanırlar. Yerel • - Büyük Durum Uzayları: Çok büyük veya sonsuz durum uzaylarına Aramanın sahip problemlerde bile makul çözümler bulabilirler. • - 'Yeterince İyi' Çözümler: Optimal çözüm gerekmeyen durumlarda, hızlı Avantajları ve bir şekilde oldukça iyi çözümler üretebilirler. Dezavantajları • Dezavantajları: • - Optimalite Garantisi Yok Genellikle buldukları çözümün global",
-    "metadata": {
-      "source": "YZM0101_week5.pdf",
-      "page": 14,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week5.pdf_p14_s1": {
-    "content": "a iyi çözümler üretebilirler. Dezavantajları • Dezavantajları: • - Optimalite Garantisi Yok Genellikle buldukları çözümün global optimum olduğunu garanti edemezler. • - Parametre Ayarı: Tavlama Benzetimi ve Genetik Algoritmalar gibi yöntemler, doğru çalışmaları için dikkatli parametre ayarı (soğutma hızı, mutasyon oranı vb.) gerektirir.",
+    "content": "Genel Bir Bakış • Avantajları: • - Hafıza Verimliliği: Genellikle sadece birkaç durumu hafızada tuttukları için çok az bellek kullanırlar. Yerel • - Büyük Durum Uzayları: Çok büyük veya sonsuz durum uzaylarına Aramanın sahip problemlerde bile makul çözümler bulabilirler. • - 'Yeterince İyi' Çözümler: Optimal çözüm gerekmeyen durumlarda, hızlı Avantajları ve bir şekilde oldukça iyi çözümler üretebilirler. Dezavantajları • Dezavantajları: • - Optimalite Garantisi Yok Genellikle buldukları çözümün global optimum olduğunu garanti edemezler. • - Parametre Ayarı: Tavlama Benzetimi ve Genetik Algoritmalar gibi yöntemler, doğru çalışmaları için dikkatli parametre ayarı (soğutma hızı, mutasyon oranı vb.) gerektirir.",
     "metadata": {
       "source": "YZM0101_week5.pdf",
       "page": 14,
@@ -2456,15 +2032,7 @@
     }
   },
   "YZM0101_week5.pdf_p16_s0": {
-    "content": "Hangi Yerel Arama Yaklaşımı? • Problem: Bir satıcının, belirli bir şehir listesini, her şehre bir kez uğrayarak ve toplamda en kısa mesafeyi kat ederek gezmesi gerekiyor. Düşünme • Bu, çok zor bir optimizasyon problemidir (NP-Hard). Sorusu: Gezgin • Bu problemi çözmek için bu hafta öğrendiğimiz yerel arama Satıcı Problemi algoritmalarından birini kullanacak olsaydınız, hangisini veya hangilerini düşünürdünüz ve neden? • Durum: Şehirlerin bir gezi sırası (permutasyonu). • Komşu Durum: İki şehrin yerini",
-    "metadata": {
-      "source": "YZM0101_week5.pdf",
-      "page": 16,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week5.pdf_p16_s1": {
-    "content": "ini veya hangilerini düşünürdünüz ve neden? • Durum: Şehirlerin bir gezi sırası (permutasyonu). • Komşu Durum: İki şehrin yerini değiştirmek gibi küçük bir değişiklik.",
+    "content": "Hangi Yerel Arama Yaklaşımı? • Problem: Bir satıcının, belirli bir şehir listesini, her şehre bir kez uğrayarak ve toplamda en kısa mesafeyi kat ederek gezmesi gerekiyor. Düşünme • Bu, çok zor bir optimizasyon problemidir (NP-Hard). Sorusu: Gezgin • Bu problemi çözmek için bu hafta öğrendiğimiz yerel arama Satıcı Problemi algoritmalarından birini kullanacak olsaydınız, hangisini veya hangilerini düşünürdünüz ve neden? • Durum: Şehirlerin bir gezi sırası (permutasyonu). • Komşu Durum: İki şehrin yerini değiştirmek gibi küçük bir değişiklik.",
     "metadata": {
       "source": "YZM0101_week5.pdf",
       "page": 16,
@@ -2496,15 +2064,7 @@
     }
   },
   "YZM0101_week5.pdf_p20_s0": {
-    "content": "Genetik Algoritmalara Bir Alternatif • Genetik Algoritmalar gibi bir popülasyon (bir grup durum) tutar, ancak bu popülasyonun boyutunu sabit tutar. • Algoritma: Işın Araması • 1. k adet rastgele durumdan oluşan bir popülasyonla başla. • 2. Her adımda, popülasyondaki tüm durumların bütün komşularını üret. (Beam Search) • 3. Bu üretilen tüm komşular arasından en iyi k tanesini seç ve bunları yeni popülasyon yap. • 4. Bir hedefe ulaşılana veya zaman dolana kadar tekrarla. • Çaprazlama ve mutasyon yoktur, daha",
-    "metadata": {
-      "source": "YZM0101_week5.pdf",
-      "page": 20,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week5.pdf_p20_s1": {
-    "content": "e bunları yeni popülasyon yap. • 4. Bir hedefe ulaşılana veya zaman dolana kadar tekrarla. • Çaprazlama ve mutasyon yoktur, daha basit bir yapıdadır.",
+    "content": "Genetik Algoritmalara Bir Alternatif • Genetik Algoritmalar gibi bir popülasyon (bir grup durum) tutar, ancak bu popülasyonun boyutunu sabit tutar. • Algoritma: Işın Araması • 1. k adet rastgele durumdan oluşan bir popülasyonla başla. • 2. Her adımda, popülasyondaki tüm durumların bütün komşularını üret. (Beam Search) • 3. Bu üretilen tüm komşular arasından en iyi k tanesini seç ve bunları yeni popülasyon yap. • 4. Bir hedefe ulaşılana veya zaman dolana kadar tekrarla. • Çaprazlama ve mutasyon yoktur, daha basit bir yapıdadır.",
     "metadata": {
       "source": "YZM0101_week5.pdf",
       "page": 20,
@@ -2600,15 +2160,7 @@
     }
   },
   "YZM0101_week6.pdf_p9_s0": {
-    "content": "Performans Analizi • Tamlık (Completeness): Evet, eğer oyun ağacı sonlu ise. • Optimalite (Optimality): Evet, eğer rakip de optimal oynuyorsa. Rakip hatalı oynarsa, daha da iyi sonuç verir. Minimax • Zaman Karmaşıklığı: O(b^m). 'b' dallanma faktörü, 'm' maksimum derinlik.Algoritmasının Özellikleri • Uzay Karmaşıklığı: O(b*m). DFS tabanlı bir gezinme ile. • Problem: Zaman karmaşıklığı, satranç gibi karmaşık oyunlar için çok yüksektir. Satrançta b ≈ 35, ortalama oyun uzunluğu m ≈ 100 (yaklaşık 50 tam hamle",
-    "metadata": {
-      "source": "YZM0101_week6.pdf",
-      "page": 9,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week6.pdf_p9_s1": {
-    "content": "klığı, satranç gibi karmaşık oyunlar için çok yüksektir. Satrançta b ≈ 35, ortalama oyun uzunluğu m ≈ 100 (yaklaşık 50 tam hamle çifti). 3550 ≈1077 Bu sayı, evrendeki atomların sayısından bile büyük!",
+    "content": "Performans Analizi • Tamlık (Completeness): Evet, eğer oyun ağacı sonlu ise. • Optimalite (Optimality): Evet, eğer rakip de optimal oynuyorsa. Rakip hatalı oynarsa, daha da iyi sonuç verir. Minimax • Zaman Karmaşıklığı: O(b^m). 'b' dallanma faktörü, 'm' maksimum derinlik.Algoritmasının Özellikleri • Uzay Karmaşıklığı: O(b*m). DFS tabanlı bir gezinme ile. • Problem: Zaman karmaşıklığı, satranç gibi karmaşık oyunlar için çok yüksektir. Satrançta b ≈ 35, ortalama oyun uzunluğu m ≈ 100 (yaklaşık 50 tam hamle çifti). 3550 ≈1077 Bu sayı, evrendeki atomların sayısından bile büyük!",
     "metadata": {
       "source": "YZM0101_week6.pdf",
       "page": 9,
@@ -2624,15 +2176,7 @@
     }
   },
   "YZM0101_week6.pdf_p11_s0": {
-    "content": "Budama Koşulu • Arama sırasında, bir düğümde α >= β durumu oluşursa, o düğümün altındaki diğer dallar budanır. • Alfa Budaması (MAX Düğümünde): Bir MIN düğümünün değeri, Alfa-Beta Budaması MAX'ın mevcut alfa değerinden daha düşük veya eşitse, MIN oyuncusu bu yolu zaten tercih etmeyecektir. MAX, daha iyi bir alternatifi zaten Nasıl Çalışır? bulmuştur. • Beta Budaması (MIN Düğümünde): Bir MAX düğümünün değeri, MIN'in mevcut beta değerinden daha yüksek veya eşitse, MAX oyuncusu bu yolu zaten tercih",
-    "metadata": {
-      "source": "YZM0101_week6.pdf",
-      "page": 11,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week6.pdf_p11_s1": {
-    "content": "N Düğümünde): Bir MAX düğümünün değeri, MIN'in mevcut beta değerinden daha yüksek veya eşitse, MAX oyuncusu bu yolu zaten tercih etmeyecektir. MIN, daha iyi bir alternatifi zaten bulmuştur",
+    "content": "Budama Koşulu • Arama sırasında, bir düğümde α >= β durumu oluşursa, o düğümün altındaki diğer dallar budanır. • Alfa Budaması (MAX Düğümünde): Bir MIN düğümünün değeri, Alfa-Beta Budaması MAX'ın mevcut alfa değerinden daha düşük veya eşitse, MIN oyuncusu bu yolu zaten tercih etmeyecektir. MAX, daha iyi bir alternatifi zaten Nasıl Çalışır? bulmuştur. • Beta Budaması (MIN Düğümünde): Bir MAX düğümünün değeri, MIN'in mevcut beta değerinden daha yüksek veya eşitse, MAX oyuncusu bu yolu zaten tercih etmeyecektir. MIN, daha iyi bir alternatifi zaten bulmuştur",
     "metadata": {
       "source": "YZM0101_week6.pdf",
       "page": 11,
@@ -2656,15 +2200,7 @@
     }
   },
   "YZM0101_week6.pdf_p14_s0": {
-    "content": "Bir Pozisyon Ne Kadar İyidir? • Bir oyun pozisyonunun 'değerini' tahmin eden bir sezgisel Değerlendirme fonksiyondur. • Genellikle pozisyonun önemli özelliklerinin (features) ağırlıklı toplamı Fonksiyonu olarak hesaplanır. • Satranç için Örnek Özellikler: (Evaluation Function) • - Malzeme avantajı (taşların değeri: piyon=1, at=3, kale=5, vezir=9). • - Merkez kontrolü. • - Şah güvenliği. • - Taşların hareketliliği. • İyi bir değerlendirme fonksiyonu tasarlamak, bir oyun programı yapmanın en zor ve en önemli",
-    "metadata": {
-      "source": "YZM0101_week6.pdf",
-      "page": 14,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week6.pdf_p14_s1": {
-    "content": "nliği. • - Taşların hareketliliği. • İyi bir değerlendirme fonksiyonu tasarlamak, bir oyun programı yapmanın en zor ve en önemli kısmıdır.",
+    "content": "Bir Pozisyon Ne Kadar İyidir? • Bir oyun pozisyonunun 'değerini' tahmin eden bir sezgisel Değerlendirme fonksiyondur. • Genellikle pozisyonun önemli özelliklerinin (features) ağırlıklı toplamı Fonksiyonu olarak hesaplanır. • Satranç için Örnek Özellikler: (Evaluation Function) • - Malzeme avantajı (taşların değeri: piyon=1, at=3, kale=5, vezir=9). • - Merkez kontrolü. • - Şah güvenliği. • - Taşların hareketliliği. • İyi bir değerlendirme fonksiyonu tasarlamak, bir oyun programı yapmanın en zor ve en önemli kısmıdır.",
     "metadata": {
       "source": "YZM0101_week6.pdf",
       "page": 14,
@@ -2680,15 +2216,7 @@
     }
   },
   "YZM0101_week6.pdf_p17_s0": {
-    "content": "Akılda Kalması Gerekenler • Adversarial Arama: Rakibin de optimal oynadığını varsayarak en iyi hamleyi bulma. Haftanın • Oyun Ağacı: Bir oyundaki tüm olası hamle dizilerinin temsili. Kavramları: • Minimax: MAX ve MIN seviyeleri arasında değerleri yukarı yayarak optimal hamleyi bulur. Zaman karmaşıklığı yüksektir (O(b^m)). Özet • Alfa-Beta Budaması: Minimax ile aynı sonucu veren, ancak alakasız dalları budayarak performansı dramatik şekilde artıran bir optimizasyon. • Değerlendirme Fonksiyonu: Oyunun",
-    "metadata": {
-      "source": "YZM0101_week6.pdf",
-      "page": 17,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week6.pdf_p17_s1": {
-    "content": "eren, ancak alakasız dalları budayarak performansı dramatik şekilde artıran bir optimizasyon. • Değerlendirme Fonksiyonu: Oyunun bitmediği bir pozisyonun değerini tahmin eden sezgisel bir fonksiyon.",
+    "content": "Akılda Kalması Gerekenler • Adversarial Arama: Rakibin de optimal oynadığını varsayarak en iyi hamleyi bulma. Haftanın • Oyun Ağacı: Bir oyundaki tüm olası hamle dizilerinin temsili. Kavramları: • Minimax: MAX ve MIN seviyeleri arasında değerleri yukarı yayarak optimal hamleyi bulur. Zaman karmaşıklığı yüksektir (O(b^m)). Özet • Alfa-Beta Budaması: Minimax ile aynı sonucu veren, ancak alakasız dalları budayarak performansı dramatik şekilde artıran bir optimizasyon. • Değerlendirme Fonksiyonu: Oyunun bitmediği bir pozisyonun değerini tahmin eden sezgisel bir fonksiyon.",
     "metadata": {
       "source": "YZM0101_week6.pdf",
       "page": 17,
@@ -2776,15 +2304,7 @@
     }
   },
   "YZM0101_week7.pdf_p6_s0": {
-    "content": "Bir Mantık Dilini Tanımlamak • Her mantık dili iki temel unsurdan oluşur: • Sözdizimi (Syntax): Hangi cümlelerin 'doğru biçimlendirilmiş' (well- Mantığa Giriş: formed) olduğunu belirleyen kurallar. (Dilin grameri). Sözdizimi ve • - Örnek: `x + y = 4` doğru, `x 4 y = +` yanlış. • Anlambilim (Semantics): Bir cümlenin 'anlamını' tanımlar. Hangi koşullar Anlambilim altında bir cümlenin doğru veya yanlış olduğunu belirler. • - Örnek: `x + y = 4` cümlesi, x=2 ve y=2 olduğunda doğrudur, x=1 ve y=1 olduğunda",
-    "metadata": {
-      "source": "YZM0101_week7.pdf",
-      "page": 6,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week7.pdf_p6_s1": {
-    "content": "ümlenin doğru veya yanlış olduğunu belirler. • - Örnek: `x + y = 4` cümlesi, x=2 ve y=2 olduğunda doğrudur, x=1 ve y=1 olduğunda yanlıştır.",
+    "content": "Bir Mantık Dilini Tanımlamak • Her mantık dili iki temel unsurdan oluşur: • Sözdizimi (Syntax): Hangi cümlelerin 'doğru biçimlendirilmiş' (well- Mantığa Giriş: formed) olduğunu belirleyen kurallar. (Dilin grameri). Sözdizimi ve • - Örnek: `x + y = 4` doğru, `x 4 y = +` yanlış. • Anlambilim (Semantics): Bir cümlenin 'anlamını' tanımlar. Hangi koşullar Anlambilim altında bir cümlenin doğru veya yanlış olduğunu belirler. • - Örnek: `x + y = 4` cümlesi, x=2 ve y=2 olduğunda doğrudur, x=1 ve y=1 olduğunda yanlıştır.",
     "metadata": {
       "source": "YZM0101_week7.pdf",
       "page": 6,
@@ -2800,15 +2320,7 @@
     }
   },
   "YZM0101_week7.pdf_p8_s0": {
-    "content": "Mantıksal Bağlaçlar (Connectives): Bağlaç Sembol Okunuşu Örnek Anlamı Değil ¬ “not” ¬P “P doğru değil” Ve ∧ “and” P ∧Q “P ve Q doğru” “P veya Q (ya da her Veya ∨ “or” P ∨Q ikisi) doğru” “Eğer P doğruysa, Q Gerektirme ⇒ “if… then” P ⇒Q da doğru olmalı” “P ve Q aynı anda Çift yönlü ⇔ “if and only if” P ⇔Q doğru veya aynı gerektirme anda yanlış” Mantıksal İfade Doğal Dil Yorumu ¬P “Bugün hava yağmurlu değil.” Gerçeğin tersini söyler. P ∧Q “Bugün yağmur yağıyor ve yarın güneş açacak.” İki koşul da aynı anda",
-    "metadata": {
-      "source": "YZM0101_week7.pdf",
-      "page": 8,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week7.pdf_p8_s1": {
-    "content": "“Bugün hava yağmurlu değil.” Gerçeğin tersini söyler. P ∧Q “Bugün yağmur yağıyor ve yarın güneş açacak.” İki koşul da aynı anda olmalı. “Ya bugün yağmur yağacak ya da yarın güneş P ∨Q En az biri olmalı. açacak.” P ⇒Q “Eğer yağmur yağıyorsa, zemin ıslaktır.” Sebep-sonuç ilişkisi. P ⇔Q “Zemin ıslaksa ve ancak yağmur yağıyorsa.” Her iki ifade birbirine denktir.",
+    "content": "Mantıksal Bağlaçlar (Connectives): Bağlaç Sembol Okunuşu Örnek Anlamı Değil ¬ “not” ¬P “P doğru değil” Ve ∧ “and” P ∧Q “P ve Q doğru” “P veya Q (ya da her Veya ∨ “or” P ∨Q ikisi) doğru” “Eğer P doğruysa, Q Gerektirme ⇒ “if… then” P ⇒Q da doğru olmalı” “P ve Q aynı anda Çift yönlü ⇔ “if and only if” P ⇔Q doğru veya aynı gerektirme anda yanlış” Mantıksal İfade Doğal Dil Yorumu ¬P “Bugün hava yağmurlu değil.” Gerçeğin tersini söyler. P ∧Q “Bugün yağmur yağıyor ve yarın güneş açacak.” İki koşul da aynı anda olmalı. “Ya bugün yağmur yağacak ya da yarın güneş P ∨Q En az biri olmalı. açacak.” P ⇒Q “Eğer yağmur yağıyorsa, zemin ıslaktır.” Sebep-sonuç ilişkisi. P ⇔Q “Zemin ıslaksa ve ancak yağmur yağıyorsa.” Her iki ifade birbirine denktir.",
     "metadata": {
       "source": "YZM0101_week7.pdf",
       "page": 8,
@@ -2856,15 +2368,7 @@
     }
   },
   "YZM0101_week7.pdf_p15_s0": {
-    "content": "Bilgi Tabanından Yeni Cümleler Üretmek • Gerektirme (Entailment): KB ╞ α • - α cümlesi, KB bilgi tabanı tarafından gerektirilir. • - Anlamı: KB'nin doğru olduğu her dünyada, α da zorunlu olarak Mantıksal doğrudur. Çıkarım • Çıkarım (Inference): KB ⊢i α (Inference) • - 'α cümlesi, KB'den 'i' çıkarım algoritması kullanılarak türetilebilir.' • - Çıkarım, gerektirmenin sözdizimsel karşılığıdır. Cümleler üzerinde mekanik işlemler yapar. • İyi bir çıkarım algoritması 'sağlam' (sound) ve 'tam' (complete)",
-    "metadata": {
-      "source": "YZM0101_week7.pdf",
-      "page": 15,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week7.pdf_p15_s1": {
-    "content": "imsel karşılığıdır. Cümleler üzerinde mekanik işlemler yapar. • İyi bir çıkarım algoritması 'sağlam' (sound) ve 'tam' (complete) olmalıdır.",
+    "content": "Bilgi Tabanından Yeni Cümleler Üretmek • Gerektirme (Entailment): KB ╞ α • - α cümlesi, KB bilgi tabanı tarafından gerektirilir. • - Anlamı: KB'nin doğru olduğu her dünyada, α da zorunlu olarak Mantıksal doğrudur. Çıkarım • Çıkarım (Inference): KB ⊢i α (Inference) • - 'α cümlesi, KB'den 'i' çıkarım algoritması kullanılarak türetilebilir.' • - Çıkarım, gerektirmenin sözdizimsel karşılığıdır. Cümleler üzerinde mekanik işlemler yapar. • İyi bir çıkarım algoritması 'sağlam' (sound) ve 'tam' (complete) olmalıdır.",
     "metadata": {
       "source": "YZM0101_week7.pdf",
       "page": 15,
@@ -2944,15 +2448,7 @@
     }
   },
   "YZM0101_week7.pdf_p25_s0": {
-    "content": "Bir Şeyin Doğruluğunu, Tersiyle Çelişki Bularak Kanıtlamak Çözünürlük ile • Amaç: KB ╞ α olup olmadığını kanıtlamak. • Yöntem (Proof by Contradiction): Çıkarım: • 1. `KB ∧¬α`'nın bir çelişki içerdiğini, yani 'karşılanamaz' (unsatisfiable) Çürütme Yoluyla olduğunu göster. • 2. Bilgi tabanına, kanıtlamak istediğimiz şeyin tersini (¬α) ekle. İspat • 3. Bu yeni bilgi tabanındaki cümlelere, boş cümlecik (empty clause - yani `False`) elde edene kadar çözünürlük kuralını tekrar tekrar uygula. • 4. Eğer boş",
-    "metadata": {
-      "source": "YZM0101_week7.pdf",
-      "page": 25,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week7.pdf_p25_s1": {
-    "content": "i cümlelere, boş cümlecik (empty clause - yani `False`) elde edene kadar çözünürlük kuralını tekrar tekrar uygula. • 4. Eğer boş cümlecik elde edilirse, başlangıç varsayımı (¬α'nın doğru olduğu) yanlış demektir. O halde α doğru olmalıdır.",
+    "content": "Bir Şeyin Doğruluğunu, Tersiyle Çelişki Bularak Kanıtlamak Çözünürlük ile • Amaç: KB ╞ α olup olmadığını kanıtlamak. • Yöntem (Proof by Contradiction): Çıkarım: • 1. `KB ∧¬α`'nın bir çelişki içerdiğini, yani 'karşılanamaz' (unsatisfiable) Çürütme Yoluyla olduğunu göster. • 2. Bilgi tabanına, kanıtlamak istediğimiz şeyin tersini (¬α) ekle. İspat • 3. Bu yeni bilgi tabanındaki cümlelere, boş cümlecik (empty clause - yani `False`) elde edene kadar çözünürlük kuralını tekrar tekrar uygula. • 4. Eğer boş cümlecik elde edilirse, başlangıç varsayımı (¬α'nın doğru olduğu) yanlış demektir. O halde α doğru olmalıdır.",
     "metadata": {
       "source": "YZM0101_week7.pdf",
       "page": 25,
@@ -2960,15 +2456,7 @@
     }
   },
   "YZM0101_week7.pdf_p26_s0": {
-    "content": "Neden Yeterli Değil? • Önermeler mantığı 'bildirime dayalı' (declarative) değildir. Dünyayı nesneler, özellikler ve ilişkiler olarak göremez. • Her bir olgu için ayrı bir sembol gerekir.Önermeler • - `Esinti_1_1`, `Esinti_1_2`, ... gibi 64 farklı sembol gerekir.Mantığının Sınırları • Genel kuralları ifade etmek çok zordur. • - 'Tüm komşu karelerdeki çukurlar esintiye neden olur' gibi bir kuralı, her bir kare için ayrı ayrı yazmak gerekir. • Çözüm: Nesneleri ve ilişkileri doğrudan temsil edebilen daha güçlü",
-    "metadata": {
-      "source": "YZM0101_week7.pdf",
-      "page": 26,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week7.pdf_p26_s1": {
-    "content": "ibi bir kuralı, her bir kare için ayrı ayrı yazmak gerekir. • Çözüm: Nesneleri ve ilişkileri doğrudan temsil edebilen daha güçlü bir mantık: Birinci Dereceden Mantık (First-Order Logic).",
+    "content": "Neden Yeterli Değil? • Önermeler mantığı 'bildirime dayalı' (declarative) değildir. Dünyayı nesneler, özellikler ve ilişkiler olarak göremez. • Her bir olgu için ayrı bir sembol gerekir.Önermeler • - `Esinti_1_1`, `Esinti_1_2`, ... gibi 64 farklı sembol gerekir.Mantığının Sınırları • Genel kuralları ifade etmek çok zordur. • - 'Tüm komşu karelerdeki çukurlar esintiye neden olur' gibi bir kuralı, her bir kare için ayrı ayrı yazmak gerekir. • Çözüm: Nesneleri ve ilişkileri doğrudan temsil edebilen daha güçlü bir mantık: Birinci Dereceden Mantık (First-Order Logic).",
     "metadata": {
       "source": "YZM0101_week7.pdf",
       "page": 26,
@@ -2984,15 +2472,7 @@
     }
   },
   "YZM0101_week7.pdf_p28_s0": {
-    "content": "Akılda Kalması Gerekenler • Mantıksal Ajan: Dünyayı bir Bilgi Tabanı (KB) ile temsil eden ve çıkarım yapan ajan. Haftanın • Önermeler Mantığı: Dünyayı, doğru/yanlış olabilen basit önermeler (P, Q) ve mantıksal bağlaçlarla (∧, ∨, ¬, ⇒) modeller. Kavramları: • Gerektirme (Entailment - ╞): Bir cümlenin, KB'nin doğru olduğu her dünyada zorunlu olarak doğru olması (anlamsal). Özet • Çıkarım (Inference - ⊢): Bir cümlenin, KB'den çıkarım kuralları kullanılarak türetilmesi (sözdizimsel). • Çözünürlük (Resolution):",
-    "metadata": {
-      "source": "YZM0101_week7.pdf",
-      "page": 28,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week7.pdf_p28_s1": {
-    "content": "karım (Inference - ⊢): Bir cümlenin, KB'den çıkarım kuralları kullanılarak türetilmesi (sözdizimsel). • Çözünürlük (Resolution): Önermeler mantığı için sağlam ve tam bir çıkarım kuralı.",
+    "content": "Akılda Kalması Gerekenler • Mantıksal Ajan: Dünyayı bir Bilgi Tabanı (KB) ile temsil eden ve çıkarım yapan ajan. Haftanın • Önermeler Mantığı: Dünyayı, doğru/yanlış olabilen basit önermeler (P, Q) ve mantıksal bağlaçlarla (∧, ∨, ¬, ⇒) modeller. Kavramları: • Gerektirme (Entailment - ╞): Bir cümlenin, KB'nin doğru olduğu her dünyada zorunlu olarak doğru olması (anlamsal). Özet • Çıkarım (Inference - ⊢): Bir cümlenin, KB'den çıkarım kuralları kullanılarak türetilmesi (sözdizimsel). • Çözünürlük (Resolution): Önermeler mantığı için sağlam ve tam bir çıkarım kuralı.",
     "metadata": {
       "source": "YZM0101_week7.pdf",
       "page": 28,
@@ -3016,15 +2496,7 @@
     }
   },
   "YZM0101_week7.pdf_p31_s0": {
-    "content": "Önermeler Mantığının Gücü • SAT Problemi (Boolean Satisfiability Problem): Verilen bir önermeler mantığı cümlesini 'doğru' yapacak bir model (değişken Gerçek Dünya ataması) var mıdır? • Bu, bilgisayar biliminin en temel ve en zor problemlerinden biridir (ilk Örneği: SAT NP-Complete problem). • Modern SAT Çözücüler, milyonlarca değişken ve cümlecik içeren Çözücüler problemleri bile şaşırtıcı bir hızda çözebilen, son derece optimize edilmiş algoritmalardır. • Uygulamaları: Donanım doğrulaması, planlama,",
-    "metadata": {
-      "source": "YZM0101_week7.pdf",
-      "page": 31,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week7.pdf_p31_s1": {
-    "content": "bile şaşırtıcı bir hızda çözebilen, son derece optimize edilmiş algoritmalardır. • Uygulamaları: Donanım doğrulaması, planlama, yazılım testi, kriptografi.",
+    "content": "Önermeler Mantığının Gücü • SAT Problemi (Boolean Satisfiability Problem): Verilen bir önermeler mantığı cümlesini 'doğru' yapacak bir model (değişken Gerçek Dünya ataması) var mıdır? • Bu, bilgisayar biliminin en temel ve en zor problemlerinden biridir (ilk Örneği: SAT NP-Complete problem). • Modern SAT Çözücüler, milyonlarca değişken ve cümlecik içeren Çözücüler problemleri bile şaşırtıcı bir hızda çözebilen, son derece optimize edilmiş algoritmalardır. • Uygulamaları: Donanım doğrulaması, planlama, yazılım testi, kriptografi.",
     "metadata": {
       "source": "YZM0101_week7.pdf",
       "page": 31,
@@ -3056,15 +2528,7 @@
     }
   },
   "YZM0101_week8.pdf_p3_s0": {
-    "content": "Geleneksel Programlamanın Yetersiz Kaldığı Yerler • Karmaşık Problemler: Kurallarını elle yazmanın çok zor veya imkansız olduğu problemler (örn: yüz tanıma, konuşma anlama). • Değişen Ortamlar: Sürekli yeni verilere adapte olması gerekenNeden Makine Öğrenmesi? sistemler (örn: spam filtresi, öneri sistemleri). • Kişiselleştirme: Her kullanıcı için farklı kurallar gerektiren uygulamalar (örn: Netflix film önerileri). • İnsan Uzmanlığının Olmadığı Alanlar: Büyük veri setlerindeki gizli desenleri ve içgörüleri",
-    "metadata": {
-      "source": "YZM0101_week8.pdf",
-      "page": 3,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week8.pdf_p3_s1": {
-    "content": "alar (örn: Netflix film önerileri). • İnsan Uzmanlığının Olmadığı Alanlar: Büyük veri setlerindeki gizli desenleri ve içgörüleri keşfetme (örn: genetik analiz, borsa tahmini).",
+    "content": "Geleneksel Programlamanın Yetersiz Kaldığı Yerler • Karmaşık Problemler: Kurallarını elle yazmanın çok zor veya imkansız olduğu problemler (örn: yüz tanıma, konuşma anlama). • Değişen Ortamlar: Sürekli yeni verilere adapte olması gerekenNeden Makine Öğrenmesi? sistemler (örn: spam filtresi, öneri sistemleri). • Kişiselleştirme: Her kullanıcı için farklı kurallar gerektiren uygulamalar (örn: Netflix film önerileri). • İnsan Uzmanlığının Olmadığı Alanlar: Büyük veri setlerindeki gizli desenleri ve içgörüleri keşfetme (örn: genetik analiz, borsa tahmini).",
     "metadata": {
       "source": "YZM0101_week8.pdf",
       "page": 3,
@@ -3072,15 +2536,7 @@
     }
   },
   "YZM0101_week8.pdf_p4_s0": {
-    "content": "Üç Ana Paradigma • 1. Denetimli Öğrenme (Supervised Learning): • - Algoritmaya etiketli veri (soru-cevap çiftleri) verilir. • - Amaç, yeni girdiler için doğru çıktıyı tahmin etmeyi öğrenmektir. Makine Öğrenmesi • 2. Denetimsiz Öğrenme (Unsupervised Learning): • - Algoritmaya etiketsiz veri verilir. Türleri • - Amaç, verinin içindeki gizli yapıları veya desenleri keşfetmektir. • 3. Pekiştirmeli Öğrenme (Reinforcement Learning): • - Ajan, bir ortamda deneme-yanılma yoluyla hareket eder. • - Amaç, ödülleri",
-    "metadata": {
-      "source": "YZM0101_week8.pdf",
-      "page": 4,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week8.pdf_p4_s1": {
-    "content": "3. Pekiştirmeli Öğrenme (Reinforcement Learning): • - Ajan, bir ortamda deneme-yanılma yoluyla hareket eder. • - Amaç, ödülleri maksimize eden bir davranış politikası öğrenmektir.",
+    "content": "Üç Ana Paradigma • 1. Denetimli Öğrenme (Supervised Learning): • - Algoritmaya etiketli veri (soru-cevap çiftleri) verilir. • - Amaç, yeni girdiler için doğru çıktıyı tahmin etmeyi öğrenmektir. Makine Öğrenmesi • 2. Denetimsiz Öğrenme (Unsupervised Learning): • - Algoritmaya etiketsiz veri verilir. Türleri • - Amaç, verinin içindeki gizli yapıları veya desenleri keşfetmektir. • 3. Pekiştirmeli Öğrenme (Reinforcement Learning): • - Ajan, bir ortamda deneme-yanılma yoluyla hareket eder. • - Amaç, ödülleri maksimize eden bir davranış politikası öğrenmektir.",
     "metadata": {
       "source": "YZM0101_week8.pdf",
       "page": 4,
@@ -3104,15 +2560,7 @@
     }
   },
   "YZM0101_week8.pdf_p9_s0": {
-    "content": "Deneme-Yanılma ile Karar Öğrenme • Bir ajan, çevreyle etkileşime girerek eylemlerinin sonuçlarını gözlemler. • Amaç: Toplam ödülü (cumulative reward) en büyükleyecek bir politika (policy) öğrenmek. Pekiştirmeli • Ajan – Çevre – Ödül üçlüsü temel yapıyı oluşturur. Öğrenme • Temel kavramlar: • - Durum (state), Eylem (action), Ödül (reward) • - Politika (π): her durumda hangi eylemin seçileceğini belirleyen strateji • - Q-değerleri (aksiyon-değer fonksiyonu): belirli bir durumda belirli bir eylemin uzun",
-    "metadata": {
-      "source": "YZM0101_week8.pdf",
-      "page": 9,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week8.pdf_p9_s1": {
-    "content": "ylemin seçileceğini belirleyen strateji • - Q-değerleri (aksiyon-değer fonksiyonu): belirli bir durumda belirli bir eylemin uzun vadeli getirisi",
+    "content": "Deneme-Yanılma ile Karar Öğrenme • Bir ajan, çevreyle etkileşime girerek eylemlerinin sonuçlarını gözlemler. • Amaç: Toplam ödülü (cumulative reward) en büyükleyecek bir politika (policy) öğrenmek. Pekiştirmeli • Ajan – Çevre – Ödül üçlüsü temel yapıyı oluşturur. Öğrenme • Temel kavramlar: • - Durum (state), Eylem (action), Ödül (reward) • - Politika (π): her durumda hangi eylemin seçileceğini belirleyen strateji • - Q-değerleri (aksiyon-değer fonksiyonu): belirli bir durumda belirli bir eylemin uzun vadeli getirisi",
     "metadata": {
       "source": "YZM0101_week8.pdf",
       "page": 9,
@@ -3120,15 +2568,7 @@
     }
   },
   "YZM0101_week8.pdf_p11_s0": {
-    "content": "Adım Adım Model Geliştirme • 1. Problemi Tanımlama: Ne tür bir problem çözüyoruz (sınıflandırma/regresyon)? Başarıyı nasıl ölçeceğiz? • 2. Veri Toplama ve Hazırlama: En önemli ve en çok zaman alan adım. Bir Makine Öğrenmesi Veriyi temizleme, formatlama, özellik mühendisliği. • 3. Model Seçimi: Probleme uygun bir veya birkaç MÖ modeli (hipotez Projesinin Yaşam uzayı) seçmek. • 4. Model Eğitimi (Training): Seçilen modeli, hazırlanan veri setini Döngüsü kullanarak 'öğrenmesi' için çalıştırmak. • 5. Model",
-    "metadata": {
-      "source": "YZM0101_week8.pdf",
-      "page": 11,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week8.pdf_p11_s1": {
-    "content": "4. Model Eğitimi (Training): Seçilen modeli, hazırlanan veri setini Döngüsü kullanarak 'öğrenmesi' için çalıştırmak. • 5. Model Değerlendirme (Evaluation): Modelin daha önce görmediği yeni veriler üzerindeki performansını ölçmek. • 6. Parametre Ayarlama (Tuning) ve Dağıtım (Deployment): Modelin performansını iyileştirmek ve gerçek dünyada kullanılabilir hale getirmek.",
+    "content": "Adım Adım Model Geliştirme • 1. Problemi Tanımlama: Ne tür bir problem çözüyoruz (sınıflandırma/regresyon)? Başarıyı nasıl ölçeceğiz? • 2. Veri Toplama ve Hazırlama: En önemli ve en çok zaman alan adım. Bir Makine Öğrenmesi Veriyi temizleme, formatlama, özellik mühendisliği. • 3. Model Seçimi: Probleme uygun bir veya birkaç MÖ modeli (hipotez Projesinin Yaşam uzayı) seçmek. • 4. Model Eğitimi (Training): Seçilen modeli, hazırlanan veri setini Döngüsü kullanarak 'öğrenmesi' için çalıştırmak. • 5. Model Değerlendirme (Evaluation): Modelin daha önce görmediği yeni veriler üzerindeki performansını ölçmek. • 6. Parametre Ayarlama (Tuning) ve Dağıtım (Deployment): Modelin performansını iyileştirmek ve gerçek dünyada kullanılabilir hale getirmek.",
     "metadata": {
       "source": "YZM0101_week8.pdf",
       "page": 11,
@@ -3136,15 +2576,7 @@
     }
   },
   "YZM0101_week8.pdf_p13_s0": {
-    "content": "Eğitim, Doğrulama ve Test • Elimizdeki toplam veriyi genellikle üçe ayırırız: • Eğitim Seti (Training Set): Modelin öğrenmek için kullandığı veri. Genellikle toplam verinin %60-80'i. • Doğrulama Seti (Validation Set): Modelin farklı parametreleriniTemel Kavram: Veri Seti ayarlarken (tuning) performansını karşılaştırmak için kullanılır. Genellikle %10-20'si. • Test Seti (Test Set): Modelin nihai performansını, tamamen 'kör' olduğu (hiç görmediği) veriler üzerinde ölçmek için kullanılır. Genellikle",
-    "metadata": {
-      "source": "YZM0101_week8.pdf",
-      "page": 13,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week8.pdf_p13_s1": {
-    "content": "Test Set): Modelin nihai performansını, tamamen 'kör' olduğu (hiç görmediği) veriler üzerinde ölçmek için kullanılır. Genellikle %10-20'si. Bu sete sadece en sonda dokunulur.",
+    "content": "Eğitim, Doğrulama ve Test • Elimizdeki toplam veriyi genellikle üçe ayırırız: • Eğitim Seti (Training Set): Modelin öğrenmek için kullandığı veri. Genellikle toplam verinin %60-80'i. • Doğrulama Seti (Validation Set): Modelin farklı parametreleriniTemel Kavram: Veri Seti ayarlarken (tuning) performansını karşılaştırmak için kullanılır. Genellikle %10-20'si. • Test Seti (Test Set): Modelin nihai performansını, tamamen 'kör' olduğu (hiç görmediği) veriler üzerinde ölçmek için kullanılır. Genellikle %10-20'si. Bu sete sadece en sonda dokunulur.",
     "metadata": {
       "source": "YZM0101_week8.pdf",
       "page": 13,
@@ -3152,15 +2584,7 @@
     }
   },
   "YZM0101_week8.pdf_p14_s0": {
-    "content": "Ezberlemek vs. Öğrenmek • Aşırı Öğrenme (Overfitting): Model, eğitim verisindeki detayları ve gürültüyü o kadar iyi öğrenir ki, yeni ve görünmeyen verilere genelleme yapma yeteneğini kaybeder. Eğitim hatası çok düşük, test hatası çokTemel Problem: Aşırı Öğrenme yüksektir. • Eksik Öğrenme (Underfitting): Model, eğitim verisindeki temel (Overfitting) yapıyı bile yakalayamayacak kadar basittir. Hem eğitim hem de test hatası yüksektir. • İyi Uyum (Good Fit): Model, eğitim verisindeki genel deseni yakalar ve",
-    "metadata": {
-      "source": "YZM0101_week8.pdf",
-      "page": 14,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week8.pdf_p14_s1": {
-    "content": "adar basittir. Hem eğitim hem de test hatası yüksektir. • İyi Uyum (Good Fit): Model, eğitim verisindeki genel deseni yakalar ve yeni verilere iyi genelleme yapar.",
+    "content": "Ezberlemek vs. Öğrenmek • Aşırı Öğrenme (Overfitting): Model, eğitim verisindeki detayları ve gürültüyü o kadar iyi öğrenir ki, yeni ve görünmeyen verilere genelleme yapma yeteneğini kaybeder. Eğitim hatası çok düşük, test hatası çokTemel Problem: Aşırı Öğrenme yüksektir. • Eksik Öğrenme (Underfitting): Model, eğitim verisindeki temel (Overfitting) yapıyı bile yakalayamayacak kadar basittir. Hem eğitim hem de test hatası yüksektir. • İyi Uyum (Good Fit): Model, eğitim verisindeki genel deseni yakalar ve yeni verilere iyi genelleme yapar.",
     "metadata": {
       "source": "YZM0101_week8.pdf",
       "page": 14,
@@ -3184,15 +2608,7 @@
     }
   },
   "YZM0101_week8.pdf_p20_s0": {
-    "content": "Modelin Haksız Avantajı • Data leakage, modelin eğitim sırasında geleceğe ait veya test verisine ait bilgiyi farkında olmadan öğrenmesidir. • Sonuçta model eğitimde mükemmel görünür fakat gerçek dünyada başarısız olur. Data Leakage • Yaygın nedenler: (Veri Sızıntısı) • - Eğitim/test karışımı veya yanlış zaman sıralaması • - Özellik mühendisliğinde hedef (label) bilgisinin sızması • - Normalizasyon veya ölçeklemenin tüm veri üzerinden yapılması • Önleme: Veri ayrımını işlem öncesinde yap, tüm dönüşümleri",
-    "metadata": {
-      "source": "YZM0101_week8.pdf",
-      "page": 20,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week8.pdf_p20_s1": {
-    "content": "sı • - Normalizasyon veya ölçeklemenin tüm veri üzerinden yapılması • Önleme: Veri ayrımını işlem öncesinde yap, tüm dönüşümleri yalnızca eğitim verisine uygula.",
+    "content": "Modelin Haksız Avantajı • Data leakage, modelin eğitim sırasında geleceğe ait veya test verisine ait bilgiyi farkında olmadan öğrenmesidir. • Sonuçta model eğitimde mükemmel görünür fakat gerçek dünyada başarısız olur. Data Leakage • Yaygın nedenler: (Veri Sızıntısı) • - Eğitim/test karışımı veya yanlış zaman sıralaması • - Özellik mühendisliğinde hedef (label) bilgisinin sızması • - Normalizasyon veya ölçeklemenin tüm veri üzerinden yapılması • Önleme: Veri ayrımını işlem öncesinde yap, tüm dönüşümleri yalnızca eğitim verisine uygula.",
     "metadata": {
       "source": "YZM0101_week8.pdf",
       "page": 20,
@@ -3224,15 +2640,7 @@
     }
   },
   "YZM0101_week8.pdf_p24_s0": {
-    "content": "Dengesiz Veri Setleri Problemi • Problem: Bir kredi kartı işleminin sahte mi yoksa geçerli mi olduğunu Gerçek Dünya belirlemek. • Bu bir sınıflandırma problemidir.Örneği: Kredi Kartı • Zorluk: Veri seti aşırı derecede 'dengesizdir'. Milyonlarca geçerli Sahtekarlığı işleme karşılık, sadece birkaç bin sahte işlem vardır (%99.9 vs %0.1). Tespiti • Model, her şeye 'geçerli' demeyi öğrenerek %99.9 doğruluk oranına ulaşabilir, ancak hiçbir işe yaramaz. • Bu, doğru değerlendirme metriğini seçmenin neden önemli",
-    "metadata": {
-      "source": "YZM0101_week8.pdf",
-      "page": 24,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week8.pdf_p24_s1": {
-    "content": "öğrenerek %99.9 doğruluk oranına ulaşabilir, ancak hiçbir işe yaramaz. • Bu, doğru değerlendirme metriğini seçmenin neden önemli olduğunu gösterir.",
+    "content": "Dengesiz Veri Setleri Problemi • Problem: Bir kredi kartı işleminin sahte mi yoksa geçerli mi olduğunu Gerçek Dünya belirlemek. • Bu bir sınıflandırma problemidir.Örneği: Kredi Kartı • Zorluk: Veri seti aşırı derecede 'dengesizdir'. Milyonlarca geçerli Sahtekarlığı işleme karşılık, sadece birkaç bin sahte işlem vardır (%99.9 vs %0.1). Tespiti • Model, her şeye 'geçerli' demeyi öğrenerek %99.9 doğruluk oranına ulaşabilir, ancak hiçbir işe yaramaz. • Bu, doğru değerlendirme metriğini seçmenin neden önemli olduğunu gösterir.",
     "metadata": {
       "source": "YZM0101_week8.pdf",
       "page": 24,
@@ -3240,15 +2648,7 @@
     }
   },
   "YZM0101_week8.pdf_p25_s0": {
-    "content": "Veriyi Sanata Dönüştürmek • Ham veriyi, bir makine öğrenmesi modelinin anlayabileceği ve daha iyi Özellik öğrenebileceği 'özellikre' (features) dönüştürme sürecidir. • Bu, genellikle bir MÖ projesinin başarısındaki en kritik faktördür. Mühendisliği • Örnekler: (Feature • - Bir 'tarih' sütunundan 'haftanın günü', 'ay', 'tatil mi?' gibi yeni özellikler türetmek.Engineering) • - Metin verisinden kelime sıklıklarını çıkarmak. • - Kategorik verileri (örn: 'İstanbul', 'Ankara') sayısal değerlere dönüştürmek",
-    "metadata": {
-      "source": "YZM0101_week8.pdf",
-      "page": 25,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week8.pdf_p25_s1": {
-    "content": "Metin verisinden kelime sıklıklarını çıkarmak. • - Kategorik verileri (örn: 'İstanbul', 'Ankara') sayısal değerlere dönüştürmek (One-Hot Encoding). • Bu, probleme özgü bilgi ve yaratıcılık gerektirir.",
+    "content": "Veriyi Sanata Dönüştürmek • Ham veriyi, bir makine öğrenmesi modelinin anlayabileceği ve daha iyi Özellik öğrenebileceği 'özellikre' (features) dönüştürme sürecidir. • Bu, genellikle bir MÖ projesinin başarısındaki en kritik faktördür. Mühendisliği • Örnekler: (Feature • - Bir 'tarih' sütunundan 'haftanın günü', 'ay', 'tatil mi?' gibi yeni özellikler türetmek.Engineering) • - Metin verisinden kelime sıklıklarını çıkarmak. • - Kategorik verileri (örn: 'İstanbul', 'Ankara') sayısal değerlere dönüştürmek (One-Hot Encoding). • Bu, probleme özgü bilgi ve yaratıcılık gerektirir.",
     "metadata": {
       "source": "YZM0101_week8.pdf",
       "page": 25,
@@ -3312,15 +2712,7 @@
     }
   },
   "YZM0101_week9.pdf_p6_s0": {
-    "content": "Modelimiz Ne Kadar Kötü? • Bir doğrunun verilere ne kadar 'uygun' olduğunu nasıl ölçeriz? Maliyet • Her bir veri noktası için, modelin tahmin ettiği değer (çizgi üzerindeki nokta) ile gerçek değer arasındaki hatayı (error) hesaplarız. Fonksiyonu • Maliyet Fonksiyonu (J): Bu hataların ortalamasını alan bir fonksiyondur.(Cost Function) • Ortalama Kare Hata (Mean Squared Error - MSE): En yaygın kullanılan maliyet fonksiyonudur. Hataların karelerini alarak negatif değerleri ortadan kaldırır ve büyük hataları",
-    "metadata": {
-      "source": "YZM0101_week9.pdf",
-      "page": 6,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week9.pdf_p6_s1": {
-    "content": "E): En yaygın kullanılan maliyet fonksiyonudur. Hataların karelerini alarak negatif değerleri ortadan kaldırır ve büyük hataları daha fazla cezalandırır.",
+    "content": "Modelimiz Ne Kadar Kötü? • Bir doğrunun verilere ne kadar 'uygun' olduğunu nasıl ölçeriz? Maliyet • Her bir veri noktası için, modelin tahmin ettiği değer (çizgi üzerindeki nokta) ile gerçek değer arasındaki hatayı (error) hesaplarız. Fonksiyonu • Maliyet Fonksiyonu (J): Bu hataların ortalamasını alan bir fonksiyondur.(Cost Function) • Ortalama Kare Hata (Mean Squared Error - MSE): En yaygın kullanılan maliyet fonksiyonudur. Hataların karelerini alarak negatif değerleri ortadan kaldırır ve büyük hataları daha fazla cezalandırır.",
     "metadata": {
       "source": "YZM0101_week9.pdf",
       "page": 6,
@@ -3344,15 +2736,7 @@
     }
   },
   "YZM0101_week9.pdf_p13_s0": {
-    "content": "Parametreleri Güncellemek • 1. m ve b için rastgele başlangıç değerleri seç. • 2. Döngü (yakınsayana kadar): • a. Mevcut m ve b değerleri için maliyet fonksiyonunun gradyanını (türevini) hesapla. • - Gradyan, her parametreye göre alınan kısmi türevlerden oluşan bir Gradyan Azalması vektördür. • - Bize en dik 'yokuşun' yönünü söyler. Algoritması • b. Parametreleri, gradyanın tersi yönde, küçük bir adımla güncelle: • - `m = m - α * (J'nin m'e göre türevi)` • - `b = b - α * (J'nin b'ye göre türevi)` • - α",
-    "metadata": {
-      "source": "YZM0101_week9.pdf",
-      "page": 13,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week9.pdf_p13_s1": {
-    "content": "rsi yönde, küçük bir adımla güncelle: • - `m = m - α * (J'nin m'e göre türevi)` • - `b = b - α * (J'nin b'ye göre türevi)` • - α (alfa): Öğrenme Oranı (Learning Rate). Adım büyüklüğünü kontrol eder.",
+    "content": "Parametreleri Güncellemek • 1. m ve b için rastgele başlangıç değerleri seç. • 2. Döngü (yakınsayana kadar): • a. Mevcut m ve b değerleri için maliyet fonksiyonunun gradyanını (türevini) hesapla. • - Gradyan, her parametreye göre alınan kısmi türevlerden oluşan bir Gradyan Azalması vektördür. • - Bize en dik 'yokuşun' yönünü söyler. Algoritması • b. Parametreleri, gradyanın tersi yönde, küçük bir adımla güncelle: • - `m = m - α * (J'nin m'e göre türevi)` • - `b = b - α * (J'nin b'ye göre türevi)` • - α (alfa): Öğrenme Oranı (Learning Rate). Adım büyüklüğünü kontrol eder.",
     "metadata": {
       "source": "YZM0101_week9.pdf",
       "page": 13,
@@ -3368,15 +2752,7 @@
     }
   },
   "YZM0101_week9.pdf_p15_s0": {
-    "content": "Birden Fazla Girdi Özelliği • Gerçek dünya problemleri genellikle birden fazla özelliğe sahiptir. • Örnek: Bir evin fiyatı sadece metrekaresine değil, aynı zamanda oda sayısına, yaşına, konumuna vb. de bağlıdır. Çoklu Lineer • Model denklemi genişler: • y = b + m1*x1 + m2*x2 + ... + mn*xn Regresyon • - x1, x2, ...: Farklı girdi özellikleri. • - m1, m2, ...: Her bir özelliğin ağırlığı (katsayısı). • Gradyan Azalması fikri tamamen aynı kalır, sadece daha fazla parametre (b, m1, m2, ...) için gradyan",
-    "metadata": {
-      "source": "YZM0101_week9.pdf",
-      "page": 15,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week9.pdf_p15_s1": {
-    "content": "ğin ağırlığı (katsayısı). • Gradyan Azalması fikri tamamen aynı kalır, sadece daha fazla parametre (b, m1, m2, ...) için gradyan hesaplanır.",
+    "content": "Birden Fazla Girdi Özelliği • Gerçek dünya problemleri genellikle birden fazla özelliğe sahiptir. • Örnek: Bir evin fiyatı sadece metrekaresine değil, aynı zamanda oda sayısına, yaşına, konumuna vb. de bağlıdır. Çoklu Lineer • Model denklemi genişler: • y = b + m1*x1 + m2*x2 + ... + mn*xn Regresyon • - x1, x2, ...: Farklı girdi özellikleri. • - m1, m2, ...: Her bir özelliğin ağırlığı (katsayısı). • Gradyan Azalması fikri tamamen aynı kalır, sadece daha fazla parametre (b, m1, m2, ...) için gradyan hesaplanır.",
     "metadata": {
       "source": "YZM0101_week9.pdf",
       "page": 15,
@@ -3392,15 +2768,7 @@
     }
   },
   "YZM0101_week9.pdf_p17_s0": {
-    "content": "Çok Karmaşık Modellerin Tehlikesi • Polinomsal regresyonda polinomun derecesini çok fazla artırmak, aşırı öğrenmeye (overfitting) yol açabilir. • Model, eğitim verisindeki gürültüye bile uyan aşırı karmaşık bir eğri öğrenir. Aşırı Öğrenme ve • Çözüm: Düzenlileştirme (Regularization) • - Modelin katsayılarının (m'lerin) çok büyük değerler almasını Regresyon engelleyerek modeli 'basit' tutmaya zorlayan bir tekniktir. • - Maliyet fonksiyonuna, katsayıların büyüklüğünü ölçen bir 'ceza' terimi eklenir. • -",
-    "metadata": {
-      "source": "YZM0101_week9.pdf",
-      "page": 17,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week9.pdf_p17_s1": {
-    "content": "'basit' tutmaya zorlayan bir tekniktir. • - Maliyet fonksiyonuna, katsayıların büyüklüğünü ölçen bir 'ceza' terimi eklenir. • - Ridge (L2) ve Lasso (L1) Regresyonu en yaygın türleridir.",
+    "content": "Çok Karmaşık Modellerin Tehlikesi • Polinomsal regresyonda polinomun derecesini çok fazla artırmak, aşırı öğrenmeye (overfitting) yol açabilir. • Model, eğitim verisindeki gürültüye bile uyan aşırı karmaşık bir eğri öğrenir. Aşırı Öğrenme ve • Çözüm: Düzenlileştirme (Regularization) • - Modelin katsayılarının (m'lerin) çok büyük değerler almasını Regresyon engelleyerek modeli 'basit' tutmaya zorlayan bir tekniktir. • - Maliyet fonksiyonuna, katsayıların büyüklüğünü ölçen bir 'ceza' terimi eklenir. • - Ridge (L2) ve Lasso (L1) Regresyonu en yaygın türleridir.",
     "metadata": {
       "source": "YZM0101_week9.pdf",
       "page": 17,
@@ -3408,15 +2776,7 @@
     }
   },
   "YZM0101_week9.pdf_p18_s0": {
-    "content": "Akılda Kalması Gerekenler • Lineer Regresyon: Girdi ve çıktı arasındaki doğrusal ilişkiyi `y = mx + b` gibi bir doğruyla modeller. • Maliyet Fonksiyonu (MSE): Modelin tahminleri ile gerçek değerler arasındaki ortalama kare hatayı ölçer. Amacımız bunu minimize etmektir. • Gradyan Azalması: Maliyet fonksiyonunu minimize etmek için modelin Haftanın parametrelerini (m, b) iteratif olarak güncelleyen bir optimizasyon Kavramları: Özet algoritmasıdır. • Öğrenme Oranı (α): Gradyan Azalması'ndaki adım büyüklüğünü",
-    "metadata": {
-      "source": "YZM0101_week9.pdf",
-      "page": 18,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week9.pdf_p18_s1": {
-    "content": "larak güncelleyen bir optimizasyon Kavramları: Özet algoritmasıdır. • Öğrenme Oranı (α): Gradyan Azalması'ndaki adım büyüklüğünü kontrol eden bir hiperparametredir. • Düzenlileştirme (Regularization): Aşırı öğrenmeyi önlemek için modelin karmaşıklığını (katsayıların büyüklüğünü) cezalandıran bir tekniktir.",
+    "content": "Akılda Kalması Gerekenler • Lineer Regresyon: Girdi ve çıktı arasındaki doğrusal ilişkiyi `y = mx + b` gibi bir doğruyla modeller. • Maliyet Fonksiyonu (MSE): Modelin tahminleri ile gerçek değerler arasındaki ortalama kare hatayı ölçer. Amacımız bunu minimize etmektir. • Gradyan Azalması: Maliyet fonksiyonunu minimize etmek için modelin Haftanın parametrelerini (m, b) iteratif olarak güncelleyen bir optimizasyon Kavramları: Özet algoritmasıdır. • Öğrenme Oranı (α): Gradyan Azalması'ndaki adım büyüklüğünü kontrol eden bir hiperparametredir. • Düzenlileştirme (Regularization): Aşırı öğrenmeyi önlemek için modelin karmaşıklığını (katsayıların büyüklüğünü) cezalandıran bir tekniktir.",
     "metadata": {
       "source": "YZM0101_week9.pdf",
       "page": 18,
@@ -3440,15 +2800,7 @@
     }
   },
   "YZM0101_week9.pdf_p21_s0": {
-    "content": "Regresyonun Gücü • Ekonomistler ve finansal analistler, gelecekteki ekonomik göstergeleri tahmin etmek için yaygın olarak regresyon modellerini kullanır. • Problem: Bir ülkenin bir sonraki yılki Gayri Safi Yurt İçi Hasılasını Gerçek Dünya Örneği: Ekonomik (GSYİH) tahmin etmek. • Özellikler (Girdiler): Enflasyon oranı, işsizlik oranı, faiz oranları, Tahminler ihracat miktarı, vb. • Hedef (Çıktı): GSYİH büyüme oranı. • Modelin katsayıları (m1, m2, ...), her bir faktörün ekonomi üzerindeki etkisinin",
-    "metadata": {
-      "source": "YZM0101_week9.pdf",
-      "page": 21,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week9.pdf_p21_s1": {
-    "content": "arı, vb. • Hedef (Çıktı): GSYİH büyüme oranı. • Modelin katsayıları (m1, m2, ...), her bir faktörün ekonomi üzerindeki etkisinin büyüklüğünü ve yönünü yorumlamak için kullanılabilir.",
+    "content": "Regresyonun Gücü • Ekonomistler ve finansal analistler, gelecekteki ekonomik göstergeleri tahmin etmek için yaygın olarak regresyon modellerini kullanır. • Problem: Bir ülkenin bir sonraki yılki Gayri Safi Yurt İçi Hasılasını Gerçek Dünya Örneği: Ekonomik (GSYİH) tahmin etmek. • Özellikler (Girdiler): Enflasyon oranı, işsizlik oranı, faiz oranları, Tahminler ihracat miktarı, vb. • Hedef (Çıktı): GSYİH büyüme oranı. • Modelin katsayıları (m1, m2, ...), her bir faktörün ekonomi üzerindeki etkisinin büyüklüğünü ve yönünü yorumlamak için kullanılabilir.",
     "metadata": {
       "source": "YZM0101_week9.pdf",
       "page": 21,
@@ -3456,15 +2808,7 @@
     }
   },
   "YZM0101_week9.pdf_p22_s0": {
-    "content": "Regresyonun Yanlış Yorumlanması Önemli Not: • Regresyon modelleri, değişkenler arasındaki korelasyonu (ilişkiyi) bulur. Korelasyon • Ancak, bir değişkenin diğerine neden olduğunu kanıtlamaz. Nedensellik Değildir! • Örnek: Yaz aylarında hem dondurma satışları hem de boğulma vakaları artar. Bu iki değişken arasında güçlü bir pozitif korelasyon vardır. • Sonuç: Dondurma yemek boğulmaya neden olmaz! Her ikisine de neden olan gizli bir faktör (sıcak hava) vardır. • Model sonuçlarını yorumlarken dikkatli",
-    "metadata": {
-      "source": "YZM0101_week9.pdf",
-      "page": 22,
-      "type": "pdf"
-    }
-  },
-  "YZM0101_week9.pdf_p22_s1": {
-    "content": "boğulmaya neden olmaz! Her ikisine de neden olan gizli bir faktör (sıcak hava) vardır. • Model sonuçlarını yorumlarken dikkatli olunmalıdır.",
+    "content": "Regresyonun Yanlış Yorumlanması Önemli Not: • Regresyon modelleri, değişkenler arasındaki korelasyonu (ilişkiyi) bulur. Korelasyon • Ancak, bir değişkenin diğerine neden olduğunu kanıtlamaz. Nedensellik Değildir! • Örnek: Yaz aylarında hem dondurma satışları hem de boğulma vakaları artar. Bu iki değişken arasında güçlü bir pozitif korelasyon vardır. • Sonuç: Dondurma yemek boğulmaya neden olmaz! Her ikisine de neden olan gizli bir faktör (sıcak hava) vardır. • Model sonuçlarını yorumlarken dikkatli olunmalıdır.",
     "metadata": {
       "source": "YZM0101_week9.pdf",
       "page": 22,

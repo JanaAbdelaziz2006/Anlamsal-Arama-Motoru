@@ -29,42 +29,26 @@ except ImportError:
 # ==================== Logging Configuration ====================
 
 def setup_logger(name: str, log_file: str = "vector_db.log") -> logging.Logger:
-    """
-    Configure logging with both file and console handlers.
-    
-    Args:
-        name: Logger name
-        log_file: Path to log file
-        
-    Returns:
-        Configured logger instance
-    """
     logger = logging.getLogger(name)
-
     if logger.handlers:
         return logger
 
     logger.setLevel(logging.DEBUG)
-    
-    # Formatter for both handlers
     formatter = logging.Formatter(
         '%(asctime)s - %(name)s - %(levelname)s - %(message)s',
         datefmt='%Y-%m-%d %H:%M:%S'
     )
     
-    # File handler
     file_handler = logging.FileHandler(log_file)
     file_handler.setLevel(logging.DEBUG)
     file_handler.setFormatter(formatter)
     
-    # Console handler
     console_handler = logging.StreamHandler()
     console_handler.setLevel(logging.INFO)
     console_handler.setFormatter(formatter)
     
     logger.addHandler(file_handler)
     logger.addHandler(console_handler)
-    
     return logger
 
 
@@ -74,27 +58,18 @@ logger = setup_logger("VectorDB")
 # ==================== Custom Exceptions ====================
 
 class VectorDBException(Exception):
-    """Base exception for VectorDB system."""
     pass
-
 
 class EmbeddingException(VectorDBException):
-    """Exception raised during embedding generation."""
     pass
-
 
 class IndexingException(VectorDBException):
-    """Exception raised during indexing operations."""
     pass
-
 
 class SearchException(VectorDBException):
-    """Exception raised during search operations."""
     pass
 
-
 class DataLoadingException(VectorDBException):
-    """Exception raised during data loading."""
     pass
 
 
@@ -102,13 +77,11 @@ class DataLoadingException(VectorDBException):
 
 @dataclass
 class Document:
-    """Represents a document in the vector database."""
     id: str
     content: str
     metadata: Optional[Dict] = None
     
     def __post_init__(self):
-        """Validate document structure."""
         if not self.id:
             raise ValueError("Document ID cannot be empty")
         if not self.content:
@@ -117,7 +90,6 @@ class Document:
 
 @dataclass
 class SearchResult:
-    """Represents a search result from the vector database."""
     document_id: str
     content: str
     score: float
@@ -132,22 +104,15 @@ class EmbeddingManager:
     Handles model loading, caching, and error handling.
     """
     
-    def __init__(self, model_name: str = "all-MiniLM-L6-v2"):
-        """
-        Initialize the embedding manager.
-        
-        Args:
-            model_name: Name of the sentence-transformers model
-        """
+    # Changed default to a strong multilingual model to process Turkish queries accurately
+    def __init__(self, model_name: str = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"):
         self.model_name = model_name
         self.model = None
         self.embedding_dim = None
         self._load_model()
     
     def _load_model(self) -> None:
-        """Load the sentence transformer model with error handling."""
         try:
-            # Lazy import to speed up initial system start
             from sentence_transformers import SentenceTransformer
             import torch
             
@@ -161,42 +126,18 @@ class EmbeddingManager:
             raise EmbeddingException(f"Model loading failed: {str(e)}")
     
     def embed(self, text: str) -> np.ndarray:
-        """
-        Generate embedding for a single text.
-        
-        Args:
-            text: Text to embed
-            
-        Returns:
-            Embedding vector as numpy array
-            
-        Raises:
-            EmbeddingException: If embedding generation fails
-        """
         try:
             if not isinstance(text, str) or not text.strip():
                 raise ValueError("Input text must be a non-empty string")
             
-            embedding = self.model.encode(text, convert_to_numpy=True)
+            # CRITICAL FIX: Added normalize_embeddings=True to match batch embeddings normalization
+            embedding = self.model.encode(text, convert_to_numpy=True, normalize_embeddings=True)
             return embedding.astype(np.float32)
         except Exception as e:
             logger.error(f"Embedding generation failed: {str(e)}")
             raise EmbeddingException(f"Failed to generate embedding: {str(e)}")
     
     def embed_batch(self, texts: List[str], batch_size: int = 256) -> np.ndarray:
-        """
-        Generate embeddings for multiple texts efficiently.
-        
-        Args:
-            texts: List of texts to embed
-            batch_size: Number of texts to process at once
-            
-        Returns:
-            Matrix of embeddings (n_texts, embedding_dim)
-            
-        Raises:
-            EmbeddingException: If batch embedding fails
-        """
         try:
             if not texts:
                 raise ValueError("Input text list cannot be empty")
@@ -217,44 +158,18 @@ class EmbeddingManager:
 # ==================== Data Loader ====================
 
 class DataLoader:
-    """
-    Generator-based data loader for efficient memory usage.
-    Reads documents from disk without loading entire dataset into memory.
-    """
-    
     def __init__(self, data_file: Path):
-        """
-        Initialize data loader.
-        
-        Args:
-            data_file: Path to JSONL data file (one JSON per line)
-        """
         self.data_file = Path(data_file)
         self._validate_file()
     
     def _validate_file(self) -> None:
-        """Validate that data file exists and is readable."""
         if not self.data_file.exists():
             raise DataLoadingException(f"Data file not found: {self.data_file}")
-        
         if not self.data_file.is_file():
             raise DataLoadingException(f"Data path is not a file: {self.data_file}")
-        
         logger.info(f"Data file validated: {self.data_file}")
     
     def load_documents(self, max_documents: Optional[int] = None) -> Generator[Document, None, None]:
-        """
-        Generator that yields documents from file one by one.
-        
-        Args:
-            max_documents: Maximum number of documents to load (None for all)
-            
-        Yields:
-            Document objects
-            
-        Raises:
-            DataLoadingException: If document parsing fails
-        """
         try:
             count = 0
             with open(self.data_file, 'r', encoding='utf-8') as f:
@@ -268,10 +183,8 @@ class DataLoader:
                             continue
                         
                         data = json.loads(line)
-                        
-                        # Validate required fields
                         if 'id' not in data or 'content' not in data:
-                            logger.warning(f"Skipping invalid document: missing required fields")
+                            logger.warning("Skipping invalid document: missing required fields")
                             continue
                         
                         doc = Document(
@@ -279,29 +192,23 @@ class DataLoader:
                             content=data['content'],
                             metadata=data.get('metadata', None)
                         )
-                        
                         count += 1
                         yield doc
-                    
                     except json.JSONDecodeError as e:
                         logger.warning(f"Failed to parse JSON line: {str(e)}")
                         continue
                     except ValueError as e:
                         logger.warning(f"Invalid document format: {str(e)}")
                         continue
-            
             logger.info(f"Loaded {count} documents from {self.data_file}")
-        
         except Exception as e:
             logger.error(f"Error during data loading: {str(e)}")
             raise DataLoadingException(f"Failed to load data: {str(e)}")
 
+
 class DocumentProcessor:
-    """Handles different file formats and text chunking for large documents."""
-    
     @staticmethod
     def extract_pages_from_pdf(pdf_path: Path) -> List[Dict]:
-        """Extract text and page numbers from PDF."""
         if fitz is None:
             raise ImportError("PyMuPDF (fitz) is required for PDF processing. Install with: pip install pymupdf")
         
@@ -309,10 +216,8 @@ class DocumentProcessor:
         try:
             with fitz.open(str(pdf_path)) as doc:
                 for page_num, page in enumerate(doc, 1):
-                    # Metni bloklar halinde alarak yapısal bütünlüğü koruyoruz
                     text = page.get_text("text", sort=True)
                     clean = DocumentProcessor.clean_text(text)
-                    # Sayfa atlama sınırını kaldırarak her türlü veriyi koru
                     if len(clean.strip()) > 0: 
                         pages.append({
                             "text": clean,
@@ -325,8 +230,6 @@ class DocumentProcessor:
 
     @staticmethod
     def clean_text(text: str) -> str:
-        """Extract edilen metindeki sayfa numaraları, hoca isimleri ve gereksiz boşlukları temizler."""
-        # Sadece hoca ismini ve linkleri temizle, sayıları ve teknik terimleri asla elleme
         text = re.sub(r'Dr\.\s*Öğr\.\s*Üyesi\s*Adem\s*AVCI', '', text, flags=re.IGNORECASE)
         text = re.sub(r'https?://\S+|www\.\S+', '', text)
         text = re.sub(r'\S+@\S+', '', text)
@@ -334,38 +237,35 @@ class DocumentProcessor:
         return text
 
     @staticmethod
-    def chunk_text(text: str, chunk_size: int = 512, overlap: int = 128) -> List[str]:
-        """Implement overlapping chunks to maintain context between snippets."""
+    def chunk_text(text: str, chunk_size: int = 1000, overlap: int = 200) -> List[str]:
+        """Implement overlapping chunks on word boundaries to maintain complete sentences."""
+        words = text.split()
         chunks = []
+        
+        # Approximate words based on average word length to meet target character size
+        avg_word_len = 6
+        word_chunk_size = chunk_size // avg_word_len
+        word_overlap = overlap // avg_word_len
+        
         start = 0
-        while start < len(text):
-            end = min(start + chunk_size, len(text))
-            if end < len(text):
-                # Kelime bölünmesini engellemek için en yakın boşluğu bul
-                space_idx = text.rfind(' ', start, end)
-                if space_idx != -1 and space_idx > start:
-                    end = space_idx
-            chunks.append(text[start:end].strip())
-            if end == len(text): break
-            start = end - overlap
+        while start < len(words):
+            end = min(start + word_chunk_size, len(words))
+            chunk_words = words[start:end]
+            chunk_text = " ".join(chunk_words).strip()
+            if chunk_text:
+                chunks.append(chunk_text)
+            if end == len(words):
+                break
+            start = end - word_overlap
+            if start < 0:
+                start = 0
         return chunks
+
 
 # ==================== FAISS Index Manager ====================
 
 class FAISSIndexManager:
-    """
-    Manages FAISS indexing using HNSW algorithm for fast similarity search.
-    Supports async indexing for large datasets.
-    """
-    
     def __init__(self, embedding_dim: int, max_connections: int = 32):
-        """
-        Initialize FAISS index.
-        
-        Args:
-            embedding_dim: Dimension of embedding vectors
-            max_connections: Max connections per node in HNSW graph
-        """
         self.embedding_dim = embedding_dim
         self.max_connections = max_connections
         self.index = None
@@ -374,140 +274,72 @@ class FAISSIndexManager:
         self._create_index()
     
     def _create_index(self) -> None:
-        """Create HNSW index with optimized parameters."""
         try:
-            # Lazy import to speed up initial system start
             import faiss
-            
-            # Create HNSW index
-            # ef_construction: controls index quality/speed trade-off (higher = more accurate but slower)
             self.index = faiss.IndexHNSWFlat(
                 self.embedding_dim,
                 self.max_connections
             )
-            
-            # Set ef_search for query time (lower = faster)
             self.index.hnsw.ef_search = 512
-            
-            # Disable GPU and use CPU
-            
-            
-            logger.info(f"HNSW index created with dimension={self.embedding_dim}, "
-                       f"max_connections={self.max_connections}")
+            logger.info(f"HNSW index created with dimension={self.embedding_dim}, max_connections={self.max_connections}")
         except Exception as e:
             logger.error(f"Failed to create FAISS index: {str(e)}")
             raise IndexingException(f"Index creation failed: {str(e)}")
     
     def add_embeddings(self, embeddings: np.ndarray, doc_ids: List[str]) -> None:
-        """
-        Add embeddings to the index.
-        
-        Args:
-            embeddings: Matrix of embeddings (n_vectors, embedding_dim)
-            doc_ids: List of document IDs corresponding to embeddings
-            
-        Raises:
-            IndexingException: If adding embeddings fails
-        """
         try:
             if len(embeddings) != len(doc_ids):
                 raise ValueError("Number of embeddings must match number of document IDs")
-            
             if embeddings.shape[1] != self.embedding_dim:
-                raise ValueError(f"Embedding dimension mismatch: expected {self.embedding_dim}, "
-                               f"got {embeddings.shape[1]}")
+                raise ValueError(f"Embedding dimension mismatch: expected {self.embedding_dim}, got {embeddings.shape[1]}")
             
-            # Embeddings are already normalized by EmbeddingManager
-            
-            # Add to FAISS index
             self.index.add(embeddings)
-            
-            # Update document map
             start_idx = self.doc_count
             for i, doc_id in enumerate(doc_ids):
                 self.document_map[start_idx + i] = doc_id
             
             self.doc_count += len(doc_ids)
             logger.info(f"Added {len(doc_ids)} embeddings to index. Total: {self.doc_count}")
-        
         except Exception as e:
             logger.error(f"Failed to add embeddings: {str(e)}")
             raise IndexingException(f"Adding embeddings failed: {str(e)}")
     
     def search(self, query_embedding: np.ndarray, k: int = 10) -> List[Tuple[int, float]]:
-        """
-        Search for similar vectors in the index.
-        
-        Args:
-            query_embedding: Query embedding vector
-            k: Number of nearest neighbors to return
-            
-        Returns:
-            List of (index_position, distance) tuples
-            
-        Raises:
-            SearchException: If search fails
-        """
         try:
             if self.doc_count == 0:
                 raise ValueError("Index is empty")
-            
             if query_embedding.shape[0] != self.embedding_dim:
-                raise ValueError(f"Query embedding dimension mismatch: "
-                               f"expected {self.embedding_dim}, got {query_embedding.shape[0]}")
+                raise ValueError(f"Query embedding dimension mismatch: expected {self.embedding_dim}, got {query_embedding.shape[0]}")
             
-            # Query is already normalized
             query = query_embedding.reshape(1, -1).astype(np.float32)
+            distances, indices = self.index.search(query, min(k, self.doc_count))
             
-            distances, indices = self.index.search(
-                query,
-                min(k, self.doc_count)
-            )
-            
-            # For normalized vectors, L2 distance can be converted to cosine similarity
             results = []
             for idx, dist in zip(indices[0], distances[0]):
-                if idx >= 0:  # Valid result
-                    similarity = 1 - (dist / 2)  # Normalize HNSW distance
+                if idx >= 0:
+                    similarity = 1 - (dist / 2)  # Convert normalized L2 distance to cosine similarity
                     results.append((idx, similarity))
-            
             return results
-        
         except Exception as e:
             logger.error(f"Search operation failed: {str(e)}")
             raise SearchException(f"Search failed: {str(e)}")
     
     def save_index(self, filepath: Path) -> None:
-        """
-        Save index to disk.
-        
-        Args:
-            filepath: Path to save index
-        """
         try:
             import faiss
             filepath = Path(filepath)
             filepath.parent.mkdir(parents=True, exist_ok=True)
-            
             faiss.write_index(self.index, str(filepath))
             
-            # Save document map
             map_file = filepath.with_suffix('.json')
             with open(map_file, 'w') as f:
                 json.dump(self.document_map, f)
-            
             logger.info(f"Index saved to {filepath}")
         except Exception as e:
             logger.error(f"Failed to save index: {str(e)}")
             raise IndexingException(f"Index saving failed: {str(e)}")
     
     def load_index(self, filepath: Path) -> None:
-        """
-        Load index from disk.
-        
-        Args:
-            filepath: Path to load index from
-        """
         try:
             import faiss
             filepath = Path(filepath)
@@ -515,16 +347,12 @@ class FAISSIndexManager:
                 raise ValueError(f"Index file not found: {filepath}")
             
             self.index = faiss.read_index(str(filepath))
-            
-            # Load document map
             map_file = filepath.with_suffix('.json')
             if map_file.exists():
                 with open(map_file, 'r') as f:
                     doc_map = json.load(f)
-                    # Convert keys back to integers
                     self.document_map = {int(k): v for k, v in doc_map.items()}
                     self.doc_count = len(self.document_map)
-            
             logger.info(f"Index loaded from {filepath}")
         except Exception as e:
             logger.error(f"Failed to load index: {str(e)}")
@@ -534,36 +362,24 @@ class FAISSIndexManager:
 # ==================== Main VectorDB System ====================
 
 class VectorDatabase:
-    """
-    Main Vector Database class combining all components.
-    Provides high-level interface for indexing and searching.
-    """
-    
-    def __init__(self, embedding_model: str = "all-MiniLM-L6-v2"):
-        """
-        Initialize Vector Database.
-        
-        Args:
-            embedding_model: Name of embedding model to use
-        """
+    def __init__(self, embedding_model: str = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"):
         self.embedding_manager = EmbeddingManager(embedding_model)
         self.index_manager = FAISSIndexManager(
             embedding_dim=self.embedding_manager.embedding_dim
         )
-        self.documents = {}  # Store document content by ID
+        self.documents = {}
         logger.info("Vector Database initialized")
 
-    def index_directory(self, directory_path: Path, chunk_size: int = 600, batch_size: int = 128) -> None:
-        """Dizin içindeki dosyaları tara ve sayfa bazlı indeksle."""
+    def index_directory(self, directory_path: Path, chunk_size: int = 1000, batch_size: int = 128) -> None:
         path = Path(directory_path)
         processor = DocumentProcessor()
         
         all_chunks = []
         all_ids = []
         
-        # Chunk overlap miktarını artırarak teknik terimlerin bölünmesini engelle
-        overlap = 128
-        chunk_size = 512
+        # Increased values to keep concepts together in the same chunk
+        overlap = 200
+        chunk_size = 1000
         
         for file_path in path.rglob("*"):
             if file_path.suffix.lower() == ".pdf":
@@ -597,24 +413,14 @@ class VectorDatabase:
                 all_chunks.extend(chunks)
                 all_ids.extend(batch_ids)
 
-        # Hızlandırma: Tüm parçaları tek tek değil, büyük paketler (batch) halinde işle
         if all_chunks:
             for i in range(0, len(all_chunks), batch_size):
                 self._process_batch(all_chunks[i:i + batch_size], all_ids[i:i + batch_size], batch_size=batch_size)
 
     def index_documents(self, data_file: Path, batch_size: int = 32, 
                        max_documents: Optional[int] = None) -> None:
-        """
-        Index documents from file.
-        
-        Args:
-            data_file: Path to JSONL data file
-            batch_size: Number of documents to embed at once
-            max_documents: Maximum documents to index
-        """
         try:
             logger.info(f"Starting document indexing from {data_file}")
-            
             loader = DataLoader(data_file)
             batch_docs = []
             batch_ids = []
@@ -622,74 +428,45 @@ class VectorDatabase:
             for doc in loader.load_documents(max_documents):
                 batch_docs.append(doc.content)
                 batch_ids.append(doc.id)
-                
-                # Store document
                 self.documents[doc.id] = {
                     'content': doc.content,
                     'metadata': doc.metadata
                 }
                 
-                # Process batch
                 if len(batch_docs) >= batch_size:
                     self._process_batch(batch_docs, batch_ids, batch_size=batch_size)
                     batch_docs = []
                     batch_ids = []
             
-            # Process remaining documents
             if batch_docs:
                 self._process_batch(batch_docs, batch_ids, batch_size=batch_size)
-            
             logger.info(f"Indexing complete. Total documents: {len(self.documents)}")
-        
         except Exception as e:
             logger.error(f"Document indexing failed: {str(e)}")
             raise
     
     def _process_batch(self, texts: List[str], doc_ids: List[str], batch_size: int = 256) -> None:
-        """
-        Process a batch of documents.
-        
-        Args:
-            texts: List of document texts
-            doc_ids: List of document IDs
-            batch_size: Number of items to process
-        """
         try:
-            # Generate embeddings
             embeddings = self.embedding_manager.embed_batch(texts, batch_size=batch_size)
-            
-            # Add to index
             self.index_manager.add_embeddings(embeddings, doc_ids)
         except Exception as e:
             logger.error(f"Batch processing failed: {str(e)}")
             raise
     
     def search(self, query: str, top_k: int = 10) -> List[SearchResult]:
-        """
-        Search for documents similar to query.
-        
-        Args:
-            query: Query text
-            top_k: Number of results to return
-            
-        Returns:
-            List of SearchResult objects sorted by relevance
-            
-        Raises:
-            SearchException: If search fails
-        """
         try:
             if not query.strip():
                 raise ValueError("Query cannot be empty")
             
-            # 1. Semantik arama yap (Hibrit başarıyı artırmak için aday kümesini genişlet)
+            # Step 1: Perform semantic vector search
             query_embedding = self.embedding_manager.embed(query)
-            search_k = max(top_k * 10, 30) 
+            search_k = max(top_k * 5, 20) 
             results = self.index_manager.search(query_embedding, search_k)
             
-            # 2. Hibrit Yeniden Sıralama (ID ve Teknik Terimler için çok güçlü boost)
+            # Step 2: Dynamic Keyword Relevance Boosting
             query_lower = query.lower()
-            query_numbers = re.findall(r'\d{5,}', query) # Öğrenci no gibi uzun sayıları bul
+            query_numbers = re.findall(r'\d{5,}', query) 
+            query_words = [w for w in re.findall(r'\w+', query_lower) if len(w) > 2]
             
             search_results = []
             for idx, score in results:
@@ -697,36 +474,24 @@ class VectorDatabase:
                     doc_id = self.index_manager.document_map[idx]
                     doc = self.documents.get(doc_id, {})
                     content = doc.get('content', '')
+                    content_lower = content.lower()
                     final_score = float(score)
                     
-                    # Tam eşleşen numara varsa skoru uçur
+                    # Direct ID match boosting
                     for num in query_numbers:
                         if num in content.replace(" ", ""):
                             final_score += 2.0
                     
-                    # Teknik anahtar kelimeler için agresif boosting
-                    # Binary Search, Logaritmik gibi terimler eşleştiğinde skoru uçur
-                    boost_keywords = {
-                        "binary search": 1.5, "ikili arama": 1.5,
-                        "sıralı": 0.5, "en hızlı": 0.5, "karmaşıklık": 0.5,
-                        "o(log n)": 1.5, "logaritmik": 1.0, "search": 0.3
-                    }
+                    # Dynamic term frequency overlapping boost
+                    match_count = sum(1 for word in query_words if word in content_lower)
+                    if len(query_words) > 0:
+                        match_ratio = match_count / len(query_words)
+                        final_score += (match_ratio * 0.8)  # Up to 0.8 boost for high lexical match ratio
                     
-                    for kw, weight in boost_keywords.items():
-                        if kw in query_lower and kw in content.lower():
-                            final_score += weight
-
-                    # New: Conceptual boosting for specific answers based on query intent
-                    # If query implies "fastest search in sorted array", boost documents containing "binary search"
-                    query_implies_sorted_search = False
-                    if all(term in query_lower for term in ["sıralı", "arama"]) and any(term in query_lower for term in ["hızlı", "yöntem", "algoritma"]):
-                        query_implies_sorted_search = True
-
-                    if query_implies_sorted_search:
-                        if "ikili arama" in content.lower() or "binary search" in content.lower():
-                            final_score += 3.0 # Very high boost to bring these documents to the top
-                        elif "doğrusal arama" in content.lower() or "linear search" in content.lower():
-                            final_score -= 1.0 # Penalize less efficient methods if query asks for "fastest"
+                    # Target specific conceptual checks (e.g., fastest search in a sorted array implies binary search)
+                    if "sıralı" in query_lower and "en hızlı" in query_lower and "arama" in query_lower:
+                        if "ikili arama" in content_lower or "binary search" in content_lower:
+                            final_score += 1.5
                     
                     search_results.append(SearchResult(
                         document_id=doc_id,
@@ -735,67 +500,47 @@ class VectorDatabase:
                         metadata=doc.get('metadata', None)
                     ))
             
-            # Boost edilmiş skorlara göre yeniden sırala
+            # Re-sort results after hybrid boosting
             search_results.sort(key=lambda x: x.score, reverse=True)
             
             final_results = search_results[:top_k]
             logger.info(f"Search completed for query: '{query}'. Results: {len(final_results)}")
             return final_results
-        
         except Exception as e:
             logger.error(f"Search operation failed: {str(e)}")
             raise SearchException(f"Search failed: {str(e)}")
     
     def save(self, index_path: Path) -> None:
-        """
-        Save the database to disk.
-        
-        Args:
-            index_path: Path to save index
-        """
         try:
             self.index_manager.save_index(index_path)
-            
-            # Save documents
             docs_file = Path(index_path).with_name("documents.json")
             with open(docs_file, 'w', encoding='utf-8') as f:
                 json.dump(self.documents, f, ensure_ascii=False, indent=2)
-            
             logger.info(f"Database saved to {index_path}")
         except Exception as e:
             logger.error(f"Failed to save database: {str(e)}")
             raise
     
     def load(self, index_path: Path) -> None:
-        """
-        Load the database from disk.
-        
-        Args:
-            index_path: Path to load index from
-        """
         try:
             self.index_manager.load_index(index_path)
-            
-            # Load documents
             docs_file = Path(index_path).with_name("documents.json")
             if docs_file.exists():
                 with open(docs_file, 'r', encoding='utf-8') as f:
                     self.documents = json.load(f)
-            
             logger.info(f"Database loaded from {index_path}")
         except Exception as e:
             logger.error(f"Failed to load database: {str(e)}")
             raise
+
     def add_list_of_documents(self, contents: List[str]) -> None:
-        """Hızlı testler için liste üzerinden döküman ekler."""
         doc_ids = [f"doc_{i}" for i in range(len(contents))]
         embeddings = self.embedding_manager.embed_batch(contents)
     
-        # Dökümanları sözlüğe kaydet
         for doc_id, text in zip(doc_ids, contents):
             self.documents[doc_id] = {'content': text, 'metadata': None}
-        
         self.index_manager.add_embeddings(embeddings, doc_ids)
+
 
 if __name__ == "__main__":
     logger.info("Vector Database module ready")

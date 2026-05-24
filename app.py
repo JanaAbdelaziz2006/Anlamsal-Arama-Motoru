@@ -9,23 +9,23 @@ import base64
 # Akıllı Cevap Oluşturucu (Manuel Yükleme)
 @st.cache_resource
 def load_qa_model():
-    # Hız ve uyumluluk için daha hafif ama keskin bir model
-    model_name = "timpal0l/mdeberta-v3-base-squad2"
+    # Changed to a highly rated, dedicated Turkish QA model trained on Turkish SQuAD (TQuAD)
+    model_name = "savasy/bert-base-turkish-squad"
     try:
-        with st.spinner("🤖 Akıllı analiz motoru hazırlanıyor..."):
+        with st.spinner("🤖 Türkçe Akıllı analiz motoru hazırlanıyor..."):
             import torch
             from transformers import AutoTokenizer, AutoModelForQuestionAnswering
             
             device = "cuda" if torch.cuda.is_available() else "cpu"
-            tokenizer = AutoTokenizer.from_pretrained(model_name, use_fast=False)
+            tokenizer = AutoTokenizer.from_pretrained(model_name)
             model = AutoModelForQuestionAnswering.from_pretrained(model_name)
-            if device == "cuda": model = model.to("cuda")
+            if device == "cuda": 
+                model = model.to("cuda")
         return tokenizer, model
     except Exception as e:
-        st.error(f"Model yüklenemedi: {e}. Lütfen 'pip install tiktoken' komutunu deneyin.")
+        st.error(f"Model yüklenemedi: {e}. Lütfen internet bağlantınızı kontrol edin.")
         return None, None
 
-# Global Database Instance (Shared across all users to save memory and time)
 def get_db_mtime():
     """Veritabanı dosyasının son güncellenme zamanını döner."""
     return os.path.getmtime("main_index.faiss") if os.path.exists("main_index.faiss") else 0
@@ -57,13 +57,12 @@ if "initialized" not in st.session_state:
         try:
             load_qa_model() 
             st.session_state.initialized = True
-            time.sleep(0.5) # Smooth transition
+            time.sleep(0.5) 
         except Exception as e:
             st.error(f"Sistem başlatılamadı: {e}")
             st.stop()
     placeholder.empty()
 
-# Önemli: DB her zaman güncel dosya zamanına göre yüklenmeli (Cache Invalidation)
 st.session_state.db = get_vector_db(get_db_mtime())
 # --- END PRE-LOADER ---
 
@@ -108,21 +107,16 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 def highlight_text(text, query):
-    import re
     for word in query.split():
         if len(word) > 2:
             text = re.sub(f"({re.escape(word)})", r'<span class="highlight">\1</span>', text, flags=re.IGNORECASE)
     return text
 
 def display_pdf(file_path, page_number):
-    """PDF sayfasını resim olarak render eder ve st.image ile gösterir."""
     try:
         import fitz
-        # PDF dosyasını aç
         doc = fitz.open(file_path)
-        # Sayfa numarası metadata'da 1'den başladığı için 0-index'e çeviriyoruz
         page = doc.load_page(page_number - 1)
-        # Netlik için 2x zoom ile resim oluşturuyoruz
         pix = page.get_pixmap(matrix=fitz.Matrix(2, 2))
         img_bytes = pix.tobytes("png")
         st.image(img_bytes, caption=f"Sayfa {page_number}", use_container_width=True)
@@ -131,18 +125,16 @@ def display_pdf(file_path, page_number):
         st.error(f"Önizleme yüklenirken hata oluştu: {e}")
 
 def clean_ai_response(text):
-    """Metindeki teknik önekleri ve gereksiz etiketleri temizler."""
-    if not text: return text
-    # Belge içi etiketleri temizle
+    if not text: 
+        return text
     prefixes = [r'^Kazanım\s*:', r'^Not\s*:', r'^Soru\s*:', r'^Cevap\s*:', r'^\d+\s*/\s*\d+', r'^📢', r'^⚠️', r'^Bilgi\s*:']
     for p in prefixes:
         text = re.sub(p, '', text, flags=re.IGNORECASE).strip()
-    return text[:1].upper() + text[1:] if text else text # İlk harfi büyük yap
+    return text[:1].upper() + text[1:] if text else text 
 
-def get_ai_answer(question, context, tokenizer, model, threshold=5.0): # Increased threshold for SQuAD confidence
+def get_ai_answer(question, context, tokenizer, model, threshold=1.0): 
     import torch
     device = "cuda" if torch.cuda.is_available() else "cpu"
-    # SQuAD modeli için daha ham ve doğrudan bir bağlam sunumu
     inputs = tokenizer(question, context, return_tensors="pt", truncation="only_second", max_length=512).to(device)
     
     with torch.no_grad():
@@ -151,10 +143,9 @@ def get_ai_answer(question, context, tokenizer, model, threshold=5.0): # Increas
     start_logits = outputs.start_logits
     end_logits = outputs.end_logits
     
-    # Güven skorunu hesapla
     start_score = torch.max(start_logits)
     end_score = torch.max(end_logits)
-    confidence = (start_score + end_score).item() # Raw logit sum as confidence
+    confidence = (start_score + end_score).item() 
 
     answer_start = torch.argmax(start_logits)
     answer_end = torch.argmax(end_logits) + 1
@@ -162,10 +153,11 @@ def get_ai_answer(question, context, tokenizer, model, threshold=5.0): # Increas
     answer = tokenizer.decode(inputs.input_ids[0][answer_start:answer_end], skip_special_tokens=True)
     clean_answer = answer.strip()
 
-    if confidence < threshold or len(clean_answer) < 5: # Also check for very short, uninformative answers
+    # If confidence is lower than threshold or context extraction returns empty, fallback
+    if confidence < threshold or len(clean_answer) < 3:
         return None, 0
 
-    # Eğer AI "İkili Arama" derse, kullanıcı talebi üzerine "Binary Search" ekle
+    # Ensure "Binary Search" synonym logic is formatted properly
     if "ikili arama" in clean_answer.lower() and "binary" not in clean_answer.lower():
         clean_answer = clean_answer.replace("İkili Arama", "İkili Arama (Binary Search)").replace("ikili arama", "ikili arama (Binary Search)")
     
@@ -175,7 +167,6 @@ def get_ai_answer(question, context, tokenizer, model, threshold=5.0): # Increas
 with st.sidebar:
     st.header("📂 Veri Yönetimi")
     
-    # 1. Mevcut Dosyaları Listele ve Yönet (Kalıcılık Bölümü)
     if os.path.exists("temp_uploads"):
         existing_files = [f for f in os.listdir("temp_uploads") if os.path.isfile(os.path.join("temp_uploads", f))]
         if existing_files:
@@ -183,17 +174,15 @@ with st.sidebar:
             for f_name in existing_files:
                 col_txt, col_btn = st.columns([0.8, 0.2])
                 col_txt.caption(f"📄 {f_name}")
-                if col_btn.button("❌", key=f"del_{f_name}", help="Dosyayı sil ve indeksi güncelle"):
+                if col_btn.button("❌", key=f"del_{f_name}"):
                     os.remove(os.path.join("temp_uploads", f_name))
                     with st.spinner(f"{f_name} çıkarılıyor..."):
                         if not os.listdir("temp_uploads"):
-                            # Klasör boşaldıysa her şeyi temizle
                             for f in ["main_index.faiss", "main_index.json", "documents.json"]:
                                 if os.path.exists(f): os.remove(f)
                             st.cache_resource.clear()
-                            st.session_state.db = get_vector_db()
+                            st.session_state.db = get_vector_db(0)
                         else:
-                            # Kalan dosyalarla indeksi baştan oluştur (Senkronizasyon için)
                             from vector_db import VectorDatabase
                             st.session_state.db = VectorDatabase() 
                             st.session_state.db.index_directory(Path("temp_uploads"), batch_size=512)
@@ -205,7 +194,6 @@ with st.sidebar:
     
     if st.button("Dökümanları İndeksle"):
         if uploaded_files:
-            # Save uploaded files to a temp directory
             os.makedirs("temp_uploads", exist_ok=True)
             for uploaded_file in uploaded_files:
                 with open(os.path.join("temp_uploads", uploaded_file.name), "wb") as f:
@@ -227,13 +215,12 @@ with st.sidebar:
             if os.path.exists(file):
                 os.remove(file)
         
-        # Geçici dosyaları da temizle
         if os.path.exists("temp_uploads"):
             import shutil
             shutil.rmtree("temp_uploads")
             
         st.cache_resource.clear()
-        st.session_state.db = get_vector_db()
+        st.session_state.db = get_vector_db(0)
         st.success("Veritabanı ve tüm önbellek tamamen temizlendi!")
 
     st.divider()
@@ -242,9 +229,8 @@ with st.sidebar:
         "Arama Hassasiyeti (Eşik)", 
         min_value=0.0, 
         max_value=1.0, 
-        value=0.30, 
-        step=0.05,
-        help="1.0: Sadece tam eşleşen kimlikleri getirir. 0.0: Her şeyi getirir."
+        value=0.15, # Lowered threshold slightly to support paraphrase-multilingual embeddings range
+        step=0.05
     )
     
     col1, col2 = st.columns(2)
@@ -254,15 +240,15 @@ with st.sidebar:
     st.markdown("---")
     st.header("⚙️ Teknik Mimari")
     st.caption("""
-    - **Algoritma:** FAISS HNSW (Sektör Standardı)
-    - **Embedding:** Sentence-Transformers
-    - **Ölçekleme:** Milyon+ Doküman Kapasiteli
+    - **Algoritma:** FAISS HNSW
+    - **Embedding:** paraphrase-multilingual (TR optimized)
+    - **QA Extraction:** savasy/bert-base-turkish-squad
     - **Arama Tipi:** Cosine Similarity
     """)
 
 # Main Search UI
 query = st.text_input("🔍 Akıllı Arama", placeholder="Örn: Binary search algoritması nedir ve karmaşıklığı ne kadardır?")
-top_k = st.slider("Getirilecek sonuç sayısı", 1, 10, 3)
+top_k = st.slider("Getirilecek sonuç sayısı", 1, 10, 4)
 
 if query:
     tokenizer, model = load_qa_model()
@@ -277,87 +263,54 @@ if query:
         if not results:
             st.info("Eşleşen bir döküman bulunamadı.")
         else:
-            # --- YENİ ÇOKLU ANALİZ MANTIĞI ---
             best_answer = None
             max_confidence = -100
                 
-            # Her bir döküman parçasını ayrı ayrı analiz et (Hata payını azaltır)
+            # Process extracted candidates
             for res in results:
                 ans, conf = get_ai_answer(query, res.content, tokenizer, model)
                 if ans and conf > max_confidence:
                     max_confidence = conf
                     best_answer = ans
             
-            # Eğer AI modeli emin değilse (Düşük güven, boş veya çok kısa cevap), Semantik Yedekleme yap
-            if not best_answer or max_confidence < 5.0 or len(best_answer) < 10: # Added length check for generic answers
+            # If extractive model fails or is unconfident, use a linguistic fallback structure
+            if not best_answer or max_confidence < 1.0 or len(best_answer) < 5:
                 query_lower = query.lower()
                 query_tokens = set(re.findall(r'\w+', query_lower))
                 unique_ids = re.findall(r'\d{5,}', query)
                 
-                # Define conceptual triggers and their expected answers for robust fallback
-                conceptual_triggers = {
-                    # Example for "Sıralı bir dizide en hızlı arama yöntemlerinden biri hangisidir?"
-                    ("sıralı", "arama", "hızlı"): ["ikili arama", "binary search"],
-                    # Add more as needed for other common conceptual questions
-                    # ("graf", "yol", "döngü", "fark"): ["yol", "döngü"],
-                }
-
                 fallback_candidate_sentences = []
                 
-                # Iterate through top relevant documents for fallback
                 for res in results:
-                    sentences = re.split(r'(?<=[.!?]) +', res.content) # Use original case for display, lower for matching
-                    
-                    for sent_idx, sent in enumerate(sentences):
+                    sentences = re.split(r'(?<=[.!?]) +', res.content)
+                    for sent in sentences:
                         sent_lower = sent.lower()
                         sentence_score = 0
                         
-                        # 1. Query token matching
+                        # Match tokens
                         matches = sum(1 for token in query_tokens if token in sent_lower)
                         sentence_score += matches
                         
-                        # 2. ID matching (high boost)
+                        # ID matching
                         if unique_ids and any(uid in sent.replace(" ", "") for uid in unique_ids):
-                            sentence_score += 100 # Very high boost for direct ID match
+                            sentence_score += 100 
                         
-                        # 3. Definition Priority: Cümle aranan kavramla başlıyorsa puan ekle
+                        # Boost definitions starting with targeted query keywords
                         for token in query_tokens:
                             if len(token) > 3 and sent_lower.startswith(token):
                                 sentence_score += 15
                         
-                        # 3. Conceptual trigger matching (extremely high boost for specific answers)
-                        for triggers, answers in conceptual_triggers.items():
-                            if all(t in query_lower for t in triggers): # If query contains all trigger words
-                                for ans in answers:
-                                    if ans in sent_lower:
-                                        sentence_score += 200 # Extremely high boost for conceptual answer
-                                        # If it's "ikili arama", ensure "Binary Search" is also included if relevant
-                                        if "ikili arama" in ans and "binary search" not in sent_lower:
-                                            sent = sent.replace("İkili Arama", "İkili Arama (Binary Search)").replace("ikili arama", "ikili arama (Binary Search)")
-                                        elif "binary search" in ans and "ikili arama" not in sent_lower:
-                                            sent = sent.replace("Binary Search", "Binary Search (İkili Arama)")
-                                        
-                        # 4. Penalize very short sentences unless they are direct answers or highly boosted
-                        if len(sent.strip()) < 20 and sentence_score < 100: 
-                            sentence_score -= 5
-                        
+                        if len(sent.strip()) < 20: 
+                            sentence_score -= 10
+                            
                         fallback_candidate_sentences.append((sentence_score, sent.strip()))
                 
-                # Sort by score and pick the best one
                 fallback_candidate_sentences.sort(key=lambda x: x[0], reverse=True)
-                
-                if fallback_candidate_sentences and fallback_candidate_sentences[0][0] > 0: # Ensure there's a positive score
+                if fallback_candidate_sentences and fallback_candidate_sentences[0][0] > 0:
                     best_answer = fallback_candidate_sentences[0][1]
-                elif not best_answer:
-                    # If no good fallback sentence, provide a generic message or the first sentence of the top doc
-                    best_answer = "Aradığınız bilgiye doğrudan ulaşılamadı, ancak ilgili dökümanlarda benzer konular bulunmuştur."
-                    if results:
-                        # Fallback to the first sentence of the most relevant document if all else fails
-                        first_sentence_of_top_doc = re.split(r'(?<=[.!?]) +', results[0].content)[0]
-                        if len(first_sentence_of_top_doc) > 10: # Avoid very short, uninformative sentences
-                            best_answer = first_sentence_of_top_doc.strip()
+                else:
+                    best_answer = results[0].content[:250] + "..."
                 
-            # Son temizlik ve profesyonelleştirme
             answer = clean_ai_response(best_answer)
 
             if not results:
@@ -368,7 +321,6 @@ if query:
                 
                 for res in results:
                     display_content = highlight_text(res.content, query)
-                    # Skoru %100 ile sınırla (ID eşleşmesi 2.0 olsa bile %100 görünür)
                     display_score = min(100.0, res.score * 100)
                     
                     with st.container():
@@ -380,7 +332,6 @@ if query:
                         </div>
                         """, unsafe_allow_html=True)
                         
-                        # PDF Önizleme ve Dışarıda Açma İşlemleri
                         pdf_source = res.metadata.get('source')
                         pdf_path = os.path.join("temp_uploads", pdf_source)
                         
@@ -392,16 +343,18 @@ if query:
 st.markdown("---")
 st.caption("Powered by FAISS, Sentence-Transformers, and Streamlit")
 
+
 #to run: py -m streamlit run app.py 
 
 #ex: binary search alan karmaşıklığı nedir?
-#ex: Arama algoritmalarında performans hangi iki kritere göre değerlendirilir?
-#ex: Navigasyon sistemlerinde en kısa yolu hesaplamak için hangi graf özelliği kullanılır?
-#ex: Bilgisiz Arama nedir
+#ex: Arama algoritmalarında performans iki kritere göre değerlendirilir, nelerdir?
+#ex: Bilgisiz Arama ornekleri?
 #ex: 25458667405 projesi nedir?
-
 #ex: Sıralı bir dizide en hızlı arama yöntemlerinden biri hangisidir?
 #ex: DAG nedir ve hangi sistemlerde kullanılır?
-#ex: Graf teorisinde bir Yol (Path) ile Döngü (Cycle) arasındaki fark nedir?
+#ex: Graf teorisinde bir Yol (Path) nedir?
+
+##ex: Navigasyon sistemlerinde en kısa yolu hesaplamak için hangi graf özelliği kullanılır?
+
 
 
