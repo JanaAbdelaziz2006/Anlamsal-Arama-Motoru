@@ -4754,3 +4754,9 @@
 2026-05-24 21:02:03 - VectorDB - INFO - Search completed for query: 'Bilgisiz Arama nedir?'. Results: 5
 2026-05-24 21:02:14 - VectorDB - INFO - Search completed for query: 'Bilgisiz Arama ornekler?'. Results: 5
 2026-05-24 21:02:33 - VectorDB - INFO - Search completed for query: 'Bilgisiz Arama ornekleri?'. Results: 5
+2026-05-25 22:20:39 - VectorDB - INFO - Loading embedding model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-05-25 22:20:49 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-25 22:20:50 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-25 22:20:50 - VectorDB - INFO - Vector Database initialized
+2026-05-25 22:20:50 - VectorDB - INFO - Index loaded from main_index.faiss
+2026-05-25 22:20:50 - VectorDB - INFO - Database loaded from main_index.faiss
