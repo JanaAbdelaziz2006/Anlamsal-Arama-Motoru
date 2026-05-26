@@ -4786,3 +4786,6 @@
 2026-05-27 01:14:00 - VectorDB - INFO - Vector Database initialized
 2026-05-27 01:14:00 - VectorDB - INFO - Index loaded from main_index.faiss
 2026-05-27 01:14:00 - VectorDB - INFO - Database loaded from main_index.faiss
+2026-05-27 01:16:53 - VectorDB - INFO - Search completed for query: 'binary search alan karmasikligi nedir'. Results: 4
+2026-05-27 01:17:04 - VectorDB - INFO - Search completed for query: 'binary search alan karmasikligi nedir'. Results: 5
+2026-05-27 01:17:12 - VectorDB - INFO - Search completed for query: 'binary search alan karmasikligi nedir'. Results: 5
