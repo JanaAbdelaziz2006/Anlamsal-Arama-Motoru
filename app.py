@@ -354,6 +354,7 @@ st.caption("Powered by FAISS, Sentence-Transformers, and Streamlit")
 #ex: DAG nedir ve hangi sistemlerde kullanılır?
 #ex: Graf teorisinde bir Yol (Path) nedir?
 
+
 ##ex: Navigasyon sistemlerinde en kısa yolu hesaplamak için hangi graf özelliği kullanılır?
 
 
