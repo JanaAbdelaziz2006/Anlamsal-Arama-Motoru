@@ -350,6 +350,7 @@ st.caption("Powered by FAISS, Sentence-Transformers, and Streamlit")
 #ex: Arama algoritmalarında performans iki kritere göre değerlendirilir, nelerdir?
 #ex: Bilgisiz Arama ornekleri?
 #ex: 25458667405 projesi nedir?
+##ex: 25458667006 projesi hangi alanda yönetim sağlar?
 #ex: Sıralı bir dizide en hızlı arama yöntemlerinden biri hangisidir?
 #ex: DAG nedir ve hangi sistemlerde kullanılır?
 #ex: Graf teorisinde bir Yol (Path) nedir?
