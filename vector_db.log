@@ -4789,3 +4789,92 @@
 2026-05-27 01:16:53 - VectorDB - INFO - Search completed for query: 'binary search alan karmasikligi nedir'. Results: 4
 2026-05-27 01:17:04 - VectorDB - INFO - Search completed for query: 'binary search alan karmasikligi nedir'. Results: 5
 2026-05-27 01:17:12 - VectorDB - INFO - Search completed for query: 'binary search alan karmasikligi nedir'. Results: 5
+2026-05-29 18:54:36 - VectorDB - INFO - Loading embedding model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-05-29 18:54:45 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-29 18:54:45 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-29 18:54:45 - VectorDB - INFO - Vector Database initialized
+2026-05-29 18:54:45 - VectorDB - INFO - Index loaded from main_index.faiss
+2026-05-29 18:54:45 - VectorDB - INFO - Database loaded from main_index.faiss
+2026-05-29 18:57:03 - VectorDB - INFO - Search completed for query: 'Bilgisiz arama neye denir?'. Results: 5
+2026-05-29 20:14:06 - VectorDB - INFO - Loading embedding model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-05-29 20:14:13 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-29 20:14:13 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-29 20:14:13 - VectorDB - INFO - Vector Database initialized
+2026-05-29 20:19:20 - VectorDB - INFO - Loading embedding model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-05-29 20:19:26 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-29 20:19:27 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-29 20:19:27 - VectorDB - INFO - Vector Database initialized
+2026-05-29 20:20:24 - VectorDB - INFO - Loading embedding model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-05-29 20:20:32 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-29 20:20:32 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-29 20:20:32 - VectorDB - INFO - Vector Database initialized
+2026-05-29 20:20:32 - VectorDB - INFO - Processing PDF: Arama ve Graf Temelleri.pdf
+2026-05-29 20:20:32 - VectorDB - INFO - Processing PDF: projeler.pdf
+2026-05-29 20:20:32 - VectorDB - INFO - Processing PDF: YZM0101_week10.pdf
+2026-05-29 20:20:32 - VectorDB - INFO - Processing PDF: YZM0101_week11_v1.pdf
+2026-05-29 20:20:32 - VectorDB - INFO - Processing PDF: YZM0101_week12.pdf
+2026-05-29 20:20:32 - VectorDB - INFO - Processing PDF: YZM0101_week13v1.pdf
+2026-05-29 20:20:32 - VectorDB - INFO - Processing PDF: YZM0101_week1_2.pdf
+2026-05-29 20:20:33 - VectorDB - INFO - Processing PDF: YZM0101_week2.pdf
+2026-05-29 20:20:33 - VectorDB - INFO - Processing PDF: YZM0101_week3.pdf
+2026-05-29 20:20:33 - VectorDB - INFO - Processing PDF: YZM0101_week4.pdf
+2026-05-29 20:20:33 - VectorDB - INFO - Processing PDF: YZM0101_week5.pdf
+2026-05-29 20:20:33 - VectorDB - INFO - Processing PDF: YZM0101_week6.pdf
+2026-05-29 20:20:33 - VectorDB - INFO - Processing PDF: YZM0101_week7.pdf
+2026-05-29 20:20:33 - VectorDB - INFO - Processing PDF: YZM0101_week8.pdf
+2026-05-29 20:20:33 - VectorDB - INFO - Processing PDF: YZM0101_week9.pdf
+2026-05-29 20:20:50 - VectorDB - INFO - Added 354 embeddings to index. Total: 354
+2026-05-29 20:20:50 - VectorDB - INFO - Index saved to temp_data\148cafc3-ac8a-46cb-8f48-79a080caea3a\main_index.faiss
+2026-05-29 20:20:50 - VectorDB - INFO - Database saved to temp_data\148cafc3-ac8a-46cb-8f48-79a080caea3a\main_index.faiss
+2026-05-29 20:20:54 - VectorDB - INFO - Loading embedding model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-05-29 20:21:01 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-29 20:21:01 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-29 20:21:01 - VectorDB - INFO - Vector Database initialized
+2026-05-29 20:21:01 - VectorDB - INFO - Index loaded from temp_data\148cafc3-ac8a-46cb-8f48-79a080caea3a\main_index.faiss
+2026-05-29 20:21:01 - VectorDB - INFO - Database loaded from temp_data\148cafc3-ac8a-46cb-8f48-79a080caea3a\main_index.faiss
+2026-05-29 20:21:24 - VectorDB - INFO - Loading embedding model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-05-29 20:21:31 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-29 20:21:31 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-29 20:21:31 - VectorDB - INFO - Vector Database initialized
+2026-05-29 20:21:31 - VectorDB - INFO - Index loaded from main_index.faiss
+2026-05-29 20:21:31 - VectorDB - INFO - Database loaded from main_index.faiss
+2026-05-29 20:21:43 - VectorDB - INFO - Search completed for query: 'binary search alan karmasikligi nedir'. Results: 4
+2026-05-29 20:21:52 - VectorDB - INFO - Search completed for query: 'binary search alan karmasikligi nedir'. Results: 9
+2026-05-29 20:21:56 - VectorDB - INFO - Search completed for query: 'binary search alan karmasikligi nedir'. Results: 5
+2026-05-29 20:25:13 - VectorDB - INFO - Loading embedding model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-05-29 20:25:20 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-29 20:25:20 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-29 20:25:20 - VectorDB - INFO - Vector Database initialized
+2026-05-29 20:25:20 - VectorDB - INFO - Index loaded from main_index.faiss
+2026-05-29 20:25:20 - VectorDB - INFO - Database loaded from main_index.faiss
+2026-05-29 20:29:34 - VectorDB - INFO - Search completed for query: 'Bilgisiz Arama ornekleri?'. Results: 5
+2026-05-29 20:29:46 - VectorDB - INFO - Search completed for query: '25458667405 projesi nedir?'. Results: 5
+2026-05-29 20:29:49 - VectorDB - INFO - Search completed for query: '25458667405 projesi nedir?'. Results: 4
+2026-05-29 20:29:51 - VectorDB - INFO - Search completed for query: '25458667405 projesi nedir?'. Results: 5
+2026-05-29 20:31:00 - VectorDB - INFO - Search completed for query: 'Graf teorisinde bir Yol (Path) nedir?'. Results: 5
+2026-05-29 20:51:35 - VectorDB - INFO - Loading embedding model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-05-29 20:51:42 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-29 20:51:42 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-29 20:51:42 - VectorDB - INFO - Vector Database initialized
+2026-05-29 20:51:42 - VectorDB - INFO - Index loaded from main_index.faiss
+2026-05-29 20:51:42 - VectorDB - INFO - Database loaded from main_index.faiss
+2026-05-29 20:53:17 - VectorDB - INFO - Loading embedding model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-05-29 20:53:25 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-29 20:53:25 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-29 20:53:25 - VectorDB - INFO - Vector Database initialized
+2026-05-29 20:53:25 - VectorDB - INFO - Index loaded from main_index.faiss
+2026-05-29 20:53:25 - VectorDB - INFO - Database loaded from main_index.faiss
+2026-05-29 21:19:37 - VectorDB - INFO - Loading embedding model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-05-29 21:19:54 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-05-29 21:19:55 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-05-29 21:19:55 - VectorDB - INFO - Vector Database initialized
+2026-05-29 21:19:55 - VectorDB - INFO - Index loaded from main_index.faiss
+2026-05-29 21:19:55 - VectorDB - INFO - Database loaded from main_index.faiss
+2026-05-29 21:23:04 - VectorDB - INFO - Search completed for query: 'Bilgisiz Arama ornekleri?'. Results: 5
+2026-05-29 21:23:24 - VectorDB - INFO - Search completed for query: '25458667405 projesi nedir?'. Results: 5
+2026-05-29 21:23:27 - VectorDB - INFO - Search completed for query: '25458667405 projesi nedir?'. Results: 4
+2026-05-29 21:23:29 - VectorDB - INFO - Search completed for query: '25458667405 projesi nedir?'. Results: 5
+2026-05-29 21:24:15 - VectorDB - INFO - Search completed for query: 'Graf teorisinde bir Yol (Path) nedir?'. Results: 5
+2026-05-29 21:29:15 - VectorDB - INFO - Search completed for query: 'Bilgisiz Arama ornekleri?'. Results: 5
+2026-05-29 21:29:39 - VectorDB - INFO - Search completed for query: '25458667405 projesi nedir?'. Results: 5
+2026-05-29 21:31:13 - VectorDB - INFO - Search completed for query: 'Graf teorisinde bir Yol (Path) nedir?'. Results: 5
