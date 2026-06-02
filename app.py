@@ -510,4 +510,3 @@ st.caption("Powered by FAISS, Sentence-Transformers, and Streamlit")
 #ex: Derinlik Öncelikli Arama (DFS) sınır veri yapısı olarak ne kullanır?
 #ex: Komşuluk Listesi bellek olarak ne kadar yer kaplar?
 #ex: İkili Arama hangi paradigma ile çalışır?
-#ex: IDS nedir?
