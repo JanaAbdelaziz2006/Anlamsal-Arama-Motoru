@@ -4899,3 +4899,8 @@
 2026-06-02 17:00:15 - VectorDB - INFO - Vector Database initialized
 2026-06-02 17:00:15 - VectorDB - INFO - Index loaded from main_index.faiss
 2026-06-02 17:00:15 - VectorDB - INFO - Database loaded from main_index.faiss
+2026-06-02 17:21:02 - VectorDB - INFO - Search completed for query: 'Bilgisiz Arama ornekleri?'. Results: 3
+2026-06-02 17:21:03 - VectorDB - INFO - Search completed for query: 'Bilgisiz Arama ornekleri?'. Results: 4
+2026-06-02 17:21:04 - VectorDB - INFO - Search completed for query: 'Bilgisiz Arama ornekleri?'. Results: 4
+2026-06-02 17:21:05 - VectorDB - INFO - Search completed for query: 'Bilgisiz Arama ornekleri?'. Results: 5
+2026-06-02 17:21:51 - VectorDB - INFO - Search completed for query: 'Bilgili Arama ornekleri?'. Results: 5
