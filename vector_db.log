@@ -4893,3 +4893,9 @@
 2026-05-31 14:25:38 - VectorDB - INFO - Search completed for query: 'binary search alan karmasikligi nedir'. Results: 3
 2026-05-31 14:25:57 - VectorDB - INFO - Search completed for query: 'binary search alan karmasikligi nedir'. Results: 5
 2026-05-31 14:25:58 - VectorDB - INFO - Search completed for query: 'binary search alan karmasikligi nedir'. Results: 5
+2026-06-02 17:00:03 - VectorDB - INFO - Loading embedding model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-06-02 17:00:14 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-06-02 17:00:15 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-06-02 17:00:15 - VectorDB - INFO - Vector Database initialized
+2026-06-02 17:00:15 - VectorDB - INFO - Index loaded from main_index.faiss
+2026-06-02 17:00:15 - VectorDB - INFO - Database loaded from main_index.faiss
