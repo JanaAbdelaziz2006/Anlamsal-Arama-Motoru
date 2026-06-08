@@ -4938,3 +4938,5 @@
 2026-06-08 16:38:30 - VectorDB - INFO - Vector Database initialized
 2026-06-08 16:38:30 - VectorDB - INFO - Index loaded from main_index.faiss
 2026-06-08 16:38:30 - VectorDB - INFO - Database loaded from main_index.faiss
+2026-06-08 16:46:06 - VectorDB - INFO - Search completed for query: 'A* ne ozellikleri var'. Results: 5
+2026-06-08 16:46:37 - VectorDB - INFO - Search completed for query: 'entropy nedir'. Results: 5
