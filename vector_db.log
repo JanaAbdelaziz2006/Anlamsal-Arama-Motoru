@@ -4952,3 +4952,4 @@
 2026-06-11 12:11:56 - VectorDB - INFO - Vector Database initialized
 2026-06-11 12:11:56 - VectorDB - INFO - Index loaded from main_index.faiss
 2026-06-11 12:11:56 - VectorDB - INFO - Database loaded from main_index.faiss
+2026-06-11 12:16:16 - VectorDB - INFO - Search completed for query: 'binary search'. Results: 3
