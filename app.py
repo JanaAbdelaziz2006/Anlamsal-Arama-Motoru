@@ -478,7 +478,7 @@ if query:
                         st.markdown(f"""
                         <div class="result-card">
                             <div class="pdf-title">📄 {res.metadata.get('source')}</div>
-                            <div class="metadata-tag">SAYFA: {res.metadata.get('page')} • ALAKA: %{display_score:.0f}</div>
+                            <div class="metadata-tag">SAYFA: {res.metadata.get('page')}
                             <div class="snippet">...{display_content}...</div>
                         </div>
                         """, unsafe_allow_html=True)

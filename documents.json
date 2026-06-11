@@ -1,368 +1,368 @@
 {
-  "Arama ve Graf Temelleri.pdf_p2_s0": {
+  "Arama ve Graf Temelleri 2.pdf_p2_s0": {
     "content": "AramaArama veve GrafGraf TemelleriTemelleri Algoritmalar ve Veri Yapıları | Hafta: 5 Çalıştırmak için Space basın 2 / 47",
     "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
+      "source": "Arama ve Graf Temelleri 2.pdf",
       "page": 2,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p3_s0": {
+  "Arama ve Graf Temelleri 2.pdf_p3_s0": {
     "content": "Arama Algoritmalarına Giriş Veri yığınları içinde hedef bilgiyi bulma stratejileri. Performans kritiği: Zaman (Time) ve Alan (Space) karmaşıklığı. Veri organizasyonunun (sıralı vs sırasız) arama hızına etkisi. 3 / 47",
     "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
+      "source": "Arama ve Graf Temelleri 2.pdf",
       "page": 3,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p4_s0": {
+  "Arama ve Graf Temelleri 2.pdf_p4_s0": {
     "content": "Doğrusal Arama (Linear Search) Diziyi baştan sona tek tek tarayan en ilkel yöntemdir. Verinin sıralı olmasına ihtiyaç duymaz. En kötü durumda (Worst Case) tüm elemanlara bakılır. 4 / 47",
     "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
+      "source": "Arama ve Graf Temelleri 2.pdf",
       "page": 4,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p5_s0": {
+  "Arama ve Graf Temelleri 2.pdf_p5_s0": {
     "content": "Doğrusal Arama: Karmaşıklık Analizi Best Case: Hedef ilk elemanda ( O(1) ). Worst Case: Hedef sonda veya yok ( O(n) ). Average Case: Ortalama n/2 karşılaştırma ( O(n) ). 5 / 47",
     "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
+      "source": "Arama ve Graf Temelleri 2.pdf",
       "page": 5,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p6_s0": {
+  "Arama ve Graf Temelleri 2.pdf_p6_s0": {
     "content": "Doğrusal Arama Ne Zaman Kullanılır? Veri kümesi küçükse ( n < 50 ). Veri tamamen düzensizse ve sıralama maliyeti yüksekse. Sadece bir kez arama yapılacaksa. 6 / 47",
     "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
+      "source": "Arama ve Graf Temelleri 2.pdf",
       "page": 6,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p7_s0": {
+  "Arama ve Graf Temelleri 2.pdf_p7_s0": {
     "content": "İkili Arama (Binary Search) Böl ve Yönet (Divide and Conquer) paradigmasıyla çalışır. Arama uzayını her adımda yarıya indirir. Logaritmik performans ( O(log n) ) sağlar. 7 / 47",
     "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
+      "source": "Arama ve Graf Temelleri 2.pdf",
       "page": 7,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p8_s0": {
+  "Arama ve Graf Temelleri 2.pdf_p8_s0": {
     "content": "8 / 47",
     "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
+      "source": "Arama ve Graf Temelleri 2.pdf",
       "page": 8,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p9_s0": {
+  "Arama ve Graf Temelleri 2.pdf_p9_s0": {
     "content": "O(log n) BinaryBinary SearchSearch Time Complexity: Sıralı bir dizide aranan elemanı bulmak için arama aralığını her adımda yarıya indirir. Zaman karmaşıklığı O(log n)'dir. binary_search.py Status: Ready def binary_search(arr, target): low = 0 high = len(arr) - 1 while low <= high: mid = (low + high) // 2 if arr[mid] == target: return mid elif arr[mid] < target: low = mid + 1 else: high = mid - 1 return -1 6 8 16 30 33 36 45 54 56 76 78 85 92 94 99 Target Value: Steps 76 0   Play  Speed Elements 9 / 47",
     "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
+      "source": "Arama ve Graf Temelleri 2.pdf",
       "page": 9,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p10_s0": {
+  "Arama ve Graf Temelleri 2.pdf_p10_s0": {
     "content": "Kritik Şart: Sıralı Veri Binary Search sadece sıralı (sorted) dizilerde çalışır. Sıralı veri, arama uzayını elemenize imkan tanır. Sıralı değilse, önce sıralama maliyeti ( O(n log n) ) göze alınmalıdır. 10 / 47",
     "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
+      "source": "Arama ve Graf Temelleri 2.pdf",
       "page": 10,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p11_s0": {
+  "Arama ve Graf Temelleri 2.pdf_p11_s0": {
     "content": "İkili Arama: Adım Adım Mantık Dizinin orta elemanını (mid) belirle. Hedef == Mid ise, bulundu! Hedef < Mid ise, sol yarıyı tara (sağı çöpe at). Hedef > Mid ise, sağ yarıyı tara (solu çöpe at). 11 / 47",
     "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
+      "source": "Arama ve Graf Temelleri 2.pdf",
       "page": 11,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p12_s0": {
+  "Arama ve Graf Temelleri 2.pdf_p12_s0": {
     "content": "Binary Search: Özyinelemeli (Recursive) Problemi her seferinde kendisinin bir kopyasıyla ama daha küçük aralıkla çözer. Base Case: low > high ise bulunamadı. Kod okunabilirliği yüksektir. 12 / 47",
     "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
+      "source": "Arama ve Graf Temelleri 2.pdf",
       "page": 12,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p13_s0": {
+  "Arama ve Graf Temelleri 2.pdf_p13_s0": {
     "content": "Binary Search: Özyinelemeli (Recursive) (Algoritma) 1 binary_search(A, low, high, target): 2 if low > high: return -1 3 mid = low + (high - low) / 2 4 if A[mid] == target: return mid 5 if A[mid] > target: return binary_search(A, low, mid-1, target) 6 return binary_search(A, mid+1, high, target) 13 / 47",
     "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
+      "source": "Arama ve Graf Temelleri 2.pdf",
       "page": 13,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p14_s0": {
+  "Arama ve Graf Temelleri 2.pdf_p14_s0": {
     "content": "Binary Search: İteratif (Döngüsel) Hafıza dostu: Sabit alan karmaşıklığı ( O(1) ). Stack Overflow riski taşımaz. Endüstriyel kodlamada genellikle bu yöntem tercih edilir. 14 / 47",
     "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
+      "source": "Arama ve Graf Temelleri 2.pdf",
       "page": 14,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p15_s0": {
+  "Arama ve Graf Temelleri 2.pdf_p15_s0": {
     "content": "Binary Search: İteratif (Döngüsel) (Kod Uygulaması) 1 def binary_search(arr, target): 2 low, high = 0, len(arr)-1 3 while low <= high: 4 mid = low + (high - low) // 2 5 if arr[mid] == target: return mid 6 if arr[mid] < target: low = mid + 1 7 else: high = mid - 1 8 return -1 15 / 47",
     "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
+      "source": "Arama ve Graf Temelleri 2.pdf",
       "page": 15,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p16_s0": {
+  "Arama ve Graf Temelleri 2.pdf_p16_s0": {
     "content": "Doğrusal vs İkili Arama Özeti Linear: 109 eleman →109 adım. Binary: 109 eleman →log 2 ​(10 9 ) ≈ 30 adım. Fark: Saniyeler vs Milisaniyeler. 16 / 47",
     "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
+      "source": "Arama ve Graf Temelleri 2.pdf",
       "page": 16,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p17_s0": {
+  "Arama ve Graf Temelleri 2.pdf_p17_s0": {
     "content": "Graf Teorisine Giriş Bilgisayar bilimlerinde karmaşık ilişkileri ve sistemleri modellemenin matematiksel yoludur. Aşağıda bazı yaygın uygulamaların graflar üzerinden modelleme mantığını görebilirsiniz: Uygulama Eleman (Düğüm - Node) Bağlantı (Kenar - Edge) Harita ve Navigasyon Kavşak, Şehir Yol, Otoban World Wide Web İnternet Sayfası (URL) Hiper Bağlayıcı (Link) E-Ticaret ve Öneriler Müşteri, Ürün Alışveriş, Görüntüleme Sosyal Ağlar Kişi, Kullanıcı Arkadaşlık, Takip 17 / 47",
     "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
+      "source": "Arama ve Graf Temelleri 2.pdf",
       "page": 17,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p18_s0": {
+  "Arama ve Graf Temelleri 2.pdf_p18_s0": {
     "content": "Matematiksel Tanım: G = (V, E) V (Vertices): Bağımsız nesneler veya noktalar. E (Edges): Nesneler arasındaki her türlü ilişki. İlişki varlığı bir küme eşleşmesi olarak ifade edilir. 18 / 47",
     "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
+      "source": "Arama ve Graf Temelleri 2.pdf",
       "page": 18,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p19_s0": {
+  "Arama ve Graf Temelleri 2.pdf_p19_s0": {
     "content": "Matematiksel Tanım ve Yönsüz Graflar Bir Graf G , düğümlerden (Vertices - V ) ve kenarlardan (Edges - E ) oluşur: G = (V , E) Yönsüz Graf (Undirected): İlişki karşılıklıdır, yön belirtilmez. (Örn: 1 ile 2 bağlıysa 2 de 1 ile bağlıdır). Undirected: İlişki karşılıklıdır (Örn: Facebook arkadaşlığı). Kümelerle İfade: V := {1, 2, 3, 4, 5} E := {{1, 2}, {1, 5}, {2, 5}, {2, 3}, {2, 4}, {3, 4}, {4, 5}} 19 / 47",
     "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
+      "source": "Arama ve Graf Temelleri 2.pdf",
       "page": 19,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p20_s0": {
+  "Arama ve Graf Temelleri 2.pdf_p20_s0": {
     "content": "1 2 3 4 5 20 / 47",
     "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
+      "source": "Arama ve Graf Temelleri 2.pdf",
       "page": 20,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p21_s0": {
+  "Arama ve Graf Temelleri 2.pdf_p21_s0": {
     "content": "21 / 47",
     "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
+      "source": "Arama ve Graf Temelleri 2.pdf",
       "page": 21,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p22_s0": {
+  "Arama ve Graf Temelleri 2.pdf_p22_s0": {
     "content": "Graf Terminolojisi: Derece (Degree) Degree: Bir düğüme bağlı olan kenar sayısıdır. In-Degree: Düğüme gelen oklar (Directed). Out-Degree: Düğümden çıkan oklar (Directed). Popülerlik veya kritiklik ölçütü olarak kullanılır. 22 / 47",
     "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
+      "source": "Arama ve Graf Temelleri 2.pdf",
       "page": 22,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p23_s0": {
+  "Arama ve Graf Temelleri 2.pdf_p23_s0": {
     "content": "Yönlü Graflar (Directed Graphs - Digraph) İlişkinin tek yönlü akabildiği graflardır. (Örn: Twitter takibi, web sayfası linkleri). V := {1, 2, 3, 4, 5, 6} E := {(1, 2), (1, 4), (2, 5), (4, 2), (5, 4), (3, 3), (3, 5), (3, 6)} (u, v) gösterimi kullanılır, yön u ’dan v ’ye doğrudur. Teorem (Derece Toplamı): Yönsüz için: ∑ deg(v) = 2E Yönlü için: ∑ indeg(v) = ∑ outdeg(v) = E 23 / 47",
     "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
+      "source": "Arama ve Graf Temelleri 2.pdf",
       "page": 23,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p24_s0": {
+  "Arama ve Graf Temelleri 2.pdf_p24_s0": {
     "content": "1 2 3 6 5 4 (Not: 3 numaralı düğümün 'kendine döngüsü' (self loop) vardır.) 24 / 47",
     "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
+      "source": "Arama ve Graf Temelleri 2.pdf",
       "page": 24,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p25_s0": {
+  "Arama ve Graf Temelleri 2.pdf_p25_s0": {
     "content": "Özel Bir Yapı: DAG Directed Acyclic Graph (Yönlü Döngüsüz Graf). İçinde döngü yoktur, bir akış her zaman ilerler. İş akışları ve bağımlılık haritaları (Build system) DAG’dır. 25 / 47",
     "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
+      "source": "Arama ve Graf Temelleri 2.pdf",
       "page": 25,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p26_s0": {
+  "Arama ve Graf Temelleri 2.pdf_p26_s0": {
     "content": "26 / 47",
     "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
+      "source": "Arama ve Graf Temelleri 2.pdf",
       "page": 26,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p27_s0": {
+  "Arama ve Graf Temelleri 2.pdf_p27_s0": {
     "content": "Ağırlıklı Graflar (Weighted) Kenarlara sayısal bir değer atanmasıdır. Ağırlık: Mesafe, Maliyet, Kapasite veya Gecikme olabilir. Navigasyon sistemlerinde 'en kısa yol' hesabı bu ağırlıklarla yapılır. 27 / 47",
     "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
+      "source": "Arama ve Graf Temelleri 2.pdf",
       "page": 27,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p28_s0": {
+  "Arama ve Graf Temelleri 2.pdf_p28_s0": {
     "content": "Önemli Graf Terminolojileri Paralel Kenarlar: Aynı düğüm çiftini birbirine bağlayan birden fazla kenar (Çok şeritli yol gibi). Kendine Döngü (Self Loop): Bir düğümü kendine bağlayan kenardır. Yol (Path): Düğümler arası geçiş dizisidir. (Örn: A-B-C-D) Basit Yol (Simple Path): Hiçbir düğümün tekrar etmediği geçiş dizisidir. Döngü (Cycle): Başladığı noktada biten kapalı yoldur. Yazılımlarda tehlikeli (sonsuz döngü) veya finansal sahtecilik analizinde (para aklama zinciri) kâr getiren bir keşif olabilir. Bağlılık (Connectivity): Her düğümden her düğüme ulaşmanın mümkün olduğu, kopuk bir 'ada' (Component) barındırmayan sistemlerdir. 28 / 47",
     "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
+      "source": "Arama ve Graf Temelleri 2.pdf",
       "page": 28,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p29_s0": {
+  "Arama ve Graf Temelleri 2.pdf_p29_s0": {
     "content": "Ağaçlar (Trees): Kurallı Graflar Ağaçlar, aslında çok katı kuralları olan birer graftır. Bir grafın ağaç olabilmesi için şu özelliklere sahip olması gerekir: Tamamen Bağlı (Connected) olmalıdır. İçinde hiçbir Döngü (Acyclic) barındırmamalıdır. Düğüm sayısı V ise, tam olarak V −1 adet kenarı olmalıdır. Herhangi iki düğüm arasında sadece tek bir basit yol vardır. Orman (Forest): Ağaçların bir araya gelerek oluşturduğu kümedir (bağlantısız ağaçlar bütünü). 29 / 47",
     "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
+      "source": "Arama ve Graf Temelleri 2.pdf",
       "page": 29,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p30_s0": {
+  "Arama ve Graf Temelleri 2.pdf_p30_s0": {
     "content": "Özel Graflar: Bipartite ve Komple Bipartite Graflar (İki Kümeli): Düğümleri kırmızı ve mavi olarak ayırdığımızda, hiçbir kırmızı bir başka kırmızıyla (veya mavi maviyle) bağlanamaz. İş-İşçi, Öğrenci-Ders atamaları için mükemmel modeldir. Complete Graflar (Tam Graf): Herkesin herkesle doğrudan komşu (bağlı) olduğu ütopik graflardır. V V (V −1) ​ düğümlü tam grafta kenar sayısı maksimumdur: 2 30 / 47",
     "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
+      "source": "Arama ve Graf Temelleri 2.pdf",
       "page": 30,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p31_s0": {
+  "Arama ve Graf Temelleri 2.pdf_p31_s0": {
     "content": "Graf Temsili: Komşuluk Matrisi (Adjacency Matrix) Grafı hafızada tutmanın en direk yolu 2-Boyutlu Array kullanmaktır. Boyutlar: V × V . Kenar varsa 1 (veya ağırlık), yoksa 0 yazılır. A B C D B A 0 1 1 0 A D B 1 0 0 1 C C 1 0 0 1 Karmaşıklık: O(V 2 ) bellek. Kenar sorgusu: O(1) . D 0 1 1 0 31 / 47",
     "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
+      "source": "Arama ve Graf Temelleri 2.pdf",
       "page": 31,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p32_s0": {
+  "Arama ve Graf Temelleri 2.pdf_p32_s0": {
     "content": "32 / 47",
     "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
+      "source": "Arama ve Graf Temelleri 2.pdf",
       "page": 32,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p33_s0": {
+  "Arama ve Graf Temelleri 2.pdf_p33_s0": {
     "content": "Ara Soru: Matris Maliyeti 1 Milyon ( 106 ) kullanıcısı olan bir sosyal ağı Komşuluk Matrisi ile RAM’de tutmak istiyoruz. Her bir hücrenin değeri için sadece 1 Byte (8 bit) harcarsek, matrisin boyutu toplamda yaklaşık kaç Terabyte (TB) olur? Çözüm Adımları: 1. V = 1.000.000 düğüm. 2. Matris hücre sayısı = V × V = 1012 hücre. 3. Her hücre 1 Byte ise toplam = 1012 Byte. 4. 1012 Byte ≈1 Terabyte (TB) sadece yapıyı tutmak için! (İçinde \"1\" olmayan %99 boşluk). Kazanım: Seyrek (Sparse) graflarda matris kullanımının hafıza iflasına yol açacağının ve matematiksel hesaplama kapasitesinin kavratılması. 33 / 47",
     "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
+      "source": "Arama ve Graf Temelleri 2.pdf",
       "page": 33,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p34_s0": {
+  "Arama ve Graf Temelleri 2.pdf_p34_s0": {
     "content": "Soru: Matris Maliyeti ve Hafıza İflası (1/2) 1 Milyon ( 106 ) kullanıcısı olan bir sosyal ağı Komşuluk Matrisi ile RAM’de tutmak istiyoruz. Her bir hücre için sadece 1 Byte harcarsak, bu matrisin boyutu yaklaşık kaç Terabyte (TB) olur? Hücre Sayısının Tespiti: Hesap 1 Matris V × V boyutunda olduğu için: 10 6 × 10 6 = 1012 (1 Trilyon) hücre. Toplam Byte Miktarı: Hesap 2 Her hücre 1 Byte yer kapladığından: 10 12 × 1 Byte = 10 12 Byte 34 / 47",
     "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
+      "source": "Arama ve Graf Temelleri 2.pdf",
       "page": 34,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p35_s0": {
+  "Arama ve Graf Temelleri 2.pdf_p35_s0": {
     "content": "Soru: Birim Dönüşümü ve Analiz (2/2) Birimlerin Karşılaştırılması: 103 Byte = 1 KB Dönüşüm 106 Byte = 1 MB 109 Byte = 1 GB 1012 Byte = 1 Terabyte (TB) Sonuç Final: Yaklaşık 1 TB RAM gereklidir! Kazanım (Analiz): Sosyal ağlarda bir kişi genellikle en fazla birkaç bin kişiyle bağlantılıdır. Bu durumda matrisin %99.9’u sıfır (boş) olacaktır. 1 TB’lık bu alanın neredeyse tamamı \"hiçlik\" tutmak için israf edilir. İşte bu yüzden Seyrek (Sparse) Graflar için her zaman liste yapısı tercih edilir. 35 / 47",
     "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
+      "source": "Arama ve Graf Temelleri 2.pdf",
       "page": 35,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p36_s0": {
+  "Arama ve Graf Temelleri 2.pdf_p36_s0": {
     "content": "3 Edges: 2 GraphGraph RepresentationsRepresentations Nodes: Graf yapılarını görselleştirin ve Adjacency Matrix ile Adjacency List arasındaki farkı inceleyin.  Click to add node, drag to move, shift+drag between nodes to add edge. Clear Adjacency Matrix Adjacency List 0 1 2 0 0 1 0 0 1 1 1 0 1 2 0 1 0 2 36 / 47",
     "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
+      "source": "Arama ve Graf Temelleri 2.pdf",
       "page": 36,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p37_s0": {
+  "Arama ve Graf Temelleri 2.pdf_p37_s0": {
     "content": "Graf Temsili: Komşuluk Listesi (Adjacency List) Her düğüm için, sadece o düğüme bağlı olan (komşusu olan) düğümlerin listesini tutma stratejisidir. A →[B, C] B →[A, D] C →[A, D] D →[B, C] Karmaşıklık: O(V + E) bellek harcar. \"Kim komşu?\" sorusunu satırı tarayarak O(deg(V )) sürede çözer. Seyrek (Sparse) graflar için en çok tercih edilen tiptir. 37 / 47",
     "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
+      "source": "Arama ve Graf Temelleri 2.pdf",
       "page": 37,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p38_s0": {
+  "Arama ve Graf Temelleri 2.pdf_p38_s0": {
     "content": "38 / 47",
     "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
+      "source": "Arama ve Graf Temelleri 2.pdf",
       "page": 38,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p39_s0": {
+  "Arama ve Graf Temelleri 2.pdf_p39_s0": {
     "content": "39 / 47",
     "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
+      "source": "Arama ve Graf Temelleri 2.pdf",
       "page": 39,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p40_s0": {
+  "Arama ve Graf Temelleri 2.pdf_p40_s0": {
     "content": "Diğer Modeller: Kenar Listesi ve Çapraz Kenar Listesi (Edge List): Tüm grafi sadece bir dizi veya tablo satırı gibi (Başlangıç, Bitiş, Ağırlık) tuple’ları halinde ardışık saklamak. Özellikle Kruskal gibi graf kenarlarını ağırlığına göre 'sıralayan' algoritmalar için muazzamdır. Örn: (A, B, 15) , (B, C, 22) Çapraz Bağlantılı Listeler (Incidence List): Her düğüm ve her kenar için ayrı nesne (class) oluşturulup obje referanslarıyla birbirlerine bağlanmasıdır. Nesne Yönelimli Programlamada (OOP) esneklik sağlar ancak bellek (pointer vs.) tüketimi daha büyüktür. 40 / 47",
     "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
+      "source": "Arama ve Graf Temelleri 2.pdf",
       "page": 40,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p41_s0": {
+  "Arama ve Graf Temelleri 2.pdf_p41_s0": {
     "content": "Graf Temsilleri: Karşılaştırma Matrisi Hangi yapı, hangi durumda daha avantajlıdır? Komşuluk Komşuluk İşlem Kenar Listesi Çapraz Bağlantılı Matrisi Listesi Kurulum Alanı O(V 2 ) O(V + E) O(E) O(V + E) (Bellek) Kenar (u,v) Var Mı? O(1) O(deg(v)) O(E) O(min(deg(u), deg(v))) Tüm Komşuları O(V ) O(deg(v)) O(E) O(deg(V )) Bulma Kenar Ekleme O(1) O(1) O(1) O(1) Uygun Olduğu Yoğun Seyrek Çok Seyrek / Kenar Karma / OOP Senaryo (Dense) (Sparse) Sıralı 41 / 47",
     "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
+      "source": "Arama ve Graf Temelleri 2.pdf",
       "page": 41,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p42_s0": {
+  "Arama ve Graf Temelleri 2.pdf_p42_s0": {
     "content": "Hafta 5 Özeti ve Gelecek Hafta Sıralı verinin Binary Search ile O(log n) büyüklüğündeki operasyonel gücünü gördük. Gerçek dünya sistemlerini modellemek için Graf kavramını ve Yönlü/Yönsüz yapıları öğrendik. Hafıza/Hız denklemlerinde Matris ve Liste gösterimlerinin matematiksel maliyetlerini çıkardık. Gelecek Hafta: Kurduğumuz bu düğüm ve kenarlar dünyasında labirentleri nasıl çözeceğimizi, BFS (Arama) algoritmalarını işleyeceğiz. 42 / 47",
     "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
+      "source": "Arama ve Graf Temelleri 2.pdf",
       "page": 42,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p43_s0": {
+  "Arama ve Graf Temelleri 2.pdf_p43_s0": {
     "content": "Konu Sonu Soruları 43 / 47",
     "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
+      "source": "Arama ve Graf Temelleri 2.pdf",
       "page": 43,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p44_s0": {
+  "Arama ve Graf Temelleri 2.pdf_p44_s0": {
     "content": "Soru: Binary Search Performans Analizi (1/2) 1.000.000 elemanlı sıralı bir dizide Binary Search (İkili Arama) algoritması hedef elemanı bulmak için en fazla kaç karşılaştırma yapar? Zaman Karmaşıklığı: Teori Binary Search, her adımda arama uzayını yarıya indirdiği için Logaritmik Zaman Karmaşıklığına ( ​ O(log 2 n) ) sahiptir. Karşılaştırma Sayısı: Maksimum karşılaştırma sayısı, eleman sayısını 1’e indirene kadar kaç kez 2’ye bölebileceğimize Mantık eşittir: Steps ≈log 2 ​(1.000.000) 44 / 47",
     "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
+      "source": "Arama ve Graf Temelleri 2.pdf",
       "page": 44,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p45_s0": {
+  "Arama ve Graf Temelleri 2.pdf_p45_s0": {
     "content": "Soru: Üstel Büyüme ve Karar (2/2) 2’nin Kuvvetleri ile Yaklaşım: 2 10 = 1.024 Hesap 2 19 ≈ 524.288 2 20 ≈ 1.048.576 Final Sonuç: En fazla 20 karşılaştırma yapılır. Kazanım: Doğrusal aramada (Linear Search) 1 milyon adım sürebilecek bir işlem, Binary Search ile sadece 20 adımda biter. Bu, verinin büyüklüğüne rağmen algoritmanın hızı korumasını sağlayan logaritmik verimliliğin en net kanıtıdır. 45 / 47",
     "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
+      "source": "Arama ve Graf Temelleri 2.pdf",
       "page": 45,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p46_s0": {
+  "Arama ve Graf Temelleri 2.pdf_p46_s0": {
     "content": "Soru: Binary Search ve Aritmetik Taşma (1/2) Binary Search algoritmasında orta noktayı bulurken mid = (low + high) / 2 yerine neden mid = low + (high - low) / 2 yazılması önerilir? Integer Overflow (Tam Sayı Taşması): Sorun Eğer low ve high değerleri veri tipinin (örneğin 32-bit işaretli tamsayı) üst sınırına yakınsa ( > 230 ), (low + high) işlemi bellekte ayrılan sınırı aşarak negatif bir sonuç üretir. Program Çöküşü: Etki Taşma sonucu oluşan negatif değer 2 ’ye bölündüğünde, ortaya çıkan negatif indeks ( ArrayIndexOutOfBoundsException ) programın beklenmedik şekilde durmasına yol açar. 46 / 47",
     "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
+      "source": "Arama ve Graf Temelleri 2.pdf",
       "page": 46,
       "type": "pdf"
     }
   },
-  "Arama ve Graf Temelleri.pdf_p47_s0": {
+  "Arama ve Graf Temelleri 2.pdf_p47_s0": {
     "content": "Soru: Güvenli Tasarım ve İspat (2/2) Matematiksel Eşdeğerlik: high−low 2⋅low+high−low low+high ​ ​ ​ low + = = Çözüm 2 2 2 Formül matematiksel olarak aynıdır, ancak işlem sırasında low + high toplamı hiçbir zaman gerçekleşmez. Önce fark ( high - low ) hesaplandığı için sonuç her zaman küçülür, ardından low üzerine ekleme yapıldığında Fark toplam değer asla high değerini aşmaz. Bu, süreci güvenli aralıkta tutar. Best-Practice: Bu durum, 20 yıl boyunca Java’nın standart kütüphanesinde gizli kalmış meşhur bir hatadır. Modern sistemlerde büyük veri setleri ile çalışırken bu \"güvenli hesaplama\" yöntemi zorunluluktur. 47 / 47",
     "metadata": {
-      "source": "Arama ve Graf Temelleri.pdf",
+      "source": "Arama ve Graf Temelleri 2.pdf",
       "page": 47,
       "type": "pdf"
     }

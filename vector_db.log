@@ -4965,3 +4965,60 @@
 2026-06-11 19:24:34 - VectorDB - INFO - Vector Database initialized
 2026-06-11 19:24:34 - VectorDB - INFO - Index loaded from main_index.faiss
 2026-06-11 19:24:34 - VectorDB - INFO - Database loaded from main_index.faiss
+2026-06-11 19:30:12 - VectorDB - INFO - Loading embedding model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-06-11 19:30:34 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-06-11 19:30:35 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-06-11 19:30:35 - VectorDB - INFO - Vector Database initialized
+2026-06-11 19:30:35 - VectorDB - INFO - Index loaded from main_index.faiss
+2026-06-11 19:30:35 - VectorDB - INFO - Database loaded from main_index.faiss
+2026-06-11 19:33:44 - VectorDB - INFO - Loading embedding model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-06-11 19:34:07 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-06-11 19:34:07 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-06-11 19:34:07 - VectorDB - INFO - Vector Database initialized
+2026-06-11 19:34:07 - VectorDB - INFO - Processing PDF: projeler.pdf
+2026-06-11 19:34:07 - VectorDB - INFO - Processing PDF: YZM0101_week10.pdf
+2026-06-11 19:34:08 - VectorDB - INFO - Processing PDF: YZM0101_week11_v1.pdf
+2026-06-11 19:34:08 - VectorDB - INFO - Processing PDF: YZM0101_week12.pdf
+2026-06-11 19:34:08 - VectorDB - INFO - Processing PDF: YZM0101_week13v1.pdf
+2026-06-11 19:34:08 - VectorDB - INFO - Processing PDF: YZM0101_week1_2.pdf
+2026-06-11 19:34:09 - VectorDB - INFO - Processing PDF: YZM0101_week2.pdf
+2026-06-11 19:34:09 - VectorDB - INFO - Processing PDF: YZM0101_week3.pdf
+2026-06-11 19:34:09 - VectorDB - INFO - Processing PDF: YZM0101_week4.pdf
+2026-06-11 19:34:10 - VectorDB - INFO - Processing PDF: YZM0101_week5.pdf
+2026-06-11 19:34:15 - VectorDB - INFO - Processing PDF: YZM0101_week6.pdf
+2026-06-11 19:34:15 - VectorDB - INFO - Processing PDF: YZM0101_week7.pdf
+2026-06-11 19:34:16 - VectorDB - INFO - Processing PDF: YZM0101_week8.pdf
+2026-06-11 19:34:16 - VectorDB - INFO - Loading embedding model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-06-11 19:34:17 - VectorDB - INFO - Processing PDF: YZM0101_week9.pdf
+2026-06-11 19:34:48 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-06-11 19:34:48 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-06-11 19:34:48 - VectorDB - INFO - Vector Database initialized
+2026-06-11 19:34:51 - VectorDB - INFO - Added 308 embeddings to index. Total: 308
+2026-06-11 19:35:24 - VectorDB - INFO - Loading embedding model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-06-11 19:35:42 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-06-11 19:35:42 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-06-11 19:35:42 - VectorDB - INFO - Vector Database initialized
+2026-06-11 19:35:42 - VectorDB - INFO - Processing PDF: Arama ve Graf Temelleri 2.pdf
+2026-06-11 19:35:43 - VectorDB - INFO - Processing PDF: projeler.pdf
+2026-06-11 19:35:43 - VectorDB - INFO - Processing PDF: YZM0101_week10.pdf
+2026-06-11 19:35:43 - VectorDB - INFO - Processing PDF: YZM0101_week11_v1.pdf
+2026-06-11 19:35:43 - VectorDB - INFO - Processing PDF: YZM0101_week12.pdf
+2026-06-11 19:35:44 - VectorDB - INFO - Processing PDF: YZM0101_week13v1.pdf
+2026-06-11 19:35:44 - VectorDB - INFO - Processing PDF: YZM0101_week1_2.pdf
+2026-06-11 19:35:44 - VectorDB - INFO - Processing PDF: YZM0101_week2.pdf
+2026-06-11 19:35:45 - VectorDB - INFO - Processing PDF: YZM0101_week3.pdf
+2026-06-11 19:35:45 - VectorDB - INFO - Processing PDF: YZM0101_week4.pdf
+2026-06-11 19:35:45 - VectorDB - INFO - Processing PDF: YZM0101_week5.pdf
+2026-06-11 19:35:46 - VectorDB - INFO - Processing PDF: YZM0101_week6.pdf
+2026-06-11 19:35:46 - VectorDB - INFO - Processing PDF: YZM0101_week7.pdf
+2026-06-11 19:35:46 - VectorDB - INFO - Processing PDF: YZM0101_week8.pdf
+2026-06-11 19:35:47 - VectorDB - INFO - Processing PDF: YZM0101_week9.pdf
+2026-06-11 19:36:08 - VectorDB - INFO - Added 354 embeddings to index. Total: 354
+2026-06-11 19:36:08 - VectorDB - INFO - Index saved to main_index.faiss
+2026-06-11 19:36:08 - VectorDB - INFO - Database saved to main_index.faiss
+2026-06-11 19:36:13 - VectorDB - INFO - Loading embedding model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-06-11 19:36:35 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-06-11 19:36:35 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-06-11 19:36:35 - VectorDB - INFO - Vector Database initialized
+2026-06-11 19:36:35 - VectorDB - INFO - Index loaded from main_index.faiss
+2026-06-11 19:36:35 - VectorDB - INFO - Database loaded from main_index.faiss
