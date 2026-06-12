@@ -5022,3 +5022,65 @@
 2026-06-11 19:36:35 - VectorDB - INFO - Vector Database initialized
 2026-06-11 19:36:35 - VectorDB - INFO - Index loaded from main_index.faiss
 2026-06-11 19:36:35 - VectorDB - INFO - Database loaded from main_index.faiss
+2026-06-11 19:57:23 - VectorDB - INFO - Loading embedding model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-06-11 19:57:33 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-06-11 19:57:33 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-06-11 19:57:33 - VectorDB - INFO - Vector Database initialized
+2026-06-11 19:57:33 - VectorDB - INFO - Index loaded from main_index.faiss
+2026-06-11 19:57:33 - VectorDB - INFO - Database loaded from main_index.faiss
+2026-06-12 01:40:50 - VectorDB - INFO - Loading embedding model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-06-12 01:41:01 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-06-12 01:41:02 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-06-12 01:41:02 - VectorDB - INFO - Vector Database initialized
+2026-06-12 01:41:02 - VectorDB - INFO - Index loaded from main_index.faiss
+2026-06-12 01:41:02 - VectorDB - INFO - Database loaded from main_index.faiss
+2026-06-12 01:44:29 - VectorDB - INFO - Search completed for query: 'IDS nedir?'. Results: 5
+2026-06-12 01:45:49 - VectorDB - INFO - Search completed for query: 'IDS ne zaman kullanilir?'. Results: 5
+2026-06-12 01:46:27 - VectorDB - INFO - Search completed for query: 'IDS nedir'. Results: 5
+2026-06-12 01:46:32 - VectorDB - INFO - Search completed for query: 'IDS ne'. Results: 5
+2026-06-12 01:46:40 - VectorDB - INFO - Search completed for query: 'IDS nedir??'. Results: 5
+2026-06-12 01:46:53 - VectorDB - INFO - Search completed for query: 'ne zaman IDS'. Results: 5
+2026-06-12 01:47:08 - VectorDB - INFO - Search completed for query: 'ne zaman IDS?'. Results: 5
+2026-06-12 01:47:16 - VectorDB - INFO - Search completed for query: 'ne zaman IDS kullanilir?'. Results: 5
+2026-06-12 01:47:34 - VectorDB - INFO - Search completed for query: 'IDS ne yapiyor'. Results: 5
+2026-06-12 01:48:28 - VectorDB - INFO - Search completed for query: 'IDS nedir'. Results: 5
+2026-06-12 01:48:30 - VectorDB - INFO - Search completed for query: 'IDS nedir'. Results: 3
+2026-06-12 01:48:35 - VectorDB - INFO - Search completed for query: 'IDS nedir'. Results: 3
+2026-06-12 01:48:37 - VectorDB - INFO - Search completed for query: 'IDS nedir'. Results: 3
+2026-06-12 01:48:40 - VectorDB - INFO - Search completed for query: 'IDS nedir'. Results: 3
+2026-06-12 01:48:42 - VectorDB - INFO - Search completed for query: 'IDS nedir'. Results: 3
+2026-06-12 01:48:43 - VectorDB - INFO - Search completed for query: 'IDS nedir'. Results: 3
+2026-06-12 01:48:48 - VectorDB - INFO - Search completed for query: 'IDS nedir?'. Results: 3
+2026-06-12 01:48:58 - VectorDB - INFO - Search completed for query: 'IDS ne demek??'. Results: 3
+2026-06-12 01:49:09 - VectorDB - INFO - Search completed for query: 'IDS nedir'. Results: 3
+2026-06-12 01:49:11 - VectorDB - INFO - Search completed for query: 'IDS nedir?'. Results: 3
+2026-06-12 01:49:30 - VectorDB - INFO - Search completed for query: 'IDS alan karmasikligi nedir?'. Results: 3
+2026-06-12 01:49:33 - VectorDB - INFO - Search completed for query: 'IDS alan karmasikligi nedir?'. Results: 4
+2026-06-12 01:49:35 - VectorDB - INFO - Search completed for query: 'IDS alan karmasikligi nedir?'. Results: 5
+2026-06-12 01:49:48 - VectorDB - INFO - Search completed for query: 'IDS zaman karmasikligi nedir?'. Results: 5
+2026-06-12 01:50:27 - VectorDB - INFO - Search completed for query: 'IDS nedir?'. Results: 5
+2026-06-12 01:50:37 - VectorDB - INFO - Search completed for query: 'IDS ne ise yariyor?'. Results: 5
+2026-06-12 01:51:00 - VectorDB - INFO - Search completed for query: 'IDS ne zaman ise yariyor?'. Results: 5
+2026-06-12 01:51:32 - VectorDB - INFO - Search completed for query: 'IDS nedir?'. Results: 5
+2026-06-12 01:56:32 - VectorDB - INFO - Search completed for query: 'IDS '. Results: 5
+2026-06-12 01:56:44 - VectorDB - INFO - Search completed for query: 'IDS ne anlama gelir?'. Results: 5
+2026-06-12 01:57:10 - VectorDB - INFO - Search completed for query: 'Ne zaman IDS kullaniyoruz'. Results: 5
+2026-06-12 01:57:17 - VectorDB - INFO - Search completed for query: 'Ne zaman IDS kullaniyoruz?'. Results: 5
+2026-06-12 01:57:29 - VectorDB - INFO - Search completed for query: 'Ids nedir?'. Results: 5
+2026-06-12 01:57:44 - VectorDB - INFO - Search completed for query: 'IDS ve BFS arasinda ne alaka var?'. Results: 5
+2026-06-12 01:58:42 - VectorDB - INFO - Search completed for query: 'IDS hangi seyden olusur'. Results: 5
+2026-06-12 01:59:04 - VectorDB - INFO - Search completed for query: 'IDS hangi arama olusur'. Results: 5
+2026-06-12 01:59:09 - VectorDB - INFO - Search completed for query: 'IDS hangi aramalardan olusur'. Results: 5
+2026-06-12 01:59:21 - VectorDB - INFO - Search completed for query: 'IDS hangi aramalar birlesir'. Results: 5
+2026-06-12 02:22:41 - VectorDB - INFO - Loading embedding model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-06-12 02:22:48 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-06-12 02:22:48 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-06-12 02:22:48 - VectorDB - INFO - Vector Database initialized
+2026-06-12 02:22:48 - VectorDB - INFO - Index loaded from main_index.faiss
+2026-06-12 02:22:48 - VectorDB - INFO - Database loaded from main_index.faiss
+2026-06-12 09:10:35 - VectorDB - INFO - Loading embedding model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-06-12 09:10:45 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-06-12 09:10:45 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-06-12 09:10:45 - VectorDB - INFO - Vector Database initialized
+2026-06-12 09:10:45 - VectorDB - INFO - Index loaded from main_index.faiss
+2026-06-12 09:10:45 - VectorDB - INFO - Database loaded from main_index.faiss
