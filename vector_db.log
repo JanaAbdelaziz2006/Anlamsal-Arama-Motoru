@@ -5084,3 +5084,9 @@
 2026-06-12 09:10:45 - VectorDB - INFO - Vector Database initialized
 2026-06-12 09:10:45 - VectorDB - INFO - Index loaded from main_index.faiss
 2026-06-12 09:10:45 - VectorDB - INFO - Database loaded from main_index.faiss
+2026-06-14 00:28:47 - VectorDB - INFO - Loading embedding model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-06-14 00:28:57 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-06-14 00:28:58 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-06-14 00:28:58 - VectorDB - INFO - Vector Database initialized
+2026-06-14 00:28:58 - VectorDB - INFO - Index loaded from main_index.faiss
+2026-06-14 00:28:58 - VectorDB - INFO - Database loaded from main_index.faiss
