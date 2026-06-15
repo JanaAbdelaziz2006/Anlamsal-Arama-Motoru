@@ -5090,3 +5090,16 @@
 2026-06-14 00:28:58 - VectorDB - INFO - Vector Database initialized
 2026-06-14 00:28:58 - VectorDB - INFO - Index loaded from main_index.faiss
 2026-06-14 00:28:58 - VectorDB - INFO - Database loaded from main_index.faiss
+2026-06-15 18:33:20 - VectorDB - INFO - Loading embedding model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-06-15 18:33:28 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-06-15 18:33:28 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-06-15 18:33:28 - VectorDB - INFO - Vector Database initialized
+2026-06-15 18:33:28 - VectorDB - INFO - Index loaded from main_index.faiss
+2026-06-15 18:33:28 - VectorDB - INFO - Database loaded from main_index.faiss
+2026-06-15 18:34:35 - VectorDB - INFO - Loading embedding model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-06-15 18:34:45 - VectorDB - INFO - Model loaded successfully. Embedding dimension: 384
+2026-06-15 18:34:45 - VectorDB - INFO - HNSW index created with dimension=384, max_connections=32
+2026-06-15 18:34:45 - VectorDB - INFO - Vector Database initialized
+2026-06-15 18:34:45 - VectorDB - INFO - Index loaded from main_index.faiss
+2026-06-15 18:34:45 - VectorDB - INFO - Database loaded from main_index.faiss
+2026-06-15 18:37:13 - VectorDB - INFO - Search completed for query: 'binary search nedir'. Results: 3
