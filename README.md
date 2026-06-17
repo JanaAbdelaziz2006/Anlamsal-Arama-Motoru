@@ -33,7 +33,7 @@ Profesyonel, nesne yönelimli (OOP) ve yüksek performanslı bir Vektör Veritab
 
 ### 3. **Veri Yönetimi (Data Management)**
 - ✅ Generator-based veri yükleme (hafıza tasarrufu)
-- ✅ JSONL dosya formatı desteği
+- ✅ pdf-txt dosya formatı desteği
 - ✅ Disk'ten akış bazlı okuma
 - ✅ Milyonlarca satırda RAM patlaması olmaz
 
