@@ -1,3 +1,18 @@
+Projenin sunumu (Presentation):
+[updated sunum.pptx](https://github.com/user-attachments/files/29057918/updated.sunum.pptx)
+
+Projenin interface:
+<img width="1920" height="850" alt="image" src="https://github.com/user-attachments/assets/e2204424-7551-442c-b7b4-3b3b05c1a0cb" />
+<img width="1920" height="850" alt="image" src="https://github.com/user-attachments/assets/69544068-d649-41c1-8cb7-bd3ad975c9f0" />
+<img width="1920" height="843" alt="image" src="https://github.com/user-attachments/assets/ab8bd321-bdd8-4ed3-933b-81639c04b2c0" />
+<img width="1919" height="831" alt="image" src="https://github.com/user-attachments/assets/de67ba94-e961-4dfc-a9d9-063672db2941" />
+<img width="1919" height="840" alt="image" src="https://github.com/user-attachments/assets/890de8ef-9f57-4fa8-95f9-57fccb5d4fcd" />
+<img width="1920" height="842" alt="image" src="https://github.com/user-attachments/assets/e30429fd-f275-474a-8e75-6770d9523942" />
+
+
+
+
+
 # Professional Vector Database (VectorDB) System
 
 Profesyonel, nesne yönelimli (OOP) ve yüksek performanslı bir Vektör Veritabanı sistemi.
@@ -5,7 +20,7 @@ Profesyonel, nesne yönelimli (OOP) ve yüksek performanslı bir Vektör Veritab
 ## 🎯 Özellikler
 
 ### 1. **Embedding (Vektör Oluşturma)**
-- ✅ `sentence-transformers` (all-MiniLM-L6-v2) kullanımı
+- ✅ `sentence-transformers` (paraphrase-multilingual-MiniLM-L12-v2) kullanımı
 - ✅ Toplu embedding işlemleri (batch processing)
 - ✅ Optimal boyut: 384-dimansiyonal vektörler
 - ✅ Hata yönetimi ve loglama
@@ -106,6 +121,10 @@ Veri dosyası JSONL formatında olmalıdır (her satır bir JSON):
 {"id": "doc_000002", "content": "Machine learning çok güçlüdür", "metadata": {"source": "test"}}
 {"id": "doc_000003", "content": "Python programlama dili popülerdir", "metadata": {"source": "test"}}
 ```
+## 📝 Veri Format (pdf,txt)
+
+Kullanıcı herhangi bir dosya pdf-txt yükleyebilir ve 100000 tane dosya koysa da fark etmez
+
 
 ### Gerekli Alanlar
 - `id`: Unique document identifier (string)
@@ -145,7 +164,7 @@ VectorDatabase (Ana Sınıf)
 
 ```python
 class VectorDatabase:
-    def __init__(self, embedding_model: str = "all-MiniLM-L6-v2")
+    def __init__(self, embedding_model: str = "multilingual-MiniLM-L12-v2")
     def index_documents(self, data_file: Path, batch_size: int = 32)
     def search(self, query: str, top_k: int = 10) -> List[SearchResult]
     def save(self, index_path: Path)
@@ -156,7 +175,7 @@ class VectorDatabase:
 
 ```python
 class EmbeddingManager:
-    def __init__(self, model_name: str = "all-MiniLM-L6-v2")
+    def __init__(self, model_name: str = "multilingual-MiniLM-L12-v2")
     def embed(self, text: str) -> np.ndarray
     def embed_batch(self, texts: List[str]) -> np.ndarray
 ```
@@ -232,7 +251,7 @@ results = db.search("your query", top_k=20)
 ## 📊 Performans Özellikleri
 
 ### Embedding Boyutu
-- Model: all-MiniLM-L6-v2
+- Model: multilingual-MiniLM-L12-v2
 - Boyut: 384 dimensyon
 - Hız: ~1000 saniye/dokuman (GPU'da daha hızlı)
 
@@ -380,6 +399,6 @@ MIT License - Açık kaynak ve ticari kullanım için ücretsiz
 
 ---
 
-**Son Güncelleme:** Mayıs 2026
+**Son Güncelleme:** Haziran 2026
 
 **Durum:** ✅ Production Ready
