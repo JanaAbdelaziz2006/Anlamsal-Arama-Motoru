@@ -1,4 +1,5 @@
 Projenin sunumu (Presentation):
+
 [updated sunum.pptx](https://github.com/user-attachments/files/29057918/updated.sunum.pptx)
 
 Projenin interface:
