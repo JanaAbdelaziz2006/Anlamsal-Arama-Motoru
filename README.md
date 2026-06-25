@@ -3,6 +3,7 @@ Projenin sunumu (Presentation):
 [updated sunum.pptx](https://github.com/user-attachments/files/29057918/updated.sunum.pptx)
 
 Projenin interface:
+
 <img width="1920" height="850" alt="image" src="https://github.com/user-attachments/assets/e2204424-7551-442c-b7b4-3b3b05c1a0cb" />
 <img width="1920" height="850" alt="image" src="https://github.com/user-attachments/assets/69544068-d649-41c1-8cb7-bd3ad975c9f0" />
 <img width="1920" height="843" alt="image" src="https://github.com/user-attachments/assets/ab8bd321-bdd8-4ed3-933b-81639c04b2c0" />
